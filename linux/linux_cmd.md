@@ -68,7 +68,7 @@ There are other software examples too, like git, ffmpeg, npm etc..
   
 + ```exit 0```
 
-+ video conversion
++ video and audio conversion
 
   ```bash
   ffmpeg -i filename.mkv -c:v copy -c:a copy output.avi
