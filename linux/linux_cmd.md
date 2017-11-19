@@ -184,6 +184,8 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
 + ```sed -n '/inizio/,/fine/p' file.lol```
 
++ ```systemd-analyze blame```
+
 + ```lm-sensors sensors ```
 
 + ```service httpd restart```
