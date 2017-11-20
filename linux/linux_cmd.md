@@ -163,6 +163,8 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
 + ```ll -Slhr```
 
++ ```ln -sf /path/to/file /path/to/symlink```
+
 + ```locate <filename>```
 
 + ```mkdir```
