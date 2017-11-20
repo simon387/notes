@@ -1,17 +1,18 @@
 # Mainly from dnf
 
-+ youtube-dl
-+ stress
-+ code (visual studio code)
-+ thunderbird
-+ terminator
-+ opera
-+ chrome
-+ gimp
-+ filezilla
-+ htop
-+ feh
 + byobu
-+ clamav clamtk
-+ rkhunter
++ chrome
 + chrootkit
++ clamav clamtk
++ code (visual studio code)
++ feh
++ filezilla
++ gimp
++ htop
++ opera
++ rkhunter
++ stress
++ terminator
++ thunderbird
++ youtube-dl
+
