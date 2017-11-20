@@ -1,8 +1,8 @@
-# info utili per la creazione e modifica template e strutture in liferay
+# infos about template and structure develompment in liferay
 
-linguaggio più scelto per i template è Velocity
+the main used template language is Velocity
 
-## accesso a variabile ripetibile (lista) e alle sue sottovariabili
+## list variable access
 ```
 #if (!$slideTitle.getSiblings().isEmpty())
  #foreach ($cur_slideTitle in $slideTitle.getSiblings())
@@ -11,21 +11,21 @@ linguaggio più scelto per i template è Velocity
 #end
 ```
 
-## set variabili
+## var set
 ```
 #set ($c = 0)
 ```
 
-# operatori logici in espressioni
+# logic operations in expressions
 ```
 && || ! != ==
 ```
 
-# accesso a checkbox
+# checkbox access
 ```
 $getterUtil.getBoolean($variabileCheckboxosa.getData())
 ```
 
-# convenzioni strutture
-+ per documenti, immagini, video, media ecc usare sempre "Documents and media" come oggetto.
-+ per contenuti multimediali, mettere sempre un campo "alt"
+# structure conventions
++ in documents, images, video, media, etc, always use object: "Documents and media"
++ use always field "alt" on mutlimedia contents
