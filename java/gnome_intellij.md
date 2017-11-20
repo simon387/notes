@@ -22,3 +22,4 @@
 | ```shift + F6```          | refactory rename         |
 | ```ctrl + d```            | show diff window         | duplicate line
 | ```ctrl + alt + l```      | format code              |
+| ```ctrl + shift + F9```   | hot class replacement during debug |
