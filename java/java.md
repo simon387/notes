@@ -39,3 +39,32 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
   + theme
   + ext
   + layout
++ set proxy inside dev environment
+  build-common-ivy.xml
+  ```xml
+  <!-- before "if not avalable file=''"-->
+  <setproxy proxyhost="" proxyport=""/>
+  ```
++ Eclipse setup example
+  + download Eclipse
+  + download and install Liferay IDE from Eclipse marketplace or web
+  + create new workspace
+  + set the jdk
+  + download from project version system the sdk
+  + set the just downloaded sdk as default
+  + if you want you can set the source folder, tomcat bundle zip and javadoc
+  + to edit a Liferay plugin just export from sdk (project nature:liferay should be already enabled)
+  + now the Liferay menu should be enabled from context menu (es. right click on project, liferay, build)
+  + set the proxy if any in ```build-common-ivy.xml```
+    + ```<setproxy proxyhost="" proxyport=""/>```
++ EXT deploy example
+  + stop liferay
+  + remove the old ext
+    + ```sudo rm /opt/liferay/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/lib/ext/ext-NAME-ext-service.jar```
+    + ```sudo rm -rf /opt/liferay/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/webapps/NAME-ext/```
+    + ```sudo rm /opt/liferay/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/webapps/ROOT/WEB-INF/ext-NAME-ext.xml```
+    + ```sudo rm /opt/liferay/liferay/tomcat-7.0.42/webapps/ROOT/WEB-INF/lib/ext-NAME-ext-*```
+  + start liferay
+  + after complete startup, deploy the war (just cp it)
+  + always check logs
+  + at the end restart liferay
