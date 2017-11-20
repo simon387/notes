@@ -1,5 +1,9 @@
 # java notes
 
+## popular annotations
+
++ ```@Transient``` doesn't persist the field on db
+
 ## optional usage example
 
 ```java
