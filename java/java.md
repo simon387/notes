@@ -28,7 +28,8 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
 
 ## popular annotations
 
-+ ```@Transient``` doesn't persist the field on db
++ JPA
+  + ```@Transient``` doesn't persist the field on db
 
 ## liferay
 
