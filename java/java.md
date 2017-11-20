@@ -2,7 +2,7 @@
 
 ## log4j
 
-example log4j property file [a link](https://github.com/simon387/Log4jEx/blob/master/src/main/resources/log4j.properties)
+[log4j property file example](https://github.com/simon387/Log4jEx/blob/master/src/main/resources/log4j.properties)
 
 ## optional usage example
 
