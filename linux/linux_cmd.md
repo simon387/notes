@@ -119,7 +119,21 @@ There are other software examples too, like git, ffmpeg, npm etc..
   git push
   git reflog
   git reset --hard origin/master
+  git stash save 'message'
+  git stash list
+  git stash clear
   git status
+  
+  git checkout -- <file>
+  failed ? ->
+    git rm --cached -r .
+    git reset --hard
+  
+  lost stashed changed?
+    1) git fsck --unreachable | grep commit | cut -d\ -f3 | xargs git show
+    2) find code between commits
+    3) git stash apply 7ae2f2a27885383136c3025c5e24f47b29a3ee38
+    4) ??? profit!
   ```
 
 + ```grep "LOGIN_TOUCH" monitor.log.2017-04-10 | grep "AUTHENTI" | grep "KO" | grep -oP '((?=\[KO - ).*(?=Sid))'```
