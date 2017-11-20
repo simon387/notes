@@ -1,9 +1,5 @@
 # java notes
 
-## popular annotations
-
-+ ```@Transient``` doesn't persist the field on db
-
 ## optional usage example
 
 ```java
@@ -25,6 +21,10 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
 		return Optional.absent();
 	}
 ```
+
+## popular annotations
+
++ ```@Transient``` doesn't persist the field on db
 
 ## liferay
 
