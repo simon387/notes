@@ -26,3 +26,7 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
 		return Optional.absent();
 	}
 ```
+
+## liferay
+
++ ```public class com.liferay.portal.servlet.filters.dynamiccss.DynamicCSSUtil``` -> theme sass cache generation trigger
