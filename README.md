@@ -4,3 +4,7 @@
 + wetransfer
 + mobaxterm
 + sourcetree
++ jmeter
++ dynatrace
++ newrelic
++ soapUI
