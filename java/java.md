@@ -33,3 +33,9 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
 ## liferay
 
 + ```public class com.liferay.portal.servlet.filters.dynamiccss.DynamicCSSUtil``` -> theme sass cache generation trigger
++ plugins:
+  + portlet
+  + hook
+  + theme
+  + ext
+  + layout
