@@ -109,16 +109,17 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
   ```bash
   git add .
-  git commit -m "msg"
-  git push
+  git branch
   git clone <repo>
-  git pull
+  git commit -m "msg"
+  git commit --amend
+  git diff HEAD file
   git fetch
-  git status
+  git pull
+  git push
   git reflog
   git reset --hard origin/master
-  git branch
-  git diff HEAD file
+  git status
   ```
 
 + ```grep "LOGIN_TOUCH" monitor.log.2017-04-10 | grep "AUTHENTI" | grep "KO" | grep -oP '((?=\[KO - ).*(?=Sid))'```
