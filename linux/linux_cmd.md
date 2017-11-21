@@ -266,6 +266,12 @@ There are other software examples too, like git, ffmpeg, npm etc..
   ( tail -f -n0 "$CATALINA_OUT" & ) | grep -iq "INFO:\ Server\ startup\ in"
   ```
 
++ tail until string is found with timeout of 3 minutes
+
+  ```bash
+  timeout 180 grep -iq 'INFO:\ Server\ startup\ in' <(tail -f catalina.2017-11-21.log)
+  ```
+
 + ```top```
 
 + ```touch <file>```
