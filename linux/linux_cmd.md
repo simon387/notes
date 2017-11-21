@@ -320,3 +320,9 @@ There are other software examples too, like git, ffmpeg, npm etc..
   ```stringLength=${#stringVar}```
 
 + ```!<cmd>```
+
++ first arguemnt= ```$1```
+
++ arguments count= ```$#```
+
++ last return code= ```$?```
