@@ -40,7 +40,7 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
 + ```date```
 
-  es getting current time formatted like 20171121-11:51:01:
+  es getting current time formatted like "20171121-11:51:01":
 
   ```bash
   echo `date +%Y%m%d-%H:%M:%S`
