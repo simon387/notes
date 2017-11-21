@@ -319,10 +319,18 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
   ```stringLength=${#stringVar}```
 
-+ ```!<cmd>```
++ repeat command
 
-+ first argument= ```$1```
+  ```!<cmd>```
 
-+ arguments count= ```$#```
++ first argument value
 
-+ last return code= ```$?```
+  ```$1```
+
++ arguments count
+  
+  ```$#```
+
++ last return code value
+
+  ```$?```
