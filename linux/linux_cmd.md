@@ -60,6 +60,8 @@ There are other software examples too, like git, ffmpeg, npm etc..
   dnf install <name>
   dnf search <name>
   dnf list installed
+  dnf config-manager --set-enabled updates-testing
+  dnf config-manager --set-disabled updates-testing
   ```
 
 + dir dimension
