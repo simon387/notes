@@ -271,6 +271,10 @@ There are other software examples too, like git, ffmpeg, npm etc..
   ```bash
   timeout 180 grep -iq 'INFO:\ Server\ startup\ in' <(tail -f catalina.2017-11-21.log)
   ```
+  or
+  ```bash
+  ( tail -f -n0 "$CATALINA_OUT" & ) | timeout 3m grep -iq "INFO:\ Server\ startup\ in"
+  ```
 
 + ```top```
 
