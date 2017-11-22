@@ -92,10 +92,10 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
   + set the proxy if any in ```build-common-ivy.xml```
     + ```<setproxy proxyhost="" proxyport=""/>```
   + if some library cannot be downloaded automatically from ivy, just download and add it in ```/liferay-plugins-sdk-6.2/.ivy/cache``` (unzipped) [example of added zip](https://github.com/simon387/job_note/blob/master/java/jars/biz.zip)
-  + to include de liferay source code in Eclipse:
+  + to include the Liferay source code into Eclipse:
     + right click on Package Explorer
     + import
-    + existing project into workspace
+    + Existing project into Workspace
 + EXT deploy example
   + stop liferay
   + remove the old ext
