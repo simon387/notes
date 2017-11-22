@@ -91,7 +91,7 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
   + now the Liferay menu should be enabled from context menu (es. right click on project, liferay, build)
   + set the proxy if any in ```build-common-ivy.xml```
     + ```<setproxy proxyhost="" proxyport=""/>```
-  + if some library cannot be downloaded automatically from ivy, just download and add it in ```/liferay-plugins-sdk-6.2/.ivy/cache``` [example of added zip](https://github.com/simon387/job_note/master/tree/master/java/jars/biz.zip)
+  + if some library cannot be downloaded automatically from ivy, just download and add it in ```/liferay-plugins-sdk-6.2/.ivy/cache``` (unzipped) [example of added zip](https://github.com/simon387/job_note/blob/master/java/jars/biz.zip)
 + EXT deploy example
   + stop liferay
   + remove the old ext
