@@ -25,6 +25,39 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
 		return Optional.absent();
 	}
 ```
+```json
+{
+	"a": "a",
+	"b": "b",
+	"c": "c",
+	"d": "d",
+	"e": "e",
+	"f": "f",
+	"components": {
+		"name-name": [
+			{
+				"name": "name",
+				"variation": "variation",
+				"field": {
+					"a": "a",
+					"b": {
+						"c": "c"
+					}
+				},
+				"features": {
+					"a": {
+						"b": "b",
+						"c": "c"
+					},
+					"d": {
+						"e": "e"
+					}
+				}
+			}
+		]
+	}
+}
+```
 
 ## popular annotations
 
