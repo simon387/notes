@@ -189,6 +189,8 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
 + ```npm update```
 
++ ```pip install Ghost.py```
+
 + ```printf "\033c"```
 
 + ```ps aux | grep java```
