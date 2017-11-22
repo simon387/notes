@@ -53,8 +53,8 @@ There are other software examples too, like git, ffmpeg, npm etc..
 + ```diff```
 
 + hardware info
-
-  ```dmidecode```
+  
+  ```dmidecode```
 
 + dnf
 
