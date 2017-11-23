@@ -68,6 +68,10 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
 + JPA
   + ```@Transient``` doesn't persist the field on db
 
+## Java Thread Dump
+
++ dump example: [output](https://github.com/simon387/job_note/blob/master/linux/java_thread_dump_example)
+
 ## Liferay note (6.1-6.2)
 
 + ```public class com.liferay.portal.servlet.filters.dynamiccss.DynamicCSSUtil``` -> theme sass cache generation trigger
