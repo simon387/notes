@@ -1,4 +1,4 @@
-# java notes
+# Java notes
 
 ## Eclipse note
 
@@ -8,7 +8,7 @@
 
 [log4j property file example](https://github.com/simon387/Log4jEx/blob/master/src/main/resources/log4j.properties)
 
-## optional usage example
+## Optional usage example (with JSON parsing)
 
 ```java
 private Optional<Map<String, Object>> getComponentField(String componentName, String componentVariation, String field) {
@@ -63,12 +63,12 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
 }
 ```
 
-## popular annotations
+## Popular annotations
 
 + JPA
   + ```@Transient``` doesn't persist the field on db
 
-## liferay
+## Liferay note (6.1-6.2)
 
 + ```public class com.liferay.portal.servlet.filters.dynamiccss.DynamicCSSUtil``` -> theme sass cache generation trigger
 + plugins:
