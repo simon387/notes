@@ -19,3 +19,4 @@ protected X X X
           X X
 private   X
 ```
+9. Remember that a String once created cannot be changed
