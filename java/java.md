@@ -70,6 +70,7 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
 
 ## Java Thread Dump
 
++ ```kill -3 <pid>```
 + dump example: [output](https://github.com/simon387/job_note/blob/master/linux/java_thread_dump_example)
 
 ## Liferay note (6.1-6.2)
