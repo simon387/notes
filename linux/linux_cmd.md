@@ -187,6 +187,10 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
 + ```nautilus```
 
+  is the default gnome graphic file manager
+  + ```ctrl + l``` show address bar
+  + ```ctrl + h``` toggle hidden files
+
 + ```npm update```
 
 + ```pip install Ghost.py```
