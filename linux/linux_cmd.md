@@ -53,7 +53,7 @@ There are other software examples too, like git, ffmpeg, npm etc..
 + ```diff```
 
 + hardware info
-  
+
   ```dmidecode```
 
 + dnf
@@ -77,7 +77,7 @@ There are other software examples too, like git, ffmpeg, npm etc..
   ```du --max-depth=1 -h .```
 
 + ```echo hello```
-  
+
 + ```exit 0```
 
 + video and audio conversion
@@ -135,12 +135,12 @@ There are other software examples too, like git, ffmpeg, npm etc..
   git stash list
   git stash clear
   git status
-  
+
   git checkout -- <file>
   failed ? ->
     git rm --cached -r .
     git reset --hard
-  
+
   lost stashed changed?
     1) git fsck --unreachable | grep commit | cut -d\ -f3 | xargs git show
     2) find code between commits
@@ -161,7 +161,7 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
 + ```kill -9 <pid>```
 
-+ java thread dump (see [output example](java_thread_dump_example))
++ java thread dump (see [output example](https://github.com/simon387/job_note/blob/master/java/java_thread_dump_example))
 
   ```bash
   kill -3 <pid>
@@ -221,7 +221,7 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
 + ```systemd-analyze blame```
 
-+ ```lm-sensors sensors ```
++ ```lm-sensors sensors```
 
 + ```service httpd restart```
 
@@ -342,7 +342,7 @@ There are other software examples too, like git, ffmpeg, npm etc..
   ```$1```
 
 + arguments count
-  
+
   ```$#```
 
 + last return code value
