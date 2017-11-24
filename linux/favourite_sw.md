@@ -8,6 +8,7 @@
 + feh
 + filezilla
 + fslint
+
   find duplicate files
 + gimp
 + htop
