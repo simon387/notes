@@ -148,6 +148,10 @@ There are other software examples too, like git, ffmpeg, npm etc..
     4) ??? profit!
   ```
 
++ gnome
+
+  ```alt + F2``` show "Enter a command" inputbox
+
 + ```grep "LOGIN_TOUCH" monitor.log.2017-04-10 | grep "AUTHENTI" | grep "KO" | grep -oP '((?=\[KO - ).*(?=Sid))'```
 
 + ```grep "LOGIN_TOUCH" monitor.log.2017-04-11 | grep "AUTHENTI" | grep "OK" | wc -l```
