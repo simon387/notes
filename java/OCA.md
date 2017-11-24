@@ -21,4 +21,15 @@ private   X
 ```
 9. Remember that a String once created cannot be changed
 10. Default methods enable us to add new functionalities to interfaces without breaking the classes that implements that interface. Lets take a look at the example below.
-
+11. always return 1
+  ```java
+  try {
+    throw new Exception();
+  }
+  catch(Exception exception) {
+    return 0;
+  }
+  finally {
+    return 1;
+  }
+  ```
