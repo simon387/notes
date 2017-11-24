@@ -1,0 +1,2715 @@
+
+<!-- saved from url=(0041)http://www.caliberdt.com/tips/sqlcode.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>SQLCODE Table</title>
+</head>
+
+<body bgcolor="BlanchedAlmond">
+
+<table cellpadding="20" align="CENTER" width="90%">
+<tbody><tr>
+<td>
+
+<b><u><font size="3">
+<p>SQLCODE Table</p>
+</font></u></b><font size="3">
+
+<table border="1" cellpadding="10" bgcolor="WHITE">
+<tbody><tr>
+<td colspan="2">
+<b>Successful Execution SQLCODE</b>
+</td>
+</tr>
+
+<tr>
+<td>000</td>
+<td>
+SUCCESSFUL EXECUTION                                              
+</td>
+</tr>
+
+
+<tr><td colspan="2">
+<b>Warning SQLCODE</b>
+</td>
+</tr>
+
+<tr>
+<td>+012</td>
+<td>
+THE UNQUALIFIED COLUMN NAME column-name WAS INTERPRETED AS A CORRELATED REFERENCE
+</td>
+</tr>
+
+<tr>
+<td>+098</td>
+<td>
+A DYNAMIC SQL STATEMENT ENDS WITH A SEMICOLON
+</td>
+</tr>
+
+<tr>
+<td>+100</td>
+<td>
+ROW NOT FOUND FOR FETCH, UPDATE OR DELETE, OR THE RESULT OF A QUERY IS AN EMPTY TABLE
+</td>
+</tr>
+
+<tr>
+<td>+110</td>
+<td>
+SQL UPDATE TO A DATA CAPTURE TABLE NOT SIGNALED TO ORIGINATING SUBSYSTEM
+</td>
+</tr>
+
+<tr>
+<td>+111</td>
+<td>
+THE SUBPAGES OPTION IS NOT SUPPORTED FOR TYPE 2 INDEXES           
+</td>
+</tr>
+
+<tr>
+<td>+117</td>
+<td>
+THE NUMBER OF INSERT VALUES IS NOT THE SAME AS THE NUMBER OF OBJECT COLUMNS
+</td>
+</tr>
+
+<tr>
+<td>+162</td>
+<td>
+TABLESPACE database-name.tablespace-name HAS BEEN PLACED IN CHECK PENDING
+</td>
+</tr>
+
+<tr>
+<td>+203</td>
+<td>
+THE QUALIFIED COLUMN NAME column-name WAS RESOLVED USING A NON-UNIQUE OR UNEXPOSED NAME
+</td>
+</tr>
+
+<tr>
+<td>+204</td>
+<td>
+name IS AN UNDEFINED NAME                                         
+</td>
+</tr>
+
+<tr>
+<td>+206</td>
+<td>
+column-name IS NOT A COLUMN OF AN INSERTED TABLE, UPDATED TABLE, OR ANY TABLE IDENTIFIED IN A FROM CLAUSE
+</td>
+</tr>
+
+<tr>
+<td>+218</td>
+<td>
+THE SQL STATEMENT REFERENCING A REMOTE OBJECT CANNOT BE EXPLAINED
+</td>
+</tr>
+
+<tr>
+<td>+219</td>
+<td>
+THE REQUIRED EXPLANATION TABLE  table-name DOES NOT EXIST
+</td>
+</tr>
+
+<tr>
+<td>+220</td>
+<td>
+THE COLUMN column-name  IN EXPLANATION TABLE table-name IS NOT DEFINED PROPERLY
+</td>
+</tr>
+
+<tr>
+<td>+304</td>
+<td>
+A VALUE WITH DATA TYPE data-type1 CANNOT BE ASSIGNED TO A HOST VARIABLE BECAUSE THE VALUE IS NOT WITHIN THE RANGE OF THE HOST VARIABLE IN POSITION position-number WITH DATA TYPE data-type2
+</td>
+</tr>
+
+<tr>
+<td>+331</td>
+<td>
+THE NULL VALUE HAS BEEN ASSIGNED TO A HOST VARIABLE BECAUSE THE STRING CANNOT BE TRANSLATED. REASON reason-code, CHARACTER code-point, HOST VARIABLE position-number
+</td>
+</tr>
+
+<tr>
+<td>+339</td>
+<td>
+THE SQL STATEMENT HAS BEEN SUCCESSFULLY EXECUTED, BUT THERE MAY BE SOME CHARACTER CONVERSION INCONSISTENCIES
+</td>
+</tr>
+
+<tr>
+<td>+402</td>
+<td>
+LOCATION location IS UNKNOWN
+</td>
+</tr>
+
+<tr>
+<td>+403</td>
+<td>
+THE LOCAL OBJECT REFERENCED BY THE CREATE ALIAS STATEMENT DOES NOT EXIST
+</td>
+</tr>
+
+<tr>
+<td>+535</td>
+<td>
+THE RESULT OF THE POSITIONED UPDATE OR DELETE MAY DEPEND ON THE ORDER OF THE ROWS.
+</td>
+</tr>
+
+<tr>
+<td>+541</td>
+<td>
+THE REFERENTIAL OR UNIQUE CONSTRAINT name HAS BEEN IGNORED BECAUSE IT IS A DUPLICATE
+</td>
+</tr>
+
+<tr>
+<td>+551</td>
+<td>
+auth-id DOES NOT HAVE THE PRIVILEGE TO PERFORM OPERATION operation ON OBJECT object-name
+</td>
+</tr>
+
+<tr>
+<td>+552</td>
+<td>
+auth-id DOES NOT HAVE THE PRIVILEGE TO PERFORM OPERATION operation                   
+</td>
+</tr>
+
+<tr>
+<td>+558</td>
+<td>
+THE WITH GRANT OPTION IS IGNORED                                  
+</td>
+</tr>
+
+<tr>
+<td>+561</td>
+<td>
+THE ALTER, INDEX, AND REFERENCES PRIVILEGES CANNOT BE GRANTED TO PUBLIC AT ALL LOCATIONS
+</td>
+</tr>
+
+<tr>
+<td>+562</td>
+<td>A GRANT OF A PRIVILEGE WAS IGNORED BECAUSE THE GRANTEE ALREADY HAS THE PRIVILEGE FROM THE GRANTOR
+</td>
+</tr>
+
+<tr>
+<td>+610</td>
+<td>
+INDEX index-name HAS BEEN PLACED IN RECOVER PENDING
+</td>
+</tr>
+
+<tr>
+<td>+625</td>
+<td>
+THE DEFINITION OF TABLE table-name HAS BEEN CHANGED TO INCOMPLETE
+</td>
+</tr>
+
+<tr>
+<td>+626</td>
+<td>
+DROPPING THE INDEX TERMINATES ENFORCEMENT OF THE UNIQUENESS OF A KEY THAT WAS DEFINED WHEN THE TABLE WAS CREATED
+</td>
+</tr>
+
+<tr>
+<td>+645</td>
+<td>
+WHERE NOT NULL IS IGNORED BECAUSE THE INDEX KEY CANNOT CONTAIN NULL VALUES       </td>
+</tr>
+
+<tr>                                                
+<td>+650</td>
+<td>
+THE TABLE BEING CREATED OR ALTERED CANNOT BECOME A DEPENDENT TABLE               </td>
+</tr>
+
+<tr>
+<td>+653</td>
+<td>
+TABLE table-name IN PARTITIONED TABLESPACE tspace-name IS NOT AVAILABLE BECAUSE ITS PARTITIONED INDEX HAS NOT BEEN CREATED
+</td>
+</tr>
+
+<tr>
+<td>+658</td>
+<td>
+THE SUBPAGES VALUE IS IGNORED FOR THE CATALOG INDEX index-name    
+</td>
+</tr>
+
+<tr>
+<td>+664</td>
+<td>
+THE INTERNAL LENGTH OF THE LIMIT-KEY FIELDS FOR THE PARTITIONED INDEX index-name EXCEEDS THE LENGTH IMPOSED BY THE INDEX MANAGER
+</td>
+</tr>
+
+<tr>
+<td>+738</td>
+<td>
+DEFINITION CHANGE OF object object_name MAY REQUIRE SIMILAR CHANGE ON READ-ONLY SYSTEMS
+</td>
+</tr>
+
+<tr>
+<td>+802</td>
+<td>
+EXCEPTION ERROR exception-type HAS OCCURRED DURING operation-type OPERATION ON data-type DATA, POSITION position-number
+</td>
+</tr>
+
+<tr>
+<td>+806</td>
+<td>
+BIND ISOLATION LEVEL RR CONFLICTS WITH TABLESPACE LOCKSIZE PAGE OR LOCKSIZE ROW AND LOCKMAX 0
+</td>
+</tr>
+
+<tr>
+<td>+807</td>
+<td>
+THE RESULT OF DECIMAL MULTIPLICATION MAY CAUSE OVERFLOW           
+</td>
+</tr>
+
+<tr>
+<td>+863</td>
+<td>
+THE CONNECTION WAS SUCCESSFUL BUT ONLY SBCS WILL BE SUPPORTED
+</td>
+</tr>
+
+<tr>
+<td>+2000</td>
+<td>
+TYPE 1 INDEXES WITH SUBPAGES GREATER THAN 1 CANNOT BECOME GROUP BUFFER POOL DEPENDENT IN A DATA SHARING ENVIRONMENT
+</td>
+</tr>
+
+<tr>
+<td>+30100</td>
+<td>
+OPERATION COMPLETED SUCCESSFULLY BUT A DISTRIBUTION PROTOCOL VIOLATION HAS BEEN DETECTED. ORIGINAL SQLCODE=original-sqlcode AND ORIGINAL SQLSTATE=original-sqlstate
+</td>
+</tr>
+
+<tr><td colspan="2">
+<b>Error SQLCODE</b>
+</td>
+</tr>
+
+<tr>
+<td>-007</td>
+<td>
+STATEMENT CONTAINS THE ILLEGAL CHARACTER character
+</td>
+</tr>
+
+<tr>
+<td>-010</td>
+<td>
+THE STRING CONSTANT BEGINNING string IS NOT TERMINATED
+</td>
+</tr>
+
+<tr>
+<td>-029</td>
+<td>
+INTO CLAUSE REQUIRED
+</td>
+</tr>
+
+<tr>
+<td>-060</td>
+<td>
+INVALID type SPECIFICATION : spec
+</td>
+</tr>
+
+<tr>
+<td>-084</td>
+<td>
+UNACCEPTABLE SQL STATEMENT
+</td>
+</tr>
+
+<tr>
+<td>-101</td>
+<td>
+THE STATEMENT IS TOO LONG OR TOO COMPLEX
+</td>
+</tr>
+
+<tr>
+<td>-102</td>
+<td>
+LITERAL STRING IS TOO LONG.  STRING BEGINS string
+</td>
+</tr>
+
+<tr>
+<td>-103</td>
+<td>
+literal IS AN INVALID NUMERIC LITERAL
+</td>
+</tr>
+
+<tr>
+<td>-104</td>
+<td>
+ILLEGAL SYMBOL "token". SOME SYMBOLS THAT MIGHT BE LEGAL ARE: token-list
+</td>
+</tr>
+
+<tr>
+<td>-105</td>
+<td>
+INVALID STRING
+</td>
+</tr>
+
+<tr>
+<td>-107</td>
+<td>
+THE NAME name IS TOO LONG.  MAXIMUM ALLOWABLE SIZE IS size
+</td>
+</tr>
+
+<tr>
+<td>-109</td>
+<td>
+clause CLAUSE IS NOT PERMITTED
+</td>
+</tr>
+
+<tr>
+<td>-110</td>
+<td>
+INVALID HEXADECIMAL LITERAL BEGINNING string
+</td>
+</tr>
+
+<tr>
+<td>-111</td>
+<td>
+A COLUMN FUNCTION DOES NOT INCLUDE A COLUMN NAME
+</td>
+</tr>
+
+<tr>
+<td>-112</td>
+<td>
+THE OPERAND OF A COLUMN FUNCTION IS ANOTHER COLUMN FUNCTION
+</td>
+</tr>
+
+<tr>
+<td>-113</td>
+<td>
+INVALID CHARACTER FOUND IN string, REASON CODE - nnn
+</td>
+</tr>
+
+<tr>
+<td>-114</td>
+<td>
+THE LOCATION NAME location DOES NOT MATCH THE CURRENT SERVER
+</td>
+</tr>
+
+<tr>
+<td>-115</td>
+<td>
+A PREDICATE IS INVALID BECAUSE THE COMPARISON OPERATOR operator IS FOLLOWED BY A PARENTHESIZED LIST OR BY ANY OR ALL WITHOUT A SUBQUERY
+</td>
+</tr>
+
+<tr>
+<td>-117</td>
+<td>
+THE NUMBER OF INSERT VALUES IS NOT THE SAME AS THE NUMBER OF OBJECT COLUMNS
+</td>
+</tr>
+
+<tr>
+<td>-118</td>
+<td>
+THE OBJECT TABLE OR VIEW OF THE INSERT, DELETE, OR UPDATE STATEMENT IS ALSO IDENTIFIED IN A FROM CLAUSE
+</td>
+</tr>
+
+<tr>
+<td>-119</td>
+<td>
+A COLUMN IDENTIFIED IN A HAVING CLAUSE IS NOT INCLUDED IN THE GROUP BY CLAUSE
+</td>
+</tr>
+
+<tr>
+<td>-120</td>
+<td>
+A WHERE CLAUSE OR SET CLAUSE INCLUDES A COLUMN FUNCTION
+</td>
+</tr>
+
+<tr>
+<td>-121</td>
+<td>
+THE COLUMN name IS IDENTIFIED MORE THAN ONCE IN THE INSERT OR UPDATE STATEMENT
+</td>
+</tr>
+
+<tr>
+<td>-122</td>
+<td>
+A SELECT STATEMENT WITH NO GROUP BY CLAUSE CONTAINS A COLUMN NAME AND A COLUMN FUNCTION IN THE SELECT CLAUSE OR A COLUMN NAME IS CONTAINED IN THE SELECT CLAUSE BUT NOT IN THE GROUP BY CLAUSE
+</td>
+</tr>
+
+<tr>
+<td>-125</td>
+<td>
+AN INTEGER IN THE ORDER BY CLAUSE DOES NOT IDENTIFY A COLUMN OF THE RESULT           </td>
+</tr>
+
+<tr>
+<td>-126</td>
+<td>
+THE SELECT STATEMENT CONTAINS BOTH AN UPDATE CLAUSE AND AN ORDER BY CLAUSE           </td>
+</tr>
+
+<tr>
+<td>-127</td>
+<td>
+DISTINCT IS SPECIFIED MORE THAN ONCE IN A SUBSELECT
+</td>
+</tr>
+
+<tr>
+<td>-128</td>
+<td>
+INVALID USE OF NULL IN A PREDICATE
+</td>
+</tr>
+
+<tr>
+<td>-129</td>
+<td>
+THE STATEMENT CONTAINS TOO MANY TABLE NAMES
+</td>
+</tr>
+
+<tr>
+<td>-130</td>
+<td>
+THE ESCAPE CLAUSE CONSISTS OF MORE THAN ONE CHARACTER, OR THE STRING PATTERN CONTAINS AN INVALID OCCURRENCE OF THE ESCAPE CHARACTER
+</td>
+</tr>
+
+<tr>
+<td>-131</td>
+<td>
+STATEMENT WITH LIKE PREDICATE HAS INCOMPATIBLE DATA TYPES
+</td>
+</tr>
+
+<tr>
+<td>-132</td>
+<td>A LIKE PREDICATE IS INVALID BECAUSE THE SECOND OPERAND IS NOT A STRING</td>
+</tr>
+
+<tr>
+<td>-133</td>
+<td>
+A COLUMN FUNCTION IN A SUBQUERY OF A HAVING CLAUSE IS INVALID BECAUSE ALL COLUMN REFERENCES IN ITS ARGUMENT ARE NOT CORRELATED TO THE GROUP BY RESULT THAT THE HAVING CLAUSE IS APPLIED TO</td>
+</tr>
+
+<tr>
+<td>-134</td>
+<td>
+IMPROPER USE OF LONG STRING COLUMN column-name OR A HOST VARIABLE OF MAXIMUM LENGTH GREATER THAN 254</td>
+</tr>
+
+<tr>
+<td>-136</td>
+<td>
+SORT CANNOT BE EXECUTED BECAUSE THE SORT KEY LENGTH IS GREATER THAN 4000 BYTES</td>
+</tr>
+
+<tr>
+<td>-137</td>
+<td>
+RESULT OF CONCATENATION TOO LONG
+</td>
+</tr>
+
+<tr>
+<td>-138</td>
+<td>
+THE SECOND OR THIRD ARGUMENT OF THE SUBSTR FUNCTION IS OUT OF RANGE
+</td>
+</tr>
+
+<tr>
+<td>-144</td>
+<td>
+INVALID SECTION NUMBER number
+</td>
+</tr>
+
+<tr>
+<td>-150</td>
+<td>
+THE OBJECT OF THE INSERT, DELETE, OR UPDATE STATEMENT IS A VIEW FOR WHICH THE REQUESTED OPERATION IS NOT PERMITTED
+</td>
+</tr>
+
+<tr>
+<td>-151</td>
+<td>
+THE UPDATE STATEMENT IS INVALID BECAUSE THE CATALOG DESCRIPTION OF COLUMN column-name INDICATES THAT IT CANNOT BE UPDATED
+</td>
+</tr>
+
+<tr>
+<td>-152</td>
+<td>
+THE DROP clause CLAUSE IN THE ALTER STATEMENT IS INVALID BECAUSE constraint-name IS A constraint-type
+</td>
+</tr>
+
+<tr>
+<td>-153</td>
+<td>
+THE CREATE VIEW STATEMENT DOES NOT INCLUDE A REQUIRED COLUMN LIST
+</td>
+</tr>
+
+<tr>
+<td>-154</td>
+<td>
+THE CREATE VIEW FAILED BECAUSE THE VIEW DEFINITION CONTAINS A UNION, A UNION ALL, OR A REMOTE OBJECT
+</td>
+</tr>
+
+<tr>
+<td>-156</td>
+<td>
+THE STATEMENT DOES NOT IDENTIFY A TABLE
+</td>
+</tr>
+
+<tr>
+<td>-157</td>
+<td>
+ONLY A TABLE NAME CAN BE SPECIFIED IN A FOREIGN KEY CLAUSE. object-name IS NOT THE NAME OF A TABLE.
+</td>
+</tr>
+
+<tr>
+<td>-158</td>
+<td>
+THE NUMBER OF COLUMNS SPECIFIED FOR THE VIEW IS NOT THE SAME AS THE NUMBER OF COLUMNS SPECIFIED BY THE SELECT CLAUSE
+</td>
+</tr>
+
+<tr>
+<td>-159</td>
+<td>
+DROP OR COMMENT ON token IDENTIFIES A(N) token RATHER THAN A(N) token
+</td>
+</tr>
+
+<tr>
+<td>-160</td>
+<td>
+THE WITH CHECK OPTION CANNOT BE USED FOR THE SPECIFIED VIEW
+</td>
+</tr>
+
+<tr>
+<td>-161</td>
+<td>
+THE INSERT OR UPDATE IS NOT ALLOWED BECAUSE A RESULTING ROW DOES NOT SATISFY THE VIEW DEFINITION
+</td>
+</tr>
+
+<tr>
+<td>-164</td>
+<td>
+auth-id1 DOES NOT HAVE THE PRIVILEGE TO CREATE A VIEW WITH QUALIFICATION authorization ID
+</td>
+</tr>
+
+<tr>
+<td>-170</td>
+<td>
+THE NUMBER OF ARGUMENTS SPECIFIED FOR function-name IS INVALID
+</td>
+</tr>
+
+<tr>
+<td>-171</td>
+<td>
+THE DATA TYPE, LENGTH, OR VALUE OF ARGUMENT nn OF function-name IS INVALID
+</td>
+</tr>
+
+<tr>
+<td>-173</td>
+<td>
+UR IS SPECIFIED ON THE WITH CLAUSE BUT THE CURSOR IS NOT READ-ONLY
+</td>
+</tr>
+
+<tr>
+<td>-180</td>
+<td>
+THE STRING REPRESENTATION OF A DATETIME VALUE HAS INVALID SYNTAX
+</td>
+</tr>
+
+<tr>
+<td>-181</td>
+<td>
+THE STRING REPRESENTATION OF A DATETIME VALUE IS NOT A VALID DATETIME VALUE
+</td>
+</tr>
+
+<tr>
+<td>-182</td>
+<td>
+AN ARITHMETIC EXPRESSION WITH A DATETIME VALUE IS INVALID
+</td>
+</tr>
+
+<tr>
+<td>-183</td>
+<td>
+AN ARITHMETIC OPERATION ON A DATE OR TIMESTAMP HAS A RESULT THAT IS NOT WITHIN THE VALID RANGE OF DATES
+</td>
+</tr>
+
+<tr>
+<td>-184</td>
+<td>
+AN ARITHMETIC EXPRESSION WITH A DATETIME VALUE CONTAINS A PARAMETER MARKER
+</td>
+</tr>
+
+<tr>
+<td>-185</td>
+<td>
+THE LOCAL FORMAT OPTION HAS BEEN USED WITH A DATE OR TIME AND NO LOCAL EXIT HAS BEEN INSTALLED
+</td>
+</tr>
+
+<tr>
+<td>-186</td>
+<td>
+THE LOCAL DATE LENGTH OR LOCAL TIME LENGTH HAS BEEN INCREASED AND EXECUTING PROGRAM RELIES ON THE OLD LENGTH
+</td>
+</tr>
+
+<tr>
+<td>-187</td>
+<td>
+A REFERENCE TO A CURRENT DATE/TIME SPECIAL REGISTER IS INVALID BECAUSE THE MVS TOD CLOCK IS BAD OR THE MVS PARMTZ IS OUT OF RANGE
+</td>
+</tr>
+
+<tr>
+<td>-188</td>
+<td>
+THE STRING REPRESENTATION OF A NAME IS INVALID
+</td>
+</tr>
+
+<tr>
+<td>-189</td>
+<td>
+CCSID ccsid IS UNKNOWN OR INVALID FOR THE DATA TYPE OR SUBTYPE
+</td>
+</tr>
+
+<tr>
+<td>-191</td>
+<td>
+A STRING CANNOT BE USED BECAUSE IT IS INVALID MIXED DATA
+</td>
+</tr>
+
+<tr>
+<td>-197</td>
+<td>
+QUALIFIED COLUMN NAMES IN ORDER BY CLAUSE NOT PERMITTED WHEN UNION OR UNION ALL SPECIFIED
+</td>
+</tr>
+
+<tr>
+<td>-198</td>
+<td>
+THE OPERAND OF THE PREPARE OR EXECUTE IMMEDIATE STATEMENT IS BLANK OR EMPTY
+</td>
+</tr>
+
+<tr>
+<td>-199</td>
+<td>
+ILLEGAL USE OF KEYWORD keyword.  TOKEN token-list WAS EXPECTED
+</td>
+</tr>
+
+<tr>
+<td>-203</td>
+<td>
+A REFERENCE TO COLUMN column-name IS AMBIGUOUS
+</td>
+</tr>
+
+<tr>
+<td>-204</td>
+<td>
+name IS AN UNDEFINED NAME
+</td>
+</tr>
+
+<tr>
+<td>-205</td>
+<td>
+column-name IS NOT A COLUMN OF TABLE table-name
+</td>
+</tr>
+
+<tr>
+<td>-206</td>
+<td>
+column-name IS NOT A COLUMN OF AN INSERTED TABLE, UPDATED TABLE, OR ANY TABLE IDENTIFIED IN A FROM CLAUSE
+</td>
+</tr>
+
+<tr>
+<td>-208</td>
+<td>
+THE ORDER BY CLAUSE IS INVALID BECAUSE COLUMN name IS NOT PART OF THE RESULT TABLE
+</td>
+</tr>
+
+<tr>
+<td>-198</td>
+<td>
+THE OPERAND OF THE PREPARE OR EXECUTE IMMEDIATE STATEMENT IS BLANK OR EMPTY
+</td>
+</tr>
+
+<tr>
+<td>-199</td>
+<td>
+ILLEGAL USE OF KEYWORD keyword. TOKEN token-list WAS EXPECTED
+</td>
+</tr>
+
+<tr>
+<td>-203</td>
+<td>
+A REFERENCE TO COLUMN column-name IS AMBIGUOUS
+</td>
+</tr>
+
+<tr>
+<td>-204</td>
+<td>
+name IS AN UNDEFINED NAME
+</td>
+</tr>
+
+<tr>
+<td>-205</td>
+<td>
+column-name IS NOT A COLUMN OF TABLE table-name
+</td>
+</tr>
+
+<tr>
+<td>-206</td>
+<td>
+column-name IS NOT A COLUMN OF AN INSERTED TABLE, UPDATED TABLE, OR ANY TABLE IDENTIFIED IN A FROM CLAUSE
+</td>
+</tr>
+
+<tr>
+<td>-208</td>
+<td>
+THE ORDER BY CLAUSE IS INVALID BECAUSE COLUMN name IS NOT PART OF THE RESULT TABLE
+</td>
+</tr>
+
+<tr>
+<td>-219</td>
+<td>
+THE REQUIRED EXPLANATION TABLE table-name DOES NOT EXIST
+</td>
+</tr>
+
+<tr>
+<td>-220</td>
+<td>
+THE COLUMN column-name IN EXPLANATION TABLE table-name IS NOT DEFINED PROPERLY
+</td>
+</tr>
+
+<tr>
+<td>-221</td>
+<td>
+"SET OF OPTIONAL COLUMNS" IN EXPLANATION TABLE table-name IS INCOMPLETE.  OPTIONAL COLUMN column-name IS MISSING
+</td>
+</tr>
+
+<tr>
+<td>-250</td>
+<td>
+THE LOCAL LOCATION NAME IS NOT DEFINED WHEN PROCESSING A THREE-PART OBJECT NAME
+</td>
+</tr>
+
+<tr>
+<td>-251</td>
+<td>
+TOKEN name IS NOT VALID
+</td>
+</tr>
+
+<tr>
+<td>-300</td>
+<td>
+THE STRING CONTAINED IN HOST VARIABLE OR PARAMETER position-number IS NOT NUL-TERMINATED
+</td>
+</tr>
+
+<tr>
+<td>-301</td>
+<td>
+THE VALUE OF INPUT HOST VARIABLE OR PARAMETER NUMBER position-number CANNOT BE USED AS SPECIFIED BECAUSE OF ITS DATA TYPE
+</td>
+</tr>
+
+<tr>
+<td>-302</td>
+<td>
+THE VALUE OF INPUT VARIABLE OR PARAMETER NUMBER position-number IS INVALID OR TOO LARGE FOR THE TARGET COLUMN OR THE TARGET VALUE
+</td>
+</tr>
+
+<tr>
+<td>-303</td>
+<td>
+A VALUE CANNOT BE ASSIGNED TO OUTPUT HOST VARIABLE NUMBER position-number BECAUSE THE DATA TYPES ARE NOT COMPARABLE
+</td>
+</tr>
+
+<tr>
+<td>-304</td>
+<td>
+A VALUE WITH DATA TYPE data-type1 CANNOT BE ASSIGNED TO A HOST VARIABLE BECAUSE THE VALUE IS NOT WITHIN THE RANGE OF THE HOST VARIABLE IN POSITION position-number WITH DATA TYPE data-type2
+</td>
+</tr>
+
+<tr>
+<td>-305</td>
+<td>
+THE NULL VALUE CANNOT BE ASSIGNED TO OUTPUT HOST VARIABLE NUMBER position-number BECAUSE NO INDICATOR VARIABLE IS SPECIFIED
+</td>
+</tr>
+
+<tr>
+<td>-309</td>
+<td>
+A PREDICATE IS INVALID BECAUSE A REFERENCED HOST VARIABLE HAS THE NULL VALUE
+</td>
+</tr>
+
+<tr>
+<td>-310</td>
+<td>
+DECIMAL HOST VARIABLE OR PARAMETER number CONTAINS NON DECIMAL DATA.
+</td>
+</tr>
+
+<tr>
+<td>-311</td>
+<td>
+THE LENGTH OF INPUT HOST VARIABLE NUMBER position-number IS NEGATIVE OR GREATER THAN THE MAXIMUM
+</td>
+</tr>
+
+<tr>
+<td>-312</td>
+<td>
+UNDEFINED OR UNUSABLE HOST VARIABLE variable-name
+</td>
+</tr>
+
+<tr>
+<td>-313</td>
+<td>
+THE NUMBER OF HOST VARIABLES SPECIFIED IS NOT EQUAL TO THE NUMBER OF PARAMETER MARKERS
+</td>
+</tr>
+
+<tr>
+<td>-314</td>
+<td>
+THE STATEMENT CONTAINS AN AMBIGUOUS HOST VARIABLE REFERENCE
+</td>
+</tr>
+
+<tr>
+<td>-330</td>
+<td>
+A STRING CANNOT BE USED BECAUSE IT CANNOT BE TRANSLATED.  REASON reason-code, CHARACTER code-point, HOST VARIABLE position-number
+</td>
+</tr>
+
+<tr>
+<td>-331</td>
+<td>
+A STRING CANNOT BE ASSIGNED TO A HOST VARIABLE BECAUSE IT CANNOT BE TRANSLATED. REASON reason-code, CHARACTER code-point, POSITION position-number
+</td>
+</tr>
+
+<tr>
+<td>-332</td>
+<td>
+SYSSTRINGS DOES NOT DEFINE A TRANSLATION FROM CCSID ccsid TO ccsid
+</td>
+</tr>
+
+<tr>
+<td>-333</td>
+<td>
+THE SUBTYPE OF A STRING VARIABLE IS NOT THE SAME AS THE SUBTYPE KNOWN AT BIND TIME AND THE DIFFERENCE CANNOT BE RESOLVED BY TRANSLATION
+</td>
+</tr>
+
+<tr>
+<td>-338</td>
+<td>
+AN ON CLAUSE IS INVALID
+</td>
+</tr>
+
+<tr>
+<td>-339</td>
+<td>
+THE SQL STATEMENT CANNOT BE EXECUTED FROM AN ASCII BASED DRDA APPLICATION REQUESTOR TO A V2R2 DB2 SUBSYSTEM
+</td>
+</tr>
+
+<tr>
+<td>-351</td>
+<td>
+AN UNSUPPORTED SQLTYPE WAS ENCOUNTERED IN POSITION "<position-number>" ON A PREPARE or DESCRIBE OPERATION
+</position-number></td>
+</tr>
+
+<tr>
+<td>-400</td>
+<td>
+THE CATALOG HAS THE MAXIMUM NUMBER OF USER DEFINED INDEXES
+</td>
+</tr>
+
+<tr>
+<td>-401</td>
+<td>
+THE OPERANDS OF AN ARITHMETIC OR COMPARISON OPERATION ARE NOT COMPARABLE
+</td>
+</tr>
+
+<tr>
+<td>-402</td>
+<td>
+AN ARITHMETIC FUNCTION OR OPERATOR arith-fop IS APPLIED TO CHARACTER OR DATETIME DATA
+</td>
+</tr>
+
+<tr>
+<td>-404</td>
+<td>
+THE UPDATE OR INSERT STATEMENT SPECIFIES A STRING THAT IS TOO LONG column-name
+</td>
+</tr>
+
+<tr>
+<td>-405</td>
+<td>
+THE NUMERIC LITERAL literal CANNOT BE USED AS SPECIFIED BECAUSE IT IS OUT OF RANGE
+</td>
+</tr>
+
+<tr>
+<td>-406</td>
+<td>
+A CALCULATED OR DERIVED NUMERIC VALUE IS NOT WITHIN THE RANGE OF ITS OBJECT COLUMN
+</td>
+</tr>
+
+<tr>
+<td>-407</td>
+<td>
+AN UPDATE OR INSERT VALUE IS NULL, BUT THE OBJECT COLUMN column-name CANNOT CONTAIN NULL VALUES
+</td>
+</tr>
+
+<tr>
+<td>-408</td>
+<td>
+AN UPDATE OR INSERT VALUE IS NOT COMPARABLE WITH THE DATA TYPE OF ITS OBJECT COLUMN column-name
+</td>
+</tr>
+
+<tr>
+<td>-409</td>
+<td>
+INVALID OPERAND OF A COUNT FUNCTION
+</td>
+</tr>
+
+<tr>
+<td>-410</td>
+<td>
+THE FLOATING POINT LITERAL literal CONTAINS MORE THAN 30 CHARACTERS
+</td>
+</tr>
+
+<tr>
+<td>-411</td>
+<td>
+CURRENT SQLID CANNOT BE USED IN A STATEMENT THAT REFERENCES REMOTE OBJECTS
+</td>
+</tr>
+
+<tr>
+<td>-412</td>
+<td>
+THE SELECT CLAUSE OF A SUBQUERY SPECIFIES MULTIPLE COLUMNS
+</td>
+</tr>
+
+<tr>
+<td>-414</td>
+<td>
+A LIKE PREDICATE IS INVALID BECAUSE THE FIRST OPERAND IS NOT A STRING
+</td>
+</tr>
+
+<tr>
+<td>-415</td>
+<td>
+THE CORRESPONDING COLUMNS, column-number, OF THE OPERANDS OF A UNION OR A UNION ALL DO NOT HAVE COMPARABLE COLUMN DESCRIPTIONS
+</td>
+</tr>
+
+<tr>
+<td>-416</td>
+<td>
+AN OPERAND OF A UNION CONTAINS A LONG STRING COLUMN
+</td>
+</tr>
+
+<tr>
+<td>-417</td>
+<td>
+A STATEMENT STRING TO BE PREPARED INCLUDES PARAMETER MARKERS AS THE OPERANDS OF THE SAME OPERATOR
+</td>
+</tr>
+
+<tr>
+<td>-418</td>
+<td>
+A STATEMENT STRING TO BE PREPARED CONTAINS AN INVALID USE OF PARAMETER MARKERS
+</td>
+</tr>
+
+<tr>
+<td>-419</td>
+<td>
+THE DECIMAL DIVIDE OPERATION IS INVALID BECAUSE THE RESULT WOULD HAVE A NEGATIVE SCALE
+</td>
+</tr>
+
+<tr>
+<td>-420</td>
+<td>
+THE VALUE OF A CHARACTER STRING ARGUMENT WAS NOT ACCEPTABLE TO THE function-name FUNCTION
+</td>
+</tr>
+
+<tr>
+<td>-421</td>
+<td>
+THE OPERANDS OF A UNION OR UNION ALL DO NOT HAVE THE SAME NUMBER OF COLUMNS
+</td>
+</tr>
+
+<tr>
+<td>-426</td>
+<td>
+DYNAMIC COMMIT NOT VALID AT AN APPLICATION SERVER WHERE UPDATES ARE NOT ALLOWED
+</td>
+</tr>
+
+<tr>
+<td>-427</td>
+<td>
+DYNAMIC ROLLBACK NOT VALID AT AN APPLICATION SERVER WHERE UPDATES ARE NOT ALLOWED
+</td>
+</tr>
+
+<tr>
+<td>-440</td>
+<td>
+THE NUMBER OF PARAMETERS IN THE PARAMETER LIST DOES NOT MATCH THE NUMBER OF PARAMETERS EXPECTED FOR STORED PROCEDURE name, AUTHID authid, LUNAME luname.  number PARAMETERS WERE EXPECTED.
+</td>
+</tr>
+
+<tr>
+<td>-444</td>
+<td>
+USER PROGRAM name COULD NOT BE FOUND
+</td>
+</tr>
+
+<tr>
+<td>-450</td>
+<td>
+STORED PROCEDURE name, PARAMETER NUMBER number, OVERLAYED STORAGE BEYOND ITS DECLARED LENGTH
+</td>
+</tr>
+
+<tr>
+<td>-469</td>
+<td>
+SQL CALL STATEMENT MUST SPECIFY AN OUTPUT HOST VARIABLE FOR PARAMETER number.
+</td>
+</tr>
+
+<tr>
+<td>-470</td>
+<td>
+SQL CALL STATEMENT SPECIFIED A NULL VALUE FOR INPUT PARAMETER number, BUT THE STORED PROCEDURE DOES NOT SUPPORT NULL VALUES
+</td>
+</tr>
+
+<tr>
+<td>-471</td>
+<td>
+SQL CALL FOR STORED PROCEDURE name FAILED DUE TO REASON rc
+</td>
+</tr>
+
+<tr>
+<td>-500</td>
+<td>
+THE IDENTIFIED CURSOR WAS CLOSED WHEN THE CONNECTION WAS DESTROYED
+</td>
+</tr>
+
+<tr>
+<td>-501</td>
+<td>
+THE CURSOR IDENTIFIED IN A FETCH OR CLOSE STATEMENT IS NOT OPEN
+</td>
+</tr>
+
+<tr>
+<td>-502</td>
+<td>
+THE CURSOR IDENTIFIED IN AN OPEN STATEMENT IS ALREADY OPEN
+</td>
+</tr>
+
+<tr>
+<td>-503</td>
+<td>
+A COLUMN CANNOT BE UPDATED BECAUSE IT IS NOT IDENTIFIED IN THE UPDATE CLAUSE OF THE SELECT STATEMENT OF THE CURSOR
+</td>
+</tr>
+
+<tr>
+<td>-504</td>
+<td>
+THE CURSOR NAME cursor-name IS NOT DEFINED
+</td>
+</tr>
+
+<tr>
+<td>-507</td>
+<td>
+THE CURSOR IDENTIFIED IN THE UPDATE OR DELETE STATEMENT IS NOT OPEN
+</td>
+</tr>
+
+<tr>
+<td>-508</td>
+<td>
+THE CURSOR IDENTIFIED IN THE UPDATE OR DELETE STATEMENT IS NOT POSITIONED ON A ROW
+</td>
+</tr>
+
+<tr>
+<td>-509</td>
+<td>
+THE TABLE IDENTIFIED IN THE UPDATE OR DELETE STATEMENT IS NOT THE SAME TABLE DESIGNATED BY THE CURSOR
+</td>
+</tr>
+
+<tr>
+<td>-510</td>
+<td>
+THE TABLE DESIGNATED BY THE CURSOR OF THE UPDATE OR DELETE STATEMENT CANNOT BE MODIFIED
+</td>
+</tr>
+
+<tr>
+<td>-511</td>
+<td>
+THE FOR UPDATE CLAUSE CANNOT BE SPECIFIED BECAUSE THE TABLE DESIGNATED BY THE CURSOR CANNOT BE MODIFIED
+</td>
+</tr>
+
+<tr>
+<td>-512</td>
+<td>
+STATEMENT REFERENCE TO REMOTE OBJECT IS INVALID
+</td>
+</tr>
+
+<tr>
+<td>-513</td>
+<td>
+THE ALIAS alias-name MUST NOT BE DEFINED ON ANOTHER LOCAL OR REMOTE ALIAS
+</td>
+</tr>
+
+<tr>
+<td>-514</td>
+<td>
+THE CURSOR cursor-name IS NOT IN A PREPARED STATE
+</td>
+</tr>
+
+<tr>
+<td>-516</td>
+<td>
+THE DESCRIBE STATEMENT DOES NOT IDENTIFY A PREPARED STATEMENT
+</td>
+</tr>
+
+<tr>
+<td>-517</td>
+<td>
+CURSOR cursor-name CANNOT BE USED BECAUSE ITS STATEMENT NAME DOES NOT IDENTIFY A PREPARED SELECT STATEMENT
+</td>
+</tr>
+
+<tr>
+<td>-518</td>
+<td>
+THE EXECUTE STATEMENT DOES NOT IDENTIFY A VALID PREPARED STATEMENT
+</td>
+</tr>
+
+<tr>
+<td>-519</td>
+<td>
+THE PREPARE STATEMENT IDENTIFIES THE SELECT STATEMENT OF THE OPENED CURSOR cursor-name
+</td>
+</tr>
+
+<tr>
+<td>-525</td>
+<td>
+THE SQL STATEMENT CANNOT BE EXECUTED BECAUSE IT WAS IN ERROR AT BIND TIME FOR SECTION = sectno PACKAGE = pkgname CONSISTENCY TOKEN = X'contoken'
+</td>
+</tr>
+
+<tr>
+<td>-530</td>
+<td>
+THE INSERT OR UPDATE VALUE OF FOREIGN KEY constraint-name IS INVALID
+</td>
+</tr>
+
+<tr>
+<td>-531</td>
+<td>
+THE PRIMARY KEY IN A PARENT ROW CANNOT BE UPDATED BECAUSE IT HAS ONE OR MORE DEPENDENT ROWS IN RELATIONSHIP constraint-name
+</td>
+</tr>
+
+<tr>
+<td>-532</td>
+<td>
+THE RELATIONSHIP constraint-name RESTRICTS THE DELETION OF ROW WITH RID X'rid-number'
+</td>
+</tr>
+
+<tr>
+<td>-533</td>
+<td>
+INVALID MULTIPLE-ROW INSERT
+</td>
+</tr>
+
+<tr>
+<td>-534</td>
+<td>
+THE PRIMARY KEY CANNOT BE UPDATED BECAUSE OF MULTIPLE-ROW UPDATE
+</td>
+</tr>
+
+<tr>
+<td>-536</td>
+<td>
+THE DELETE STATEMENT IS INVALID BECAUSE TABLE table-name CAN BE AFFECTED BY THE OPERATION
+</td>
+</tr>
+
+<tr>
+<td>-537</td>
+<td>
+THE PRIMARY KEY CLAUSE, A FOREIGN KEY CLAUSE, OR A UNIQUE CLAUSE IDENTIFIES COLUMN column-name MORE THAN ONCE
+</td>
+</tr>
+
+<tr>
+<td>-538</td>
+<td>
+FOREIGN KEY name DOES NOT CONFORM TO THE DESCRIPTION OF THE PRIMARY KEY OF TABLE table-name
+</td>
+</tr>
+
+<tr>
+<td>-539</td>
+<td>
+TABLE table-name DOES NOT HAVE A PRIMARY KEY
+</td>
+</tr>
+
+<tr>
+<td>-540</td>
+<td>
+THE DEFINITION OF TABLE table-name IS INCOMPLETE BECAUSE IT LACKS A PRIMARY INDEX OR A REQUIRED UNIQUE INDEX
+</td>
+</tr>
+
+<tr>
+<td>-542</td>
+<td>
+column-name CANNOT BE A COLUMN OF A PRIMARY KEY OR A UNIQUE CONSTRAINT BECAUSE IT CAN CONTAIN NULL VALUES
+</td>
+</tr>
+
+<tr>
+<td>-543</td>
+<td>
+A ROW IN A PARENT TABLE CANNOT BE DELETED BECAUSE THE CHECK CONSTRAINT check-constraint RESTRICTS THE DELETION
+</td>
+</tr>
+
+<tr>
+<td>-544</td>
+<td>
+THE CHECK CONSTRAINT SPECIFIED IN THE ALTER TABLE STATEMENT CANNOT BE ADDED BECAUSE AN EXISTING ROW VIOLATES THE CHECK CONSTRAINT
+</td>
+</tr>
+
+<tr>
+<td>-545</td>
+<td>
+THE REQUESTED OPERATION IS NOT ALLOWED BECAUSE A ROW DOES NOT SATISFY THE CHECK CONSTRAINT check-constraint
+</td>
+</tr>
+
+<tr>
+<td>-546</td>
+<td>
+THE CHECK CONSTRAINT constraint-name IS INVALID
+</td>
+</tr>
+
+<tr>
+<td>-548</td>
+<td>
+A CHECK CONSTRAINT THAT IS DEFINED WITH column-name IS INVALID
+</td>
+</tr>
+
+<tr>
+<td>-549</td>
+<td>
+THE statement STATEMENT IS NOT ALLOWED FOR object_type1 object_name  BECAUSE THE BIND OPTION DYNAMICRULES(BIND) IN THE object_type2 IS IN EFFECT
+</td>
+</tr>
+
+<tr>
+<td>-551</td>
+<td>
+auth-id DOES NOT HAVE THE PRIVILEGE TO PERFORM OPERATION operation ON OBJECT object-name
+</td>
+</tr>
+
+<tr>
+<td>-552</td>
+<td>
+auth-id DOES NOT HAVE THE PRIVILEGE TO PERFORM OPERATION operation
+</td>
+</tr>
+
+<tr>
+<td>-553</td>
+<td>
+auth-id SPECIFIED IS NOT ONE OF THE VALID AUTHORIZATION IDS
+</td>
+</tr>
+
+<tr>
+<td>-554</td>
+<td>
+AN AUTHORIZATION ID CANNOT GRANT A PRIVILEGE TO ITSELF
+</td>
+</tr>
+
+<tr>
+<td>-555</td>
+<td>
+AN AUTHORIZATION ID CANNOT REVOKE A PRIVILEGE FROM ITSELF
+</td>
+</tr>
+
+<tr>
+<td>-556</td>
+<td>
+authid2 CANNOT HAVE THE privilege PRIVILEGE on_object REVOKED BY authid1 BECAUSE THE REVOKEE DOES NOT POSSESS THE PRIVILEGE OR THE REVOKER DID NOT MAKE THE GRANT
+</td>
+</tr>
+
+<tr>
+<td>-557</td>
+<td>
+INCONSISTENT GRANT/REVOKE KEYWORD keyword.  PERMITTED KEYWORDS ARE keyword-list
+</td>
+</tr>
+
+<tr>
+<td>-558</td>
+<td>
+INVALID CLAUSE OR COMBINATION OF CLAUSES ON A GRANT OR REVOKE
+</td>
+</tr>
+
+<tr>
+<td>-559</td>
+<td>
+ALL AUTHORIZATION FUNCTIONS HAVE BEEN DISABLED
+</td>
+</tr>
+
+<tr>
+<td>-567</td>
+<td>
+bind-type AUTHORIZATION ERROR USING auth-id AUTHORITY PACKAGE = package-name PRIVILEGE = privilege
+</td>
+</tr>
+
+<tr>
+<td>-571</td>
+<td>
+THE STATEMENT WOULD RESULT IN A MULTIPLE SITE UPDATE
+</td>
+</tr>
+
+<tr>
+<td>-574</td>
+<td>
+THE SPECIFIED DEFAULT VALUE CONFLICTS WITH THE COLUMN DEFINITION.
+</td>
+</tr>
+
+<tr>
+<td>-601</td>
+<td>
+THE NAME OF THE OBJECT TO BE CREATED IS IDENTICAL TO THE EXISTING NAME name OF THE OBJECT TYPE obj-type
+</td>
+</tr>
+
+<tr>
+<td>-602</td>
+<td>
+TOO MANY COLUMNS SPECIFIED IN A CREATE INDEX
+</td>
+</tr>
+
+<tr>
+<td>-603</td>
+<td>
+A UNIQUE INDEX CANNOT BE CREATED BECAUSE THE TABLE CONTAINS ROWS WHICH ARE DUPLICATES WITH RESPECT TO THE VALUES OF THE IDENTIFIED COLUMNS
+</td>
+</tr>
+
+<tr>
+<td>-604</td>
+<td>
+A COLUMN DEFINITION SPECIFIES AN INVALID LENGTH, PRECISION, OR SCALE ATTRIBUTE
+</td>
+</tr>
+
+<tr>
+<td>-607</td>
+<td>
+OPERATION OR OPTION operation IS NOT DEFINED FOR THIS OBJECT
+</td>
+</tr>
+
+<tr>
+<td>-611</td>
+<td>
+ONLY LOCKMAX 0 CAN BE SPECIFIED WHEN THE LOCK SIZE OF THE TABLESPACE IS TABLESPACE OR TABLE
+</td>
+</tr>
+
+<tr>
+<td>-612</td>
+<td>
+column-name IS A DUPLICATE COLUMN NAME
+</td>
+</tr>
+
+<tr>
+<td>-613</td>
+<td>
+THE PRIMARY KEY OR A UNIQUE CONSTRAINT IS TOO LONG OR HAS TOO MANY COLUMNS
+</td>
+</tr>
+
+<tr>
+<td>-614</td>
+<td>
+THE INDEX CANNOT BE CREATED BECAUSE THE SUM OF THE INTERNAL LENGTHS OF THE IDENTIFIED COLUMNS IS GREATER THAN THE ALLOWABLE MAXIMUM
+</td>
+</tr>
+
+<tr>
+<td>-615</td>
+<td>
+operation-type IS NOT ALLOWED ON A PACKAGE IN USE
+</td>
+</tr>
+
+<tr>
+<td>-616</td>
+<td>
+obj-type1 obj-name1 CANNOT BE DROPPED BECAUSE IT IS REFERENCED BY obj-type2 obj-name2
+</td>
+</tr>
+
+<tr>
+<td>-617</td>
+<td>
+A TYPE 1 INDEX CANNOT BE DEFINED ON A TABLE IN A TABLE SPACE WITH LOCKSIZE ROW
+</td>
+</tr>
+
+<tr>
+<td>-618</td>
+<td>
+OPERATION operation IS NOT ALLOWED ON SYSTEM DATABASES
+</td>
+</tr>
+
+<tr>
+<td>-619</td>
+<td>
+OPERATION DISALLOWED BECAUSE THE WORK FILE DATABASE IS NOT STOPPED
+</td>
+</tr>
+
+<tr>
+<td>-620</td>
+<td>
+KEYWORD keyword IN stmt type STATEMENT IS NOT PERMITTED FOR A TABLE SPACE IN THE WORK FILE DATABASE
+</td>
+</tr>
+
+<tr>
+<td>-621</td>
+<td>
+DUPLICATE DBID dbid WAS DETECTED AND PREVIOUSLY ASSIGNED TO database-name
+</td>
+</tr>
+
+<tr>
+<td>-622</td>
+<td>
+FOR MIXED DATA IS INVALID BECAUSE THE MIXED DATA INSTALL OPTION IS NO
+</td>
+</tr>
+
+<tr>
+<td>-623</td>
+<td>
+A CLUSTERING INDEX ALREADY EXISTS ON TABLE table-name
+</td>
+</tr>
+
+<tr>
+<td>-624</td>
+<td>
+TABLE table-name ALREADY HAS A PRIMARY KEY
+</td>
+</tr>
+
+<tr>
+<td>-625</td>
+<td>
+TABLE table-name DOES NOT HAVE AN INDEX TO ENFORCE THE UNIQUENESS OF THE PRIMARY KEY
+</td>
+</tr>
+
+<tr>
+<td>-626</td>
+<td>
+THE ALTER STATEMENT IS NOT EXECUTABLE BECAUSE THE PAGE SET IS NOT STOPPED
+</td>
+</tr>
+
+<tr>
+<td>-627</td>
+<td>
+THE ALTER STATEMENT IS INVALID BECAUSE THE PAGESET HAS USER-MANAGED DATA SETS
+</td>
+</tr>
+
+<tr>
+<td>-628</td>
+<td>
+THE CLAUSES ARE MUTUALLY EXCLUSIVE.
+</td>
+</tr>
+
+<tr>
+<td>-629</td>
+<td>
+SET NULL CANNOT BE SPECIFIED BECAUSE FOREIGN KEY name CANNOT CONTAIN NULL VALUES
+</td>
+</tr>
+
+<tr>
+<td>-630</td>
+<td>
+THE WHERE NOT NULL SPECIFICATION IS INVALID FOR TYPE 1 INDEXES
+</td>
+</tr>
+
+<tr>
+<td>-631</td>
+<td>
+FOREIGN KEY name IS TOO LONG OR HAS TOO MANY COLUMNS
+</td>
+</tr>
+
+<tr>
+<td>-632</td>
+<td>
+THE TABLE CANNOT BE DEFINED AS A DEPENDENT OF table-name BECAUSE OF DELETE RULE RESTRICTIONS
+</td>
+</tr>
+
+<tr>
+<td>-633</td>
+<td>
+THE DELETE RULE MUST BE delete-rule
+</td>
+</tr>
+
+<tr>
+<td>-634</td>
+<td>
+THE DELETE RULE MUST NOT BE CASCADE
+</td>
+</tr>
+
+<tr>
+<td>-635</td>
+<td>
+THE DELETE RULES CANNOT BE DIFFERENT OR CANNOT BE SET NULL
+</td>
+</tr>
+
+<tr>
+<td>-636</td>
+<td>
+THE PARTITIONING KEYS ARE NOT SPECIFIED IN ASCENDING OR DESCENDING ORDER
+</td>
+</tr>
+
+<tr>
+<td>-637</td>
+<td>
+DUPLICATE keyword KEYWORD
+</td>
+</tr>
+
+<tr>
+<td>-638</td>
+<td>
+TABLE table-name CANNOT BE CREATED BECAUSE COLUMN DEFINITION IS MISSING
+</td>
+</tr>
+
+<tr>
+<td>-639</td>
+<td>
+A NULLABLE COLUMN OF A FOREIGN KEY WITH A DELETE RULE OF SET NULL CANNOT BE A COLUMN OF THE KEY OF A PARTITIONED INDEX
+</td>
+</tr>
+
+<tr>
+<td>-640</td>
+<td>
+LOCKSIZE ROW CANNOT BE SPECIFIED BECAUSE TABLE IN THIS TABLESPACE HAS TYPE 1 INDEX
+</td>
+</tr>
+
+<tr>
+<td>-642</td>
+<td>
+TOO MANY COLUMNS IN UNIQUE CONSTRAINTS
+</td>
+</tr>
+
+<tr>
+<td>-643</td>
+<td>
+CHECK CONSTRAINT EXCEEDS MAXIMUM ALLOWABLE LENGTH
+</td>
+</tr>
+
+<tr>
+<td>-644</td>
+<td>
+INVALID VALUE SPECIFIED FOR KEYWORD keyword IN stmt-type TATEMENT
+</td>
+</tr>
+
+<tr>
+<td>-646</td>
+<td>
+TABLE table-name CANNOT BE CREATED IN PARTITIONED/DEFAULT TABLE SPACE tspace-name BECAUSE IT ALREADY CONTAINS A TABLE
+</td>
+</tr>
+
+<tr>
+<td>-647</td>
+<td>
+BUFFERPOOL bp-name CANNOT BE SPECIFIED BECAUSE IT HAS NOT BEEN ACTIVATED
+</td>
+</tr>
+
+<tr>
+<td>-650</td>
+<td>
+THE ALTER INDEX CANNOT BE EXECUTED, REASON reason
+</td>
+</tr>
+
+<tr>
+<td>-651</td>
+<td>
+TABLE DESCRIPTION EXCEEDS MAXIMUM SIZE OF OBJECT DESCRIPTOR.
+</td>
+</tr>
+
+<tr>
+<td>-652</td>
+<td>
+VIOLATION OF INSTALLATION DEFINED EDIT OR VALIDATION PROCEDURE proc-name
+</td>
+</tr>
+
+<tr>
+<td>-653</td>
+<td>
+TABLE table-name IN PARTITIONED TABLE SPACE tspace-name IS NOT AVAILABLE BECAUSE ITS PARTITIONED INDEX HAS NOT BEEN CREATED
+</td>
+</tr>
+
+<tr>
+<td>-655</td>
+<td>
+THE CREATE OR ALTER STOGROUP IS INVALID BECAUSE THE STORAGE GROUP WOULD HAVE BOTH SPECIFIC AND NON-SPECIFIC VOLUME IDS
+</td>
+</tr>
+
+<tr>
+<td>-660</td>
+<td>
+INDEX index-name CANNOT BE CREATED ON PARTITIONED TABLE SPACE tspace-name BECAUSE KEY LIMITS ARE NOT SPECIFIED
+</td>
+</tr>
+
+<tr>
+<td>-661</td>
+<td>
+INDEX index-name CANNOT BE CREATED ON PARTITIONED TABLE SPACE tspace-name BECAUSE THE NUMBER OF PART SPECIFICATIONS IS NOT EQUAL TO THE NUMBER OF PARTITIONS OF THE TABLE SPACE
+</td>
+</tr>
+
+<tr>
+<td>-662</td>
+<td>
+A PARTITIONED INDEX CANNOT BE CREATED ON A NON-PARTITIONED TABLE SPACE tspace-name
+</td>
+</tr>
+
+<tr>
+<td>-663</td>
+<td>
+THE NUMBER OF KEY LIMIT VALUES IS EITHER ZERO, OR GREATER THAN THE NUMBER OF COLUMNS IN THE KEY OF INDEX index-name
+</td>
+</tr>
+
+<tr>
+<td>-665</td>
+<td>
+THE PART CLAUSE OF AN ALTER STATEMENT IS OMITTED OR INVALID
+</td>
+</tr>
+
+<tr>
+<td>-666</td>
+<td>
+stmt-verb object CANNOT BE EXECUTED BECAUSE function IS IN PROGRESS
+</td>
+</tr>
+
+<tr>
+<td>-667</td>
+<td>
+THE CLUSTERING INDEX FOR A PARTITIONED TABLE SPACE CANNOT BE EXPLICITLY DROPPED
+</td>
+</tr>
+
+<tr>
+<td>-668</td>
+<td>
+THE COLUMN CANNOT BE ADDED TO THE TABLE BECAUSE THE TABLE HAS AN EDIT PROCEDURE
+</td>
+</tr>
+
+<tr>
+<td>-669</td>
+<td>
+A TABLE IN A PARTITIONED TABLE SPACE CANNOT BE EXPLICITLY  DROPPED
+</td>
+</tr>
+
+<tr>
+<td>-670</td>
+<td>
+THE RECORD LENGTH OF THE TABLE EXCEEDS THE PAGE SIZE LIMIT
+</td>
+</tr>
+
+<tr>
+<td>-671</td>
+<td>
+THE BUFFERPOOL ATTRIBUTE OF THE TABLE SPACE CANNOT BE ALTERED AS SPECIFIED BECAUSE IT WOULD CHANGE THE PAGE SIZE OF THE TABLE SPACE
+</td>
+</tr>
+
+<tr>
+<td>-672</td>
+<td>
+OPERATION DROP NOT ALLOWED ON TABLE table_name
+</td>
+</tr>
+
+<tr>
+<td>-676</td>
+<td>
+A 32K PAGE BUFFERPOOL MAY NOT BE USED FOR AN INDEX
+</td>
+</tr>
+
+<tr>
+<td>-677</td>
+<td>
+INSUFFICIENT VIRTUAL STORAGE FOR BUFFERPOOL EXPANSION
+</td>
+</tr>
+
+<tr>
+<td>-678</td>
+<td>
+THE LITERAL literal SPECIFIED FOR THE INDEX LIMIT KEY MUST CONFORM TO THE DATA TYPE data-type OF THE CORRESPONDING COLUMN column-name
+</td>
+</tr>
+
+<tr>
+<td>-679</td>
+<td>
+THE OBJECT name CANNOT BE CREATED BECAUSE A DROP IS PENDING ON THE OBJECT
+</td>
+</tr>
+
+<tr>
+<td>-680</td>
+<td>
+TOO MANY COLUMNS SPECIFIED FOR A TABLE
+</td>
+</tr>
+
+<tr>
+<td>-681</td>
+<td>
+COLUMN column-name IN VIOLATION OF INSTALLATION DEFINED FIELD PROCEDURE.  RT: return-code, RS: reason-code, MSG: message-token
+</td>
+</tr>
+
+<tr>
+<td>-682</td>
+<td>
+FIELD PROCEDURE procedure-name COULD NOT BE LOADED
+</td>
+</tr>
+
+<tr>
+<td>-683</td>
+<td>
+INVALID COLUMN TYPE FOR FIELDPROC, BIT DATA, SBCS DATA, OR MIXED DATA OPTION, column-name
+</td>
+</tr>
+
+<tr>
+<td>-684</td>
+<td>
+THE LENGTH OF LITERAL LIST BEGINNING string IS TOO LONG
+</td>
+</tr>
+
+<tr>
+<td>-685</td>
+<td>
+INVALID FIELD TYPE, column-name
+</td>
+</tr>
+
+<tr>
+<td>-686</td>
+<td>
+COLUMN DEFINED WITH A FIELD PROCEDURE CAN NOT COMPARE WITH ANOTHER COLUMN WITH DIFFERENT FIELD PROCEDURE
+</td>
+</tr>
+
+<tr>
+<td>-687</td>
+<td>
+FIELD TYPES INCOMPARABLE
+</td>
+</tr>
+
+<tr>
+<td>-688</td>
+<td>
+INCORRECT DATA RETURNED FROM FIELD PROCEDURE, column-name, msgno
+</td>
+</tr>
+
+<tr>
+<td>-689</td>
+<td>
+TOO MANY COLUMNS DEFINED FOR A DEPENDENT TABLE
+</td>
+</tr>
+
+<tr>
+<td>-690</td>
+<td>
+THE STATEMENT IS REJECTED BY DATA DEFINITION CONTROL SUPPORT. REASON reason-code
+</td>
+</tr>
+
+<tr>
+<td>-691</td>
+<td>
+THE REQUIRED REGISTRATION TABLE table-name DOES NOT EXIST
+</td>
+</tr>
+
+<tr>
+<td>-692</td>
+<td>
+THE REQUIRED UNIQUE INDEX index-name FOR DDL REGISTRATION TABLE table-name DOES NOT EXIST
+</td>
+</tr>
+
+<tr>
+<td>-693</td>
+<td>
+THE COLUMN column-name IN DDL REGISTRATION TABLE OR INDEX table-name (index-name) IS NOT DEFINED PROPERLY
+</td>
+</tr>
+
+<tr>
+<td>-694</td>
+<td>
+THE DDL STATEMENT CANNOT BE EXECUTED BECAUSE A DROP IS PENDING ON THE DDL REGISTRATION TABLE table-name
+</td>
+</tr>
+
+<tr>
+<td>-713</td>
+<td>
+THE REPLACEMENT VALUE FOR special-register IS INVALID
+</td>
+</tr>
+
+<tr>
+<td>-715</td>
+<td>
+PROGRAM program-name WITH MARK release-dependency-mark FAILED BECAUSE IT DEPENDS ON FUNCTIONS OF THE RELEASE FROM WHICH FALLBACK HAS OCCURRED
+</td>
+</tr>
+
+<tr>
+<td>-716</td>
+<td>
+PROGRAM program-name PRECOMPILED WITH INCORRECT LEVEL FOR THIS RELEASE.
+</td>
+</tr>
+
+<tr>
+<td>-717</td>
+<td>
+bind-type FOR object-type object-name WITH MARK release-dependency-mark FAILED BECAUSE object-type DEPENDS ON FUNCTIONS OF THE RELEASE FROM WHICH FALLBACK HAS OCCURRED.
+</td>
+</tr>
+
+<tr>
+<td>-718</td>
+<td>
+REBIND FOR PACKAGE package-name FAILED BECAUSE IBMREQD OF ibmreqd IS INVALID
+</td>
+</tr>
+
+<tr>
+<td>-719</td>
+<td>
+BIND ADD ERROR USING auth-id AUTHORITY PACKAGE package-name ALREADY EXISTS
+</td>
+</tr>
+
+<tr>
+<td>-720</td>
+<td>
+BIND ERROR, ATTEMPTING TO REPLACE PACKAGE = package_name WITH VERSION = version2 BUT THIS VERSION ALREADY EXISTS
+</td>
+</tr>
+
+<tr>
+<td>-721</td>
+<td>
+BIND ERROR FOR PACKAGE = pkg-id CONTOKEN = 'contoken'X IS NOT UNIQUE SO IT CANNOT BE CREATED
+</td>
+</tr>
+
+<tr>
+<td>-722</td>
+<td>
+bind-type ERROR USING auth-id AUTHORITY PACKAGE package-name DOES NOT EXIST
+</td>
+</tr>
+
+<tr>
+<td>-726</td>
+<td>
+BIND ERROR ATTEMPTING TO REPLACE PACKAGE = <package_name>. THERE ARE ENABLE OR DISABLE ENTRIES CURRENTLY ASSOCIATED WITH THE PACKAGE
+</package_name></td>
+</tr>
+
+<tr>
+<td>-730</td>
+<td>
+THE PARENT OF A TABLE IN A READ-ONLY SHARED DATABASE MUST ALSO BE A TABLE IN A READ-ONLY SHARED DATABASE
+</td>
+</tr>
+
+<tr>
+<td>-731</td>
+<td>
+USER-DEFINED DATASET dsname MUST BE DEFINED WITH SHAREOPTIONS(1,3)
+</td>
+</tr>
+
+<tr>
+<td>-732</td>
+<td>
+THE DATABASE IS DEFINED ON THIS SUBSYSTEM WITH THE ROSHARE READ ATTRIBUTE BUT THE TABLE SPACE OR INDEX SPACE HAS NOT BEEN DEFINED ON THE OWNING SUBSYSTEM
+</td>
+</tr>
+
+<tr>
+<td>-733</td>
+<td>
+THE DESCRIPTION OF A TABLE SPACE, INDEX SPACE, OR TABLE IN A ROSHARE READ DATABASE MUST BE CONSISTENT WITH ITS DESCRIPTION IN THE OWNER SYSTEM
+</td>
+</tr>
+
+<tr>
+<td>-734</td>
+<td>
+THE ROSHARE ATTRIBUTE OF A DATABASE CANNOT BE ALTERED FROM ROSHARE READ
+</td>
+</tr>
+
+<tr>
+<td>-735</td>
+<td>
+DATABASE dbid CANNOT BE ACCESSED BECAUSE IT IS NO LONGER A SHARED DATABASE
+</td>
+</tr>
+
+<tr>
+<td>-736</td>
+<td>
+INVALID OBID obid SPECIFIED
+</td>
+</tr>
+
+<tr>
+<td>-737</td>
+<td>
+IMPLICIT TABLE SPACE NOT ALLOWED
+</td>
+</tr>
+
+<tr>
+<td>-741</td>
+<td>
+A WORK FILE DATABASE IS ALREADY DEFINED FOR MEMBER member-name
+</td>
+</tr>
+
+<tr>
+<td>-742</td>
+<td>
+DSNDB07 IS THE IMPLICIT WORK FILE DATABASE
+</td>
+</tr>
+
+<tr>
+<td>-751</td>
+<td>
+A STORED PROCEDURE HAS BEEN PLACED IN MUST_ROLLBACK STATE DUE TO SQL OPERATION name
+</td>
+</tr>
+
+<tr>
+<td>-752</td>
+<td>
+THE CONNECT STATEMENT IS INVALID BECAUSE THE PROCESS IS NOT IN THE CONNECTABLE STATE
+</td>
+</tr>
+
+<tr>
+<td>-802</td>
+<td>
+EXCEPTION ERROR 'exception-type' HAS OCCURRED DURING 'operation-type' OPERATION ON 'data-type' DATA, POSITION 'position-number'
+</td>
+</tr>
+
+<tr>
+<td>-803</td>
+<td>
+AN INSERTED OR UPDATED VALUE IS INVALID BECAUSE THE INDEX IN INDEX SPACE indexspace-name CONSTRAINS COLUMNS OF THE TABLE SO NO TWO ROWS CAN CONTAIN DUPLICATE VALUES IN THOSE COLUMNS.  RID OF EXISTING ROW IS X'rid'
+</td>
+</tr>
+
+<tr>
+<td>-804</td>
+<td>
+AN ERROR WAS FOUND IN THE APPLICATION PROGRAM INPUT PARAMETERS FOR THE SQL STATEMENT. REASON reason
+</td>
+</tr>
+
+<tr>
+<td>-805</td>
+<td>
+DBRM or PACKAGE NAME location-name.collection-id.dbrm-name.consistency -token NOT FOUND IN PLAN plan-name.  REASON reason
+</td>
+</tr>
+
+<tr>
+<td>-807</td>
+<td>
+ACCESS DENIED: PACKAGE package-name IS NOT ENABLED FOR ACCESS FROM connection-type connection-name
+</td>
+</tr>
+
+<tr>
+<td>-808</td>
+<td>
+THE CONNECT STATEMENT IS NOT CONSISTENT WITH THE FIRST CONNECT STATEMENT
+</td>
+</tr>
+
+<tr>
+<td>-811</td>
+<td>
+THE RESULT OF AN EMBEDDED SELECT STATEMENT IS A TABLE OF MORE THAN ONE ROW, OR THE RESULT OF THE SUBQUERY OF A BASIC PREDICATE IS MORE THAN ONE VALUE
+</td>
+</tr>
+
+<tr>
+<td>-812</td>
+<td>
+THE SQL STATEMENT CANNOT BE PROCESSED BECAUSE A BLANK COLLECTION-ID WAS FOUND IN THE CURRENT PACKAGESET SPECIAL REGISTER WHILE TRYING TO FORM A QUALIFIED PACKAGE NAME FOR PROGRAM program-name.consistency-token USING PLAN plan-name
+</td>
+</tr>
+
+<tr>
+<td>-815</td>
+<td>
+A GROUP BY OR HAVING CLAUSE IS IMPLICITLY OR EXPLICITLY SPECIFIED IN AN EMBEDDED SELECT STATEMENT OR A SUBQUERY OF A BASIC PREDICATE
+</td>
+</tr>
+
+<tr>
+<td>-817</td>
+<td>
+THE SQL STATEMENT CANNOT BE EXECUTED BECAUSE THE STATEMENT WILL RESULT IN A PROHIBITED UPDATE OPERATION
+</td>
+</tr>
+
+<tr>
+<td>-818</td>
+<td>
+THE PRECOMPILER-GENERATED TIMESTAMP x IN THE LOAD MODULE IS DIFFERENT FROM THE BIND TIMESTAMP y BUILT FROM THE DBRM z
+</td>
+</tr>
+
+<tr>
+<td>-819</td>
+<td>
+THE VIEW CANNOT BE PROCESSED BECAUSE THE LENGTH OF ITS PARSE TREE IN THE CATALOG IS ZERO
+</td>
+</tr>
+
+<tr>
+<td>-820</td>
+<td>
+THE SQL STATEMENT CANNOT BE PROCESSED BECAUSE catalog-table CONTAINS A VALUE THAT IS NOT VALID IN THIS RELEASE
+</td>
+</tr>
+
+<tr>
+<td>-822</td>
+<td>
+THE SQLDA CONTAINS AN INVALID DATA ADDRESS OR INDICATOR VARIABLE ADDRESS
+</td>
+</tr>
+
+<tr>
+<td>-840</td>
+<td>
+TOO MANY ITEMS RETURNED IN A SELECT OR INSERT LIST
+</td>
+</tr>
+
+<tr>
+<td>-842</td>
+<td>
+A CONNECTION TO location-name ALREADY EXISTS
+</td>
+</tr>
+
+<tr>
+<td>-843</td>
+<td>
+THE SET CONNECTION OR RELEASE STATEMENT MUST SPECIFY AN EXISTING CONNECTION
+</td>
+</tr>
+
+<tr>
+<td>-870</td>
+<td>
+THE NUMBER OF HOST VARIABLES IN THE STATEMENT IS NOT EQUAL TO THE NUMBER OF DESCRIPTORS
+</td>
+</tr>
+
+<tr>
+<td>-900</td>
+<td>
+THE SQL STATEMENT CANNOT BE EXECUTED BECAUSE THE APPLICATION PROCESS IS NOT CONNECTED TO AN APPLICATION SERVER
+</td>
+</tr>
+
+<tr>
+<td>-901</td>
+<td>
+UNSUCCESSFUL EXECUTION CAUSED BY A SYSTEM ERROR THAT DOES NOT PRECLUDE THE SUCCESSFUL EXECUTION OF SUBSEQUENT SQL STATEMENTS
+</td>
+</tr>
+
+<tr>
+<td>-902</td>
+<td>
+POINTER TO THE ESSENTIAL CONTROL BLOCK (CT/RDA) HAS VALUE 0, REBIND REQUIRED
+</td>
+</tr>
+
+<tr>
+<td>-904</td>
+<td>
+UNSUCCESSFUL EXECUTION CAUSED BY AN UNAVAILABLE RESOURCE. REASON reason-code, TYPE OF RESOURCE resource-type, AND RESOURCE NAME resource-name
+</td>
+</tr>
+
+<tr>
+<td>-905</td>
+<td>
+UNSUCCESSFUL EXECUTION DUE TO RESOURCE LIMIT BEING EXCEEDED, RESOURCE NAME = resource-name LIMIT = limit-amount1 CPU SECONDS (limit-amount2 SERVICE UNITS) DERIVED FROM limit-source
+</td>
+</tr>
+
+<tr>
+<td>-906</td>
+<td>
+THE SQL STATEMENT CANNOT BE EXECUTED BECAUSE THIS FUNCTION IS DISABLED DUE TO A PRIOR ERROR
+</td>
+</tr>
+
+<tr>
+<td>-908</td>
+<td>
+bind-type ERROR USING auth-id AUTHORITY BIND, REBIND OR AUTO-REBIND OPERATION IS NOT ALLOWED
+</td>
+</tr>
+
+<tr>
+<td>-909</td>
+<td>
+THE OBJECT HAS BEEN DELETED
+</td>
+</tr>
+
+<tr>
+<td>-910</td>
+<td>
+THE SQL STATEMENT CANNOT ACCESS AN OBJECT ON WHICH A DROP OR ALTER IS PENDING
+</td>
+</tr>
+
+<tr>
+<td>-911</td>
+<td>
+THE CURRENT UNIT OF WORK HAS BEEN ROLLED BACK DUE TO DEADLOCK OR TIMEOUT.  REASON reason-code, TYPE OF RESOURCE resource-type, AND RESOURCE NAME resource-name
+</td>
+</tr>
+
+<tr>
+<td>-913</td>
+<td>
+UNSUCCESSFUL EXECUTION CAUSED BY DEADLOCK OR TIMEOUT.  REASON CODE reason-code, TYPE OF RESOURCE resource-type, AND RESOURCE NAME resource-name
+</td>
+</tr>
+
+<tr>
+<td>-917</td>
+<td>
+BIND PACKAGE FAILED
+</td>
+</tr>
+
+<tr>
+<td>-918</td>
+<td>
+THE SQL STATEMENT CANNOT BE EXECUTED BECAUSE A CONNECTION HAS BEEN LOST
+</td>
+</tr>
+
+<tr>
+<td>-919</td>
+<td>
+A ROLLBACK OPERATION IS REQUIRED
+</td>
+</tr>
+
+<tr>
+<td>-922</td>
+<td>
+AUTHORIZATION FAILURE: error-type ERROR.  REASON reason-code
+</td>
+</tr>
+
+<tr>
+<td>-923</td>
+<td>
+CONNECTION NOT ESTABLISHED: DB2 condition REASON reason-code, TYPE resource-type, NAME resource-name
+</td>
+</tr>
+
+<tr>
+<td>-924</td>
+<td>
+DB2 CONNECTION INTERNAL ERROR, function-code, return-code, reason-code
+</td>
+</tr>
+
+<tr>
+<td>-925</td>
+<td>
+COMMIT NOT VALID IN IMS/VS OR CICS ENVIRONMENT
+</td>
+</tr>
+
+<tr>
+<td>-926</td>
+<td>
+ROLLBACK NOT VALID IN IMS/VS OR CICS ENVIRONMENT
+</td>
+</tr>
+
+<tr>
+<td>-927</td>
+<td>
+THE LANGUAGE INTERFACE (LI) WAS CALLED WHEN THE CONNECTING ENVIRONMENT WAS NOT ESTABLISHED.  THE PROGRAM SHOULD BE INVOKED UNDER THE DSN COMMAND
+</td>
+</tr>
+
+<tr>
+<td>-929</td>
+<td>
+FAILURE IN A DATA CAPTURE EXIT: token
+</td>
+</tr>
+
+<tr>
+<td>-939</td>
+<td>
+ROLLBACK REQUIRED DUE TO UNREQUESTED ROLLBACK OF A REMOTE SERVER
+</td>
+</tr>
+
+<tr>
+<td>-947</td>
+<td>
+THE SQL STATEMENT FAILED BECAUSE IT WILL CHANGE A TABLE DEFINED WITH DATA CAPTURE CHANGES, BUT THE DATA CANNOT BE PROPAGATED
+</td>
+</tr>
+
+<tr>
+<td>-948</td>
+<td>
+DISTRIBUTED OPERATION IS INVALID
+</td>
+</tr>
+
+<tr>
+<td>-950</td>
+<td>
+THE LOCATION NAME SPECIFIED IN THE CONNECT STATEMENT IS INVALID OR NOT LISTED IN THE COMMUNICATIONS DATABASE
+</td>
+</tr>
+
+<tr>
+<td>-965</td>
+<td>
+STORED PROCEDURE procname TERMINATED ABNORMALLY
+</td>
+</tr>
+
+<tr>
+<td>-2001</td>
+<td>
+THE NUMBER OF HOST VARIABLE PARAMETERS FOR A STORED PROCEDURE IS NOT EQUAL TO THE NUMBER OF EXPECTED HOST VARIABLE PARAMETERS. ACTUAL NUMBER sqldanum, EXPECTED NUMBER opnum
+</td>
+</tr>
+
+<tr>
+<td>-30000</td>
+<td>
+EXECUTION FAILED DUE TO A DISTRIBUTION PROTOCOL ERROR THAT WILL NOT AFFECT THE SUCCESSFUL EXECUTION OF SUBSEQUENT COMMANDS OR SQL STATEMENTS:  REASON reason-code (sub-code)
+</td>
+</tr>
+
+<tr>
+<td>-30020</td>
+<td>
+EXECUTION FAILED DUE TO A DISTRIBUTION PROTOCOL ERROR THAT CAUSED DEALLOCATION OF THE CONVERSATION:  REASON &lt;reason-code (sub-code)&gt;
+</td>
+</tr>
+
+<tr>
+<td>-30021</td>
+<td>
+EXECUTION FAILED DUE TO A DISTRIBUTION PROTOCOL ERROR THAT WILL AFFECT THE SUCCESSFUL EXECUTION OF SUBSEQUENT COMMANDS OR SQL STATEMENTS:  MANAGER manager AT LEVEL level NOT SUPPORTED ERROR
+</td>
+</tr>
+
+<tr>
+<td>-30030</td>
+<td>
+COMMIT REQUEST WAS UNSUCCESSFUL, A DISTRIBUTION PROTOCOL VIOLATION HAS BEEN DETECTED, THE CONVERSATION HAS BEEN DEALLOCATED.  ORIGINAL SQLCODE=original-sqlcode AND ORIGINAL SQLSTATE=original-sqlstate
+</td>
+</tr>
+
+<tr>
+<td>-30040</td>
+<td>
+EXECUTION FAILED DUE TO UNAVAILABLE RESOURCES THAT WILL NOT AFFECT THE SUCCESSFUL EXECUTION OF SUBSEQUENT COMMANDS OR SQL STATEMENTS. REASON &lt;reason-code&gt; TYPE OF RESOURCE &lt;resource-type&gt; RESOURCE NAME &lt;resource-name&gt; PRODUCT ID &lt;pppvvrrm&gt;  RDBNAME &lt;rdbname&gt;
+</td>
+</tr>
+
+<tr>
+<td>-30041</td>
+<td>
+EXECUTION FAILED DUE TO UNAVAILABLE RESOURCES THAT WILL AFFECT THE SUCCESSFUL EXECUTION OF SUBSEQUENT COMMANDS AND SQL STATEMENTS REASON &lt;reason-code&gt;  TYPE OF RESOURCE &lt;resource-type&gt; RESOURCE NAME &lt;resource-name&gt; PRODUCT ID &lt;pppvvrrm&gt;  RDBNAME &lt;rdbname&gt;
+</td>
+</tr>
+
+<tr>
+<td>-30050</td>
+<td>
+&lt;command-or-SQL-statement-type&gt; COMMAND OR SQL STATEMENT INVALID WHILE BIND PROCESS IN PROGRESS
+</td>
+</tr>
+
+<tr>
+<td>-30051</td>
+<td>
+BIND PROCESS WITH SPECIFIED PACKAGE NAME AND CONSISTENCY TOKEN NOT ACTIVE
+</td>
+</tr>
+
+<tr>
+<td>-30052</td>
+<td>
+PROGRAM PREPARATION ASSUMPTIONS ARE INCORRECT
+</td>
+</tr>
+
+<tr>
+<td>-30053</td>
+<td>
+OWNER AUTHORIZATION FAILURE
+</td>
+</tr>
+
+<tr>
+<td>-30060</td>
+<td>
+RDB AUTHORIZATION FAILURE
+</td>
+</tr>
+
+<tr>
+<td>-30061</td>
+<td>
+RDB NOT FOUND
+</td>
+</tr>
+
+<tr>
+<td>-30070</td>
+<td>
+&lt;command&gt; COMMAND NOT SUPPORTED ERROR
+</td>
+</tr>
+
+<tr>
+<td>-30071</td>
+<td>
+&lt;object-type&gt; OBJECT NOT SUPPORTED ERROR
+</td>
+</tr>
+
+<tr>
+<td>-30072</td>
+<td>
+&lt;parameter&gt;:&lt;subcode&gt; PARAMETER NOT SUPPORTED ERROR
+</td>
+</tr>
+
+<tr>
+<td>-30073</td>
+<td>
+&lt;parameter&gt;:&lt;subcode&gt; PARAMETER VALUE NOT SUPPORTED ERROR
+</td>
+</tr>
+
+<tr>
+<td>-30074</td>
+<td>
+REPLY MESSAGE WITH codepoint (svrcod) NOT SUPPORTED ERROR
+</td>
+</tr>
+
+<tr>
+<td>-30080</td>
+<td>
+COMMUNICATION ERROR code (subcode)
+</td>
+</tr>
+
+<tr>
+<td>-30090</td>
+<td>
+REMOTE OPERATION INVALID FOR APPLICATION EXECUTION ENVIRONMENT
+</td>
+</tr>
+
+
+
+
+</tbody></table>
+
+<p>
+<font size="-1">
+<i>(Taken from an old training manual. Original source unknown.)</i>
+</font>
+</p>
+
+<p>
+<em>Go to the <a href="http://www.caliberdt.com/tips/index.htm">articles index</a>.
+Copyright © 2004 by <a href="http://www.caliberdt.com/">Caliber Data Training</a> 800.938.1222</em>
+</p>
+
+</font></td>
+</tr>
+</tbody></table>
+
+
+
+
+</body></html>
