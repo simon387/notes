@@ -7,6 +7,8 @@
 + code (visual studio code)
 + feh
 + filezilla
++ fslint
+  find duplicate files
 + gimp
 + htop
 + opera
