@@ -34,3 +34,4 @@ private   X
   }
   ```
 12. ```new Object[] {"asd", {}};``` will not compile for ```{}```
+13. A constructor cannot be final, static or abstract.
