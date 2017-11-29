@@ -33,3 +33,4 @@ private   X
     return 1;
   }
   ```
+12. ```new Object[] {"asd", {}};``` will not compile for ```{}```
