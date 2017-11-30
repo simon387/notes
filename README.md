@@ -1,4 +1,4 @@
-# job_note
+# notes
 
 ## random keyword
 + CQ5
