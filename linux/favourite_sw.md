@@ -17,5 +17,6 @@
 + stress
 + terminator
 + thunderbird
++ trash-cli
 + youtube-dl
 
