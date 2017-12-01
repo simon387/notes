@@ -6,9 +6,18 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
 [Commands examples](https://github.com/simon387/notes/blob/master/linux/linux_cmd.md)
 
+## run a graphic program from ssh
+
+Sometime just works with 
+
+```bash
+export DISPLAY=:0
+cmd
+```
+
 ## where to add alias and startup scripts
 
-+ ```~/.bash_profile  ~/.bashrc```
+```~/.bash_profile  ~/.bashrc```
 
 ## favourite softwares
 
