@@ -296,6 +296,8 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
 + ```touch <file>```
 
++ ```trash <file>```
+
 + ```tree```
 
 + kernel version
