@@ -105,6 +105,8 @@ There are other software examples too, like git, ffmpeg, npm etc..
   if [ ! -f $SCRIPT_DETACH ]; then
   ```
 
++ ```gio trash <file>```
+
 + ```ifconfig```
 
 + custom git bash macro inside .bashrc:
