@@ -35,3 +35,4 @@ private   X
   ```
 12. ```new Object[] {"asd", {}};``` will not compile for ```{}```
 13. A constructor cannot be final, static or abstract.
+14. super class can catch() subclass Exception
