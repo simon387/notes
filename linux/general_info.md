@@ -52,3 +52,14 @@ and then this can help
 + boxes images ```~/.local/share/gnome-boxes```
 + example of where to put aliass and startup scripts ```~/.bash_profile  ~/.bashrc```
 + where to put desktop entry files ```/usr/share/applications```
+
+  es:
+  ```bash
+  [Desktop Entry]
+  Name=intellij
+  Exec=sh /opt/idea-IC-173.3727.127/bin/idea.sh
+  Terminal=false
+  Type=Application
+  Categories=GTK;GNOME;Utility;
+  Icon=/opt/idea-IC-173.3727.127/bin/idea.png
+  ```
