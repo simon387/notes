@@ -12,7 +12,13 @@ Sometime just works with
 
 ```bash
 export DISPLAY=:0
-cmd
+<cmd>
+```
+
+and then this can help
+
+```bash
+(setsid <cmd> &)
 ```
 
 ## favourite softwares
