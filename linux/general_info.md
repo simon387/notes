@@ -15,10 +15,6 @@ export DISPLAY=:0
 cmd
 ```
 
-## where to add alias and startup scripts
-
-```~/.bash_profile  ~/.bashrc```
-
 ## favourite softwares
 
 + byobu
@@ -48,3 +44,5 @@ cmd
 + file host ```/etc/hosts```
 + applications data ```~/.local```
 + boxes images ```~/.local/share/gnome-boxes```
++ example of where to put aliass and startup scripts ```~/.bash_profile  ~/.bashrc```
++ where to put desktop entry files ```/usr/share/applications```
