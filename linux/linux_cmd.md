@@ -197,6 +197,8 @@ There are other software examples too, like git, ffmpeg, npm etc..
   + ```ctrl + l``` show address bar
   + ```ctrl + h``` toggle hidden files
 
++ ```nm-connection-editor```
+
 + ```npm update```
 
 + ```passwd <user ID>```
