@@ -37,3 +37,5 @@ private   X
 + A constructor cannot be final, static or abstract.
 + super classes can catch() subclass Exception
 + abstract classes can implements interface (obv without implementing methods)
++ Multiple inheritance of state includes ability to inherit instance fields from multiple classes.
++ Multiple inheritance of type includes ability to implement multiple interfaces and/or ability to extend from multiple clases.
