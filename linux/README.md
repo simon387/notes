@@ -41,6 +41,7 @@ and then this can help
 + terminator
 + thunderbird
 + trash-cli
++ wondershaper
 + youtube-dl
 
 ## usefull paths
