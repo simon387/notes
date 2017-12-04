@@ -56,6 +56,8 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
   ```dmidecode```
 
++ ```hostnamectl set-hostname new-name```
+
 + dnf
 
   ```bash
