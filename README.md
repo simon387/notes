@@ -1,11 +1,13 @@
 # notes
 
 ## random keyword
++ Amazon Chime
 + CQ5
 + dynatrace
 + Hazelcast
 
   In-Memory Data Grid
++ HockeyApp
 + jmeter
 + mobaxterm
 + newrelic
