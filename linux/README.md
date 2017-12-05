@@ -25,6 +25,7 @@ and then this can help
 
 + byobu
 + chrome
++ chkrootkit
 + chrootkit
 + clamav clamtk
 + code (visual studio code)
