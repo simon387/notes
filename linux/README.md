@@ -101,6 +101,6 @@ and then this can help
   let app = new HelloWorld();
   app.application.run(ARGV);
   ```
-1. save it ```hellowordl.js```
-1. make it executable ```chmod +x helloworld.js```
-1. run it ```./helloworld.js```
+5. save it ```hellowordl.js```
+5. make it executable ```chmod +x helloworld.js```
+5. run it ```./helloworld.js```
