@@ -1,0 +1,8 @@
+directory daoc
+nome account
+password account
+nome pg
+ip server
+?porta server
+?reame
+?flag

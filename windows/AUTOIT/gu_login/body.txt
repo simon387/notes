@@ -1,0 +1,855 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 87.16.117.237</b></big><big></big><br>
+<small><b>Long IP address : 1460696557
+</small></b><br><small><small><b>Reverse DNS hostname : host237-117-dynamic.16-87-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Calabria<br>
+City         = Catanzaro<br>
+Latitude     = 38.9   :   
+Longitude    = 16.5833<br>
+Timezone     = Europe/Rome<br><small>Friday 28<sup>th</sup> December, 2012<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 79.40.137.27</b></big><big></big><br>
+<small><b>Long IP address : 1328056603
+</small></b><br><small><small><b>Reverse DNS hostname : host27-137-dynamic.40-79-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Lombardia<br>
+City         = Varese<br>
+Latitude     = 45.8   :   
+Longitude    = 8.8333<br>
+Timezone     = Europe/Rome<br><small>Sunday 30<sup>th</sup> December, 2012<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 79.41.142.23</b></big><big></big><br>
+<small><b>Long IP address : 1328123415
+</small></b><br><small><small><b>Reverse DNS hostname : host23-142-dynamic.41-79-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Lombardia<br>
+City         = Milan<br>
+Latitude     = 45.4667   :   
+Longitude    = 9.2<br>
+Timezone     = Europe/Rome<br><small>Monday 31<sup>st</sup> December, 2012<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 79.41.142.23</b></big><big></big><br>
+<small><b>Long IP address : 1328123415
+</small></b><br><small><small><b>Reverse DNS hostname : host23-142-dynamic.41-79-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Lombardia<br>
+City         = Milan<br>
+Latitude     = 45.4667   :   
+Longitude    = 9.2<br>
+Timezone     = Europe/Rome<br><small>Tuesday 1<sup>st</sup> January, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 79.41.142.23</b></big><big></big><br>
+<small><b>Long IP address : 1328123415
+</small></b><br><small><small><b>Reverse DNS hostname : host23-142-dynamic.41-79-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Lombardia<br>
+City         = Milan<br>
+Latitude     = 45.4667   :   
+Longitude    = 9.2<br>
+Timezone     = Europe/Rome<br><small>Wednesday 2<sup>nd</sup> January, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 95.249.47.34</b></big><big></big><br>
+<small><b>Long IP address : 1610166050
+</small></b><br><small><small><b>Reverse DNS hostname : host34-47-dynamic.249-95-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Piemonte<br>
+City         = Novara<br>
+Latitude     = 45.4667   :   
+Longitude    = 8.6333<br>
+Timezone     = Europe/Rome<br><small>Thursday 3<sup>rd</sup> January, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 95.249.47.34</b></big><big></big><br>
+<small><b>Long IP address : 1610166050
+</small></b><br><small><small><b>Reverse DNS hostname : host34-47-dynamic.249-95-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Piemonte<br>
+City         = Novara<br>
+Latitude     = 45.4667   :   
+Longitude    = 8.6333<br>
+Timezone     = Europe/Rome<br><small>Thursday 3<sup>rd</sup> January, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 87.5.61.107</b></big><big></big><br>
+<small><b>Long IP address : 1459961195
+</small></b><br><small><small><b>Reverse DNS hostname : host107-61-dynamic.5-87-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Liguria<br>
+City         = Godiasco<br>
+Latitude     = 44.9   :   
+Longitude    = 9.05<br>
+Timezone     = Europe/Rome<br><small>Friday 8<sup>th</sup> February, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 87.5.61.107</b></big><big></big><br>
+<small><b>Long IP address : 1459961195
+</small></b><br><small><small><b>Reverse DNS hostname : host107-61-dynamic.5-87-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Liguria<br>
+City         = Godiasco<br>
+Latitude     = 44.9   :   
+Longitude    = 9.05<br>
+Timezone     = Europe/Rome<br><small>Friday 8<sup>th</sup> February, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 87.5.61.107</b></big><big></big><br>
+<small><b>Long IP address : 1459961195
+</small></b><br><small><small><b>Reverse DNS hostname : host107-61-dynamic.5-87-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Liguria<br>
+City         = Godiasco<br>
+Latitude     = 44.9   :   
+Longitude    = 9.05<br>
+Timezone     = Europe/Rome<br><small>Friday 8<sup>th</sup> February, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 87.5.61.107</b></big><big></big><br>
+<small><b>Long IP address : 1459961195
+</small></b><br><small><small><b>Reverse DNS hostname : host107-61-dynamic.5-87-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Liguria<br>
+City         = Godiasco<br>
+Latitude     = 44.9   :   
+Longitude    = 9.05<br>
+Timezone     = Europe/Rome<br><small>Friday 8<sup>th</sup> February, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 87.5.61.107</b></big><big></big><br>
+<small><b>Long IP address : 1459961195
+</small></b><br><small><small><b>Reverse DNS hostname : host107-61-dynamic.5-87-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Liguria<br>
+City         = Godiasco<br>
+Latitude     = 44.9   :   
+Longitude    = 9.05<br>
+Timezone     = Europe/Rome<br><small>Friday 8<sup>th</sup> February, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 87.5.61.107</b></big><big></big><br>
+<small><b>Long IP address : 1459961195
+</small></b><br><small><small><b>Reverse DNS hostname : host107-61-dynamic.5-87-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Liguria<br>
+City         = Godiasco<br>
+Latitude     = 44.9   :   
+Longitude    = 9.05<br>
+Timezone     = Europe/Rome<br><small>Saturday 9<sup>th</sup> February, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 87.5.61.107</b></big><big></big><br>
+<small><b>Long IP address : 1459961195
+</small></b><br><small><small><b>Reverse DNS hostname : host107-61-dynamic.5-87-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Liguria<br>
+City         = Godiasco<br>
+Latitude     = 44.9   :   
+Longitude    = 9.05<br>
+Timezone     = Europe/Rome<br><small>Saturday 9<sup>th</sup> February, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 87.5.61.107</b></big><big></big><br>
+<small><b>Long IP address : 1459961195
+</small></b><br><small><small><b>Reverse DNS hostname : host107-61-dynamic.5-87-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Liguria<br>
+City         = Godiasco<br>
+Latitude     = 44.9   :   
+Longitude    = 9.05<br>
+Timezone     = Europe/Rome<br><small>Sunday 10<sup>th</sup> February, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 87.5.61.107</b></big><big></big><br>
+<small><b>Long IP address : 1459961195
+</small></b><br><small><small><b>Reverse DNS hostname : host107-61-dynamic.5-87-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Liguria<br>
+City         = Godiasco<br>
+Latitude     = 44.9   :   
+Longitude    = 9.05<br>
+Timezone     = Europe/Rome<br><small>Monday 11<sup>th</sup> February, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 87.5.61.107</b></big><big></big><br>
+<small><b>Long IP address : 1459961195
+</small></b><br><small><small><b>Reverse DNS hostname : host107-61-dynamic.5-87-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Liguria<br>
+City         = Godiasco<br>
+Latitude     = 44.9   :   
+Longitude    = 9.05<br>
+Timezone     = Europe/Rome<br><small>Tuesday 12<sup>th</sup> February, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 87.5.61.107</b></big><big></big><br>
+<small><b>Long IP address : 1459961195
+</small></b><br><small><small><b>Reverse DNS hostname : host107-61-dynamic.5-87-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Liguria<br>
+City         = Godiasco<br>
+Latitude     = 44.9   :   
+Longitude    = 9.05<br>
+Timezone     = Europe/Rome<br><small>Wednesday 13<sup>th</sup> February, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>myip 80.164.152.78</title>
+</head>
+<body bgcolor="#104040" text="#FFFFFF" link="#00FF00" vlink="#FFFF00" alink="#C0C0C0">
+<h1 align="center"><font size="7"><strong>myip 80.164.152.78</strong></font></h1>
+<hr>
+
+ 
+
+<center>
+
+<big><big><big><b>Your IP address : 87.5.61.107</b></big><big></big><br>
+<small><b>Long IP address : 1459961195
+</small></b><br><small><small><b>Reverse DNS hostname : host107-61-dynamic.5-87-r.retail.telecomitalia.it</small></small></b><br><BR>
+<small>Your Browser is:   n/a<br>
+<small>Country Code = IT ITA Italy<br>
+Region       = Liguria<br>
+City         = Godiasco<br>
+Latitude     = 44.9   :   
+Longitude    = 9.05<br>
+Timezone     = Europe/Rome<br><small>Thursday 14<sup>th</sup> February, 2013<BR>
+You are the 1st visitor since 21 Juli 2011</small></small><script type="text/javascript"> 
+document.write('<br/>Java Enabled: ' + navigator.javaEnabled());
+document.write('<br/>Platform: ' + navigator.platform);
+document.write('<br/>Screen-resolution: ' + window.screen.width + ' x ' + window.screen.height);
+</script> 
+</center>
+<hr>
+<a href="nqt.php"><font size="3">Network Query Tool</font></a><br>
+<a href="/network_utils/"><font size="3">Network utils</font></a><br>
+<a href="SubnetCalc.php"><font size="3">Subnet Calculator</font></a><br>
+<hr>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+        }, 'google_translate_element');
+	}
+	</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>document.write("<FONT SIZE=-2>Last Modified " + document.lastModified+"</FONT>")</script>.<font size="2">(c) myip 80.164.152.78</font>
+<br>
+</body>
+</html>

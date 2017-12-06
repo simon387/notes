@@ -1,0 +1,17 @@
+parametri  1              2              3          4            5          6             7         8   
+login.dll [DAOC dir path][game.dll path][server ip][server port][server ID][account name][password][?nome pg]
+
+[?flag] e [?nome pg] potrebbero essere invertiti?
+fatto sta che con [?flag] numerto intero maggiore di zero, al server DOL si connette
+[?nome pg] ipotizzato per logica esclusione
+
+OFFICIAL [?flag] 41 per ywain1, stessa logica dei file ini? SISISISIS
+
+il campo si restringe, sia benedetta la funzione random()!
+
+unica cosa rimasta da scoprire, come scegliere il pg :(
+						 1				2 	  3  4          5                6        7 8
+processexplorer game.dll 107.23.173.143 10622 41 rayva gwjldkhklljlTy6hlasdLTKdtAS7 bruasdnetta 2 1f4
+																						350
+																						468
+

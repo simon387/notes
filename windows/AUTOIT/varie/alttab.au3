@@ -1,0 +1,7 @@
+Send("{alt down}")
+Send("{tab}")
+Send("{alt up}")
+Sleep(5000)
+Send("{alt down}")
+Send("{tab}")
+Send("{alt up}")

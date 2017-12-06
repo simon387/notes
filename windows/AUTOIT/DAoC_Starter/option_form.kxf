@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<object type="TAForm" name="Form3">
+	<properties>
+		<property name="Left" vt="Int16">302</property>
+		<property name="Top" vt="Int16">218</property>
+		<property name="Width" vt="Int16">585</property>
+		<property name="Height" vt="Int16">306</property>
+		<property name="Caption" vt="String">Advanced Options</property>
+		<property name="Color" vt="Ident">clBtnFace</property>
+		<property name="Font.Charset" vt="Ident">DEFAULT_CHARSET</property>
+		<property name="Font.Color" vt="Ident">clWindowText</property>
+		<property name="Font.Height" vt="Int8">-11</property>
+		<property name="Font.Name" vt="String">MS Sans Serif</property>
+		<property name="Font.Style" vt="Set"/>
+		<property name="OldCreateOrder" vt="False">False</property>
+		<property name="Visible" vt="True">True</property>
+		<property name="Style" vt="Int32">-1798701056</property>
+		<property name="ExStyle" vt="Int16">256</property>
+		<property name="Version" vt="String">1.04</property>
+		<property name="Description" vt="String">A standard Windows Form.</property>
+		<property name="FormOptOnEvent" vt="False">False</property>
+		<property name="FormOptExpVars" vt="False">False</property>
+		<property name="FormOptPopulate" vt="False">False</property>
+		<property name="FormOptVarsForSet" vt="False">False</property>
+		<property name="FormOptIndentChar" vt="Int8">0</property>
+		<property name="FormOptIndentCount" vt="Int8">1</property>
+		<property name="FormOptIndentInit" vt="Int8">0</property>
+		<property name="FormOptVarScope" vt="Int8">0</property>
+		<property name="Resizing" vt="Set"/>
+		<property name="PixelsPerInch" vt="Int8">96</property>
+		<property name="TextHeight" vt="Int8">13</property>
+	</properties>
+	<components>
+		<object type="TAGroup" name="Group2">
+			<properties>
+				<property name="Left" vt="Int8">12</property>
+				<property name="Top" vt="Int8">11</property>
+				<property name="Width" vt="Int16">547</property>
+				<property name="Height" vt="Int16">247</property>
+				<property name="CtrlStyle" vt="Int32">1342308359</property>
+				<property name="CtrlExStyle" vt="Int8">0</property>
+				<property name="Caption" vt="String">Advanced Options</property>
+				<property name="TabOrder" vt="Int8">0</property>
+				<property name="Resizing" vt="Set"/>
+			</properties>
+			<components>
+				<object type="TALabel" name="">
+					<properties>
+						<property name="Left" vt="Int8">56</property>
+						<property name="Top" vt="Int8">27</property>
+						<property name="Width" vt="Int8">68</property>
+						<property name="Height" vt="Int8">17</property>
+						<property name="Caption" vt="String">general audio</property>
+						<property name="TabOrder" vt="Int8">0</property>
+						<property name="HaveVariable" vt="False">False</property>
+						<property name="CtrlStyle" vt="Int32">1342308608</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set"/>
+					</properties>
+					<components/>
+				</object>
+				<object type="TALabel" name="">
+					<properties>
+						<property name="Left" vt="Int8">16</property>
+						<property name="Top" vt="Int8">58</property>
+						<property name="Width" vt="Int8">108</property>
+						<property name="Height" vt="Int8">17</property>
+						<property name="Caption" vt="String">ambient music volume</property>
+						<property name="TabOrder" vt="Int8">1</property>
+						<property name="HaveVariable" vt="False">False</property>
+						<property name="CtrlStyle" vt="Int32">1342308608</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set"/>
+					</properties>
+					<components/>
+				</object>
+				<object type="TALabel" name="">
+					<properties>
+						<property name="Left" vt="Int8">14</property>
+						<property name="Top" vt="Int8">89</property>
+						<property name="Width" vt="Int8">110</property>
+						<property name="Height" vt="Int8">17</property>
+						<property name="Caption" vt="String">ambient sound volume</property>
+						<property name="TabOrder" vt="Int8">2</property>
+						<property name="HaveVariable" vt="False">False</property>
+						<property name="CtrlStyle" vt="Int32">1342308608</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set"/>
+					</properties>
+					<components/>
+				</object>
+				<object type="TALabel" name="">
+					<properties>
+						<property name="Left" vt="Int8">56</property>
+						<property name="Top" vt="Int8">120</property>
+						<property name="Width" vt="Int8">68</property>
+						<property name="Height" vt="Int8">17</property>
+						<property name="Caption" vt="String">music volume</property>
+						<property name="TabOrder" vt="Int8">3</property>
+						<property name="HaveVariable" vt="False">False</property>
+						<property name="CtrlStyle" vt="Int32">1342308608</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set"/>
+					</properties>
+					<components/>
+				</object>
+				<object type="TALabel" name="">
+					<properties>
+						<property name="Left" vt="Int8">54</property>
+						<property name="Top" vt="Int16">150</property>
+						<property name="Width" vt="Int8">70</property>
+						<property name="Height" vt="Int8">17</property>
+						<property name="Caption" vt="String">sound volume</property>
+						<property name="TabOrder" vt="Int8">4</property>
+						<property name="HaveVariable" vt="False">False</property>
+						<property name="CtrlStyle" vt="Int32">1342308608</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set"/>
+					</properties>
+					<components/>
+				</object>
+				<object type="TALabel" name="">
+					<properties>
+						<property name="Left" vt="Int8">66</property>
+						<property name="Top" vt="Int16">181</property>
+						<property name="Width" vt="Int8">58</property>
+						<property name="Height" vt="Int8">17</property>
+						<property name="Caption" vt="String">sleep mode</property>
+						<property name="TabOrder" vt="Int8">5</property>
+						<property name="HaveVariable" vt="False">False</property>
+						<property name="CtrlStyle" vt="Int32">1342308608</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set"/>
+					</properties>
+					<components/>
+				</object>
+				<object type="TALabel" name="">
+					<properties>
+						<property name="Left" vt="Int8">49</property>
+						<property name="Top" vt="Int16">212</property>
+						<property name="Width" vt="Int8">75</property>
+						<property name="Height" vt="Int8">17</property>
+						<property name="Caption" vt="String">shadow figures</property>
+						<property name="TabOrder" vt="Int8">6</property>
+						<property name="HaveVariable" vt="False">False</property>
+						<property name="CtrlStyle" vt="Int32">1342308608</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set"/>
+					</properties>
+					<components/>
+				</object>
+				<object type="TALabel" name="">
+					<properties>
+						<property name="Left" vt="Int16">291</property>
+						<property name="Top" vt="Int8">27</property>
+						<property name="Width" vt="Int8">88</property>
+						<property name="Height" vt="Int8">17</property>
+						<property name="Caption" vt="String">dynamic shadows</property>
+						<property name="TabOrder" vt="Int8">7</property>
+						<property name="HaveVariable" vt="False">False</property>
+						<property name="CtrlStyle" vt="Int32">1342308608</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set"/>
+					</properties>
+					<components/>
+				</object>
+				<object type="TALabel" name="">
+					<properties>
+						<property name="Left" vt="Int16">349</property>
+						<property name="Top" vt="Int8">58</property>
+						<property name="Width" vt="Int8">30</property>
+						<property name="Height" vt="Int8">17</property>
+						<property name="Caption" vt="String">water</property>
+						<property name="TabOrder" vt="Int8">8</property>
+						<property name="HaveVariable" vt="False">False</property>
+						<property name="CtrlStyle" vt="Int32">1342308608</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set"/>
+					</properties>
+					<components/>
+				</object>
+				<object type="TALabel" name="">
+					<properties>
+						<property name="Left" vt="Int16">299</property>
+						<property name="Top" vt="Int8">89</property>
+						<property name="Width" vt="Int8">80</property>
+						<property name="Height" vt="Int8">17</property>
+						<property name="Caption" vt="String">reflection quality</property>
+						<property name="TabOrder" vt="Int8">9</property>
+						<property name="HaveVariable" vt="False">False</property>
+						<property name="CtrlStyle" vt="Int32">1342308608</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set"/>
+					</properties>
+					<components/>
+				</object>
+				<object type="TALabel" name="">
+					<properties>
+						<property name="Left" vt="Int16">296</property>
+						<property name="Top" vt="Int8">120</property>
+						<property name="Width" vt="Int8">83</property>
+						<property name="Height" vt="Int8">17</property>
+						<property name="Caption" vt="String">reflection update</property>
+						<property name="TabOrder" vt="Int8">10</property>
+						<property name="HaveVariable" vt="False">False</property>
+						<property name="CtrlStyle" vt="Int32">1342308608</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set"/>
+					</properties>
+					<components/>
+				</object>
+				<object type="TALabel" name="">
+					<properties>
+						<property name="Left" vt="Int16">310</property>
+						<property name="Top" vt="Int16">150</property>
+						<property name="Width" vt="Int8">69</property>
+						<property name="Height" vt="Int8">17</property>
+						<property name="Caption" vt="String">atlantis terrain</property>
+						<property name="TabOrder" vt="Int8">11</property>
+						<property name="HaveVariable" vt="False">False</property>
+						<property name="CtrlStyle" vt="Int32">1342308608</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set"/>
+					</properties>
+					<components/>
+				</object>
+				<object type="TALabel" name="">
+					<properties>
+						<property name="Left" vt="Int16">321</property>
+						<property name="Top" vt="Int16">181</property>
+						<property name="Width" vt="Int8">58</property>
+						<property name="Height" vt="Int8">17</property>
+						<property name="Caption" vt="String">atlantis tree</property>
+						<property name="TabOrder" vt="Int8">12</property>
+						<property name="HaveVariable" vt="False">False</property>
+						<property name="CtrlStyle" vt="Int32">1342308608</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set"/>
+					</properties>
+					<components/>
+				</object>
+				<object type="TALabel" name="">
+					<properties>
+						<property name="Left" vt="Int16">288</property>
+						<property name="Top" vt="Int16">212</property>
+						<property name="Width" vt="Int8">91</property>
+						<property name="Height" vt="Int8">17</property>
+						<property name="Caption" vt="String">characters version</property>
+						<property name="TabOrder" vt="Int8">13</property>
+						<property name="HaveVariable" vt="False">False</property>
+						<property name="CtrlStyle" vt="Int32">1342308608</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set"/>
+					</properties>
+					<components/>
+				</object>
+				<object type="TACombo" name="Combo_general">
+					<properties>
+						<property name="Left" vt="Int16">133</property>
+						<property name="Top" vt="Int8">25</property>
+						<property name="Width" vt="Int16">145</property>
+						<property name="Height" vt="Int8">25</property>
+						<property name="ItemHeight" vt="Int8">13</property>
+						<property name="TabOrder" vt="Int8">14</property>
+						<property name="Items.Strings" vt="List">
+							<list>
+								<li vt="String">on</li>
+								<li vt="String">off</li>
+							</list>
+						</property>
+						<property name="CtrlStyle" vt="Int32">1342374467</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set">DockHeight</property>
+					</properties>
+					<components/>
+				</object>
+				<object type="TACombo" name="Combo_ambient_m">
+					<properties>
+						<property name="Left" vt="Int16">133</property>
+						<property name="Top" vt="Int8">56</property>
+						<property name="Width" vt="Int16">145</property>
+						<property name="Height" vt="Int8">25</property>
+						<property name="ItemHeight" vt="Int8">13</property>
+						<property name="TabOrder" vt="Int8">15</property>
+						<property name="Items.Strings" vt="List">
+							<list>
+								<li vt="String">full</li>
+								<li vt="String">9</li>
+								<li vt="String">8</li>
+								<li vt="String">7</li>
+								<li vt="String">6</li>
+								<li vt="String">5</li>
+								<li vt="String">4</li>
+								<li vt="String">3</li>
+								<li vt="String">2</li>
+								<li vt="String">1</li>
+								<li vt="String">off</li>
+							</list>
+						</property>
+						<property name="CtrlStyle" vt="Int32">1342374467</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set">DockHeight</property>
+					</properties>
+					<components/>
+				</object>
+				<object type="TACombo" name="Combo_ambient_s">
+					<properties>
+						<property name="Left" vt="Int16">133</property>
+						<property name="Top" vt="Int8">87</property>
+						<property name="Width" vt="Int16">145</property>
+						<property name="Height" vt="Int8">25</property>
+						<property name="ItemHeight" vt="Int8">13</property>
+						<property name="TabOrder" vt="Int8">16</property>
+						<property name="Items.Strings" vt="List">
+							<list>
+								<li vt="String">full</li>
+								<li vt="String">9</li>
+								<li vt="String">8</li>
+								<li vt="String">7</li>
+								<li vt="String">6</li>
+								<li vt="String">5</li>
+								<li vt="String">4</li>
+								<li vt="String">3</li>
+								<li vt="String">2</li>
+								<li vt="String">1</li>
+								<li vt="String">off</li>
+							</list>
+						</property>
+						<property name="CtrlStyle" vt="Int32">1342374467</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set">DockHeight</property>
+					</properties>
+					<components/>
+				</object>
+				<object type="TACombo" name="Combo_music">
+					<properties>
+						<property name="Left" vt="Int16">133</property>
+						<property name="Top" vt="Int8">118</property>
+						<property name="Width" vt="Int16">145</property>
+						<property name="Height" vt="Int8">25</property>
+						<property name="ItemHeight" vt="Int8">13</property>
+						<property name="TabOrder" vt="Int8">17</property>
+						<property name="Items.Strings" vt="List">
+							<list>
+								<li vt="String">full</li>
+								<li vt="String">9</li>
+								<li vt="String">8</li>
+								<li vt="String">7</li>
+								<li vt="String">6</li>
+								<li vt="String">5</li>
+								<li vt="String">4</li>
+								<li vt="String">3</li>
+								<li vt="String">2</li>
+								<li vt="String">1</li>
+								<li vt="String">off</li>
+							</list>
+						</property>
+						<property name="CtrlStyle" vt="Int32">1342374467</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set">DockHeight</property>
+					</properties>
+					<components/>
+				</object>
+				<object type="TACombo" name="Combo_sound">
+					<properties>
+						<property name="Left" vt="Int16">133</property>
+						<property name="Top" vt="Int16">148</property>
+						<property name="Width" vt="Int16">145</property>
+						<property name="Height" vt="Int8">25</property>
+						<property name="ItemHeight" vt="Int8">13</property>
+						<property name="TabOrder" vt="Int8">18</property>
+						<property name="Items.Strings" vt="List">
+							<list>
+								<li vt="String">full</li>
+								<li vt="String">9</li>
+								<li vt="String">8</li>
+								<li vt="String">7</li>
+								<li vt="String">6</li>
+								<li vt="String">5</li>
+								<li vt="String">4</li>
+								<li vt="String">3</li>
+								<li vt="String">2</li>
+								<li vt="String">1</li>
+								<li vt="String">off</li>
+							</list>
+						</property>
+						<property name="CtrlStyle" vt="Int32">1342374467</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set">DockHeight</property>
+					</properties>
+					<components/>
+				</object>
+				<object type="TACombo" name="Combo_sleep">
+					<properties>
+						<property name="Left" vt="Int16">133</property>
+						<property name="Top" vt="Int16">179</property>
+						<property name="Width" vt="Int16">145</property>
+						<property name="Height" vt="Int8">25</property>
+						<property name="ItemHeight" vt="Int8">13</property>
+						<property name="TabOrder" vt="Int8">19</property>
+						<property name="Items.Strings" vt="List">
+							<list>
+								<li vt="String">background</li>
+								<li vt="String">never</li>
+								<li vt="String">minimized</li>
+							</list>
+						</property>
+						<property name="CtrlStyle" vt="Int32">1342374467</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set">DockHeight</property>
+					</properties>
+					<components/>
+				</object>
+				<object type="TACombo" name="Combo_shadow">
+					<properties>
+						<property name="Left" vt="Int16">133</property>
+						<property name="Top" vt="Int16">210</property>
+						<property name="Width" vt="Int16">145</property>
+						<property name="Height" vt="Int8">25</property>
+						<property name="ItemHeight" vt="Int8">13</property>
+						<property name="TabOrder" vt="Int8">20</property>
+						<property name="Items.Strings" vt="List">
+							<list>
+								<li vt="String">none</li>
+								<li vt="String">all figures</li>
+								<li vt="String">self only</li>
+								<li vt="String">near 5 figures</li>
+								<li vt="String">near 10 figures</li>
+							</list>
+						</property>
+						<property name="CtrlStyle" vt="Int32">1342374467</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set">DockHeight</property>
+					</properties>
+					<components/>
+				</object>
+				<object type="TACombo" name="Combo_dynamic">
+					<properties>
+						<property name="Left" vt="Int16">389</property>
+						<property name="Top" vt="Int8">25</property>
+						<property name="Width" vt="Int16">145</property>
+						<property name="Height" vt="Int8">25</property>
+						<property name="ItemHeight" vt="Int8">13</property>
+						<property name="TabOrder" vt="Int8">21</property>
+						<property name="Items.Strings" vt="List">
+							<list>
+								<li vt="String">on</li>
+								<li vt="String">low</li>
+								<li vt="String">high</li>
+							</list>
+						</property>
+						<property name="CtrlStyle" vt="Int32">1342374467</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set">DockHeight</property>
+					</properties>
+					<components/>
+				</object>
+				<object type="TACombo" name="Combo_water">
+					<properties>
+						<property name="Left" vt="Int16">389</property>
+						<property name="Top" vt="Int8">56</property>
+						<property name="Width" vt="Int16">145</property>
+						<property name="Height" vt="Int8">25</property>
+						<property name="ItemHeight" vt="Int8">13</property>
+						<property name="TabOrder" vt="Int8">22</property>
+						<property name="Items.Strings" vt="List">
+							<list>
+								<li vt="String">classic</li>
+								<li vt="String">SI</li>
+								<li vt="String">reflective</li>
+							</list>
+						</property>
+						<property name="CtrlStyle" vt="Int32">1342374467</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set">DockHeight</property>
+					</properties>
+					<components/>
+				</object>
+				<object type="TACombo" name="Combo_reflection_q">
+					<properties>
+						<property name="Left" vt="Int16">389</property>
+						<property name="Top" vt="Int8">87</property>
+						<property name="Width" vt="Int16">145</property>
+						<property name="Height" vt="Int8">25</property>
+						<property name="ItemHeight" vt="Int8">13</property>
+						<property name="TabOrder" vt="Int8">23</property>
+						<property name="Items.Strings" vt="List">
+							<list>
+								<li vt="String">low</li>
+								<li vt="String">medium</li>
+								<li vt="String">high</li>
+							</list>
+						</property>
+						<property name="CtrlStyle" vt="Int32">1342374467</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set">DockHeight</property>
+					</properties>
+					<components/>
+				</object>
+				<object type="TACombo" name="Combo_reflection_u">
+					<properties>
+						<property name="Left" vt="Int16">389</property>
+						<property name="Top" vt="Int8">118</property>
+						<property name="Width" vt="Int16">145</property>
+						<property name="Height" vt="Int8">25</property>
+						<property name="ItemHeight" vt="Int8">13</property>
+						<property name="TabOrder" vt="Int8">24</property>
+						<property name="Items.Strings" vt="List">
+							<list>
+								<li vt="String">often</li>
+								<li vt="String">occasional</li>
+								<li vt="String">seldom</li>
+							</list>
+						</property>
+						<property name="CtrlStyle" vt="Int32">1342374467</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set">DockHeight</property>
+					</properties>
+					<components/>
+				</object>
+				<object type="TACombo" name="Combo_atlantis_t">
+					<properties>
+						<property name="Left" vt="Int16">389</property>
+						<property name="Top" vt="Int16">148</property>
+						<property name="Width" vt="Int16">145</property>
+						<property name="Height" vt="Int8">25</property>
+						<property name="ItemHeight" vt="Int8">13</property>
+						<property name="TabOrder" vt="Int8">25</property>
+						<property name="Items.Strings" vt="List">
+							<list>
+								<li vt="String">on</li>
+								<li vt="String">off</li>
+							</list>
+						</property>
+						<property name="CtrlStyle" vt="Int32">1342374467</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set">DockHeight</property>
+					</properties>
+					<components/>
+				</object>
+				<object type="TACombo" name="Combo_atlantis_te">
+					<properties>
+						<property name="Left" vt="Int16">389</property>
+						<property name="Top" vt="Int16">179</property>
+						<property name="Width" vt="Int16">145</property>
+						<property name="Height" vt="Int8">25</property>
+						<property name="ItemHeight" vt="Int8">13</property>
+						<property name="TabOrder" vt="Int8">26</property>
+						<property name="Items.Strings" vt="List">
+							<list>
+								<li vt="String">on</li>
+								<li vt="String">off</li>
+							</list>
+						</property>
+						<property name="CtrlStyle" vt="Int32">1342374467</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set">DockHeight</property>
+					</properties>
+					<components/>
+				</object>
+				<object type="TACombo" name="Combo_characters">
+					<properties>
+						<property name="Left" vt="Int16">389</property>
+						<property name="Top" vt="Int16">210</property>
+						<property name="Width" vt="Int16">145</property>
+						<property name="Height" vt="Int8">25</property>
+						<property name="ItemHeight" vt="Int8">13</property>
+						<property name="TabOrder" vt="Int8">27</property>
+						<property name="Items.Strings" vt="List">
+							<list>
+								<li vt="String">classic</li>
+								<li vt="String">catacombs</li>
+							</list>
+						</property>
+						<property name="CtrlStyle" vt="Int32">1342374467</property>
+						<property name="CtrlExStyle" vt="Int8">0</property>
+						<property name="Resizing" vt="Set">DockHeight</property>
+					</properties>
+					<components/>
+				</object>
+			</components>
+		</object>
+	</components>
+</object>

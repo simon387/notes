@@ -1,0 +1,19 @@
+commands:
+
+   allbuffs <target> 
+  tankbuffs <target> 
+casterbuffs <target>
+  specstank <target>
+specscaster <target>
+     acuity <target>
+     strcon <target>
+     dexqui <target>
+     specaf <target>
+    basedex <target>
+    basestr <target>
+    basecon <target>
+      haste <target>
+     curers <target>
+    buffpet <target>
+  fullbuffs <target>
+      reset

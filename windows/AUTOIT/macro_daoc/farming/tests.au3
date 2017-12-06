@@ -1,0 +1,1 @@
+ShellExecute('checkLog.au3')
