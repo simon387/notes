@@ -41,3 +41,4 @@
 + Multiple inheritance of state includes ability to inherit instance fields from multiple classes.
 + Multiple inheritance of type includes ability to implement multiple interfaces and/or ability to extend from multiple clases.
 + there is no constructor in Short that takes an int
++ class ```ArrayList<E>``` has the ```add(int, <E>)``` method
