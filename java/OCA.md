@@ -12,15 +12,16 @@
 + The overriding method cannot decrease the accessibility.
 + you cannot override/hide a static method with a non static method and vice versa
 
-```
-          C P S W
-public    X X X X
-protected X X X
-          X X
-private   X
-```
++ 
+  ```
+            C P S W
+  public    X X X X
+  protected X X X
+            X X
+  private   X
+  ```
 + Remember that a String once created cannot be changed
-+ Default methods enable us to add new functionalities to interfaces without breaking the classes that implements that interface. Lets take a look at the example below.
++ Default methods enable us to add new functionalities to interfaces without breaking the classes that implements that interface.
 + always return 1
   ```java
   try {
