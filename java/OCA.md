@@ -4,7 +4,7 @@
   + exceptional conditions external to an application that a well written application should anticipate and from which it can recover.
   + sublcass of Exception
   + invalid conditions in areas outside the imeediate control of the program
-+ RuntimeExeption(unchecked) it's sublcass of Exception!
++ RuntimeException(unchecked) it's sublcass of Exception!
 + String String = "string isa string";  System.out.println(String.substring(3, 6)); -> "ing"
 + Throwable is a super class of Exception
 + Any exception that extends java.lang.Exception but is not a subclass of java.lang.RuntimeException is a checked exception
