@@ -8,6 +8,7 @@
 
   In-Memory Data Grid
 + HockeyApp
++ jenkins
 + jmeter
 + mobaxterm
 + newrelic
