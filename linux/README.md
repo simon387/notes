@@ -104,3 +104,11 @@ and then this can help
 5. save it ```hellowordl.js```
 5. make it executable ```chmod +x helloworld.js```
 5. run it ```./helloworld.js```
+
+## example: increasing /home space in a lvm setup
+
+hot one! with out reboot
+1. ```vgdisplay```
+1. ```lvdisplay```
+1. ```lvextend -L +20G /dev/fedora/home```
+1. ```resize2fs /dev/fedora/home```
