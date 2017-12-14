@@ -66,3 +66,10 @@
   + Invocation of certain reflective methods in class Class and in package java.lang.reflect also causes class or interface initialization.
   
   A class or interface will not be initialized under any other circumstance.
++ ```RETURNTYPE=double```
+  ```java
+  public RETURNTYPE methodX( byte by){
+    double d = 10.0;
+    return (long) by/d*3;
+  }
+  ```
