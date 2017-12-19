@@ -75,6 +75,10 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
 + ```kill -3 <pid>```
 + dump example: [output](https://github.com/simon387/job_note/blob/master/java/java_thread_dump_example)
 
+## Common errors
+
++ ```ORA-00928: missing SELECT keyword``` in an insert, during an Hibernate Transaction with Oracle... I was using a reserved oracle keyword (```FILE```)
+
 ## Liferay note (6.1-6.2)
 
 + ```public class com.liferay.portal.servlet.filters.dynamiccss.DynamicCSSUtil``` -> theme sass cache generation trigger
