@@ -120,3 +120,7 @@ lvm pvresize -v  --setphysicalvolumesize 187342848K '/dev/sdb5'
 
 <i>    Wiping internal VG cache<br />    Wiping cache of LVM-capable devices<br />    Cache: Duplicate VG name fedora: Prefer existing qHFC6M-2tRL-4D5N-YV7g-cZen-rINx-n1qQjh vs new 228Bll-51D5-tGPp-AWKz-veLv-0Zne-ScEZIj<br />    Cache: Duplicate VG name fedora: Prefer existing 228Bll-51D5-tGPp-AWKz-veLv-0Zne-ScEZIj vs new qHFC6M-2tRL-4D5N-YV7g-cZen-rINx-n1qQjh<br />    Archiving volume group &quot;fedora&quot; metadata (seqno 22).<br />/dev/sdb5: Requested size 178,66 GiB is less than real size 236,47 GiB. Proceed?  [y/n]: [n]<br />  Physical Volume /dev/sdb5 not resized.<br /></i>
 ```
+## how to know if wayland session is on
+
++ ```loginctl show-session <YOUR_NUMBER> -p Type```
++ get number from ```loginctl```
