@@ -69,6 +69,19 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
   + ```@Transient``` doesn't persist the field on db
 + Spring
   + ```@Service``` it's a service class
++ ```//TODO```
+POST
+Path
+Produces
+Consumes
+GET
+Autowired
+Component
+Valid
+NotNull
+HeaderParam
+@QueryParam
+Override
 
 ## Java Thread Dump
 
