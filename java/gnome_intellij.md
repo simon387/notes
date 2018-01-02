@@ -14,7 +14,7 @@
 | ```ctrl + alt + b```      | open implementation      |
 | ```alt + F7```            | find usage               |
 | ```alt + shift + arrow``` | move selected line(s)    |
-| ```alt + F8```            | evaluate code fragment   |
+| ```alt + shift + 8```     | evaluate code fragment   |
 | ```ctrl + /```            | comment out              |
 | ```ctrl + r```            | replace in buffer        |
 | ```alt + v```             | run evaluate             |
