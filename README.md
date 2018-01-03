@@ -14,6 +14,7 @@
 + mobaxterm
 + https://app.moqups.com
 + newrelic
++ postman
 + soapUI
 + splunk
 
