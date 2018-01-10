@@ -63,6 +63,10 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
 }
 ```
 
+## VM options
+
++ ```-verbose:class``` understanding which classes are loaded 
+
 ## Popular annotations
 
 + JPA
