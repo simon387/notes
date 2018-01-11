@@ -124,3 +124,8 @@ lvm pvresize -v  --setphysicalvolumesize 187342848K '/dev/sdb5'
 
 + ```loginctl show-session <YOUR_NUMBER> -p Type```
 + get number from ```loginctl```
+
+## connecting to a "pulse" VPN
+
+example:
+```sudo openconnect --juniper -u=user -p=password -P proxy:port -v https://sslvpn.xxx```
