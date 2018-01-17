@@ -2,6 +2,8 @@
 
 ## random keyword
 + apache camel
+
+  scambio messaggi
 + Amazon Chime
 + CQ5
 + dynatrace
