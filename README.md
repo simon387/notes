@@ -26,6 +26,9 @@
 
   The main goal of Thymeleaf is to provide an elegant and well-formed way of creating templates.
 + wetransfer
++ zeplin
+
+  designer -> dev
 
 ## random links
 + https://www.packtpub.com/packt/offers/free-learning
