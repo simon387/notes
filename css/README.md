@@ -23,7 +23,7 @@
   <div class="site-navigation js-site-navigation"></div>
   ```
   ```javascript
-  const nav = document.querySelector('.js-site-navigation'
+  const nav = document.querySelector('.js-site-navigation')
   ```
 + Don’t use data attributes
 + Write More CSS Comments
