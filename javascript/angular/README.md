@@ -11,3 +11,24 @@ https://angular.io/guide/quickstart
 ## generate a component inside a project
 
 + ```ng generate component <component-name>```
+
+## for
+
++ ```<li *ngFor="let hero of heroes">```
+
+## on event
+
++ ```<li *ngFor="let hero of heroes" (click)="onSelect(hero)">```
+
+## if
+
++ ```<div *ngIf="selectedHero">```
+
+## services
+
++ ```ng generate service <service-name>```
+
+## routing
+
++ convention: ```ng generate module app-routing --flat --module=app```
+
