@@ -32,3 +32,21 @@ https://angular.io/guide/quickstart
 
 + convention: ```ng generate module app-routing --flat --module=app```
 
+## normal jQuery e Bootstrap inside components view
+
++ ```npm install --save bootstrap```
++ ```npm install --save jquery```
++ inside ```angular-cli.json``` put 
+  ```
+  "scripts": [
+		"../node_modules/jquery/dist/jquery.js",
+		"../node_modules/bootstrap/dist/js/bootstrap.min.js"
+		],
+  ```
++ same with styles/css
++ in the typescript component:
+  ```
+  import { Component, OnInit, Input, ElementRef, AfterViewInit } from '@angular/core';
+  ...
+  declare var $ : any;
+  ```
