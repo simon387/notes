@@ -129,3 +129,9 @@ lvm pvresize -v  --setphysicalvolumesize 187342848K '/dev/sdb5'
 
 example:
 ```sudo openconnect --juniper -u=user -p=password -P proxy:port -v https://sslvpn.xxx```
+
+## random numbers
+
+```bash
+while true; do shuf -i1-100 -n1; sleep 1; done
+```
