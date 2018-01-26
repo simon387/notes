@@ -15,6 +15,7 @@ https://angular.io/guide/quickstart
 ## for
 
 + ```<li *ngFor="let hero of heroes">```
++ with index ```*ngFor="let product of productsSelected; let i = index"```
 
 ## on event
 
@@ -50,3 +51,6 @@ https://angular.io/guide/quickstart
   ...
   declare var $ : any;
   ```
+## primeng
+
+https://www.primefaces.org/primeng/
