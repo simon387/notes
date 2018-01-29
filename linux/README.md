@@ -135,3 +135,17 @@ example:
 ```bash
 while true; do shuf -i1-100 -n1; sleep 1; done
 ```
+
+## yum/dnf rollback
+
+```bash
+> sudo dnf history list | head -6                  # Show last 3 installs/updates
+
+ID     | Command line             | Date a | Action | Altere
+-------------------------------------------------------------------------------
+   160 | install bleachbit        | 2015-12-29 11:38 | Install        |    1   
+   159 | update                   | 2015-12-29 10:10 | Update         |    9   
+   158 | update                   | 2015-12-27 10:08 | E, U           |    5   
+
+> sudo dnf history undo 160                        # Undo / roll-back install of bleachbit
+```
