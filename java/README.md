@@ -73,6 +73,8 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
   + ```@Transient``` doesn't persist the field on db
 + Spring
   + ```@Service``` it's a service class
++ javax.validation
+  + ```@Valid``` validate the field throw reflection?
 + ```//TODO```
 POST
 Path
