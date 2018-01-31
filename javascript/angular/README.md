@@ -71,15 +71,15 @@ template:
 
 ```html
 <select [(ngModel)]="selPerformancePeriodFilter" (ngModelChange)="changePerformancePeriod(selPerformancePeriodFilter)">
-	<option>Last year</option>
-	<option>Last 30 days</option>
+	<option value=0>Last year</option>
+	<option value=1>Last 30 days</option>
 </select>
 ```
 
 component:
 
 ```typescript
-public selPerformancePeriodFilter: string = "Last year";
+public selPerformancePeriodFilter: number = 0;//="Last year"
 
 public changePerformancePeriod(period) : void {
 	console.log('period -> ' + period);
