@@ -61,3 +61,6 @@ html: ```[ngClass]="{'this-is-a-class': roba == 1 }"```
 
 ts: ```this.roba=1;```
 
+## note on typescript
+
++ constant var: ```private static readonly color0 : String = "#00D2DE";```
