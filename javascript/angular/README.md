@@ -64,3 +64,24 @@ ts: ```this.roba=1;```
 ## note on typescript 2.0+
 
 + constant var: ```private static readonly color0 : String = "#00D2DE";```
+
+## select example
+
+template:
+
+```html
+<select [(ngModel)]="selPerformancePeriodFilter" (ngModelChange)="changePerformancePeriod(selPerformancePeriodFilter)">
+	<option>Last year</option>
+	<option>Last 30 days</option>
+</select>
+```
+
+component:
+
+```typescript
+public selPerformancePeriodFilter: string = "Last year";
+
+public changePerformancePeriod(period) : void {
+	console.log('period -> ' + period);
+}
+```
