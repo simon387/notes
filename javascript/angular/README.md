@@ -1,4 +1,4 @@
-# angular 5.2 stable
+# angular 5.0 stable
 
 ## quickstart
 
