@@ -85,3 +85,62 @@ public changePerformancePeriod(period) : void {
 	console.log('period -> ' + period);
 }
 ```
+## common errors
+
++ error at runtime, while binding variables etc : typerror \[...\] $any is not a function
+  + solved with a library downgrade in package.json
+    from
+    
+    ```json
+    "dependencies": {
+    "@angular/animations": "^5.2.1",
+    "@angular/common": "^5.2.1",
+    "@angular/compiler": "^5.0.0",
+    "@angular/core": "^5.2.1",
+    "@angular/forms": "^5.2.1",
+    "@angular/http": "^5.2.1",
+    "@angular/platform-browser": "^5.2.1",
+    "@angular/platform-browser-dynamic": "^5.0.0",
+    "@angular/router": "^5.0.0",
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.9",
+    "angular": "^1.6.8",
+    "angular-in-memory-web-api": "^0.5.2",
+    "angular2-highcharts": "^0.5.5",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "moment": "^2.20.1",
+    "ng2-carouselamos": "^3.2.0",
+    "primeng": "^5.0.2",
+    "rxjs": "^5.5.2",
+    "zone.js": "^0.8.14"
+    },
+    ```
+  
+    to
+    ```json
+    "dependencies": {
+    "@angular/animations": "5.0.0",
+    "@angular/common": "5.0.0",
+    "@angular/compiler": "5.0.0",
+    "@angular/core": "5.0.0",
+    "@angular/forms": "5.0.0",
+    "@angular/http": "5.0.0",
+    "@angular/platform-browser": "5.0.0",
+    "@angular/platform-browser-dynamic": "5.0.0",
+    "@angular/router": "5.0.0",
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.9",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "primeng": "^5.0.2",
+    "rxjs": "^5.5.2",
+    "zone.js": "^0.8.14",
+    "angular-in-memory-web-api": "^0.5.2",
+    "angular2-highcharts": "^0.5.5",
+    "moment": "^2.20.1",
+    "ng2-carouselamos": "^3.2.0"
+    },
+    ```
