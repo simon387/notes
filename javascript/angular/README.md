@@ -144,3 +144,26 @@ public changePerformancePeriod(period) : void {
     "ng2-carouselamos": "^3.2.0"
     },
     ```
+## bootstrap accordion with variable data-target
+
+```html
+<div *ngIf="clients">
+	<div *ngFor="let client of clients; let i=index">
+		<div class="row">
+			<div class="col-sm-12 acc-header collapsed" data-toggle="collapse" [attr.data-target]="'#collapse' + i">
+				<div class="pull-left">
+					<div>
+						{{client.name}}
+					</div>
+				</div>
+				<div class="pull-right">
+					<span class="accordion-control ico-down"></span>
+				</div>
+			</div>
+		</div>
+		
+		<div id="collapse{{i}}" class="collapse">
+		</div>
+	</div>
+</div>
+```
