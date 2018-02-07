@@ -27,3 +27,7 @@
   ```
 + Don’t use data attributes
 + Write More CSS Comments
+
+## mine
+
++ add spaces in html with angular ```{{}}``` to prevent elements collapsing. e.g. ```<div>{{{client.id}}} </div>```
