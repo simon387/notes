@@ -31,3 +31,14 @@
 ## mine
 
 + add spaces in html with angular ```{{}}``` to prevent elements collapsing. e.g. ```<div>{{{client.id}}} </div>```
+
+### bootstrap tips
+
++ centering div inside col-xx-nn
+
+```css
+div {
+  display: table;
+  margin: auto;
+}
+```
