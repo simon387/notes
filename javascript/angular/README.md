@@ -57,7 +57,7 @@ https://www.primefaces.org/primeng/
 
 ## add a css class to an html element
 
-html: ```[ngClass]="{'this-is-a-class': roba == 1 }"```
+html: ```[ngClass]="{'this-is-a-class': roba == 1, 'this-is-another-class': roba == 2 }"```
 
 ts: ```this.roba=1;```
 
