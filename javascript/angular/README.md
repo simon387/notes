@@ -61,6 +61,12 @@ html: ```[ngClass]="{'this-is-a-class': roba == 1, 'this-is-another-class': roba
 
 ts: ```this.roba=1;```
 
+## add style
+
+  ```html
+  <div [ngStyle]="{'background-color': '#30c171'}" class="pallino"></div>
+  ```
+
 ## note on typescript 2.0+
 
 + constant var: ```private static readonly color0 : String = "#00D2DE";```
