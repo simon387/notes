@@ -7,6 +7,7 @@
 + Amazon Chime
 + CQ5
 + dynatrace
++ fiddler
 + Hazelcast
 
   In-Memory Data Grid
