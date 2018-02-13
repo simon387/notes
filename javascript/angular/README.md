@@ -184,6 +184,8 @@ public changePerformancePeriod(period) : void {
 
 ## example: ngFor with sliders and input numbers
 
+Example of managing binded sliders and input numbers, with min and max auto validation check
+
 template
 
 ```html
@@ -208,8 +210,19 @@ ngOnInit() {
 }
 
 public manageItemLimit(i: number): void {
-		if (this.items[i].min < this.currentValues[i] || this.currentValues[i] < this.items[i].max) {
-			this.currentValues[i] = this.items[i].defaultValue;
-		}
+	if (this.items[i].min < this.currentValues[i] || this.currentValues[i] < this.items[i].max) {
+		this.currentValues[i] = this.items[i].defaultValue;
 	}
+}
+```
+
+style
+```css
+.bk-white {
+  background-color: white;
+}
+
+.bk-grey {
+  background-color: grey;
+}
 ```
