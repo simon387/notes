@@ -67,9 +67,9 @@ ts: ```this.roba=1;```
   <div [ngStyle]="{'background-color': '#30c171'}" class="pallino"></div>
   ```
 
-## note on typescript 2.0+
+## typescript 2.0+ constant var
 
-+ constant var: ```private static readonly color0 : String = "#00D2DE";```
+```private static readonly color0 : String = "#00D2DE";```
 
 ## select example
 
@@ -180,4 +180,36 @@ public changePerformancePeriod(period) : void {
 <div *ngFor="let item of items;let index = index;trackBy:trackByIndex;">
 	<input [(ngModel)]="items[index]" placeholder="item">
 </div>
+```
+
+## example: ngFor with sliders and input numbers
+
+template
+
+```html
+<div *ngFor="let item of items; let i=index" class="row" [ngClass]="{'bk-white': i%2!=0, 'bk-grey': i%2==0}">
+	<div class="col-sm-8">
+		<input type="range" min="{{item.min}}" max="{{item.max}}" step=0.01 value="{{item.defaultValue}}" [(ngModel)]="currentValues[i]">
+	</div>
+	<div class="col-sm-4">
+		<input value="{{item.defaultValue}}" type="number" min="{{item.min}}" max="{{item.max}}" step=0.01 [(ngModel)]="currentValues[i]" (change)="manageItemLimit(i)" />
+	</div>
+</div>
+```
+
+ts
+```typescript
+public currentValues: number[];
+public items: Object[];
+
+ngOnInit() {
+	this.currentValues = new Array();
+	// currentValues.push(...)
+}
+
+public manageItemLimit(i: number): void {
+		if (this.items[i].min < this.currentValues[i] || this.currentValues[i] < this.items[i].max) {
+			this.currentValues[i] = this.items[i].defaultValue;
+		}
+	}
 ```
