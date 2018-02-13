@@ -173,3 +173,11 @@ public changePerformancePeriod(period) : void {
 	</div>
 </div>
 ```
+
+## ngFor with ngModel
+
+```html
+<div *ngFor="let item of items;let index = index;trackBy:trackByIndex;">
+	<input [(ngModel)]="items[index]" placeholder="item">
+</div>
+```
