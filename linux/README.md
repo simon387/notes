@@ -149,3 +149,6 @@ ID     | Command line             | Date a | Action | Altere
 
 > sudo dnf history undo 160                        # Undo / roll-back install of bleachbit
 ```
+## virtual terminal change
+
+<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F1</kbd> / <kbd>F7</kbd>
