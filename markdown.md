@@ -41,3 +41,7 @@ alert(s);
 Absolute link
 
 ```[a link](https://github.com/user/repo/blob/branch/other_file.md)```
+
+Button effect
+
+<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>canc</kbd> = ```<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>canc</kbd> ```
