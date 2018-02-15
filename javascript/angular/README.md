@@ -57,9 +57,17 @@ https://www.primefaces.org/primeng/
 
 ## add a css class to an html element
 
+### example 1
+
 html: ```[ngClass]="{'this-is-a-class': roba == 1, 'this-is-another-class': roba == 2 }"```
 
 ts: ```this.roba=1;```
+
+### example 2
+
+html: ```<div ngClass="{{getClass()}}"></div>```
+
+ts: ```public getClass(): string { return 'class-name'; }
 
 ## add style
 
