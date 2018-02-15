@@ -19,6 +19,7 @@
 + newrelic
 + postman
 + soapUI
++ Sonar (codesmells, etc...)
 + splunk
 
   analyzing machine-generated big data
