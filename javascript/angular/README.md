@@ -67,7 +67,7 @@ ts: ```this.roba=1;```
 
 html: ```<div ngClass="{{getClass()}}"></div>```
 
-ts: ```public getClass(): string { return 'class-name'; }
+ts: ```public getClass(): string { return 'class-name'; }```
 
 ## add style
 
