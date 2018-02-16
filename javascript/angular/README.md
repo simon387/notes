@@ -20,7 +20,7 @@ https://angular.io/guide/quickstart
 
   ```html
   <div *ngFor="let item of items;let index = index;trackBy:trackByIndex;">
-  	<input [(ngModel)]="items[index]" placeholder="item">
+    <input [(ngModel)]="items[index]" placeholder="item">
   </div>
   ```
 
@@ -44,12 +44,13 @@ https://angular.io/guide/quickstart
 
 + ```npm install --save bootstrap```
 + ```npm install --save jquery```
-+ inside ```angular-cli.json``` put 
-  ```
++ inside ```angular-cli.json``` put
+
+  ```json
   "scripts": [
-		"../node_modules/jquery/dist/jquery.js",
-		"../node_modules/bootstrap/dist/js/bootstrap.min.js"
-		],
+    "../node_modules/jquery/dist/jquery.js",
+    "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+  ],
   ```
 + same with styles/css
 + in the typescript component:
@@ -92,8 +93,8 @@ template:
 
 ```html
 <select [(ngModel)]="selPerformancePeriodFilter" (ngModelChange)="changePerformancePeriod(selPerformancePeriodFilter)">
-	<option value=0>Last year</option>
-	<option value=1>Last 30 days</option>
+  <option value=0>Last year</option>
+  <option value=1>Last 30 days</option>
 </select>
 ```
 
@@ -103,7 +104,7 @@ component:
 public selPerformancePeriodFilter: number = 0;//="Last year"
 
 public changePerformancePeriod(period) : void {
-	console.log('period -> ' + period);
+  console.log('period -> ' + period);
 }
 ```
 ## common runtime error
@@ -169,23 +170,20 @@ public changePerformancePeriod(period) : void {
 
 ```html
 <div *ngIf="clients">
-	<div *ngFor="let client of clients; let i=index">
-		<div class="row">
-			<div class="col-sm-12 acc-header collapsed" data-toggle="collapse" [attr.data-target]="'#collapse' + i">
-				<div class="pull-left">
-					<div>
-						{{client.name}}
-					</div>
-				</div>
-				<div class="pull-right">
-					<span class="accordion-control ico-down"></span>
-				</div>
-			</div>
-		</div>
-		
-		<div id="collapse{{i}}" class="collapse">
-		</div>
-	</div>
+  <div *ngFor="let client of clients; let i=index">
+    <div class="row">
+      <div class="col-sm-12 acc-header collapsed" data-toggle="collapse" [attr.data-target]="'#collapse' + i">
+        <div class="pull-left">
+          <div>{{client.name}}</div>
+        </div>
+        <div class="pull-right">
+          <span class="accordion-control ico-down"></span>
+        </div>
+      </div>
+    </div>
+    <div id="collapse{{i}}" class="collapse">
+    </div>
+  </div>
 </div>
 ```
 
@@ -197,12 +195,12 @@ template
 
 ```html
 <div *ngFor="let item of items; let i=index" class="row" [ngClass]="{'bk-white': i%2!=0, 'bk-grey': i%2==0}">
-	<div class="col-sm-8">
-		<input type="range" min="{{item.min}}" max="{{item.max}}" step=0.01 value="{{item.defaultValue}}" [(ngModel)]="currentValues[i]">
-	</div>
-	<div class="col-sm-4">
-		<input value="{{item.defaultValue}}" type="number" min="{{item.min}}" max="{{item.max}}" step=0.01 [(ngModel)]="currentValues[i]" (change)="manageItemLimit(i)" />
-	</div>
+  <div class="col-sm-8">
+    <input type="range" min="{{item.min}}" max="{{item.max}}" step=0.01 value="{{item.defaultValue}}" [(ngModel)]="currentValues[i]">
+  </div>
+  <div class="col-sm-4">
+    <input value="{{item.defaultValue}}" type="number" min="{{item.min}}" max="{{item.max}}" step=0.01 [(ngModel)]="currentValues[i]" (change)="manageItemLimit(i)" />
+  </div>
 </div>
 ```
 
@@ -212,14 +210,14 @@ public currentValues: number[];
 public items: Object[];
 
 ngOnInit() {
-	this.currentValues = new Array();
-	// currentValues.push(...)
+  this.currentValues = new Array();
+  // currentValues.push(...)
 }
 
 public manageItemLimit(i: number): void {
-	if (this.items[i].min < this.currentValues[i] || this.currentValues[i] < this.items[i].max) {
-		this.currentValues[i] = this.items[i].defaultValue;
-	}
+  if (this.items[i].min < this.currentValues[i] || this.currentValues[i] < this.items[i].max) {
+    this.currentValues[i] = this.items[i].defaultValue;
+  }
 }
 ```
 
