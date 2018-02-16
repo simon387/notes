@@ -40,6 +40,12 @@ https://angular.io/guide/quickstart
 
 + convention: ```ng generate module app-routing --flat --module=app```
 
+## Elvis's operator
+
+```html
+  {{ user?.account?.service?.joined?.dateFormatted }}
+```
+
 ## normal jQuery e Bootstrap inside components view
 
 + ```npm install --save bootstrap```
