@@ -16,6 +16,13 @@ https://angular.io/guide/quickstart
 
 + ```<li *ngFor="let hero of heroes">```
 + with index ```*ngFor="let product of productsSelected; let i = index"```
++ with ngModel
+
+  ```html
+  <div *ngFor="let item of items;let index = index;trackBy:trackByIndex;">
+  	<input [(ngModel)]="items[index]" placeholder="item">
+  </div>
+  ```
 
 ## on event
 
@@ -99,7 +106,7 @@ public changePerformancePeriod(period) : void {
 	console.log('period -> ' + period);
 }
 ```
-## common errors
+## common runtime error
 
 + error at runtime, while binding variables etc : typerror \[...\] $any is not a function
   + solved with a library downgrade in package.json
@@ -179,14 +186,6 @@ public changePerformancePeriod(period) : void {
 		<div id="collapse{{i}}" class="collapse">
 		</div>
 	</div>
-</div>
-```
-
-## ngFor with ngModel
-
-```html
-<div *ngFor="let item of items;let index = index;trackBy:trackByIndex;">
-	<input [(ngModel)]="items[index]" placeholder="item">
 </div>
 ```
 
