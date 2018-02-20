@@ -32,6 +32,16 @@ https://angular.io/guide/quickstart
 
 + ```<div *ngIf="selectedHero">```
 
+### else
+
+```html
+<div *ngIf="isValid;else other_content">
+    content here ...
+</div>
+
+<ng-template #other_content>other content here...</ng-template>
+```
+
 ## services
 
 + ```ng generate service <service-name>```
