@@ -292,7 +292,7 @@ export class ExampleComponent implements OnInit {
 	}
 
 	public nextClicked() {
-		if (this.currentStatus !== this.statusesCount - 1) {
+		if (this.currentStatus !== this.statusesCount) {
 			this.currentStatus++;
 		}
 	}
