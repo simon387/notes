@@ -248,3 +248,53 @@ style
   background-color: grey;
 }
 ```
+
+## enum example
+
+html
+```html
+  <div *ngIf="0 === currentStatus"/>
+```
+
+typescript
+```typescript
+enum GenerationStatus {
+	initial,
+	secondPage,
+	final,
+}
+
+@Component({
+	selector: 'app-example',
+	templateUrl: './example.component.html',
+	styleUrls: ['./example.component.css']
+})
+export class ExampleComponent implements OnInit {
+
+	public currentStatus: GenerationStatus;
+	public readonly statusesCount: number = this.getStatusesCount();
+
+	constructor(
+	) { }
+
+	ngOnInit() {
+		this.currentStatus = GenerationStatus.initial;
+	}
+
+	private getStatusesCount(): number {
+		return Object.keys(GenerationStatus).length / 2 - 1;
+	}
+
+	public backClicked() {
+		if (this.currentStatus > 0) {
+			this.currentStatus--;
+		}
+	}
+
+	public nextClicked() {
+		if (this.currentStatus !== this.statusesCount - 1) {
+			this.currentStatus++;
+		}
+	}
+}
+```
