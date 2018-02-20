@@ -39,6 +39,10 @@ https://angular.io/guide/quickstart
 ## routing
 
 + convention: ```ng generate module app-routing --flat --module=app```
++ es html
+  ```html
+  <div routerLink="/other-page"> click to navigate </div>
+  ```
 
 ## Elvis's operator
 
