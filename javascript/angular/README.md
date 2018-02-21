@@ -307,3 +307,15 @@ export class ExampleComponent implements OnInit {
 	}
 }
 ```
+## enabling style override of external component
+
+for example ones from primeng
+
+```typescript
+@Component({
+	selector: '',
+	templateUrl: '.',
+	styleUrls: ['./],
+	encapsulation: ViewEncapsulation.None
+})
+```
