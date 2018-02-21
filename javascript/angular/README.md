@@ -95,7 +95,7 @@ ts: ```this.roba=1;```
 
 html: ```<div ngClass="{{getClass()}}"></div>```
 
-ts: ```public getClass(): string { return 'class-name'; }```
+ts: ```private getClass(): string { return 'class-name'; }```
 
 ## add style
 
@@ -121,9 +121,9 @@ template:
 component:
 
 ```typescript
-public selPerformancePeriodFilter: number = 0;//="Last year"
+private selPerformancePeriodFilter: number = 0;//="Last year"
 
-public changePerformancePeriod(period) : void {
+private changePerformancePeriod(period) : void {
   console.log('period -> ' + period);
 }
 ```
@@ -232,15 +232,15 @@ template
 
 ts
 ```typescript
-public currentValues: number[];
-public items: Object[];
+private currentValues: number[];
+private items: Object[];
 
 ngOnInit() {
   this.currentValues = new Array();
   // currentValues.push(...)
 }
 
-public manageItemLimit(i: number): void {
+private manageItemLimit(i: number): void {
   if (this.items[i].min < this.currentValues[i] || this.currentValues[i] < this.items[i].max) {
     this.currentValues[i] = this.items[i].defaultValue;
   }
@@ -280,8 +280,8 @@ enum GenerationStatus {
 })
 export class ExampleComponent implements OnInit {
 
-	public currentStatus: GenerationStatus;
-	public readonly statusesCount: number = this.getStatusesCount();
+	private currentStatus: GenerationStatus;
+	private readonly statusesCount: number = this.getStatusesCount();
 
 	constructor(
 	) { }
@@ -294,13 +294,13 @@ export class ExampleComponent implements OnInit {
 		return Object.keys(GenerationStatus).length / 2 - 1;
 	}
 
-	public backClicked() {
+	private backClicked() {
 		if (this.currentStatus > 0) {
 			this.currentStatus--;
 		}
 	}
 
-	public nextClicked() {
+	private nextClicked() {
 		if (this.currentStatus !== this.statusesCount) {
 			this.currentStatus++;
 		}
