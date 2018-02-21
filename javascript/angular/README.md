@@ -204,6 +204,15 @@ public changePerformancePeriod(period) : void {
 </div>
 ```
 
+```javascript
+// Toggle plus minus icon on show hide of collapse element
+$('.collapse').on('show.bs.collapse', function() {
+    $(this).parent().find('.accordion-control').removeClass('ico-down').addClass('ico-up');
+}).on('hide.bs.collapse', function() {
+    $(this).parent().find('.accordion-control').removeClass('ico-up').addClass('ico-down');
+});
+```
+
 ## example: ngFor with sliders and input numbers
 
 Example of managing binded sliders and input numbers, with min and max auto validation check
