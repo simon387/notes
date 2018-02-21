@@ -315,7 +315,7 @@ for example ones from primeng
 @Component({
 	selector: '',
 	templateUrl: '.',
-	styleUrls: ['./],
+	styleUrls: ['.'],
 	encapsulation: ViewEncapsulation.None
 })
 ```
