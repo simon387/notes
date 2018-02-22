@@ -24,6 +24,15 @@ https://angular.io/guide/quickstart
   </div>
   ```
 
+## switch
+
+```html
+<td [ngSwitch]="item.done">
+    <span *ngSwitchCase="true">Yes</span>
+    <span *ngSwithDefault>No</span>
+</td>
+```
+
 ## on event
 
 + ```<li *ngFor="let hero of heroes" (click)="onSelect(hero)">```
