@@ -69,7 +69,7 @@ https://angular.io/guide/quickstart
   {{ user?.account?.service?.joined?.dateFormatted }}
 ```
 
-## normal jQuery e Bootstrap inside components view
+## normal jQuery and Bootstrap inside components view
 
 + ```npm install --save bootstrap```
 + ```npm install --save jquery```
