@@ -338,16 +338,16 @@ for example ones from primeng
 
 
 ```typescript
-   const ENV = 'prod'; // your global ENV variable;
-   -----
-   
-   @NgModule({
-     imports: [
-       ...
-       HttpModule,
-       ENV !== 'prod' ? InMemoryWebApiModule.forRoot(DataMockService) : [],
-     ],
-     ...
-   })
-   export class AppModule {}
+const ENV = 'prod'; // your global ENV variable;
+-----
+
+@NgModule({
+  imports: [
+    ...
+    HttpModule,
+    ENV !== 'prod' ? InMemoryWebApiModule.forRoot(DataMockService) : [],
+  ],
+  ...
+})
+export class AppModule {}
 ```
