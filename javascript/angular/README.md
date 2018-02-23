@@ -7,6 +7,11 @@ https://angular.io/guide/quickstart
 + ```npm install -g @angular/cli```
 + ```ng new my-app```
 + ```ng serve --open```
++ example on kill by port
+  
+  ```bash
+   sudo kill $(sudo lsof -t -i:4200)
+  ```
 
 ## generate a component inside a project
 
