@@ -333,3 +333,21 @@ for example ones from primeng
 	encapsulation: ViewEncapsulation.None
 })
 ```
+
+## conditional import @NgModule example
+
+
+```typescript
+   const ENV = 'prod'; // your global ENV variable;
+   -----
+   
+   @NgModule({
+     imports: [
+       ...
+       HttpModule,
+       ENV !== 'prod' ? InMemoryWebApiModule.forRoot(DataMockService) : [],
+     ],
+     ...
+   })
+   export class AppModule {}
+```
