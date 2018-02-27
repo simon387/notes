@@ -56,3 +56,7 @@
 + https://www.shellcheck.net
 + http://jsonpath.com
 + https://jsonlint.com
+
+## Git vs SVN
+
+https://www.perforce.com/blog/list-of-equivalent-commands-in-git-mercurial-and-svn
