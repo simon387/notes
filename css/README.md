@@ -42,3 +42,19 @@ div {
   margin: auto;
 }
 ```
+
+### making a scrollabe list (select-like)
+
+```html
+<div class="dropdown-menu-scroll">
+  <div><div>
+  <!-- ... -->
+</div>
+  
+```
+
+```css
+.dropdown-menu-scroll {
+  overflow-y: scroll;
+  height: 1000%;
+}
