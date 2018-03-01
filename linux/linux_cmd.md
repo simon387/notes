@@ -38,6 +38,12 @@ There are other software examples too, like git, ffmpeg, npm etc..
   curl -H "Content-Type: application/json" -X POST -d '{"message":"Hai appena ricevuto un accredito di 0.11â‚¬ da Asd Com","appVersion":"1.0","recipients":{"userId":"asd@com.com","vibration":"true","popup":"true","sendFeedback":"never"},"fields":[{"key":"notTypeCode","value":"01"},{"key":"idPN","value":"262"}]}' http://asd/com
   ```
 
++ listing files inside an ftp directory with curl
+
+  ```bash
+  curl ftp.simonecelia.it/dir/ --user user:password
+  ```
+
 + ```date```
 
   es getting current time formatted like "20171121-11:51:01":
