@@ -351,3 +351,15 @@ const ENV = 'prod'; // your global ENV variable;
 })
 export class AppModule {}
 ```
+
+## redirect to any page if url path doesn't exists
+
+```typescript
+export class AppRoutingModule {
+  constructor(private router: Router) {
+     this.router.errorHandler = (error: any) => {
+       this.router.navigate(['dashboard']); // or redirect to default route
+     };
+  }
+}
+```
