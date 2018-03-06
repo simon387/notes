@@ -111,6 +111,29 @@ html: ```<div ngClass="{{getClass()}}"></div>```
 
 ts: ```private getClass(): string { return 'class-name'; }```
 
+### example 3
+
+Adding class on click to a carousel single slide (slick carousel)
+
+html:
+
+```html
+<div class="" data-slick='{"slidesToShow": 4, "slidesToScroll": 4, "infinite": false}'>
+    <div *ngFor="let p of highlightedProducts;let i=index" class=""
+     [ngClass]="{'this-is-a-class': selectedIndex === i}"
+     (click)="setSelected(i)">
+```
+
+ts:
+
+```typescript
+public selectedIndex = -1;
+
+public setSelected(id: number) {
+    this.selectedIndex = id;
+}
+```
+
 ## add style
 
   ```html
