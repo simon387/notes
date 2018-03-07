@@ -67,6 +67,12 @@ https://angular.io/guide/quickstart
   ```html
   <div routerLink="/other-page"> click to navigate </div>
   ```
++ es typescript
+  ```typescript
+  goHome() {
+    this.router.navigate(['']); 
+  }
+  ```
 
 ## Elvis's operator
 
