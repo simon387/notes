@@ -17,6 +17,14 @@ https://angular.io/guide/quickstart
 
 + ```ng generate component <component-name>```
 
+## two way data binding
+
+```html
+<input [(ngModel)]="username">
+
+<p>Hello {{username}}!</p>
+```
+
 ## for
 
 + ```<li *ngFor="let hero of heroes">```
