@@ -400,3 +400,25 @@ export class AppRoutingModule {
   }
 }
 ```
+
+## input validation example (without form)
+
+```html
+<div>
+    <input validationOnBlur [pattern]="lastnamePattern" class="text-input"
+        #ulastName="ngModel" [(ngModel)]="lastname" type="text"
+        required [ngClass]="{'text-input-error': !checkErrorLastname()}">
+</div>
+<div class="error" *ngIf="ulastName.errors?.pattern">
+    incorrect input message!
+</div>
+```
+
+```typescript
+public lastname = '';
+public readonly lastnamePattern = '^.{3,}$';
+
+public checkErrorLastname(): boolean {
+    return new RegExp(this.lastnamePattern).test(this.lastname);
+}
+```
