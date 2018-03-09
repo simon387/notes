@@ -447,14 +447,14 @@ enabling export module:
 
 ```typescript
 @NgModule({
-	...
-	imports: [
-		BrowserModule,
-		ChartModule.forRoot(
-			require('highcharts'),
-			require('highcharts/modules/exporting')
-		)
-	],
+    ...
+    imports: [
+    BrowserModule,
+    ChartModule.forRoot(
+            require('highcharts'),
+            require('highcharts/modules/exporting')
+        )
+    ],
 })
 ```
 
@@ -468,10 +468,10 @@ export to base64:
 
 ```typescript
 const options = {
-	"logging": false
+    "logging": false
 };
 
 html2canvas(document.getElementById("element_id"), options).then((canvas) => {
-	const image64 = canvas.toDataURL();
+    const image64 = canvas.toDataURL();
 });
 ```
