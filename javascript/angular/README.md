@@ -422,3 +422,56 @@ public checkErrorLastname(): boolean {
     return new RegExp(this.lastnamePattern).test(this.lastname);
 }
 ```
+
+## highcharts (angular2-highcharts): get istance example
+
+```html
+<chart [options]="options" (load)="saveInstance($event.context)"></chart>
+```
+
+```typescript
+chart: Object;
+
+saveInstance(chartInstance): void {
+     this.chart = chartInstance;
+}
+
+updateSeries(data: Array<any>): void {
+   this.chart.series[0].setData(data);
+}
+```
+
+## highchars: exporting
+
+enabling export module:
+
+```typescript
+@NgModule({
+	...
+	imports: [
+		BrowserModule,
+		ChartModule.forRoot(
+			require('highcharts'),
+			require('highcharts/modules/exporting')
+		)
+	],
+})
+```
+
+export to svg:
+
+```typescript
+const svg = window.btoa(this.chart.getSVG());
+```
+
+export to base64:
+
+```typescript
+const options = {
+	"logging": false
+};
+
+html2canvas(document.getElementById("element_id"), options).then((canvas) => {
+	const image64 = canvas.toDataURL();
+});
+```
