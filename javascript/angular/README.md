@@ -13,6 +13,12 @@ https://angular.io/guide/quickstart
    sudo kill $(sudo lsof -t -i:4200)
   ```
 
+### prod
+
+for better performance
+
+```ng build --prod```
+
 ## generate a component inside a project
 
 + ```ng generate component <component-name>```
