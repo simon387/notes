@@ -58,7 +58,11 @@ for better performance
 
 ## if
 
-+ ```<div *ngIf="selectedHero">```
+```<div *ngIf="selectedHero">```
+
+better:
+
+```[hidden]="!myVar"```
 
 ### else
 
