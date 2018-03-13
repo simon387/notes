@@ -152,3 +152,9 @@ ID     | Command line             | Date a | Action | Altere
 ## virtual terminal change
 
 <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F1</kbd> / <kbd>F7</kbd>
+
+## VirtualBox error rc=-1912
+
+1. remove virtualbox
+2. remove all virtualbox entries from ```dnf search virtualbox```
+3. download and install new virtualbox from oracle site, do not use npm
