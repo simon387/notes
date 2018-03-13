@@ -71,13 +71,51 @@ https://angular.io/guide/quickstart
 ### examples
 
 ```typescript
-this.service.method().subscribe(returnedObject => {
-
+this.myService.method().subscribe(returnedObject => {
+    // response with no errors
 }, (err) => {
-    //
+    // response with errors
 }, () => {
-    //
+    // on complete
 });
+```
+
+```typescript
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { of } from 'rxjs/observable/of';
+import { catchError } from 'rxjs/operators';
+
+@Injectable()
+export class MyService {
+
+    private readonly API_MINE = environment.apiMine;
+
+    constructor(private http: HttpClient) { }
+
+    public getPDFonPOST( ): Observable<any> {
+        const httpHeader: HttpHeaders = new HttpHeaders()
+        .set("Content-type", "application/json")
+        .set("Response.ContentType", "application/pdf");
+
+        const url = this.API_MINE + '/' + id;
+        return this.http.post(url, payloadObject, {
+            headers: httpHeader,
+            responseType : "blob"
+        }).pipe(
+            catchError(this.handleError('getPDFonPOST'))
+        );
+    }
+
+    private handleError<T> (operation = 'operation', result?: T) {
+        return (error: any): Observable<T> => {
+            console.error("MyService error:", error);
+            return of(result as T);
+        };
+    }
+}
+
 ```
 
 ## routing
