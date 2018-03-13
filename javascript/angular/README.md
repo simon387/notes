@@ -68,6 +68,18 @@ https://angular.io/guide/quickstart
 
 + ```ng generate service <service-name>```
 
+### examples
+
+```typescript
+this.service.method().subscribe(returnedObject => {
+
+}, (err) => {
+    //
+}, () => {
+    //
+});
+```
+
 ## routing
 
 + convention: ```ng generate module app-routing --flat --module=app```
