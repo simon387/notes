@@ -23,3 +23,4 @@
 | ```ctrl + d```            | show diff window         | duplicate line
 | ```ctrl + alt + l```      | format code              |
 | ```ctrl + shift + F9```   | hot class replacement during debug |
+| ```alt + j```             | find next selected string |
