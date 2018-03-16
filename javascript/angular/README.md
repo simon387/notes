@@ -550,3 +550,15 @@ html2canvas(document.getElementById("element_id"), options).then((canvas) => {
     const image64 = canvas.toDataURL();
 });
 ```
+
+## event stop propagation
+
+```html
+<img src="image.png" (click)="download($event); $event.stopPropagation()">
+```
+
+```typescipt
+public download(event: any): void {
+    console.log("download");
+}
+```
