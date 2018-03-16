@@ -61,11 +61,15 @@ ng build --prod
 
 ## on event
 
-+ ```<li *ngFor="let hero of heroes" (click)="onSelect(hero)">```
+```html
+   <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+```
 
 ## if
 
-```<div *ngIf="selectedHero">```
+```html
+   <div *ngIf="selectedHero">
+```
 
 better:
 
@@ -182,21 +186,27 @@ https://www.primefaces.org/primeng/
 
 ### example 1
 
-html: ```[ngClass]="{'this-is-a-class': roba == 1, 'this-is-another-class': roba == 2 }"```
+```html
+[ngClass]="{'this-is-a-class': roba == 1, 'this-is-another-class': roba == 2 }"
+```
 
-ts: ```this.roba=1;```
+```typescript
+this.roba=1;
+```
 
 ### example 2
 
-html: ```<div ngClass="{{getClass()}}"></div>```
+```html
+<div ngClass="{{getClass()}}"></div>
+```
 
-ts: ```private getClass(): string { return 'class-name'; }```
+```typescript
+private getClass(): string { return 'class-name'; }
+```
 
 ### example 3
 
 Adding class on click to a carousel single slide (slick carousel)
-
-html:
 
 ```html
 <div class="" data-slick='{"slidesToShow": 4, "slidesToScroll": 4, "infinite": false}'>
@@ -204,8 +214,6 @@ html:
      [ngClass]="{'this-is-a-class': selectedIndex === i}"
      (click)="setSelected(i)">
 ```
-
-ts:
 
 ```typescript
 public selectedIndex = -1;
@@ -217,13 +225,15 @@ public setSelected(id: number) {
 
 ## add style
 
-  ```html
-  <div [ngStyle]="{'background-color': '#30c171'}" class="pallino"></div>
-  ```
+```html
+<div [ngStyle]="{'background-color': '#30c171'}" class="pallino"></div>
+```
 
 ## typescript 2.0+ constant var
 
-```private static readonly color0 : String = "#00D2DE";```
+```typescript
+private static readonly color0 : String = "#00D2DE";
+```
 
 ## select example
 
@@ -378,12 +388,10 @@ style
 
 ## enum example
 
-html
 ```html
   <div *ngIf="0 === currentStatus"/>
 ```
 
-typescript
 ```typescript
 enum GenerationStatus {
 	initial,
