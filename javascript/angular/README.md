@@ -17,7 +17,9 @@ https://angular.io/guide/quickstart
 
 for better performance
 
-```ng build --prod```
+```bash
+ng build --prod
+```
 
 ## generate a component inside a project
 
@@ -33,10 +35,15 @@ for better performance
 
 ## for
 
-+ ```<li *ngFor="let hero of heroes">```
-+ with index ```*ngFor="let product of productsSelected; let i = index"```
++ ngFor
+   ```html
+   <li *ngFor="let hero of heroes">
+   ```
++ with index
+  ```html
+   <li *ngFor="let product of productsSelected; let i = index">
+   ```
 + with ngModel
-
   ```html
   <div *ngFor="let item of items;let index = index;trackBy:trackByIndex;">
     <input [(ngModel)]="items[index]" placeholder="item">
