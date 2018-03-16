@@ -171,3 +171,8 @@ example:
 6. set connection of the vm : adapter : bridge
 7. ssh tunnel : ```ssh -L 1521:localhost:1521 <ip_of_the_vm>```
 8. now yuo can access from the host machine
+
+### sqlplus
+
+```connect SYSTEM/password@XE```
+
