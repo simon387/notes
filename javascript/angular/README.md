@@ -557,7 +557,7 @@ html2canvas(document.getElementById("element_id"), options).then((canvas) => {
 <img src="image.png" (click)="download($event); $event.stopPropagation()">
 ```
 
-```typescipt
+```typescript
 public download(event: any): void {
     console.log("download");
 }
