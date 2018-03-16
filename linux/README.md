@@ -158,3 +158,16 @@ ID     | Command line             | Date a | Action | Altere
 1. remove virtualbox
 2. remove all virtualbox entries from ```dnf search virtualbox```
 3. download and install new virtualbox from oracle site, do not use npm
+
+## installing and using oracle database on a virtual machine
+
+example:
+
+1. install virtualbox
+2. install oracle linux 6.7 64bit as virtual machine (partition size >= 32G, swap parition >= 2G)
+3. install on the VM oracle database express (XE)
+4. configure it, install openjdk 1.8
+5. install guest additions, kernel headers, gcc, make, perl, ecc
+6. set connection of the vm : adapter : bridge
+7. ssh tunnel : ```ssh -L 1521:localhost:1521 <ip_of_the_vm>```
+8. now yuo can access from the host machine
