@@ -25,6 +25,17 @@ ng build --prod
 
 + ```ng generate component <component-name>```
 
+### general usage
+
+```html
+<my-component myParameter="myValue"></my-component>
+```
+
+```typescript
+@Input()
+public myParameter;
+```
+
 ## two way data binding
 
 ```html
