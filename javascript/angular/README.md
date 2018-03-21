@@ -102,6 +102,26 @@ better:
 
 + ```ng generate service <service-name>```
 
+## location service
+
+usage example
+
+```typescript
+import {Component} from '@angular/core';
+import {Location} from '@angular/common';
+
+@Component({
+// component's declarations here
+})
+class SomeComponent {
+    constructor(private _location: Location) {
+    }
+    backClicked() {
+        this._location.back();
+    }
+}
+```
+
 ### examples
 
 ```typescript
