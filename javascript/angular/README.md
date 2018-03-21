@@ -17,11 +17,11 @@ https://angular.io/guide/quickstart
 
 for better performance
 
-BUT sometime you can have compile errors, because is less tolerant then ```ng serve```
-
 ```bash
 ng build --prod
 ```
+BUT sometime you can have compile errors, because is less tolerant then ```ng serve```
+
 
 ## generate a component inside a project
 
