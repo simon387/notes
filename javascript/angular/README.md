@@ -20,7 +20,7 @@ for better performance
 ```bash
 ng build --prod
 ```
-BUT sometime you can have compile errors, because is less tolerant then ```ng serve```
+BUT sometime you can have compile errors, because is less tolerant than ```ng serve```
 
 
 ## generate a component inside a project
