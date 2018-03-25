@@ -181,6 +181,11 @@ export class MyService {
   ```
 + es typescript
   ```typescript
+  import { Router } from '@angular/router';
+  
+  constructor(private router: Router) {
+  }
+  
   goHome() {
     this.router.navigate(['']); 
   }
