@@ -473,7 +473,9 @@ export class ExampleComponent implements OnInit {
 ```
 ## enabling style override of external component
 
-for example ones from primeng
+for example ones from primeng.
+
+IMHO is bad to use, maybe your application design is not very good
 
 ```typescript
 @Component({
