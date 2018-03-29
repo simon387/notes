@@ -212,7 +212,7 @@ export class MyService {
 + same with styles/css
 + in the typescript component:
   ```
-  import { Component, OnInit, Input, ElementRef, AfterViewInit } from '@angular/core';
+  import { } from '';
   ...
   declare var $ : any;
   ```
