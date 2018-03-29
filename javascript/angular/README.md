@@ -603,7 +603,7 @@ public download(event: any): void {
 }
 ```
 
-## ondocumentready-like mechanism
+## ```$(document).ready(function()){}```-like mechanism
 
 ```typescript
 import { AfterViewInit } from '@angular/core';
