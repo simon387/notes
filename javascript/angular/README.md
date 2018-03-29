@@ -609,8 +609,8 @@ public download(event: any): void {
 import { AfterViewInit } from '@angular/core';
 
 // tslint:disable-next-line:use-life-cycle-interface
-    ngAfterViewInit() {
-        // your code here
-    }
+ngAfterViewInit() {
+    // your code here
+}
 ```
 
