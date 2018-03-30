@@ -190,6 +190,29 @@ export class MyService {
     this.router.navigate(['']); 
   }
   ```
+### ActivatedRoute
+
+app-routing-module.ts
+
+```typescript
+const appRoutes: Routes = [
+    { path: 'other-component/:paramName', component: OtherComponent },
+];
+```
+
+other component:
+
+```typescript
+import { ActivatedRoute } from '@angular/router';
+
+constructor(
+    private activatedRoute: ActivatedRoute,
+) { }
+
+ngOnInit() {
+    const paramName = this.activatedRoute.snapshot.params['paramName'];
+}
+```
 
 ## Elvis's operator
 
