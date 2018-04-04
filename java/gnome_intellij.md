@@ -1,4 +1,23 @@
-# default common IntelliJ IDEA hotkeys under gnome
+## .desktop file
+
+```/usr/local/share/applications/jetbrains-idea.desktop```
+
+```bash
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=IntelliJ IDEA Ultimate Edition
+#Icon=/opt/idea-IU-173.4548.28/bin/idea.png
+Icon=/opt/idea-IU-173.4548.28/bin/idea.png
+#Exec="/opt/idea-IU-173.4548.28/bin/idea.sh" %f
+Exec="/opt/idea-IU-181.4203.550/bin/idea.sh" %f
+Comment=The Drive to Develop
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=jetbrains-idea
+```
+
+## default common IntelliJ IDEA hotkeys under gnome
 
 (it's just a self memorization exercise)
 
