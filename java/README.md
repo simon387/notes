@@ -141,3 +141,11 @@ Override
   + after complete startup, deploy the war (just cp it)
   + always check logs
   + at the end restart liferay
+
+## tomcat(7) setting VM options on windows
+
+inside catalina.bat
+
+```bat
+set "JAVA_OPTS=%JAVA_OPTS% your_option "
+```
