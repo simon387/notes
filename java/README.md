@@ -155,7 +155,7 @@ set "JAVA_OPTS=%JAVA_OPTS% your_option "
 
 solution's example:
 
-setting the tomcat VM
+setting the tomcat VM option
 ```
 -Djavax.net.ssl.trustStore=path_to_keystore.jks -Djavax.net.ssl.trustStorePassword=password 
 ```
