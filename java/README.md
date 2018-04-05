@@ -149,3 +149,13 @@ inside catalina.bat
 ```bat
 set "JAVA_OPTS=%JAVA_OPTS% your_option "
 ```
+## common errors
+
+```javax.naming.CommunicationException: anonymous bind failed: ldapqa.intranet.unicreditgroup.eu:636 [Root exception is javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]```
+
+solution's example:
+
+setting the tomcat VM
+```
+-Djavax.net.ssl.trustStore=path_to_keystore.jks -Djavax.net.ssl.trustStorePassword=password 
+```
