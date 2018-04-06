@@ -149,6 +149,15 @@ inside catalina.bat
 ```bat
 set "JAVA_OPTS=%JAVA_OPTS% your_option "
 ```
+
+## remote debug
+
+catalina.sh / bat
+
+```bat
+set "JAVA_OPTS=%JAVA_OPTS% -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=12345"
+```
+
 ## common errors
 
 ```javax.naming.CommunicationException: anonymous bind failed: package.class.eu:636 [Root exception is javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]```
