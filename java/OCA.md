@@ -74,4 +74,6 @@
   }
   ```
 + Note that Arrays are Objects (i.e. cA instanceof Object is true)
-
++ octal 042 (08=error)
++ hex 0x42
++ binary 0b101010
