@@ -21,3 +21,16 @@ setTimeout(() => {
   //
 }, 1000);
 ```
+
+## range mapping 
+
+```javascript
+Number.prototype.map = function (in_min, in_max, out_min, out_max) {
+  return (this - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+var num = 5;
+console.log(num.map(0, 10, -50, 50)); // 0
+console.log(num.map(-20, 0, -100, 100)); // 150
+```
+
