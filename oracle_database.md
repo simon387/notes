@@ -1,6 +1,6 @@
 # oracle database
 
-## export schema user tables ecc example
+## export schema user tables etc example
 
 ```bash
 exp user/password@url.endpoint.com:port/service FULL=Y FILE=C:\dump_
