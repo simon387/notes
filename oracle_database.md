@@ -18,3 +18,9 @@ select 'drop table '||table_name||' cascade constraints;' from user_tables;
 select 'truncate table ' || table_name || ';' from user_tables
 ```
 
+## connection url
+
+with sid
+
+```jdbc:oracle:driver_type:[username/password]@//host_name:port_number:SID```
+
