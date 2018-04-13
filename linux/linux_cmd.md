@@ -322,15 +322,6 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
 + vim
 
-  ```bash
-  vi /etc/hosts
-  :set nu
-  dd
-  yy
-  p
-  /\cstring
-  ```
-
 + ```wget <url>```
 
 + ```whereis <filename>```
