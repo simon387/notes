@@ -176,3 +176,46 @@ example:
 
 ```connect SYSTEM/password@XE```
 
+## setup ssh access with ssh key authentication
+
++ create key pair on the "server"
+
+```bash
+[fedora@server ~]$ ssh-keygen -t rsa
+# use a passphrase
+[fedora@server ~]$ mv ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys 
+[fedora@server ~]$ chmod 600 ~/.ssh/authorized_keys 
+```
+
++ transfer the secret key created on the Server to a Client
+
+```bash
+[fedora@client ~]$ mkdir ~/.ssh 
+[fedora@client ~]$ chmod 700 ~/.ssh
+# copy the secret key to local ssh directory
+[fedora@client ~]$ scp fedora@10.0.0.30:/home/fedora/.ssh/id_rsa ~/.ssh/ 
+```
+
++ now you can login
+
+```bash
+[fedora@client ~]$ ssh -i ~/.ssh/id_rsa fedora@server 
+Enter passphrase for key '/home/fedora/.ssh/id_rsa':   # passphrase
+Last login: Wed Dec 10 22:23:46 2014 from localhost 
+[fedora@dlp ~]$   # just logined
+```
+
++ If you set "PasswordAuthentication" no, it's more secure
+
+```bash
+[root@client ~]# vi /etc/ssh/sshd_config
+# line 79: turn to "no"
+PasswordAuthentication no
+[root@client ~]# systemctl restart sshd 
+```
+
++ login without specify the key
+
+```bash
+$ ssh-add ~/.ssh/id_rsa_key
+```
