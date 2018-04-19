@@ -10,3 +10,8 @@
 
 + ```netstat -na```
 
+## web page with autojoin for a skype for business / microsoft lync call
+
+```html
+<a href="https://webconf.company.it/companygroup/meet/s.celia/H9HZQ390">Join Skype Meeting</a>
+```
