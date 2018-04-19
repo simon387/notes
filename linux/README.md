@@ -199,10 +199,10 @@ example:
 + now you can login
 
 ```bash
-[fedora@client ~]$ ssh -i ~/.ssh/id_rsa fedora@server 
+[fedora@client ~]$ ssh -i ~/.ssh/id_rsa fedora@10.0.0.30 
 Enter passphrase for key '/home/fedora/.ssh/id_rsa':   # passphrase
-Last login: Wed Dec 10 22:23:46 2014 from localhost 
-[fedora@dlp ~]$   # just logined
+Last login: Wed Dec 10 22:23:46 2042 from localhost 
+[fedora@server ~]$   # just logined
 ```
 
 + If you set "PasswordAuthentication" no, it's more secure
