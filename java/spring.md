@@ -10,7 +10,9 @@ package it.simonecelia.jokesapp.services;
 public interface ChuckNorrisService {
 	String getRandomQuote();
 }
+```
 
+```java
 package it.simonecelia.jokesapp.services;
 
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
