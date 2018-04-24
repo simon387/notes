@@ -7,3 +7,4 @@
 + ETL = Extract, Transform, Load
 + FE = Front End
 + GWS = Global Web Services
++ TBC = To Be Confirmed
