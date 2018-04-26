@@ -211,6 +211,10 @@ Last login: Wed Dec 10 22:23:46 2042 from localhost
 [root@client ~]# vi /etc/ssh/sshd_config
 # line 79: turn to "no"
 PasswordAuthentication no
+
++ to remove a passphrase ```ssh-keygen -p``` (quickest login)
+
+
 [root@client ~]# systemctl restart sshd 
 ```
 
