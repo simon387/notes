@@ -77,3 +77,14 @@
 + octal 042 (08=error)
 + hex 0x42
 + binary 0b101010
++ static members are evaluated before constructor()
++ valid:
+  ```java 
+  new Long("123");
+  Long.parseLong("123");
+  Long.valueOf(mStr).longValue();
+  ```
++ not valid:
+  ```java
+  new Long();
+  ```
