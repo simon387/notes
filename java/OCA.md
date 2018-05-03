@@ -90,3 +90,4 @@
   ```
 + long cannot be used in switch statement
 + label everywhere but declarations
++ boolean operator ```!=``` has more precedence than ```=```
