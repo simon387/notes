@@ -88,3 +88,5 @@
   ```java
   new Long();
   ```
++ long cannot be used in switch statement
++ label everywhere but declarations
