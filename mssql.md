@@ -1,0 +1,8 @@
+
+
+```sql
+ALTER TABLE <table_name> NOCHECK CONSTRAINT ALL;
+ALTER INDEX ALL ON <table_name> DISABLE;
+ALTER INDEX ALL ON <table_name> REBUILD;
+ALTER TABLE <table_name> CHECK CONSTRAINT ALL;
+```
