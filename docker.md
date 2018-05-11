@@ -8,3 +8,4 @@
 
 `docker rm <NAME>`
 
+exit(255) -> disable SElinux -> worked!
