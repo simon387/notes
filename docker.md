@@ -8,4 +8,10 @@
 
 `docker rm <NAME>`
 
+## common errors
+
 exit(255) -> disable SElinux -> worked!
+
+## dbms on docker is very slow?
+
+turning off internet connection! why? who knonws! but it works
