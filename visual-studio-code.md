@@ -3,3 +3,7 @@
 ## chrome debug extension
 
 ```"userDataDir": false,```
+
+## find all default keybinding
+
+<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>L</kbd>
