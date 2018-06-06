@@ -1,4 +1,5 @@
 
+rebuilding indexes
 
 ```sql
 ALTER TABLE <table_name> NOCHECK CONSTRAINT ALL;
