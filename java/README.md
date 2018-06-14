@@ -168,3 +168,28 @@ setting the tomcat VM option
 ```
 -Djavax.net.ssl.trustStore=path_to_keystore.jks -Djavax.net.ssl.trustStorePassword=password 
 ```
+## how to print current project classpath
+
+```java
+package it.fai.ms.etl.migration;
+
+import org.junit.Test;
+
+import java.net.URL;
+import java.net.URLClassLoader;
+
+public class PrintClasspath {
+
+	@Test
+	public void printClasspath() {
+		ClassLoader cl = ClassLoader.getSystemClassLoader();
+
+		URL[] urls = ((URLClassLoader)cl).getURLs();
+
+		for(URL url: urls){
+			System.out.println(url.getFile());
+		}
+	}
+}
+```
+
