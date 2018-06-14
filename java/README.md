@@ -171,8 +171,6 @@ setting the tomcat VM option
 ## how to print current project classpath
 
 ```java
-package it.fai.ms.etl.migration;
-
 import org.junit.Test;
 
 import java.net.URL;
