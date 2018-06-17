@@ -3,7 +3,7 @@
 + Checked exceptions are meant for...
   + exceptional conditions external to an application that a well written application should anticipate and from which it can recover.
   + sublcass of Exception
-  + invalid conditions in areas outside the imeediate control of the program
+  + invalid conditions in areas outside the immediate control of the program
 + RuntimeException(unchecked) it's sublcass of Exception!
 + String String = "string isa string";  System.out.println(String.substring(3, 6)); -> "ing"
 + Throwable is a super class of Exception
