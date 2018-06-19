@@ -1,5 +1,5 @@
 
-rebuilding indexes
+Rebuilding indexes
 
 ```sql
 ALTER TABLE <table_name> NOCHECK CONSTRAINT ALL;
@@ -17,4 +17,15 @@ INSERT sometableWithIdentity (IdentityColumn, col2, col3, ...)
 VALUES (AnIdentityValue, col2value, col3value, ...)
 
 SET IDENTITY_INSERT sometableWithIdentity OFF
+```
+
+Cannot drop database "databasename" because it is currently in use.
+
+```sql
+use master;
+GO
+
+ALTER DATABASE databasename SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+
+GO
 ```
