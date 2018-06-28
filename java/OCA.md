@@ -94,6 +94,25 @@
 
 ## lambdas
 
+what you need to know for the OCA exam
+
+```java
+a -> a.canHop()
+(Animal a) -> { return a.canHop(); }
+```
+
+```java
+print(a, b -> a.startsWith("test")); // DOES NOT COMPILE
+print(a -> { a.startsWith("test"); }); // DOES NOT COMPILE
+print(a -> { return a.startsWith("test") }); // DOES NOT COMPILE
+```
+
+```java
+public interface Predicate<T> {
+	boolean test(T t);
+}
+```
+
 ```java
 List<String> bunnies = new ArrayList<>();
 bunnies.add("long ear");
