@@ -91,3 +91,16 @@
 + long cannot be used in switch statement
 + label everywhere but declarations
 + boolean operator ```!=``` has more precedence than ```=```
+
+## lambdas
+
+```java
+		List<String> bunnies = new ArrayList<>();
+		bunnies.add("long ear");
+		bunnies.add("floppy");
+		bunnies.add("hoppy");
+		System.out.println(bunnies);  // [Long ear, floppy, hoppy]
+		bunnies.removeIf(s -> s.charAt(0) != 'h');
+		System.out.println(bunnies);  // [hoppy]
+```
+
