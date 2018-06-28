@@ -101,7 +101,7 @@ s1.add("c");
 s1.add("a");
 System.out.println(s1.remove("a") + " " + s1.remove("x")); //true false
 ```
-
++ new AssertionError() is an Error, NOT AN EXCEPTION
 
 
 ## lambdas
