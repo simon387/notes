@@ -92,7 +92,8 @@
 + label everywhere but declarations
 + boolean operator ```!=``` has more precedence than ```=```
 + virtual method: A virtual method is a method in which the specifi c implementation is not determined until runtime. In fact, all non-fi nal, non-static, and non-private Java methods are considered virtual methods, since any of them can be overridden at runtime.
-+ ```java
++ 
+```java
 List s1 = new ArrayList();
 s1.add("a");
 s1.add("b");
