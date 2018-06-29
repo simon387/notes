@@ -1,1 +1,1 @@
-Hasta luego! -> a più tardi!
+Hasta luego! -> see you later!
