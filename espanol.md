@@ -5,7 +5,6 @@
 + ¿cuál es tu nombre?
 + mi nombre es simone
 
-
 ## cosas muy importantes!
 + nunca hablar de ...
 + catalán no es dialecto
@@ -29,3 +28,8 @@
 |Nosotros|hemos sido|habiamos sido|hubimos sido|habremos sido|
 |Vosotros|habeis sido|habiais sido|hubisteis sido|habreis sido|
 |Ellos|han sido|habian sido|hubieron sido|habran sido|
+
+## dare del lei
+
++ ¿Usted es el padre de Alberto?
+
