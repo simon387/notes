@@ -108,6 +108,8 @@ System.out.println(s1.remove("a") + " " + s1.remove("x")); //true false
 ```java
 java.time.LocalDateTime.of(2015, 10, 1, 10, 10);
 ```
++ Double extends Number
+
 
 
 ## lambdas
