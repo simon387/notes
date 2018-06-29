@@ -7,7 +7,7 @@
 
 
 ## cosas muy importantes!
-+ nunca hablar de franco
++ nunca hablar de ...
 + catalán no es dialecto
 
 ## verbos
