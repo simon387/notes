@@ -2,6 +2,7 @@
 
 ## frases comunes
 + Hasta luego! -> see you later!
++ ¿cuál es tu nombre?
 + mi nombre es simone
 
 
@@ -19,7 +20,6 @@
 |Nosotros      |somos   |eramos    |fuimos              |seremos |
 |Vosotros      |sois|erais|fuisteis|sereis|
 |Ellos|son|eran|fueron|seran|
-|--------------|--------|----------|--------------------|--------|
 
 |Persona       |Presente|Imperfecto|Pretérito indefinido|Futuro  |
 |--------------|--------|----------|--------------------|--------|
