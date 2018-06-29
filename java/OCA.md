@@ -104,6 +104,11 @@ System.out.println(s1.remove("a") + " " + s1.remove("x")); //true false
 + new AssertionError() is an Error, NOT AN EXCEPTION
 + String has NOT the method reverse(); StringBuilder does
 + Autoboxing caches -128 to 127
++ LocalDateTime
+```java
+java.time.LocalDateTime.of(2015, 10, 1, 10, 10);
+```
+
 
 ## lambdas
 
