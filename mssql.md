@@ -29,3 +29,9 @@ ALTER DATABASE databasename SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
 
 GO
 ```
+
+Drop constraint
+
+```sql
+alter table tablename DROP CONSTRAINT constraint_name
+```
