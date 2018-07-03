@@ -2,8 +2,17 @@
 
 ## frases comunes
 + Hasta luego! -> see you later!
++ Buenos dias
++ Buenas tardes -> afternoon
++ Buonas noches
++ Hasta mañana
 + ¿cuál es tu nombre?
 + mi nombre es simone
+
+## vocablo
++ Mañana -> tomorrow
++ Desayuno -> breakfast
++ comida -> lunch
 
 ## cosas muy importantes!
 + nunca hablar de ...
