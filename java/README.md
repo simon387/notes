@@ -191,10 +191,14 @@ public class PrintClasspath {
 }
 ```
 
-## easy way to switch jdk on linux
+## easy way to switch jdk and jre on linux
 
 ```bash
 alternatives --config java
+```
+
+```bash
+alternatives --set javac /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-9.b11.fc28.x86_64/bin/javac
 ```
 
 
