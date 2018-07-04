@@ -191,3 +191,10 @@ public class PrintClasspath {
 }
 ```
 
+## easy way to switch jdk on linux
+
+```bash
+alternatives --config java
+```
+
+
