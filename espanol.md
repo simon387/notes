@@ -8,6 +8,7 @@
 + Hasta mañana
 + ¿cuál es tu nombre?
 + mi nombre es simone
++ que tal? -> how are you?
 
 ## vocablo
 + Mañana -> tomorrow
