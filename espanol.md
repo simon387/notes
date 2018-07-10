@@ -22,7 +22,14 @@
 + desarrollo -> development
 + hecho -> done
 + enfoque -> approach
-
++ descargar -> download
++ desde -> from/since
++ despliegue -> deployment
++ nivel -> level
++ correo -> mail
++ mientras -> while
++ duda -> question
++ cualquier -> any
 
 ## cosas muy importantes!
 + nunca hablar de ...
