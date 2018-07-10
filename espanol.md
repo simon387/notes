@@ -30,6 +30,7 @@
 + mientras -> while
 + duda -> question
 + cualquier -> any
++ callate -> taci!
 
 ## cosas muy importantes!
 + nunca hablar de ...
