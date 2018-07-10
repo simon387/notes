@@ -14,6 +14,15 @@
 + Mañana -> tomorrow
 + Desayuno -> breakfast
 + comida -> lunch
++ tarea -> job, task
++ empezar -> to start
++ codigo fuente -> source code
++ entorno -> environment
++ vez -> time
++ desarrollo -> development
++ hecho -> done
++ enfoque -> approach
+
 
 ## cosas muy importantes!
 + nunca hablar de ...
