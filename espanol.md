@@ -31,6 +31,7 @@
 + duda -> question
 + cualquier -> any
 + callate -> taci!
++ madrugar -> to wake up early in the morning
 
 ## cosas muy importantes!
 + nunca hablar de ...
