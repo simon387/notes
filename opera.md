@@ -20,5 +20,5 @@ locate and replace ```libffmpeg.so``` for opera and/or other softwares
 
 ```bash
 locate libffmpeg.so
-sudo mv ...
+sudo cp /home/scelia/dev/nwjs-ffmpeg-prebuilt/build/src/out/nw/lib/libffmpeg.so /usr/lib64/opera/libffmpeg.so
 ```
