@@ -201,6 +201,10 @@ alternatives --set javac /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-9.b11.fc28.x8
 alternatives --config java
 ```
 
+## String to Date
 
-
+```java
+String sDate = "20180118";
+Date date = new SimpleDateFormat("yyyyMMdd").parse(sDate);
+```
 
