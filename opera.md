@@ -38,5 +38,5 @@ Comment=Fast and secure web browser
 TryExec=opera
 Exec=opera %U
 Terminal=false
-Icon=/home/scelia/Pictures/opera_favicon.ico
+Icon=/home/scelia/Pictures/kisspng-opera-mobile-computer-icons-web-browser-opera-ico-5ab1b5040a1ba9.5062036715215956520414.png
 ```
