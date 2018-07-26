@@ -29,7 +29,9 @@ sudo cp /home/scelia/dev/nwjs-ffmpeg-prebuilt/build/src/out/nw/lib/libffmpeg.so 
 sudo vim /usr/share/applications/opera.desktop
 ```
 
-```
+![alt text](https://github.com/simon387/notes/raw/master/assets/kisspng-opera-mobile-computer-icons-web-browser-opera-ico-5ab1b5040a1ba9.5062036715215956520414.png "Logo Title Text 1")
+
+```ini
 [Desktop Entry]
 Version=1.0
 Name=Opera
