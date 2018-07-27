@@ -1,4 +1,4 @@
-# opera browswer
+# opera browser
 
 ## how to fix ffmpeg not rendering Encode/H.264 gif / videos
 
