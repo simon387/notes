@@ -29,7 +29,7 @@ locate libffmpeg.so
 sudo cp /home/scelia/dev/nwjs-ffmpeg-prebuilt/build/src/out/nw/lib/libffmpeg.so /usr/lib64/opera/libffmpeg.so
 ```
 
-## fix icon on Fedora + Gnome
+## how to fix icon on Fedora + Gnome
 
 ```bash
 sudo vim /usr/share/applications/opera.desktop
