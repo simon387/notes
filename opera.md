@@ -16,6 +16,8 @@ cd nwjs-ffmpeg-prebuilt/
 sudo python build_ffmpeg.py --target_arch=x64
 ```
 
+or you can find already compiled ones here: [https://github.com/iteufel/nwjs-ffmpeg-prebuilt/releases](https://github.com/iteufel/nwjs-ffmpeg-prebuilt/releases)
+
 locate and replace ```libffmpeg.so``` for opera and/or other softwares
 
 ```bash
