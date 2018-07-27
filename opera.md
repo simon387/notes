@@ -4,24 +4,25 @@
 
 on linux fedora 28:
 
-1. 
+1. cloning this repo
+
 ```bash
 git clone https://github.com/iteufel/nwjs-ffmpeg-prebuilt.git
 ```
+
+2. compiling it 
 
 ```bash
 cd nwjs-ffmpeg-prebuilt/
 ```
 
-2. 
 ```bash
 sudo python build_ffmpeg.py --target_arch=x64
 ```
 
 (or you can find already compiled ones here: [https://github.com/iteufel/nwjs-ffmpeg-prebuilt/releases](https://github.com/iteufel/nwjs-ffmpeg-prebuilt/releases))
 
-3. 
-locate and replace ```libffmpeg.so``` for opera and/or other softwares
+3. locate and replace ```libffmpeg.so``` for opera and/or other softwares
 
 ```bash
 locate libffmpeg.so
