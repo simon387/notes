@@ -7,3 +7,7 @@
 ## facebook custom video settings
 
 ```ffmpeg -i input -c:v libx264 -crf 18 -preset slow -c:a copy output.mkv```
+
+## stackoverflow
+
+```ffmpeg -i input.avi -c:v libx264 -preset slow -crf 22 -c:a copy output.mkv```
