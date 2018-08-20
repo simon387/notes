@@ -11,3 +11,9 @@
 ## stackoverflow
 
 ```ffmpeg -i input.avi -c:v libx264 -preset slow -crf 22 -c:a copy output.mkv```
+
+## cut
+
+from second "3" cutting 8 seconds (omitting -t will continue to the end)
+
+```ffmpeg -i movie.mp4 -ss 00:00:03 -t 00:00:08 -async 1 cut.mp4```
