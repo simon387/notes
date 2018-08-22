@@ -39,5 +39,5 @@
    
 10. The method to embed a portlet in a layout template is:
 
-   + processor.processPortlet()
+    + processor.processPortlet()
 
