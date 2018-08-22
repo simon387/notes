@@ -25,7 +25,7 @@
    + Create portlet, theme, layout template or hook plugins
 
 7. Instanceable portlets:
-   
+
    + Have unique prerences per portlet
    + Can be added to a page multiple times
 
@@ -36,8 +36,15 @@
 9. The method to embed the non-instanceable Language portlet with the name "82" is a theme is:
 
    + $theme.runtime("82")
-   
+
 10. The method to embed a portlet in a layout template is:
 
     + processor.processPortlet()
 
+11. Portlets events are distributed to portlets on different pages by setting the property:
+
+    + portlet.event.distributoin=layout-set
+
+12. In a JSP that includes the <liferay-theme: defineObjects /> tag, the method to check permissions is:
+
+    + permissionChecker.hasPermission()
