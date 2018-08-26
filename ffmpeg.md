@@ -17,3 +17,8 @@
 from second "3" cutting 8 seconds (omitting -t will continue to the end)
 
 ```ffmpeg -i movie.mp4 -ss 00:00:03 -t 00:00:08 -async 1 cut.mp4```
+
+## extract audio from video
+
+```ffmpeg -i video.mp4 -b:a 192K -vn music.mp3```
+
