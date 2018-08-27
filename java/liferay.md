@@ -14,3 +14,13 @@ you can have syntax highlight inside JSP
 
 deploy issues? you need to manually add ```liferay.workspace.home.dir=``` in ```gradle.properties```
 
+## gradle common errors
+
+```
+Execution failed for task ':initBundle'.
+> Could not expand ZIP xxxxx
+```
+
+solution: ```rm -rf xxxxx``` and re-run the download task
+
+
