@@ -1,4 +1,4 @@
-# liferay note
+# liferay (MAINLY LIFERAY 7) note
 
 ## Intellij IDEA / other IDE trick
 
@@ -14,6 +14,10 @@ you can have syntax highlight inside JSP
 
 deploy issues? you need to manually add ```liferay.workspace.home.dir=``` in ```gradle.properties```
 
+## liferay module (old plugin) installation location
+
+```......./bundles/osgi/modules```
+
 ## gradle common errors
 
 ```
@@ -22,5 +26,4 @@ Execution failed for task ':initBundle'.
 ```
 
 solution: ```rm -rf xxxxx``` and re-run the download task
-
 
