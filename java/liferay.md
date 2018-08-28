@@ -14,7 +14,7 @@ you can have syntax highlight inside JSP
 
 deploy issues? you need to manually add ```liferay.workspace.home.dir=``` in ```gradle.properties```
 
-## liferay module (old plugin) installation location
+## liferay modules (old plugins) installation location
 
 ```......./bundles/osgi/modules```
 
