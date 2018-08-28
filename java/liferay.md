@@ -27,3 +27,26 @@ Execution failed for task ':initBundle'.
 
 solution: ```rm -rf xxxxx``` and re-run the download task
 
+## gogo shell
+
+### access
+
+example
+
+```telnet localhost 11311```
+
+### show bundles
+
+```lb | grep Liferay```
+
+
+### stop bundle
+
+```stop $bundleId```
+
+### start bundle
+
+```start $bundleId```
+
+NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
+
