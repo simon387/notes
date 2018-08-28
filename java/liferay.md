@@ -35,7 +35,7 @@ example
 
 ```telnet localhost 11311```
 
-pay caution! don't kill this process!
+pay caution! don't kill this process or type ```exit``` ! will kill the Tomcat! use the ```disconnect``` command!
 
 ### show bundles
 
