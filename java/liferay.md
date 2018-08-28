@@ -46,6 +46,8 @@ pay caution! don't kill this process!
 
 ```stop $bundleId```
 
+very different from ```unistall``` !!
+
 ### start bundle
 
 ```start $bundleId```
