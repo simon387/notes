@@ -35,6 +35,8 @@ example
 
 ```telnet localhost 11311```
 
+pay caution! don't kill this process!
+
 ### show bundles
 
 ```lb | grep Liferay```
