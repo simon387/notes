@@ -61,3 +61,7 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 + change if needed database connection info in ```/tomcat/conf/context.xml```
 + increase if needed ```-Xmx``` and ```-XX:MaxPermSize=``` inside ```tomcat/bin/setenv.*```
 
+## localhost only environment tricks
+
++ inside ```portal-ext.properties``` set ```module.framework.properties.lpkg.index.validator.enabled=false``` to increase startup time
+
