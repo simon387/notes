@@ -54,3 +54,8 @@ very different from ```unistall``` !!
 
 NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 
+## liferay startup errors
+
++ remember to set ```liferay.home``` in ```portal-setup-wizard.properties```
++ delete ```/osgi/state```
++ change if needed database connection info in ```/tomcat/conf/context.xml```
