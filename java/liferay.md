@@ -71,7 +71,7 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 + only available on EE
 
 1. download the .zip
-2. copy it under ```/[liferay_directory/patching-tool/patches]```
+2. copy it under ```/[liferay_directory]/patching-tool/patches/```
 3. delete old zips if presents
 4. STOP THE SERVER
 5. run ```patching-tool install```
