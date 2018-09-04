@@ -64,7 +64,7 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 
 ## localhost only environment tricks
 
-+ inside ```portal-ext.properties``` set ```module.framework.properties.lpkg.index.validator.enabled=false``` to increase startup time
++ inside ```portal-ext.properties``` set ```module.framework.properties.lpkg.index.validator.enabled=false``` to decrease startup time
 
 ## patching tool
 
