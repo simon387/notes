@@ -83,3 +83,7 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 
 + comments in ```build.gradle``` are java like
 
+## deploy
+
+put jars under ```/deploy/``` dir
+
