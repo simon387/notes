@@ -78,3 +78,8 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 6. if all right start the server, otherwise fix things :(
 7. even if the procedure worked, liferay will never start up again correctly
 8. redeploy and fix things?
+
+## gradle
+
++ comments in ```build.gradle``` are java like
+
