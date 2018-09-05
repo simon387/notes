@@ -87,3 +87,30 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 
 put jars under ```/deploy/``` dir
 
+## bugs / errors
+
+### Could not resolve module
+
+```
+2018-09-05 16:17:35.292 ERROR [Framework Event Dispatcher: Equinox Container: d0fb4625-27b1-0018-117c-b64379ebebfd][XXX:97] FrameworkEvent ERROR 
+org.osgi.framework.BundleException: Could not resolve module: XXX [84]_  Unresolved requirement: Import-Package: com.liferay.faces.portal.context_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:429)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1562)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+```
+
+was a fake error, inside the ```osgi/war``` folder there was the XXX.war, it was deprecated and not used in the environment
+
+gogo shell helpfull command:
+
+```g! packages com.liferay.faces.portal.context_```
+
+result:
+
+```No exported packages```
+
