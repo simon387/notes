@@ -26,6 +26,8 @@ deploy issues? you need to manually add ```liferay.workspace.home.dir=``` in ```
 
 ## how to add custom functions in javascript aui context
 
+inside a jsp file
+
 ```javascript
 <aui:script>
 Liferay.provide(window, 'functionNameExample', 
