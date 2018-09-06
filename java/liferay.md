@@ -18,6 +18,26 @@ deploy issues? you need to manually add ```liferay.workspace.home.dir=``` in ```
 
 ```......./bundles/osgi/modules```
 
+## how to debug javascript
+
+1. add to the url ```?js_fast_load=0&css_fast_load=0&strip=0```
+2. if any (js)error will appear, you can see the code line in the browser console
+3. add breakpoint on that line
+
+## how to add custom functions in javascript aui context
+
+```javascript
+<aui:script>
+Liferay.provide(window, 'functionNameExample', 
+  function(variable1, variable2, variable3, ...) {
+    var A = AUI();
+    ...
+  },
+['aui-base']
+);
+</aui:script>
+```
+
 ## gradle common errors
 
 ```
@@ -89,6 +109,8 @@ put jars under ```/deploy/``` dir
 
 ## bugs / errors
 
+Sometime they are not related to liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
+
 ### Could not resolve module
 
 ```
@@ -114,3 +136,6 @@ result:
 
 ```No exported packages```
 
+### html elements not working properly inside the portal
+
+you got some javascript errors, check the browser javascript console!
