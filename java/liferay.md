@@ -136,6 +136,6 @@ result:
 
 ```No exported packages```
 
-### html elements not working properly inside the portal
+### Html elements not working properly inside the portal
 
 you got some javascript errors, check the browser javascript console!
