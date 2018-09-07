@@ -141,3 +141,12 @@ result:
 ### Html elements not working properly inside the portal
 
 you got some javascript errors, check the browser javascript console!
+
+### No tag "" defined in tag library imported with prefix "portlet"
+
+add in jsp 
+
+```jsp
+<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
+```
+
