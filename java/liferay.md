@@ -26,7 +26,8 @@ using gradle tasks!
 
 1. always task clean
 2. build the war
-3. put it in the ```deploy``` directory
+3. usually you can find the war file in ```...\PROJECT_NAME\themes\THEME_NAME\build\libs\```
+4. put it in the ```deploy``` directory
 
 ## liferay modules (old plugins) installation location
 
