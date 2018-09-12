@@ -55,6 +55,22 @@ Liferay.provide(window, 'functionNameExample',
 </aui:script>
 ```
 
+## language.properties
+
+### properties with parameters
+
+in jsp:
+
+```jsp
+<liferay-ui:message key="welcome-x" arguments="<%= user.getScreenName() %>" />
+```
+
+properties file
+
+```properties
+welcome-x=Welcome{0}!
+```
+
 ## gradle common errors
 
 ```
