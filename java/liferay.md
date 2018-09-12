@@ -140,6 +140,14 @@ put jars under ```/deploy/``` dir
 }
 ```
 
+### getting img from theme
+
+from jsp:
+
+```jsp
+<img src="<%= themeDisplay.getPathThemeImages() %>/img.png" />
+```
+
 ## bugs / errors
 
 Sometime they are not related to liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
