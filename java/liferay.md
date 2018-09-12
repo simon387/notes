@@ -124,6 +124,19 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 
 put jars under ```/deploy/``` dir
 
+## css
+
+### targetting browsers
+
+```css
+.ie .example {
+   
+}
+.firefox .example {
+    
+}
+```
+
 ## bugs / errors
 
 Sometime they are not related to liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
