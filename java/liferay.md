@@ -130,10 +130,13 @@ put jars under ```/deploy/``` dir
 
 ```css
 .ie .example {
-   
 }
 .firefox .example {
-    
+}
+/* EDGE ONLY */
+@supports (-ms-ime-align: auto) {
+  .example {
+  }
 }
 ```
 
