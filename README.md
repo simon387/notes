@@ -57,6 +57,10 @@
 + http://jsonpath.com
 + https://jsonlint.com
 
+## web dev utilities link
+
++ https://www.albionresearch.com/misc/urlencode.php
+
 ## Git vs SVN
 
 https://www.perforce.com/blog/list-of-equivalent-commands-in-git-mercurial-and-svn
