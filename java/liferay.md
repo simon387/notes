@@ -14,6 +14,10 @@ you can have syntax highlight inside JSP
 
 deploy issues? you need to manually add ```liferay.workspace.home.dir=``` in ```gradle.properties```
 
+### importing modules from project
+
+right click somewhere inside the project and import recursively all the modules as gradle projects
+
 ### theme management
 
 + there is no ```diff``` directory like liferay 6.x
