@@ -59,6 +59,46 @@ Liferay.provide(window, 'functionNameExample',
 </aui:script>
 ```
 
+## jsp's with aui and similar
+
+### redirect button examlple
+
+```jsp
+<portlet:renderURL var="force_back">
+	<portlet:param name="mvcPath" value="/html/blabla/view.jsp"/>
+</portlet:renderURL>
+
+<aui:form action="<%= blablaURL %>" method="post" name="nameBla" >
+	<aui:button-row>
+		<aui:button href="<%= force_back %>" type="cancel" />
+	</aui:button-row>
+</aui:form>
+```
+
+### There is no if-else, just if
+
+```jsp
+<c:if test="${user.age ge 40}">
+	You are over the hill.
+</c:if>
+```
+
+and the choose element
+
+```jsp
+<c:choose>
+	<c:when test="${a boolean expr}">
+		do something
+	</c:when>
+	<c:when test="${another boolean expr}">
+		do something else
+	</c:when>
+	<c:otherwise>
+		do this when nothing else is true
+	</c:otherwise>
+</c:choose>
+```
+
 ## language.properties
 
 ### properties with parameters
