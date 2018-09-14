@@ -28,6 +28,8 @@ using gradle tasks!
 
 #### (hot) deploy
 
+If the IDE doesn't publish it automatically (maybe the theme module is not in the add/remove server list):
+
 1. always task clean
 2. build the war
 3. usually you can find the war file in ```...\PROJECT_NAME\themes\THEME_NAME\build\libs\```
