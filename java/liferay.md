@@ -211,6 +211,7 @@ from jsp:
 ## Application Display Template (ADT)
 
 + database table: ```ddmtemplate```
+  + after editing one row, I had to restart liferay to see the effect (lol)
 
 ## bugs / errors
 
