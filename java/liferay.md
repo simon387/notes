@@ -208,6 +208,10 @@ from jsp:
 <img src="<%= themeDisplay.getPathThemeImages() %>/img.png" />
 ```
 
+## Application Display Template (ADT)
+
++ database table: ```ddmtemplate```
+
 ## bugs / errors
 
 Sometime they are not related to liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
