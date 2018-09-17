@@ -1,5 +1,7 @@
 # liferay (MAINLY LIFERAY 7) note
 
+But not only liferay infos, I put here even some random web dev tricks learned in my Spain experience
+
 ## Intellij IDEA / other IDE trick
 
 with this line
@@ -100,6 +102,12 @@ and the choose element
 	</c:otherwise>
 </c:choose>
 ```
+
+### general javascript
+
+#### IE incompatibilities
+
+Use ```myString.indexOf("otherString") > -1``` instead of ```myString.includes("otherString")```
 
 ## language.properties
 
@@ -255,4 +263,9 @@ add in jsp
 ```jsp
 <%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 ```
+
+## nice links
+
++ [alternate-text-for-css-background-images](http://davidmacd.com/blog/alternate-text-for-css-background-images.html)
+
 
