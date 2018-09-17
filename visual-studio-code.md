@@ -53,7 +53,8 @@
 	"workbench.colorTheme": "Darcula Theme from IntelliJ",
 	"[html]": {
 		"editor.tabSize": 2
-	}
+	},
+	"editor.wordBasedSuggestions": false
 	//
 }
 ```
