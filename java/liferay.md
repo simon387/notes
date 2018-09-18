@@ -126,15 +126,6 @@ example:
 
 ## language.properties
 
-access inside jsp:
-
-```jsp
-<%
-  Locale locale = request.getLocale();
-  String s = LanguageUtil.get(locale, "translate-this");
-%>
-```
-
 ### properties with parameters
 
 in jsp:
