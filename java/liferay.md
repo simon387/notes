@@ -1,4 +1,4 @@
-# liferay (MAINLY LIFERAY 7) note
+# liferay (MAINLY LIFERAY 7 DXP) note
 
 But not only liferay infos, I put here even some random web dev tricks learned in my Spain experience
 
