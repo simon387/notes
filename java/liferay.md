@@ -128,6 +128,10 @@ rendered html:
 		...
 ```
 
+### override a jsp
+
+just use an hook, and put the jsp inside it with the same name of the original one
+
 ## general javascript
 
 ### IE incompatibilities
