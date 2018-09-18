@@ -218,6 +218,24 @@ from jsp:
 <img src="<%= themeDisplay.getPathThemeImages() %>/img.png" />
 ```
 
+## HTML
+
+## ARIA
+
+ARIA (Accessible Rich Internet Applications)
+
+Hide the element only for the screen reader
+
+```html
+<div aria-hidden=true></div>
+``` 
+
+Hide the element for everyone
+
+```html
+<div hidden>you can't see this</div>
+```
+
 ## Application Display Template (ADT)
 
 + database table: ```ddmtemplate```
