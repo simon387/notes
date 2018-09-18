@@ -103,6 +103,31 @@ and the choose element
 </c:choose>
 ```
 
+### core jsp with parameter example
+
+jsp core one (its an example): ```\webapps\ROOT\html\taglib\aui\fieldset\start.jsp```
+
+inside ```<%@ include file="/html/taglib/taglib-init.jsp" %>```
+
+you can find the variables initialization
+
+for example: ```java.lang.String label = GetterUtil.getString((java.lang.String)request.getAttribute("aui:fieldset:label"));```
+
+you can use it inside your own portlet in this way:
+
+```jsp
+<aui:fieldset label="value here" cssClass="accessibleLegend"> 
+```
+
+rendered html: 
+
+```html
+<fieldset class="fieldset accessibleLegend">
+	<legend class="fieldset-legend">
+		<span class="legend">value here</span></legend><div class=""> 
+		...
+```
+
 ## general javascript
 
 ### IE incompatibilities
