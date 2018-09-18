@@ -221,6 +221,8 @@ div {
 
 ## HTML
 
++ all the elements can have the attribute ```title="my text"```. It gives extra informations and usually goes inside the over tooltip.
+
 ### getting img from theme
 
 from jsp:
