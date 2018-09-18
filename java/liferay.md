@@ -109,7 +109,31 @@ and the choose element
 
 Use ```myString.indexOf("otherString") > -1``` instead of ```myString.includes("otherString")```
 
+#### on portlet ready inside jsp
+
+example:
+
+```jsp
+<%-- on portlet ready --%>
+<aui:script>
+  AUI().ready(
+    function() {
+      console.log("ON_PORTLET_READY_TEST");
+    }
+  );
+</aui:script>
+```
+
 ## language.properties
+
+access inside jsp:
+
+```jsp
+<%
+  Locale locale = request.getLocale();
+  String s = LanguageUtil.get(locale, "translate-this");
+%>
+```
 
 ### properties with parameters
 
