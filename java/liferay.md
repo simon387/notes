@@ -103,13 +103,13 @@ and the choose element
 </c:choose>
 ```
 
-### general javascript
+## general javascript
 
-#### IE incompatibilities
+### IE incompatibilities
 
 Use ```myString.indexOf("otherString") > -1``` instead of ```myString.includes("otherString")```
 
-#### on portlet ready inside jsp
+### on portlet ready inside jsp
 
 example:
 
