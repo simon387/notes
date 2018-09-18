@@ -210,6 +210,17 @@ put jars under ```/deploy/``` dir
 }
 ```
 
+### hiding css without display:none
+
+```css
+div {
+  position: absolute; 
+  left: -999em;
+}
+```
+
+## HTML
+
 ### getting img from theme
 
 from jsp:
@@ -217,8 +228,6 @@ from jsp:
 ```jsp
 <img src="<%= themeDisplay.getPathThemeImages() %>/img.png" />
 ```
-
-## HTML
 
 ### ARIA
 
