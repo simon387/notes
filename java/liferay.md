@@ -153,6 +153,18 @@ example:
 </aui:script>
 ```
 
+### how to intercept DOM modification
+
+Example of listening an "element injection"
+
+```javascript
+var tagContainer = document.querySelector("#<portlet:namespace />searchTokensContent");
+tagContainer.addEventListener("DOMNodeInserted", function (ev) {
+	console.log("EVENT TOKEN ADDED INTERCEPTED");
+	
+}, false);
+```
+
 ## language.properties
 
 ### properties with parameters
