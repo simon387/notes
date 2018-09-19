@@ -132,6 +132,10 @@ rendered html:
 
 just use an hook, and put the jsp inside it with the same name of the original one
 
+## override a core javascript file
+
+how to redefine lifeportal javascript ? ```//TODO```
+
 ## general javascript
 
 ### IE incompatibilities
