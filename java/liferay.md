@@ -135,7 +135,8 @@ just use an hook, and put the jsp inside it with the same name of the original o
 ## override a core javascript file
 
 how to redefine lifeportal javascript ? ```//TODO```
-(take a look at this)[https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/overriding-liferays-default-yui-and-aui-modules]
+
+[take a look at this](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/overriding-liferays-default-yui-and-aui-modules)
 
 or...
 
