@@ -136,6 +136,8 @@ just use an hook, and put the jsp inside it with the same name of the original o
 
 how to redefine lifeportal javascript ? ```//TODO```
 
+You can avoid this using pure javascript, but is a bad solution(but faster)!
+
 ## general javascript
 
 ### IE incompatibilities
