@@ -383,6 +383,6 @@ add in jsp
 
 ## nice links
 
-+ [alternate-text-for-css-background-images](http://davidmacd.com/blog/alternate-text-for-css-background-images.html)
-
++ [Alternate text for css background images](http://davidmacd.com/blog/alternate-text-for-css-background-images.html)
++ [Using a Custom Bundle for the Liferay Workspace](https://community.liferay.com/es/blogs/-/blogs/using-a-custom-bundle-for-the-liferay-workspace)
 
