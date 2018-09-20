@@ -69,7 +69,7 @@ div {
 }
 ```
 
-### basic selection
+### Basic STUPID selection
 
 selecting an element by parent class and current class (NO WORRIES IF CLASSES IN MIDDLE)
 
