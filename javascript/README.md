@@ -1,6 +1,6 @@
-# general notes on Javascript
+# General notes on Javascript
 
-## style on logs
+## Style on logs
 
 ```javascript
 console.log('%c I want this to be big and red', 'font-size: 30px; color: red;');
@@ -14,7 +14,7 @@ console.log('%c I want this to be big and red', 'font-size: 30px; color: red;');
 <script>setInterval(()=>document.body.style.backgroundColor='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6),128)</script>
 ```
 
-## timeout
+## Timeout
 
 ```javascript
 setTimeout(() => {
@@ -22,7 +22,7 @@ setTimeout(() => {
 }, 1000);
 ```
 
-## range mapping 
+## Range mapping 
 
 ```javascript
 Number.prototype.map = function (in_min, in_max, out_min, out_max) {
@@ -50,7 +50,7 @@ Hide the element for everyone
 <div hidden>you can't see this</div>
 ```
 
-## replace element types
+## Replace element types
 
 example by id, but works even by class
 
@@ -106,7 +106,7 @@ h1:before {
 </div>
 ```
 
-## how to intercept DOM modification
+## How to intercept DOM modification
 
 Example of listening an "element injection"
 
@@ -122,7 +122,7 @@ tagContainer.addEventListener("DOMNodeInserted", function (ev) {
 
 + Use ```myString.indexOf("otherString") > -1``` instead of ```myString.includes("otherString")```
 
-## random usage of DOM modification
+## Random usage of DOM modification
 
 ```javascript
 function a() {
