@@ -34,3 +34,91 @@ console.log(num.map(0, 10, -50, 50)); // 0
 console.log(num.map(-20, 0, -100, 100)); // 150
 ```
 
+## ARIA
+
+ARIA (Accessible Rich Internet Applications)
+
+Hide the element only for the screen reader
+
+```html
+<div aria-hidden=true></div>
+``` 
+
+Hide the element for everyone
+
+```html
+<div hidden>you can't see this</div>
+```
+
+## replace element types
+
+example by id, but works even by class
+
+```javascript
+replaceElem('h2', 'h1', '#test');
+
+function replaceElem(oldElem, newElem, ctx) {
+  oldElems = $(oldElem, ctx);
+  //
+  $.each(oldElems, function(idx, el) {
+    var outerHTML, newOuterHTML, regexOpeningTag, regexClosingTag, tagName;
+    // create RegExp dynamically for opening and closing tags
+    tagName = $(el).get(0).tagName;
+    regexOpeningTag = new RegExp('^<' + tagName, 'i'); 
+    regexClosingTag = new RegExp(tagName + '>$', 'i');
+    // fetch the outer elem with vanilla JS,
+    outerHTML = el.outerHTML;
+    // start replacing opening tag
+    newOuterHTML = outerHTML.replace(regexOpeningTag, '<' + newElem);
+    // continue replacing closing tag
+    newOuterHTML = newOuterHTML.replace(regexClosingTag, newElem + '>');
+    // replace the old elem with the new elem-string
+    $(el).replaceWith(newOuterHTML);
+  });
+
+}
+```
+
+```css
+h1 {
+  color: white;
+  background-color: blue;
+  position: relative;
+}
+
+h1:before {
+  content: 'this is h1';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  font-size: 5px;
+  background-color: black;
+  color: yellow;
+}
+```
+
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<div id="test">
+  <h2>Foo</h2>
+  <h2>Bar</h2>
+</div>
+```
+
+## how to intercept DOM modification
+
+Example of listening an "element injection"
+
+```javascript
+var tagContainer = document.querySelector("#<portlet:namespace />searchTokensContent");
+tagContainer.addEventListener("DOMNodeInserted", function (ev) {
+	console.log("EVENT TOKEN ADDED INTERCEPTED");
+	
+}, false);
+```
+
+## IE incompatibilities
+
++ Use ```myString.indexOf("otherString") > -1``` instead of ```myString.includes("otherString")```
+
