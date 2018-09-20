@@ -4,6 +4,7 @@ But not only liferay infos, I put here even some random web dev tricks learned i
 
 + [General Javascript Notes](https://github.com/simon387/notes/blob/master/javascript/README.md)
 + [General CSS Notes](https://github.com/simon387/notes/blob/master/css/README.md)
++ [General Java Notes](https://github.com/simon387/notes/blob/master/java/README.md)
 
 ## Intellij IDEA / other IDE trick
 
