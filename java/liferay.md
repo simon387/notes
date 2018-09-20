@@ -282,6 +282,7 @@ put jars under ```/deploy/``` dir
 ## HTML
 
 + all the elements can have the attribute ```title="my text"```. It gives extra informations and usually goes inside the over tooltip.
++ main-resources like footer.html can be edited as admin user in liferay under ```Content > Web Content```
 
 ### Getting img from theme
 
@@ -295,6 +296,7 @@ from jsp:
 
 + database table: ```ddmtemplate```
   + after editing one row, I had to restart liferay to see the effect (lol)
++ you can edit them as admin user in liferay under ```Configuration > Application Display Template```
 
 ## Location of urlrewrite.xml
 
