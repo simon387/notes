@@ -1,4 +1,4 @@
-# liferay (MAINLY LIFERAY 7 DXP) note
+# Liferay (MAINLY LIFERAY 7 DXP) note
 
 But not only liferay infos, I put here even some random web dev tricks learned in my Spain experience
 
@@ -12,15 +12,15 @@ with this line
 
 you can have syntax highlight inside JSP
 
-## liferay-ide (eclipse based)
+## Liferay-ide (eclipse based)
 
 deploy issues? you need to manually add ```liferay.workspace.home.dir=``` in ```gradle.properties```
 
-### importing modules from project
+### Importing modules from project
 
 right click somewhere inside the project and import recursively all the modules as gradle projects
 
-### theme management
+### Theme management
 
 + there is no ```diff``` directory like liferay 6.x
 
@@ -28,7 +28,7 @@ using gradle tasks!
 
 + if you don't find the task: maybe you need to import the module as project, then you can find it in the gradle task window
 
-#### (hot) deploy
+#### (Hot) Deploy
 
 If the IDE doesn't publish it automatically (maybe the theme module is not in the add/remove server list):
 
@@ -37,17 +37,17 @@ If the IDE doesn't publish it automatically (maybe the theme module is not in th
 3. usually you can find the war file in ```...\PROJECT_NAME\themes\THEME_NAME\build\libs\```
 4. put it in the ```deploy``` directory
 
-## liferay modules (old plugins) installation location
+## Liferay modules (old plugins) installation location
 
 ```......./bundles/osgi/modules```
 
-## how to debug javascript
+## How to debug javascript
 
 1. add to the url ```?js_fast_load=0&css_fast_load=0&strip=0```
 2. if any (js)error will appear, you can see the code line in the browser console
 3. add breakpoint on that line
 
-## how to add custom functions in javascript aui context
+## How to add custom functions in javascript aui context
 
 inside a jsp file
 
@@ -63,9 +63,9 @@ Liferay.provide(window, 'functionNameExample',
 </aui:script>
 ```
 
-## jsp's with aui and similar
+## Jsp's with aui and similar
 
-### redirect button examlple
+### Redirect button examlple
 
 ```jsp
 <portlet:renderURL var="force_back">
@@ -103,7 +103,7 @@ and the choose element
 </c:choose>
 ```
 
-### core jsp with parameter example
+### Core jsp with parameter example
 
 jsp core one (its an example): ```\webapps\ROOT\html\taglib\aui\fieldset\start.jsp```
 
@@ -128,11 +128,11 @@ rendered html:
 		...
 ```
 
-### override a jsp
+### Override a jsp
 
 just use an hook, and put the jsp inside it with the same name of the original one
 
-## override a core javascript file
+## Override a core javascript file
 
 how to redefine lifeportal javascript ? ```//TODO```
 
@@ -142,9 +142,9 @@ or...
 
 You can avoid this using pure javascript, but is a bad solution(but faster)!
 
-## general liferay javascript
+## General liferay javascript
 
-### on portlet ready inside jsp
+### On portlet ready inside jsp
 
 example:
 
@@ -159,9 +159,9 @@ example:
 </aui:script>
 ```
 
-## language.properties
+## Language.properties
 
-### properties with parameters
+### Properties with parameters
 
 in jsp:
 
@@ -175,7 +175,7 @@ properties file
 welcome-x=Welcome{0}!
 ```
 
-## gradle common errors
+## Gradle common errors
 
 ```
 Execution failed for task ':initBundle'.
@@ -184,9 +184,9 @@ Execution failed for task ':initBundle'.
 
 solution: ```rm -rf xxxxx``` and re-run the download task
 
-## gogo shell
+## Gogo shell
 
-### access
+### Access
 
 example
 
@@ -194,24 +194,24 @@ example
 
 pay caution! don't kill this process or type ```exit``` ! will kill the Tomcat! use the ```disconnect``` command!
 
-### show bundles
+### Show bundles
 
 ```lb | grep Liferay```
 
 
-### stop bundle
+### Stop bundle
 
 ```stop $bundleId```
 
 very different from ```unistall``` !!
 
-### start bundle
+### Start bundle
 
 ```start $bundleId```
 
 NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 
-## liferay startup errors
+## Liferay startup errors
 
 + remember to set ```liferay.home``` in ```portal-setup-wizard.properties```
 + delete ```/osgi/state```
@@ -219,11 +219,11 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 + increase if needed ```-Xmx``` and ```-XX:MaxPermSize=``` inside ```tomcat/bin/setenv.*```
 + !! dunno why changing log levels in ```logging.properties``` solved a startup freezing on loading spring context !!
 
-## localhost only environment tricks
+## Localhost only environment tricks
 
 + inside ```portal-ext.properties``` set ```module.framework.properties.lpkg.index.validator.enabled=false``` to decrease startup time
 
-## patching tool
+## Patching tool
 
 + only available on EE
 
@@ -236,17 +236,17 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 7. even if the procedure worked, liferay will never start up again correctly
 8. redeploy and fix things?
 
-## gradle
+## Gradle
 
 + comments in ```build.gradle``` are java like
 
-## deploy
+## Deploy
 
 put jars under ```/deploy/``` dir
 
-## css
+## Css
 
-### targetting browsers
+### Targetting browsers
 
 ```css
 .ie .example {
@@ -264,7 +264,7 @@ put jars under ```/deploy/``` dir
 
 + all the elements can have the attribute ```title="my text"```. It gives extra informations and usually goes inside the over tooltip.
 
-### getting img from theme
+### Getting img from theme
 
 from jsp:
 
@@ -321,7 +321,7 @@ from jsp:
   + always check logs
   + at the end restart liferay
 
-## bugs / errors
+## Bugs / errors
 
 Sometime they are not related to liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
 
@@ -362,7 +362,7 @@ add in jsp
 <%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 ```
 
-## nice links
+## Nice links
 
 + [Alternate text for css background images](http://davidmacd.com/blog/alternate-text-for-css-background-images.html)
 + [Using a Custom Bundle for the Liferay Workspace](https://community.liferay.com/es/blogs/-/blogs/using-a-custom-bundle-for-the-liferay-workspace)
