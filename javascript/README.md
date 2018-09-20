@@ -1,4 +1,4 @@
-# general info on js
+# general notes on Javascript
 
 ## style on logs
 
