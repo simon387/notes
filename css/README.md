@@ -69,4 +69,13 @@ div {
 }
 ```
 
+### basic selection
+
+selecting an element by parent class and current class (NO WORRIES IF CLASSES IN MIDDLE)
+
+```css
+.outer-class .current-class {
+}
+```
+
 
