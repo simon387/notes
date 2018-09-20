@@ -58,3 +58,15 @@ div {
   overflow-y: scroll;
   height: 1000%;
 }
+```
+
+### hiding css without display:none
+
+```css
+div {
+  position: absolute; 
+  left: -999em;
+}
+```
+
+
