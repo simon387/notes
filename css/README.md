@@ -78,4 +78,10 @@ selecting an element by parent class and current class (NO WORRIES IF CLASSES IN
 }
 ```
 
+both classes at the same time
+
+```css
+.a.b {
+}
+```
 
