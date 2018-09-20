@@ -85,3 +85,10 @@ both classes at the same time
 }
 ```
 
+not having a class
+
+```css
+:not(.clazzz) {
+}
+```
+
