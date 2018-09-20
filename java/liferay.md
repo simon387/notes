@@ -33,6 +33,8 @@ using gradle tasks!
 
 + if you don't find the task: maybe you need to import the module as project, then you can find it in the gradle task window
 
+Files ```*.ftl``` are freemarkers template!
+
 #### (Hot) Deploy
 
 If the IDE doesn't publish it automatically (maybe the theme module is not in the add/remove server list):
