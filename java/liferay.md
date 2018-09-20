@@ -2,6 +2,9 @@
 
 But not only liferay infos, I put here even some random web dev tricks learned in my Spain experience
 
++ [General Javascript Notes](https://github.com/simon387/notes/blob/master/javascript/README.md)
++ [General CSS Notes](https://github.com/simon387/notes/blob/master/css/README.md)
+
 ## Intellij IDEA / other IDE trick
 
 with this line
