@@ -240,6 +240,10 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 7. even if the procedure worked, liferay will never start up again correctly
 8. redeploy and fix things?
 
+Running example:
+
+![running example](https://user-images.githubusercontent.com/18740246/45815855-3bfb0880-bcda-11e8-9c19-4056e26bba73.png)
+
 ## Gradle
 
 + comments in ```build.gradle``` are java like
