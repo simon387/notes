@@ -281,6 +281,10 @@ from jsp:
 + database table: ```ddmtemplate```
   + after editing one row, I had to restart liferay to see the effect (lol)
 
+## Location of urlrewrite.xml
+
+```...\tomcat-8.0.32\webapps\ROOT\WEB-INF\urlrewrite.xml```
+
 ## Liferay 6.1-6.2 notes
 
 + ```public class com.liferay.portal.servlet.filters.dynamiccss.DynamicCSSUtil``` -> theme sass cache generation trigger
