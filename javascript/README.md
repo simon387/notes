@@ -122,3 +122,39 @@ tagContainer.addEventListener("DOMNodeInserted", function (ev) {
 
 + Use ```myString.indexOf("otherString") > -1``` instead of ```myString.includes("otherString")```
 
+## random usage of DOM modification
+
+```javascript
+function a() {
+	/* get all nodes by class and not having the flag class
+	 * cycling:
+	 * 	adding class to flag it off 
+	 *	add the span
+	 */
+	var elements = document.getElementsByClassName("random-class");
+	var i;
+	for (i = 0; i < elements.length; i++) {
+		if (elements[i].classList.contains("random-class-elaborated")) {
+			//do nothing
+		} else {
+			elements[i].classList.add("random-class-elaborated");
+			var newSpan = document.createElement("span");
+			newSpan.style.textIndent = '-1000px';
+			newSpan.style.position = 'absolute';
+			newSpan.style.left = '-999em';
+			newSpan.appendChild(document.createTextNode('Tag:'));
+			elements[i].insertBefore(newSpan, elements[i].firstChild);
+		}
+	}
+}
+
+function b() {
+	var elements = document.getElementsByClassName('random-class');
+	var i;
+	for (i = 0; i < elements.length; i++) {
+		var tagName = elements[i].parentElement.children[1].textContent;
+		elements[i].title = 'title ' + tagName;
+	}
+}
+```
+
