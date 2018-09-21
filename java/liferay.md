@@ -1,6 +1,6 @@
 # Liferay (MAINLY LIFERAY 7 DXP) note
 
-But not only liferay infos, I put here even some random web dev tricks learned in my Spain experience
+But not only Liferay infos, I put here even some random web dev tricks learned in my Spain experience
 
 + [General Javascript Notes](https://github.com/simon387/notes/blob/master/javascript/README.md)
 + [General CSS Notes](https://github.com/simon387/notes/blob/master/css/README.md)
@@ -28,7 +28,7 @@ right click somewhere inside the project and import recursively all the modules 
 
 ### Theme management
 
-+ there is no ```diff``` directory like liferay 6.x
++ there is no ```diff``` directory like Liferay 6.x
 
 using gradle tasks!
 
@@ -150,7 +150,7 @@ or...
 
 You can avoid this using pure javascript, but is a bad solution(but faster)!
 
-## General liferay javascript
+## General Liferay Javascript
 
 ### On portlet ready inside jsp
 
@@ -232,7 +232,7 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 4. STOP THE SERVER
 5. run ```patching-tool install```
 6. if all right start the server, otherwise fix things :(
-7. even if the procedure worked, liferay will never start up again correctly
+7. even if the procedure worked, Liferay will never start up again correctly
 8. redeploy and fix things?
 
 Running example:
@@ -283,7 +283,7 @@ put jars under ```/deploy/``` dir
 ## HTML
 
 + all the elements can have the attribute ```title="my text"```. It gives extra informations and usually goes inside the over tooltip.
-+ main-resources like footer.html can be edited as admin user in liferay under ```Content > Web Content```
++ main-resources like footer.html can be edited as admin user in Liferay under ```Content > Web Content```
 
 ### Getting img from theme
 
@@ -296,8 +296,8 @@ from jsp:
 ## Application Display Template (ADT)
 
 + database table: ```ddmtemplate```
-  + after editing one row, I had to restart liferay to see the effect (lol)
-+ you can edit them as admin user in liferay under ```Configuration > Application Display Template```
+  + after editing one row, I had to restart Liferay to see the effect (lol)
++ you can edit them as admin user in Liferay under ```Configuration > Application Display Template```
 
 ## Liferay AUDIT
 
@@ -334,7 +334,7 @@ from jsp:
   + set the just downloaded sdk as default
   + if you want you can set the source folder, tomcat bundle zip and javadoc
   + to edit a Liferay plugin just export from sdk (project nature:liferay should be already enabled)
-  + now the Liferay menu should be enabled from context menu (es. right click on project, liferay, build)
+  + now the Liferay menu should be enabled from context menu (es. right click on project, Liferay, build)
   + set the proxy if any in ```build-common-ivy.xml```
     + ```<setproxy proxyhost="" proxyport=""/>```
   + if some library cannot be downloaded automatically from ivy, just download and add it in ```/liferay-plugins-sdk-6.2/.ivy/cache``` (unzipped) [example of added zip](https://github.com/simon387/job_note/blob/master/java/jars/biz.zip)
@@ -343,20 +343,20 @@ from jsp:
     + import
     + Existing project into Workspace
 + EXT deploy example
-  + stop liferay
+  + stop Liferay
   + remove the old ext
     + ```sudo rm /opt/liferay/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/lib/ext/ext-NAME-ext-service.jar```
     + ```sudo rm -rf /opt/liferay/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/webapps/NAME-ext/```
     + ```sudo rm /opt/liferay/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/webapps/ROOT/WEB-INF/ext-NAME-ext.xml```
     + ```sudo rm /opt/liferay/liferay/tomcat-7.0.42/webapps/ROOT/WEB-INF/lib/ext-NAME-ext-*```
-  + start liferay
+  + start Liferay
   + after complete startup, deploy the war (just cp it)
   + always check logs
-  + at the end restart liferay
+  + at the end restart Liferay
 
 ## Bugs / errors
 
-Sometime they are not related to liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
+Sometime they are not related to Liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
 
 ### Could not resolve module
 
