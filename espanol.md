@@ -69,6 +69,8 @@
 ## links
 
 + http://ajuntament.barcelona.cat/calendarifestius/es/
++ [croccantina 1](http://www.todo-claro.com/e_index.php)
++ [croccantina 2](http://www.spanishdict.com/)
 
 ## locs
 
