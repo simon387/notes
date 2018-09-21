@@ -275,8 +275,8 @@ put jars under ```/deploy/``` dir
 }
 /* EDGE ONLY */
 @supports (-ms-ime-align: auto) {
-  .example {
-  }
+    .example {
+    }
 }
 ```
 
