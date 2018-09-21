@@ -354,7 +354,7 @@ from jsp:
   + always check logs
   + at the end restart Liferay
 
-## Bugs / errors
+## Bugs / errors / general problems
 
 Sometime they are not related to Liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
 
@@ -394,6 +394,12 @@ add in jsp
 ```jsp
 <%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 ```
+
+### No login iterface available?
+
+Just go to ```[baseurl]/c/portal/login```
+
+example: ```localhost:8080/c/portal/login```
 
 ## Nice links
 
