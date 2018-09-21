@@ -301,10 +301,10 @@ from jsp:
 
 ## Liferay AUDIT
 
-[info link](https://www.xtivia.com/liferay-dxp-audit-service/)
-[info link](https://dzone.com/articles/liferay-7-cloud-amqp-audit-message-processor)
-[info link](https://web.liferay.com/community/wiki/-/wiki/Main/Audit+Service)
-[info link](https://web.liferay.com/community/wiki/-/wiki/Main/Adding+Auditing+Functionality+to+Portlets)
++ [info link](https://www.xtivia.com/liferay-dxp-audit-service/)
++ [info link](https://dzone.com/articles/liferay-7-cloud-amqp-audit-message-processor)
++ [info link](https://web.liferay.com/community/wiki/-/wiki/Main/Audit+Service)
++ [info link](https://web.liferay.com/community/wiki/-/wiki/Main/Adding+Auditing+Functionality+to+Portlets)
 
 ## Location of urlrewrite.xml
 
