@@ -2,19 +2,21 @@
 
 [official site](https://freemarker.apache.org)
 
++ [GOTO Liferay Notes](https://github.com/simon387/notes/blob/master/java/liferay.md)
+
 ## interpolation
 
 ```freemarker
 ${...}
 ```
 
-## comments
+## Comments
 
 ```freemarker
 <#-- this is a comment, won't get into the output -->
 ```
 
-## if else
+## If else
 
 ```freemarker
 <#if animals.python.price < animals.elephant.price>
@@ -24,7 +26,7 @@ ${...}
 </#if>
 ```
 
-## list
+## List
 
 ```freemarker
 <p>WE have these anaimals:
@@ -48,7 +50,7 @@ with else statement
 
 ```
 
-## include directive
+## Include directive
 
 ```freemarker
 <html>
@@ -63,7 +65,7 @@ with else statement
 </html
 ```
 
-## built-ins
+## Built-ins
 
 + ```user?upper_case```
 + ```animal.name?cap_first```
@@ -77,7 +79,7 @@ with else statement
 + ```animal?item_cycle('lightRow', 'darkRow')``` more specific of ```item_parity```
 + ```fruit?join(", ")``` converts list to String with separator
 
-## dealing with missing variables
+## Dealing with missing variables
 
 ```freemarker
 <h1>Welcome ${user!"visitor"}!</h1>
@@ -87,7 +89,7 @@ with else statement
 <#if user??><h1>Welcome ${user}!</h1></#if>
 ```
 
-## preventing auto-escaping
+## Preventing auto-escaping
 
 ```freemarker
 ${value?no_esc}
