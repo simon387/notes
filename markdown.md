@@ -50,4 +50,8 @@ Button effect
 
 strikethrough text ```~~text~~``` ~~text~~
 
+---
+
+bold text ```**text**``` **text**
+
 
