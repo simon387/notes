@@ -1,5 +1,7 @@
 # Java notes
 
++ [GOTO Liferay Notes](https://github.com/simon387/notes/blob/master/java/liferay.md)
+
 ## Eclipse note
 
 + debugs stop execution without breakpoints? Windows -> Preferences -> Java -> Debug -> Suspend execution on uncaught exceptions
