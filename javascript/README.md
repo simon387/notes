@@ -1,5 +1,7 @@
 # General notes on Javascript
 
++ [GOTO Liferay Notes](https://github.com/simon387/notes/blob/master/java/liferay.md)
+
 ## Chrome's Dev Tools Tricks
 
 + <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>i</kbd> : toggle the Dev Tools
