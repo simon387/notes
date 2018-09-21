@@ -6,7 +6,7 @@
 
 + debugs stop execution without breakpoints? Windows -> Preferences -> Java -> Debug -> Suspend execution on uncaught exceptions
 
-## log4j
+## Log4j
 
 [log4j property file example](https://github.com/simon387/Log4jEx/blob/master/src/main/resources/log4j.properties)
 
@@ -100,7 +100,7 @@ Override
 
 + ```ORA-00928: missing SELECT keyword``` in an insert, during an Hibernate Transaction with Oracle... I was using a reserved oracle keyword (```FILE```)
 
-## tomcat(7) setting VM options on windows
+## Tomcat(7) setting VM options on windows
 
 inside catalina.bat
 
@@ -108,7 +108,7 @@ inside catalina.bat
 set "JAVA_OPTS=%JAVA_OPTS% your_option "
 ```
 
-## remote debug
+## Remote debug
 
 catalina.sh / bat
 
@@ -116,7 +116,7 @@ catalina.sh / bat
 set "JAVA_OPTS=%JAVA_OPTS% -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=12345"
 ```
 
-## common errors
+## Common errors
 
 ```javax.naming.CommunicationException: anonymous bind failed: package.class.eu:636 [Root exception is javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]```
 
@@ -126,7 +126,7 @@ setting the tomcat VM option
 ```
 -Djavax.net.ssl.trustStore=path_to_keystore.jks -Djavax.net.ssl.trustStorePassword=password 
 ```
-## how to print current project classpath
+## How to print current project classpath
 
 ```java
 import org.junit.Test;
@@ -149,7 +149,7 @@ public class PrintClasspath {
 }
 ```
 
-## easy way to switch jdk and jre on linux
+## Easy way to switch jdk and jre on linux
 
 ```bash
 alternatives --set javac /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-9.b11.fc28.x86_64/bin/javac
