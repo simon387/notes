@@ -301,6 +301,9 @@ from jsp:
 
 ## Liferay AUDIT
 
++ to see if is installed: ```Control Panel -> Configuration -> System Settings -> Foundation -> Audit```
++ to go to the panel: ```Control Panel -> Configuration -> Audit```
+
 + [info link](https://www.xtivia.com/liferay-dxp-audit-service/)
 + [info link](https://dzone.com/articles/liferay-7-cloud-amqp-audit-message-processor)
 + [info link](https://web.liferay.com/community/wiki/-/wiki/Main/Audit+Service)
