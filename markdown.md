@@ -45,3 +45,9 @@ Absolute link
 Button effect
 
 <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>canc</kbd> = ```<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>canc</kbd> ```
+
+---
+
+strikethrough text ```~~text~~``` ~~text~~
+
+
