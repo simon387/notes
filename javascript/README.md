@@ -7,6 +7,10 @@
 + <kbd>ctrl</kbd> + <kbd>f</kbd> in elements tab: find text **and** css rules
 + <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> : finds text in all sources! **perferct for javascript function debug**
 
+## Edge and IE Dev Tools Tricks
+
++ <kbd>F12</kbd> : toggle the Dev Tools
+
 ## Style on logs
 
 ```javascript
