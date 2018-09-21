@@ -1,7 +1,6 @@
 # Freemarker
 
-[official site](https://freemarker.apache.org)
-
++ [official site](https://freemarker.apache.org)
 + [GOTO Liferay Notes](https://github.com/simon387/notes/blob/master/java/liferay.md)
 
 ## interpolation
