@@ -1,8 +1,8 @@
-# infos about template and structure develompment in liferay
+# Notes about template and structure develompment in liferay
 
 the main used template language is Velocity
 
-## list variable access
+## List variable access
 ```
 #if (!$slideTitle.getSiblings().isEmpty())
  #foreach ($cur_slideTitle in $slideTitle.getSiblings())
@@ -11,21 +11,21 @@ the main used template language is Velocity
 #end
 ```
 
-## var set
+## Var set
 ```
 #set ($c = 0)
 ```
 
-# logic operations in expressions
+# Logic operations in expressions
 ```
 && || ! != ==
 ```
 
-# checkbox access
+# Checkbox access
 ```
 $getterUtil.getBoolean($variabileCheckboxosa.getData())
 ```
 
-# structure conventions
+# Structure conventions
 + in documents, images, video, media, etc, always use object: "Documents and media"
 + use always field "alt" on mutlimedia contents
