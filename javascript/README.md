@@ -1,5 +1,10 @@
 # General notes on Javascript
 
+## Chrome's Dev Tools Tricks
+
++ <kbd>ctrl</kbd> + <kbd>f</kbd> in elements tab: find text **and** css rules
++ <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> : finds text in all sources! **perferct for javascript function debug**
+
 ## Style on logs
 
 ```javascript
