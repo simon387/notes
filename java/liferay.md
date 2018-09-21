@@ -4,6 +4,7 @@ But not only Liferay infos, I put here even some random web dev tricks learned i
 
 + [General Javascript Notes](https://github.com/simon387/notes/blob/master/javascript/README.md)
 + [General CSS Notes](https://github.com/simon387/notes/blob/master/css/README.md)
++ [General HTML Notes](https://github.com/simon387/notes/blob/master/HTML.md)
 + [General Java Notes](https://github.com/simon387/notes/blob/master/java/README.md)
 + [General Freemarker Notes](https://github.com/simon387/notes/blob/master/java/freemarker.md)
 + [General Velocity Notes](https://github.com/simon387/notes/blob/master/java/velocity.md)
@@ -282,7 +283,6 @@ put jars under ```/deploy/``` dir
 
 ## HTML
 
-+ all the elements can have the attribute ```title="my text"```. It gives extra informations and usually goes inside the over tooltip.
 + main-resources like footer.html can be edited as admin user in Liferay under ```Content > Web Content```
 
 ### Getting img from theme
