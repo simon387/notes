@@ -1,6 +1,6 @@
 # Notes about template and structure develompment in liferay
 
-the main used template language is Velocity
+The main Liferay used template language ~~is~~ was Velocity
 
 ## List variable access
 ```
