@@ -2,6 +2,8 @@
 
 ## Chrome's Dev Tools Tricks
 
++ <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>i</kbd> : toggle the Dev Tools
++ <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>c</kbd> : select an element in the page to inspect it (and open the Dev Tools)
 + <kbd>ctrl</kbd> + <kbd>f</kbd> in elements tab: find text **and** css rules
 + <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> : finds text in all sources! **perferct for javascript function debug**
 
