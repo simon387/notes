@@ -1,4 +1,4 @@
-# Liferay (MAINLY LIFERAY 7 DXP) note
+# Liferay (MAINLY LIFERAY 7 DXP) notes
 
 But not only Liferay infos, I put here even some random web dev tricks learned in my Spain experience
 
@@ -301,7 +301,7 @@ from jsp:
 
 ## Liferay AUDIT
 
-+ to see if is installed: ```Control Panel -> Configuration -> System Settings -> Foundation -> Audit```
++ to see if it is installed: ```Control Panel -> Configuration -> System Settings -> Foundation -> Audit```
 + to go to the panel: ```Control Panel -> Configuration -> Audit```
 
 + [info link](https://www.xtivia.com/liferay-dxp-audit-service/)
