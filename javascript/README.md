@@ -47,22 +47,6 @@ console.log(num.map(0, 10, -50, 50)); // 0
 console.log(num.map(-20, 0, -100, 100)); // 150
 ```
 
-## ARIA
-
-ARIA (Accessible Rich Internet Applications)
-
-Hide the element only for the screen reader
-
-```html
-<div aria-hidden=true></div>
-``` 
-
-Hide the element for everyone
-
-```html
-<div hidden>you can't see this</div>
-```
-
 ## Replace element types
 
 example by id, but works even by class
