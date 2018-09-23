@@ -54,4 +54,8 @@ strikethrough text ```~~text~~``` ~~text~~
 
 bold text ```**text**``` **text**
 
+---
 
+italic text ```*text*``` *text*
+
+---
