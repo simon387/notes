@@ -16,7 +16,18 @@
 
 from second "3" cutting 8 seconds (omitting -t will continue to the end)
 
+(-t is the duration)
+
 ```ffmpeg -i movie.mp4 -ss 00:00:03 -t 00:00:08 -async 1 cut.mp4```
+
+or
+
+```ffmpeg -i movie.mp4 -ss 00:00:03 -t 00:00:08 -async 1 -strict -2 cut.mp4```
+
+or (faster) (windows example with MINGW64)
+
+```./ffmpeg.exe -ss 00:10:43 -i /c/Users/Simon/Desktop/GP011187.MP4 -t 00:03:59 -c copy cut.mp4```
+
 
 ## extract audio from video
 
