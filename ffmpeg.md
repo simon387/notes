@@ -37,3 +37,7 @@ or (faster) (windows example with MINGW64)
 
 ```ffmpeg -i input.wav -vn -ar 44100 -ac 2 -ab 192k -f mp3 output.mp3```
 
+## replace audiu in video (fast)
+
+```ffmpeg -i v.mp4 -i a.wav -c:v copy -map 0:v:0 -map 1:a:0 new.mp4```
+
