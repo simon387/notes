@@ -93,8 +93,8 @@ Traducciones! con musica!
 |nadie te lo hace mejor que yo | *nessuno lo fa meglio di me*
 |que no se te apague la situation | *che la situazione non si esaurisce*
 |tu sabes que yo no te dejo plantao | *sai che non ti lascio*
-|calmao, que yo voi en camino, amor | *calma che sto arrivando, amore
-|calmao, que yo quiro contigo, amor | *calma che ti voglio, amore
+|calmao, que yo voi en camino, amor | *calma che sto arrivando, amore*
+|calmao, que yo quiro contigo, amor | *calma che ti voglio, amore*
 |si tu me llamas | *se tu mi chiami*
 |nos vamos pa' tu casa | *andiamo a casa tua*
 |nos quedamos en la cama | *restiamo a letto*
