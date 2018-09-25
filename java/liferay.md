@@ -21,7 +21,8 @@ you can have syntax highlight inside JSP
 
 ## Liferay-ide (eclipse based)
 
-deploy issues? you need to manually add ```liferay.workspace.home.dir=``` in ```gradle.properties```
++ deploy issues? you need to manually add ```liferay.workspace.home.dir=``` in ```gradle.properties```
++ importing new mavent project **from source** (no vcs? bad!): copy it inside the workspace **before** importing
 
 ### Importing modules from project
 
@@ -223,6 +224,10 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 
 + inside ```portal-ext.properties``` set ```module.framework.properties.lpkg.index.validator.enabled=false``` to decrease startup time
 
+## How to create a new hook
+
+TODO
+
 ## Patching tool
 
 + only available on EE
@@ -409,6 +414,3 @@ example: ```localhost:8080/c/portal/login```
 + [Alternate text for css background images](http://davidmacd.com/blog/alternate-text-for-css-background-images.html)
 + [Using a Custom Bundle for the Liferay Workspace](https://community.liferay.com/es/blogs/-/blogs/using-a-custom-bundle-for-the-liferay-workspace)
 
-## test
-
-git
