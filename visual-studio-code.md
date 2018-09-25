@@ -24,7 +24,7 @@
 	"terminal.integrated.scrollback": 8192,
 	// "window.zoomLevel": 0,
 	"workbench.statusBar.visible": true,
-	"window.menuBarVisibility": "toggle",
+	// "window.menuBarVisibility": "toggle",
 	"extensions.ignoreRecommendations": true,
 	"window.title": "${dirty}${activeEditorLong}${separator}${folderName}${separator}${appName}",
 	"files.autoSave": "afterDelay",
@@ -58,3 +58,7 @@
 	//
 }
 ```
+
+## Hotkeys on Windows (trick)
+
+For better usage, remember to disable the useless *HD Intel* software (from tray icon)
