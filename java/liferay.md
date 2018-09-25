@@ -8,6 +8,7 @@ But not only Liferay infos, I put here even some random web dev tricks learned i
 + [General Java Notes](https://github.com/simon387/notes/blob/master/java/README.md)
 + [General Freemarker Notes](https://github.com/simon387/notes/blob/master/java/freemarker.md)
 + [General Velocity Notes](https://github.com/simon387/notes/blob/master/java/velocity.md)
++ [General MySql Notes](https://github.com/simon387/notes/blob/master/sql/mysql.md)
 
 ## Intellij IDEA / other IDE trick
 
@@ -56,6 +57,31 @@ If the IDE doesn't publish it automatically (maybe the theme module is not in th
 1. add to the url ```?js_fast_load=0&css_fast_load=0&strip=0```
 2. if any (js)error will appear, you can see the code line in the browser console
 3. add breakpoint on that line
+
+## Java side logging
+
+Add a private static SLF4J Logger field.
+
+```java
+private static Logger _logger;
+```
+
+Instantiate the logger.
+
+```java
+_logger = LoggerFactory.getLogger(this.getClass().getName());
+```
+
+Throughout your class, log messages where noteworthy things happen.
+
+For example,
+
+```java
+_logger.debug("...");
+_logger.warn("...");
+_logger.error("...");
+```
+
 
 ## How to add custom functions in javascript aui context
 
@@ -303,6 +329,10 @@ from jsp:
 + database table: ```ddmtemplate```
   + after editing one row, I had to restart Liferay to see the effect (lol)
 + you can edit them as admin user in Liferay under ```Configuration > Application Display Template```
+
+## Site Settings
+
+Site entry are save by AssetEntry model -  ```assetentry``` table.
 
 ## Liferay AUDIT
 

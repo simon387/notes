@@ -9,6 +9,8 @@
 + ¿cuál es tu nombre?
 + mi nombre es simone
 + que tal? -> how are you?
++ Quieres salir esta noche?
++ Te apetece tomar algo o cenar hoy por la noche ?
 
 ## vocablo
 + Mañana -> tomorrow
