@@ -1,4 +1,4 @@
-# espanol
+# Español
 
 ## frases comunes
 + Hasta luego! -> see you later!
@@ -105,23 +105,23 @@
 
 ## keyboard
 
-|carácter| key combo
-|---|--
-|Á | <kbd>ALT</kbd> + 0193
-|á | <kbd>ALT</kbd> + 160
-|É | <kbd>ALT</kbd> + 0201
-|é | <kbd>ALT</kbd> + 130
-|Í | <kbd>ALT</kbd> + 0205
-|í | <kbd>ALT</kbd> + 161
-|Ó | <kbd>ALT</kbd> + 0211
-|ó | <kbd>ALT</kbd> + 162
-|Ú | <kbd>ALT</kbd> + 0218
-|ú | <kbd>ALT</kbd> + 163
-|ü | <kbd>ALT</kbd> + 129
-|Ñ | <kbd>ALT</kbd> + 0209
-|ñ | <kbd>ALT</kbd> + 164
-|¿ | <kbd>ALT</kbd> + 168
-|¡ | <kbd>ALT</kbd> + 173
+|carácter| ASCII|UNICODE
+|---|---|---
+|Á | <kbd>ALT</kbd> + 0193|
+|á | <kbd>ALT</kbd> + 160|
+|É | <kbd>ALT</kbd> + 0201|
+|é | <kbd>ALT</kbd> + 130|
+|Í | <kbd>ALT</kbd> + 0205|
+|í | <kbd>ALT</kbd> + 161|
+|Ó | <kbd>ALT</kbd> + 0211|
+|ó | <kbd>ALT</kbd> + 162|
+|Ú | <kbd>ALT</kbd> + 0218|
+|ú | <kbd>ALT</kbd> + 163|
+|ü | <kbd>ALT</kbd> + 129|
+|Ñ | <kbd>ALT</kbd> + 0209|<kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>U</kbd> + <kbd>d</kbd> + <kbd>1</kbd>
+|ñ | <kbd>ALT</kbd> + 164|<kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>U</kbd> + <kbd>f</kbd> + <kbd>1</kbd>
+|¿ | <kbd>ALT</kbd> + 168|
+|¡ | <kbd>ALT</kbd> + 173|
 
 ---
 
