@@ -618,5 +618,5 @@ public class SiteAdminPortletKeys {
 
 + [Alternate text for css background images](http://davidmacd.com/blog/alternate-text-for-css-background-images.html)
 + [Using a Custom Bundle for the Liferay Workspace](https://community.liferay.com/es/blogs/-/blogs/using-a-custom-bundle-for-the-liferay-workspace)
-
++ [Override command from Site Admin Portlet](https://community.liferay.com/it/forums/-/message_boards/message/106482937)
 ---
