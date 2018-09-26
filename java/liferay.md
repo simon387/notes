@@ -8,7 +8,7 @@ But not only Liferay infos, I put here even some random web dev tricks learned i
 + [General Java Notes](https://github.com/simon387/notes/blob/master/java/README.md)
 + [General Freemarker Notes](https://github.com/simon387/notes/blob/master/java/freemarker.md)
 + [General Velocity Notes](https://github.com/simon387/notes/blob/master/java/velocity.md)
-+ [General MySql Notes](https://github.com/simon387/notes/blob/master/sql/mysql.md)
++ [General MySql Notes](https://github.com/simon387/notes/blob/master/sql/readme.md)
 
 ## Intellij IDEA / other IDE trick
 
@@ -250,9 +250,9 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 
 + inside ```portal-ext.properties``` set ```module.framework.properties.lpkg.index.validator.enabled=false``` to decrease startup time
 
-## How to create a new hook
+## How to create a new "hook"
 
-TODO
+In liferay 7 DXP, I just created from maven/gradle a new osgi module (I.E.: it can be a random type of portlet) and I used the @Component mechanism to add/override the functionalities I needed
 
 ## Patching tool
 
