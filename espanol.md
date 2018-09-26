@@ -12,6 +12,9 @@
 + Quieres salir *a comer* esta noche?
 + Te apetece tomar algo o cenar hoy por la noche ?
 + ¿Me puede dar su número de teléfono?
++ Tiene aceite para la barba?
+  + ¿ que tipo de aceite?
+  + uno suavizante
 
 ---
 
