@@ -11,8 +11,11 @@
 + que tal? -> how are you?
 + Quieres salir esta noche?
 + Te apetece tomar algo o cenar hoy por la noche ?
++ ¿Me puede dar su número de teléfono?
 
-## vocablo
+---
+
+## Vocablo
 + Mañana -> tomorrow
 + Desayuno -> breakfast
 + comida -> lunch
@@ -35,9 +38,13 @@
 + callate -> taci!
 + madrugar -> to wake up early in the morning
 
+---
+
 ## cosas muy importantes!
 + nunca hablar de ...
 + catalán no es dialecto
+
+---
 
 ## verbos
 
@@ -63,10 +70,13 @@
 
 + ¿Usted es el padre de Alberto?
 
+---
+
 ## docs
 
 + NIE
-+ 
+
+---
 
 ## links
 
@@ -74,10 +84,14 @@
 + [croccantina 1](http://www.todo-claro.com/e_index.php)
 + [croccantina 2](http://www.spanishdict.com/)
 
+---
+
 ## locs
 
 + rist siete puertas
 + piazza di spagna
+
+---
 
 ## keyboard
 
@@ -99,6 +113,7 @@
 |¿ | <kbd>ALT</kbd> + 168
 |¡ | <kbd>ALT</kbd> + 173
 
+---
 
 ## Songs
 
@@ -168,3 +183,6 @@ Traducciones! con musica!
 |baby hoy no vamos a dormir | *baby oggi non andiamo a dormire*
 |natti na, yeah, yeah | *?*
 |que no traje pijama porque no me dio la gana | *Non indossavo il pigiama perché non ne avevo voglia*
+
+---
+

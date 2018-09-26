@@ -375,6 +375,25 @@ from jsp:
 
 Site entry are save by AssetEntry model -  ```assetentry``` table.
 
+
+If ```assetentry.classNameId = 20045``` it is the assetentry relative to the site.
+
+---
+
+## Read Entities from database
+
+Use always the ```xxxLocalServiceUtil...```
+
+```java
+AssetEntry assetEntry = AssetEntryLocalServiceUtil.getAssetEntry(newAssetEntry.getEntryId());
+```
+
+---
+
+## Liferay saxreaderutil
+
+Usefull to parse xml to Java Object
+
 ---
 
 ## Liferay Listener
