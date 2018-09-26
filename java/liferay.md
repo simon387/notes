@@ -2,13 +2,15 @@
 
 But not only Liferay infos, I put here even some random web dev tricks learned in my Spain experience
 
-+ [General Javascript Notes](https://github.com/simon387/notes/blob/master/javascript/README.md)
-+ [General CSS Notes](https://github.com/simon387/notes/blob/master/css/README.md)
++ [General Javascript Notes](https://github.com/simon387/notes/blob/master/javascript/readme.md)
++ [General CSS Notes](https://github.com/simon387/notes/blob/master/css/readme.md)
 + [General HTML Notes](https://github.com/simon387/notes/blob/master/HTML.md)
-+ [General Java Notes](https://github.com/simon387/notes/blob/master/java/README.md)
++ [General Java Notes](https://github.com/simon387/notes/blob/master/java/readme.md)
 + [General Freemarker Notes](https://github.com/simon387/notes/blob/master/java/freemarker.md)
 + [General Velocity Notes](https://github.com/simon387/notes/blob/master/java/velocity.md)
 + [General MySql Notes](https://github.com/simon387/notes/blob/master/sql/readme.md)
+
+---
 
 ## Intellij IDEA / other IDE trick
 
@@ -19,6 +21,8 @@ with this line
 ```
 
 you can have syntax highlight inside JSP
+
+---
 
 ## Liferay-ide (eclipse based)
 
@@ -48,15 +52,21 @@ If the IDE doesn't publish it automatically (maybe the theme module is not in th
 3. usually you can find the war file in ```...\PROJECT_NAME\themes\THEME_NAME\build\libs\```
 4. put it in the ```deploy``` directory
 
+---
+
 ## Liferay modules (old plugins) installation location
 
 ```......./bundles/osgi/modules```
+
+---
 
 ## How to debug javascript
 
 1. add to the url ```?js_fast_load=0&css_fast_load=0&strip=0```
 2. if any (js)error will appear, you can see the code line in the browser console
 3. add breakpoint on that line
+
+---
 
 ## Java side logging
 
@@ -82,6 +92,7 @@ _logger.warn("...");
 _logger.error("...");
 ```
 
+---
 
 ## How to add custom functions in javascript aui context
 
@@ -98,6 +109,8 @@ Liferay.provide(window, 'functionNameExample',
 );
 </aui:script>
 ```
+
+---
 
 ## Jsp's with aui and similar
 
@@ -166,7 +179,9 @@ rendered html:
 
 ### Override a jsp
 
-just use an hook, and put the jsp inside it with the same name of the original one
+Just use an hook, and put the jsp inside it with the same name of the original one
+
+---
 
 ## Override a core javascript file
 
@@ -177,6 +192,8 @@ how to redefine lifeportal javascript ? ```//TODO```
 or...
 
 You can avoid this using pure javascript, but is a bad solution(but faster)!
+
+---
 
 ## General Liferay Javascript
 
@@ -195,6 +212,8 @@ example:
 </aui:script>
 ```
 
+---
+
 ## Language.properties
 
 ### Properties with parameters
@@ -210,6 +229,8 @@ properties file
 ```properties
 welcome-x=Welcome{0}!
 ```
+
+---
 
 ## Gogo shell
 
@@ -238,6 +259,8 @@ very different from ```unistall``` !!
 
 NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 
+---
+
 ## Liferay startup errors
 
 + remember to set ```liferay.home``` in ```portal-setup-wizard.properties```
@@ -246,13 +269,19 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 + increase if needed ```-Xmx``` and ```-XX:MaxPermSize=``` inside ```tomcat/bin/setenv.*```
 + !! dunno why changing log levels in ```logging.properties``` solved a startup freezing on loading spring context !!
 
+---
+
 ## Localhost only environment tricks
 
 + inside ```portal-ext.properties``` set ```module.framework.properties.lpkg.index.validator.enabled=false``` to decrease startup time
 
+---
+
 ## How to create a new "hook"
 
 In liferay 7 DXP, I just created from maven/gradle a new osgi module (I.E.: it can be a random type of portlet) and I used the @Component mechanism to add/override the functionalities I needed
+
+---
 
 ## Patching tool
 
@@ -270,6 +299,8 @@ In liferay 7 DXP, I just created from maven/gradle a new osgi module (I.E.: it c
 Running example:
 
 ![running example](https://user-images.githubusercontent.com/18740246/45815855-3bfb0880-bcda-11e8-9c19-4056e26bba73.png)
+
+---
 
 ## Gradle
 
@@ -292,11 +323,15 @@ solution: (on windows environment) the three slashes after ```file:``` fixed the
 
 example: ```liferay.workspace.bundle.url=file:///C://dev//liferay-dxp-digital-enterprise-7.0-sp3_FOR_IDEA.zip```
 
+---
+
 ## Deploy
 
 put jars under ```/deploy/``` dir
 
-## Css
+---
+
+## CSS
 
 ### Targetting browsers
 
@@ -312,6 +347,8 @@ put jars under ```/deploy/``` dir
 }
 ```
 
+---
+
 ## HTML
 
 + main-resources like footer.html can be edited as admin user in Liferay under ```Content > Web Content```
@@ -324,15 +361,49 @@ from jsp:
 <img src="<%= themeDisplay.getPathThemeImages() %>/img.png" />
 ```
 
+---
+
 ## Application Display Template (ADT)
 
 + database table: ```ddmtemplate```
   + after editing one row, I had to restart Liferay to see the effect (lol)
 + you can edit them as admin user in Liferay under ```Configuration > Application Display Template```
 
+---
+
 ## Site Settings
 
 Site entry are save by AssetEntry model -  ```assetentry``` table.
+
+---
+
+## Liferay Listener
+
+There are different type of listeners.
+
+Example of a BaseModelListener:
+
+```java
+@Component(
+		service = ModelListener.class,
+		immediate = true
+)
+public class MyNewCustomListener extends BaseModelListener<AssetEntry> {
+
+	private static final Log logger = LogFactoryUtil.getLog(MyNewCustomListener.class);
+	
+	@Override
+	public void onBeforeUpdate(AssetEntry model) throws ModelListenerException {
+		// TODO Auto-generated method stub
+
+		logger.info(model.toString());
+
+		super.onBeforeUpdate(model);
+	}
+}
+```
+
+---
 
 ## Liferay AUDIT
 
@@ -344,9 +415,13 @@ Site entry are save by AssetEntry model -  ```assetentry``` table.
 + [info link](https://web.liferay.com/community/wiki/-/wiki/Main/Audit+Service)
 + [info link](https://web.liferay.com/community/wiki/-/wiki/Main/Adding+Auditing+Functionality+to+Portlets)
 
+---
+
 ## Location of urlrewrite.xml
 
 ```...\tomcat-8.0.32\webapps\ROOT\WEB-INF\urlrewrite.xml```
+
+---
 
 ## Liferay 6.1-6.2 notes
 
@@ -391,6 +466,8 @@ Site entry are save by AssetEntry model -  ```assetentry``` table.
   + after complete startup, deploy the war (just cp it)
   + always check logs
   + at the end restart Liferay
+
+---
 
 ## Bugs / errors / general problems
 
@@ -439,8 +516,11 @@ Just go to ```[baseurl]/c/portal/login```
 
 example: ```localhost:8080/c/portal/login```
 
+---
+
 ## Nice links
 
 + [Alternate text for css background images](http://davidmacd.com/blog/alternate-text-for-css-background-images.html)
 + [Using a Custom Bundle for the Liferay Workspace](https://community.liferay.com/es/blogs/-/blogs/using-a-custom-bundle-for-the-liferay-workspace)
 
+---
