@@ -15,6 +15,9 @@
 + Tiene aceite para la barba?
   + ¿ que tipo de aceite?
   + uno suavizante
++ Te apetece tomar una cerveza/caña/vino etc ?
++ Te invito a tomar una cerveza
++ Te invito a tomar algo
 
 ---
 
@@ -93,6 +96,10 @@
 
 + rist siete puertas
 + piazza di spagna
++ flaherty https://www.pflaherty.com
++ arenas barcelona -> top del top
++ la monrue -> top nachos, nel Raval
++ airport: t2 got the train
 
 ---
 
