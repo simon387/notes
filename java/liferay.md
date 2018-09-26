@@ -388,9 +388,9 @@ Example of a BaseModelListener:
 		service = ModelListener.class,
 		immediate = true
 )
-public class MyNewCustomListener extends BaseModelListener<AssetEntry> {
+public class MyNewCustomOnAssetEntryEntityListener extends BaseModelListener<AssetEntry> {
 
-	private static final Log logger = LogFactoryUtil.getLog(MyNewCustomListener.class);
+	private static final Log logger = LogFactoryUtil.getLog(MyNewCustomOnAssetEntryEntityListener.class);
 	
 	@Override
 	public void onBeforeUpdate(AssetEntry model) throws ModelListenerException {
@@ -414,6 +414,46 @@ public class MyNewCustomListener extends BaseModelListener<AssetEntry> {
 + [info link](https://dzone.com/articles/liferay-7-cloud-amqp-audit-message-processor)
 + [info link](https://web.liferay.com/community/wiki/-/wiki/Main/Audit+Service)
 + [info link](https://web.liferay.com/community/wiki/-/wiki/Main/Adding+Auditing+Functionality+to+Portlets)
+
+Example inside an ```BaseModelListener```
+
+```java
+//assetEntry is an Entity, Model
+try {
+	String eventType = "event bla";
+	long companyId = CompanyThreadLocal.getCompanyId().longValue();
+	long userId = 0L;
+	if (null != PrincipalThreadLocal.getName()) {
+		userId = GetterUtil.getLong(PrincipalThreadLocal.getName());
+	}
+	AuditRequestThreadLocal auditRequestThreadLocal = AuditRequestThreadLocal.getAuditThreadLocal();
+	long realUserId = auditRequestThreadLocal.getRealUserId();
+	String realUserName = PortalUtil.getUserName(realUserId, "");
+	JSONObject additionalInfo = JSONFactoryUtil.createJSONObject();
+	
+	if ((realUserId > 0L) && (userId != realUserId)) {
+		additionalInfo.put("doAsUserId", String.valueOf(userId));
+		additionalInfo.put("doAsUserName", PortalUtil.getUserName(userId, ""));
+	}
+	additionalInfo.put("name", organization.getName());
+	additionalInfo.put("type",organization.getType());
+	additionalInfo.put("countryId", organization.getCountryId());
+	additionalInfo.put("regionId", organization.getRegionId());
+	if(organization.getParentOrganization() != null) {
+		additionalInfo.put("parentName", organization.getParentOrganization().getName());
+	}
+	
+	AuditMessage auditMessage = new AuditMessage(
+		eventType, companyId, realUserId, realUserName, AssetEntry.class.getName(), String.valueOf(assetEntry.getEntryId()), null, additionalInfo);
+	
+	AuditRouterUtil.route(auditMessage);
+	
+} catch(Exception exception) {
+	throw new ModelListenerException(exception);
+} finally {
+	super.onAfterUpdate(assetEntry);
+}
+```
 
 ---
 
