@@ -422,6 +422,8 @@ public class MyNewCustomOnAssetEntryEntityListener extends BaseModelListener<Ass
 }
 ```
 
+---
+
 ## Comments on bnd.bnd file
 
 It's like a java properties file, use the ```#``` at the start of the line
