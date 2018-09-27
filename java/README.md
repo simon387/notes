@@ -6,9 +6,13 @@
 
 + debugs stop execution without breakpoints? Windows -> Preferences -> Java -> Debug -> Suspend execution on uncaught exceptions
 
+---
+
 ## Log4j
 
 [log4j property file example](https://github.com/simon387/Log4jEx/blob/master/src/main/resources/log4j.properties)
+
+---
 
 ## Optional usage example (with JSON parsing)
 
@@ -65,9 +69,13 @@ private Optional<Map<String, Object>> getComponentField(String componentName, St
 }
 ```
 
+---
+
 ## VM options
 
 + ```-verbose:class``` understanding which classes are loaded 
+
+---
 
 ## Popular annotations
 
@@ -91,14 +99,20 @@ HeaderParam
 @QueryParam
 Override
 
+---
+
 ## Java Thread Dump
 
 + ```kill -3 <pid>```
 + dump example: [output](https://github.com/simon387/job_note/blob/master/java/java_thread_dump_example)
 
+---
+
 ## Common errors
 
 + ```ORA-00928: missing SELECT keyword``` in an insert, during an Hibernate Transaction with Oracle... I was using a reserved oracle keyword (```FILE```)
+
+---
 
 ## Tomcat(7) setting VM options on windows
 
@@ -108,6 +122,8 @@ inside catalina.bat
 set "JAVA_OPTS=%JAVA_OPTS% your_option "
 ```
 
+---
+
 ## Remote debug
 
 catalina.sh / bat
@@ -115,6 +131,8 @@ catalina.sh / bat
 ```bat
 set "JAVA_OPTS=%JAVA_OPTS% -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=12345"
 ```
+
+---
 
 ## Common errors
 
@@ -126,6 +144,9 @@ setting the tomcat VM option
 ```
 -Djavax.net.ssl.trustStore=path_to_keystore.jks -Djavax.net.ssl.trustStorePassword=password 
 ```
+
+---
+
 ## How to print current project classpath
 
 ```java
@@ -149,6 +170,8 @@ public class PrintClasspath {
 }
 ```
 
+---
+
 ## Easy way to switch jdk and jre on linux
 
 ```bash
@@ -158,6 +181,8 @@ alternatives --set javac /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.172-9.b11.fc28.x8
 ```bash
 alternatives --config java
 ```
+
+---
 
 ## String to Date
 

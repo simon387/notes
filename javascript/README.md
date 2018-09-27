@@ -9,16 +9,22 @@
 + <kbd>ctrl</kbd> + <kbd>f</kbd> in elements tab: find text **and** css rules
 + <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> : finds text in all sources! **perferct for javascript function debug**
 
+---
+
 ## Edge and IE Dev Tools Tricks
 
 + <kbd>F12</kbd> : toggle the Dev Tools
+
+---
 
 ## Style on logs
 
 ```javascript
 console.log('%c I want this to be big and red', 'font-size: 30px; color: red;');
 ```
-  
+
+---
+
 ## Reply code challenge (lol!)
 
 ```solution.html```
@@ -27,6 +33,8 @@ console.log('%c I want this to be big and red', 'font-size: 30px; color: red;');
 <script>setInterval(()=>document.body.style.backgroundColor='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6),128)</script>
 ```
 
+---
+
 ## Timeout
 
 ```javascript
@@ -34,6 +42,8 @@ setTimeout(() => {
   //
 }, 1000);
 ```
+
+---
 
 ## Range mapping 
 
@@ -46,6 +56,8 @@ var num = 5;
 console.log(num.map(0, 10, -50, 50)); // 0
 console.log(num.map(-20, 0, -100, 100)); // 150
 ```
+
+---
 
 ## Replace element types
 
@@ -103,6 +115,8 @@ h1:before {
 </div>
 ```
 
+---
+
 ## How to intercept DOM modification
 
 Example of listening an "element injection"
@@ -115,9 +129,13 @@ tagContainer.addEventListener("DOMNodeInserted", function (ev) {
 }, false);
 ```
 
+---
+
 ## IE incompatibilities
 
 + Use ```myString.indexOf("otherString") > -1``` instead of ```myString.includes("otherString")```
+
+---
 
 ## Random usage of DOM modification
 
@@ -155,3 +173,4 @@ function b() {
 }
 ```
 
+---
