@@ -1,6 +1,6 @@
 # Español
 
-## frases comunes
+## Frases comunes
 + Hasta luego! -> see you later!
 + Buenos dias
 + Buenas tardes -> afternoon
@@ -52,7 +52,7 @@
 
 ---
 
-## verbos
+## Verbos
 
 |Persona       |Presente|Imperfecto|Pretérito indefinido|Futuro  |
 |--------------|--------|----------|--------------------|--------|
@@ -72,19 +72,19 @@
 |Vosotros|habeis sido|habiais sido|hubisteis sido|habreis sido|
 |Ellos|han sido|habian sido|hubieron sido|habran sido|
 
-## dare del lei
+## Dare del lei
 
 + ¿Usted es el padre de Alberto?
 
 ---
 
-## docs
+## Docs
 
 + NIE
 
 ---
 
-## links
+## Links
 
 + http://ajuntament.barcelona.cat/calendarifestius/es/
 + [croccantina 1](http://www.todo-claro.com/e_index.php)
@@ -92,7 +92,7 @@
 
 ---
 
-## locs
+## Locs
 
 + rist siete puertas
 + piazza di spagna
@@ -100,6 +100,7 @@
 + arenas barcelona -> top del top
 + la monrue -> top nachos, nel Raval
 + airport: t2 got the train
++ a Glories c'e' un bel centro commerciale
 
 ---
 
