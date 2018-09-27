@@ -166,3 +166,17 @@ String sDate = "20180118";
 Date date = new SimpleDateFormat("yyyyMMdd").parse(sDate);
 ```
 
+---
+
+## O(1) Search on Strings example
+
+```java
+private static final Set<String> VALUES = new HashSet<String>(Arrays.asList(
+     new String[] {"AB","BC","CD","AE"}
+));
+
+VALUES.contains(s)
+```
+
+---
+
