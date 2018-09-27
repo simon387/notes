@@ -422,6 +422,16 @@ public class MyNewCustomOnAssetEntryEntityListener extends BaseModelListener<Ass
 }
 ```
 
+## Comments on bnd.bnd file
+
+It's like a java properties file, use the ```#``` at the start of the line
+
+Example:
+
+```properties
+#Fragment-Host: com.liferay.site.admin.web;bundle-version="1.0.0"
+```
+
 ---
 
 ## Liferay AUDIT
