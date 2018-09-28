@@ -10,7 +10,7 @@ But not only Liferay infos, I put here even some random web dev tricks learned i
 + [General Freemarker Notes](https://github.com/simon387/notes/blob/master/java/freemarker.md)
 + [General Velocity Notes](https://github.com/simon387/notes/blob/master/java/velocity.md)
 + [General Maven Notes](https://github.com/simon387/notes/blob/master/java/maven.md)
-+ [General Maven Notes](https://github.com/simon387/notes/blob/master/java/gradle.md)
++ [General Gradle Notes](https://github.com/simon387/notes/blob/master/java/gradle.md)
 
 ---
 
