@@ -10,6 +10,7 @@ But not only Liferay infos, I put here even some random web dev tricks learned i
 + [General Freemarker Notes](https://github.com/simon387/notes/blob/master/java/freemarker.md)
 + [General Velocity Notes](https://github.com/simon387/notes/blob/master/java/velocity.md)
 + [General Maven Notes](https://github.com/simon387/notes/blob/master/java/maven.md)
++ [General Maven Notes](https://github.com/simon387/notes/blob/master/java/gradle.md)
 
 ---
 
@@ -300,29 +301,6 @@ In liferay 7 DXP, I just created from maven/gradle a new osgi module (I.E.: it c
 Running example:
 
 ![running example](https://user-images.githubusercontent.com/18740246/45815855-3bfb0880-bcda-11e8-9c19-4056e26bba73.png)
-
----
-
-## Gradle
-
-+ comments in ```build.gradle``` are java like
-
-### Gradle common errors
-
-```
-Execution failed for task ':initBundle'.
-> Could not expand ZIP xxxxx
-```
-
-solution: ```rm -rf xxxxx``` and re-run the download task
-
-```
-“URI has an authority component”
-```
-
-solution: (on windows environment) the three slashes after ```file:``` fixed the issue
-
-example: ```liferay.workspace.bundle.url=file:///C://dev//liferay-dxp-digital-enterprise-7.0-sp3_FOR_IDEA.zip```
 
 ---
 
