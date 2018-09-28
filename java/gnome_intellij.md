@@ -17,6 +17,8 @@ Terminal=false
 StartupWMClass=jetbrains-idea
 ```
 
+---
+
 ## default common IntelliJ IDEA hotkeys under gnome
 
 (it's just a self memorization exercise)
@@ -43,3 +45,5 @@ StartupWMClass=jetbrains-idea
 | ```ctrl + alt + l```      | format code              |
 | ```ctrl + shift + F9```   | hot class replacement during debug |
 | ```alt + j```             | find next selected string |
+
+---

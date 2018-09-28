@@ -3,6 +3,8 @@
 The main Liferay used template language ~~is~~ was Velocity
 + [GOTO Liferay Notes](https://github.com/simon387/notes/blob/master/java/liferay.md)
 
+---
+
 ## List variable access
 ```
 #if (!$slideTitle.getSiblings().isEmpty())
@@ -12,21 +14,31 @@ The main Liferay used template language ~~is~~ was Velocity
 #end
 ```
 
+---
+
 ## Var set
 ```
 #set ($c = 0)
 ```
 
-# Logic operations in expressions
+---
+
+## Logic operations in expressions
 ```
 && || ! != ==
 ```
 
-# Checkbox access
+---
+
+## Checkbox access
 ```
 $getterUtil.getBoolean($variabileCheckboxosa.getData())
 ```
 
-# Structure conventions
+---
+
+## Structure conventions
 + in documents, images, video, media, etc, always use object: "Documents and media"
 + use always field "alt" on mutlimedia contents
+
+---

@@ -3,17 +3,23 @@
 + [official site](https://freemarker.apache.org)
 + [GOTO Liferay Notes](https://github.com/simon387/notes/blob/master/java/liferay.md)
 
+---
+
 ## interpolation
 
 ```freemarker
 ${...}
 ```
 
+---
+
 ## Comments
 
 ```freemarker
 <#-- this is a comment, won't get into the output -->
 ```
+
+---
 
 ## If else
 
@@ -24,6 +30,8 @@ ${...}
   Pythons are not cheaper than elephants today.
 </#if>
 ```
+
+---
 
 ## List
 
@@ -49,6 +57,8 @@ with else statement
 
 ```
 
+---
+
 ## Include directive
 
 ```freemarker
@@ -64,6 +74,8 @@ with else statement
 </html
 ```
 
+---
+
 ## Built-ins
 
 + ```user?upper_case```
@@ -78,6 +90,8 @@ with else statement
 + ```animal?item_cycle('lightRow', 'darkRow')``` more specific of ```item_parity```
 + ```fruit?join(", ")``` converts list to String with separator
 
+---
+
 ## Dealing with missing variables
 
 ```freemarker
@@ -88,8 +102,12 @@ with else statement
 <#if user??><h1>Welcome ${user}!</h1></#if>
 ```
 
+---
+
 ## Preventing auto-escaping
 
 ```freemarker
 ${value?no_esc}
 ```
+
+---

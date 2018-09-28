@@ -111,6 +111,8 @@ java.time.LocalDateTime.of(2015, 10, 1, 10, 10);
 + Double extends Number
 
 
+---
+
 
 ## lambdas
 

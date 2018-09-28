@@ -82,8 +82,12 @@ view chucknorris.html
 </html>
 ```
 
+---
+
 ## changing banner
 
 put ```banner.txt``` under ```resources``` folder
 
 nice tool: http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
+
+---
