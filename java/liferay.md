@@ -2,13 +2,14 @@
 
 But not only Liferay infos, I put here even some random web dev tricks learned in my Spain experience
 
++ [General Java Notes](https://github.com/simon387/notes/blob/master/java/readme.md)
++ [General HTML Notes](https://github.com/simon387/notes/blob/master/HTML.md)
 + [General Javascript Notes](https://github.com/simon387/notes/blob/master/javascript/readme.md)
 + [General CSS Notes](https://github.com/simon387/notes/blob/master/css/readme.md)
-+ [General HTML Notes](https://github.com/simon387/notes/blob/master/HTML.md)
-+ [General Java Notes](https://github.com/simon387/notes/blob/master/java/readme.md)
++ [General MySql Notes](https://github.com/simon387/notes/blob/master/sql/readme.md)
 + [General Freemarker Notes](https://github.com/simon387/notes/blob/master/java/freemarker.md)
 + [General Velocity Notes](https://github.com/simon387/notes/blob/master/java/velocity.md)
-+ [General MySql Notes](https://github.com/simon387/notes/blob/master/sql/readme.md)
++ [General Maven Notes](https://github.com/simon387/notes/blob/master/java/maven.md)
 
 ---
 
