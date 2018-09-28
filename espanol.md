@@ -81,6 +81,10 @@
 ## Docs
 
 + NIE
+  + pasaporte
+  + documento de identidad
+  + licencia de conducir
+  + documento del lavoro, template da raffaele compilato da luca di swecat
 
 ---
 
