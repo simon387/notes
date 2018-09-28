@@ -31,6 +31,8 @@ With the *ant plugin*
 
 ## How to change target directory
 
+But I prefer the *ant plugin*, don't like this solution
+
 Use this profile
 
 ```xml
