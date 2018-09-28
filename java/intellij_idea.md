@@ -19,7 +19,7 @@ StartupWMClass=jetbrains-idea
 
 ---
 
-## default common IntelliJ IDEA hotkeys under gnome
+## default common IntelliJ IDEA hotkeys under Gnome
 
 (it's just a self memorization exercise)
 
