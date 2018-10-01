@@ -653,5 +653,6 @@ public static Class<?> classForClassNameId(long classNameId)
 + [Using a Custom Bundle for the Liferay Workspace](https://community.liferay.com/es/blogs/-/blogs/using-a-custom-bundle-for-the-liferay-workspace)
 + [Override command from Site Admin Portlet](https://community.liferay.com/it/forums/-/message_boards/message/106482937)
 + [Event tracking by JS](https://www.xtivia.com/google-analytics-event-tracking-liferay/)
++ [Portlet filters in Liferay 7 dxp](https://www.liferaystack.com/2017/09/portlet-filters-in-liferay-7-dxp.html)
 
 ---
