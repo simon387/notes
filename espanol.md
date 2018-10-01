@@ -91,6 +91,10 @@
   + documento de identidad
   + licencia de conducir
   + documento del lavoro, template da raffaele ~~compilato da luca di swecat~~
+  
+### Traduccion pagina NIE
+
+ho sonno
 
 ---
 
