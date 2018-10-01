@@ -85,6 +85,8 @@
 ## Docs
 
 + NIE
+  + https://sede.administracionespublicas.gob.es/icpplus/index.html
+    + selezionate "Barcelona" come provincia, e poi "Certificados UE"
   + pasaporte
   + documento de identidad
   + licencia de conducir
