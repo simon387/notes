@@ -467,6 +467,17 @@ try {
 
 ---
 
+## DynamicQuery example
+
+```java
+DynamicQuery dynamicQuery = DynamicQueryFactoryUtil.forClass(Library.class);
+dynamicQuery.add(RestrictionsFactoryUtil.like("bookName", "java"));
+dynamicQuery.add(RestrictionsFactoryUtil.eq("author", "james"));
+List results = LibraryLocalServiceUtil.dynamicQuery(dynamicQuery);
+```
+
+---
+
 ## Location of urlrewrite.xml
 
 ```...\tomcat-8.0.32\webapps\ROOT\WEB-INF\urlrewrite.xml```
@@ -603,6 +614,31 @@ public class SiteAdminPortletKeys {
 }
 ```
 
+## Useful Java methods
+
+```java
+public static long classNameIdForClass(Class<?> clazz)
+  throws SystemException {
+ return ClassNameLocalServiceUtil
+   .getClassName(clazz.getName())
+   .getClassNameId();
+}
+```
+
+```java
+public static Class<?> classForClassNameId(long classNameId)
+  throws PortalException, SystemException {
+ try {
+  String modelClassName = ClassNameLocalServiceUtil
+    .getClassName(classNameId)
+    .getValue();
+  return Class.forName(modelClassName);
+ } catch (ClassNotFoundException e) {
+  throw new SystemException(e);
+ }
+}
+```
+
 ---
 
 ## Nice links
@@ -610,4 +646,6 @@ public class SiteAdminPortletKeys {
 + [Alternate text for css background images](http://davidmacd.com/blog/alternate-text-for-css-background-images.html)
 + [Using a Custom Bundle for the Liferay Workspace](https://community.liferay.com/es/blogs/-/blogs/using-a-custom-bundle-for-the-liferay-workspace)
 + [Override command from Site Admin Portlet](https://community.liferay.com/it/forums/-/message_boards/message/106482937)
++ [Event tracking by JS](https://www.xtivia.com/google-analytics-event-tracking-liferay/)
+
 ---
