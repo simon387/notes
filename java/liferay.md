@@ -369,6 +369,17 @@ AssetEntry assetEntry = AssetEntryLocalServiceUtil.getAssetEntry(newAssetEntry.g
 
 ---
 
+### DynamicQuery example
+
+```java
+DynamicQuery dynamicQuery = DynamicQueryFactoryUtil.forClass(Library.class);
+dynamicQuery.add(RestrictionsFactoryUtil.like("bookName", "java"));
+dynamicQuery.add(RestrictionsFactoryUtil.eq("author", "james"));
+List results = LibraryLocalServiceUtil.dynamicQuery(dynamicQuery);
+```
+
+---
+
 ## Liferay saxreaderutil
 
 Usefull to parse xml to Java Object
@@ -463,17 +474,6 @@ try {
 } finally {
 	super.onAfterUpdate(assetEntry);
 }
-```
-
----
-
-## DynamicQuery example
-
-```java
-DynamicQuery dynamicQuery = DynamicQueryFactoryUtil.forClass(Library.class);
-dynamicQuery.add(RestrictionsFactoryUtil.like("bookName", "java"));
-dynamicQuery.add(RestrictionsFactoryUtil.eq("author", "james"));
-List results = LibraryLocalServiceUtil.dynamicQuery(dynamicQuery);
 ```
 
 ---
@@ -638,6 +638,12 @@ public static Class<?> classForClassNameId(long classNameId)
  }
 }
 ```
+
+---
+
+## Liferay Philosophy
+
++ Everything is an Asset!
 
 ---
 
