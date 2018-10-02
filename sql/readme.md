@@ -1,7 +1,9 @@
 # MySql General Notes
 
-+ [Mariadb notes](https://github.com/simon387/notes/blob/master/sql/readme.md)
-+ [Mariadb notes](mariadb.md)
++ [GOTO Liferay Notes](../java/liferay.md)
++ [Mariadb Notes](mariadb.md)
++ [MsSql Notes](mssql.md)
++ [Oracle Database Notes](oracle_database.md)
 
 ## Turns on queries logging
 
