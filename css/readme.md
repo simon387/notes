@@ -64,6 +64,8 @@ div {
 
 ### Hiding css without display:none
 
+Note: ```display:none``` has not opposites!
+
 ```css
 div {
   position: absolute; 
