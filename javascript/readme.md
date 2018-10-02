@@ -174,3 +174,12 @@ function b() {
 ```
 
 ---
+
+## jQuery & CO
+
+### [jquery-nice-select](https://github.com/hernansartorio/jquery-nice-select)
+
+Note: when you select items from the *fake* ```<select>``` the *real* one is not updated with the ```selected``` attribute!
+
+---
+
