@@ -1,5 +1,8 @@
 # MySql General Notes
 
++ [Mariadb notes](https://github.com/simon387/notes/blob/master/sql/readme.md)
++ [Mariadb notes](mariadb.md)
+
 ## Turns on queries logging
 
 ```
