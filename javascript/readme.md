@@ -181,5 +181,7 @@ function b() {
 
 Note: when you select items from the *fake* ```<select>``` the *real* one is not updated with the ```selected``` attribute!
 
+**NEVER USE THIS PLUGIN PLEAZE**
+
 ---
 
