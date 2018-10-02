@@ -56,6 +56,7 @@
 + https://www.shellcheck.net
 + http://jsonpath.com
 + https://jsonlint.com
++ https://rubberduckdebugging.com/
 
 ## web dev utilities link
 
