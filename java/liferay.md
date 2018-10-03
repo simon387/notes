@@ -248,7 +248,6 @@ pay caution! don't kill this process or type ```exit``` ! will kill the Tomcat! 
 
 ```lb | grep Liferay```
 
-
 ### Stop bundle
 
 ```stop $bundleId```
