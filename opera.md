@@ -1,4 +1,4 @@
-# opera browser
+# Opera Browser Notes
 
 ## how to fix ffmpeg not rendering Encode/H.264 gif / videos
 
@@ -28,6 +28,8 @@ sudo python build_ffmpeg.py --target_arch=x64
 locate libffmpeg.so
 sudo cp /home/scelia/dev/nwjs-ffmpeg-prebuilt/build/src/out/nw/lib/libffmpeg.so /usr/lib64/opera/libffmpeg.so
 ```
+
+---
 
 ## how to fix icon on Fedora + Gnome
 

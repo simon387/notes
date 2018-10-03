@@ -12,9 +12,13 @@
 
 `docker logs <NAME>`
 
+---
+
 ## common errors
 
 exit(255) -> disable SElinux -> worked!
+
+---
 
 ## dbms on docker is very slow
 
