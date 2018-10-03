@@ -354,7 +354,7 @@ from jsp:
 Site entry are save by AssetEntry model -  ```assetentry``` table.
 
 
-If ```assetentry.classNameId = 20045``` it is the assetentry relative to the site.
+If ```assetentry.classNameId = 20045``` ~~it is the assetentry relative to the site~~. **NO, IT DEPENDS BY OTHER TABLE DATA, check the relations**
 
 ---
 
