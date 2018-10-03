@@ -1,5 +1,6 @@
+# mssql
 
-Rebuilding indexes
+## Rebuilding indexes
 
 ```sql
 ALTER TABLE <table_name> NOCHECK CONSTRAINT ALL;
@@ -8,7 +9,9 @@ ALTER INDEX ALL ON <table_name> REBUILD;
 ALTER TABLE <table_name> CHECK CONSTRAINT ALL;
 ```
 
-How to turn IDENTITY_INSERT on and off using SQL Server
+---
+
+## How to turn IDENTITY_INSERT on and off using SQL Server
 
 ```sql
 SET IDENTITY_INSERT sometableWithIdentity ON
@@ -19,7 +22,9 @@ VALUES (AnIdentityValue, col2value, col3value, ...)
 SET IDENTITY_INSERT sometableWithIdentity OFF
 ```
 
-Cannot drop database "databasename" because it is currently in use.
+---
+
+## Cannot drop database "databasename" because it is currently in use.
 
 ```sql
 use master;
@@ -30,7 +35,9 @@ ALTER DATABASE databasename SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
 GO
 ```
 
-Drop constraint
+---
+
+## Drop constraint
 
 ```sql
 alter table tablename DROP CONSTRAINT constraint_name

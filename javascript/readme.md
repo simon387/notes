@@ -41,10 +41,24 @@ console.log('%c I want this to be big and red', 'font-size: 30px; color: red;');
 
 ## Timeout
 
+Call the function after n ms
+
 ```javascript
 setTimeout(() => {
   //
 }, 1000);
+```
+
+---
+
+## Interval
+
+Call the function every n ms
+
+```javascript
+window.setInterval(function(){
+  /// call your function here
+}, 5000);
 ```
 
 ---
