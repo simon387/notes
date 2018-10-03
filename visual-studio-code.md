@@ -4,9 +4,13 @@
 
 ```"userDataDir": false,```
 
+---
+
 ## find all default keybinding
 
 <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>L</kbd>
+
+---
 
 ## my settings
 
@@ -59,6 +63,10 @@
 }
 ```
 
+---
+
 ## Hotkeys on Windows (trick)
 
 For better usage, remember to disable the useless *HD Intel* software (from tray icon)
+
+---
