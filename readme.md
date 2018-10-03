@@ -57,6 +57,7 @@
 + http://jsonpath.com
 + https://jsonlint.com
 + https://rubberduckdebugging.com/
++ https://andreagaleazzi.com
 
 ## web dev utilities link
 
