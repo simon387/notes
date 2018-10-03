@@ -26,6 +26,8 @@
 </html>
 ```
 
+---
+
 ## random notes
 
 + two includes:
@@ -38,5 +40,3 @@
   allows up to write ```return <h1>kek</h1>```
 
   ```<script type="text/jsx">```
-
-

@@ -30,6 +30,8 @@
 + Don’t use data attributes
 + Write More CSS Comments
 
+---
+
 ## Mine
 
 + add spaces in html with angular ```{{}}``` to prevent elements collapsing. e.g. ```<div>{{{client.id}}} </div>```
@@ -44,6 +46,8 @@ div {
   margin: auto;
 }
 ```
+
+---
 
 ### Making a scrollabe list (select-like)
 
@@ -62,6 +66,8 @@ div {
 }
 ```
 
+---
+
 ### Hiding css without display:none
 
 Note: ```display:none``` has not opposites!
@@ -72,6 +78,8 @@ div {
   left: -999em;
 }
 ```
+
+---
 
 ### Basic STUPID selection
 

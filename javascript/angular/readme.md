@@ -22,6 +22,7 @@ ng build --prod
 ```
 BUT sometime you can have compile errors, because is less tolerant than ```ng serve```
 
+---
 
 ## generate a component inside a project
 
@@ -38,6 +39,8 @@ BUT sometime you can have compile errors, because is less tolerant than ```ng se
 public myParameter;
 ```
 
+---
+
 ## two way data binding
 
 ```html
@@ -45,6 +48,8 @@ public myParameter;
 
 <p>Hello {{username}}!</p>
 ```
+
+---
 
 ## for
 
@@ -63,6 +68,8 @@ public myParameter;
   </div>
   ```
 
+---
+
 ## switch
 
 ```html
@@ -72,11 +79,15 @@ public myParameter;
 </td>
 ```
 
+---
+
 ## on event
 
 ```html
    <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
 ```
+
+---
 
 ## if
 
@@ -98,9 +109,13 @@ better:
 <ng-template #other_content>other content here...</ng-template>
 ```
 
+---
+
 ## services
 
 + ```ng generate service <service-name>```
+
+---
 
 ## location service
 
@@ -172,6 +187,8 @@ export class MyService {
 
 ```
 
+---
+
 ## routing
 
 + convention: ```ng generate module app-routing --flat --module=app```
@@ -190,6 +207,7 @@ export class MyService {
     this.router.navigate(['']); 
   }
   ```
+
 ### ActivatedRoute
 
 app-routing-module.ts
@@ -214,11 +232,15 @@ ngOnInit() {
 }
 ```
 
+---
+
 ## Elvis's operator
 
 ```html
   {{ user?.account?.service?.joined?.dateFormatted }}
 ```
+
+---
 
 ## normal jQuery and Bootstrap inside components view
 
@@ -239,9 +261,14 @@ ngOnInit() {
   ...
   declare var $ : any;
   ```
+
+---
+
 ## primeng
 
 https://www.primefaces.org/primeng/
+
+---
 
 ## add a css class to an html element
 
@@ -284,17 +311,23 @@ public setSelected(id: number) {
 }
 ```
 
+---
+
 ## add style
 
 ```html
 <div [ngStyle]="{'background-color': '#30c171'}" class="pallino"></div>
 ```
 
+---
+
 ## typescript 2.0+ constant var
 
 ```typescript
 private static readonly color0 : String = "#00D2DE";
 ```
+
+---
 
 ## select example
 
@@ -316,6 +349,9 @@ private changePerformancePeriod(period) : void {
   console.log('period -> ' + period);
 }
 ```
+
+---
+
 ## common runtime error
 
 + error at runtime, while binding variables etc : typerror \[...\] $any is not a function
@@ -375,6 +411,9 @@ private changePerformancePeriod(period) : void {
     "ng2-carouselamos": "^3.2.0"
     },
     ```
+
+---
+
 ## bootstrap accordion with variable data-target
 
 ```html
@@ -401,6 +440,8 @@ $('.collapse').on('show.bs.collapse', function() {
     $(this).parent().find('.accordion-control').removeClass('ico-up').addClass('ico-down');
 });
 ```
+
+---
 
 ## example: ngFor with sliders and input numbers
 
@@ -446,6 +487,8 @@ style
   background-color: grey;
 }
 ```
+
+---
 
 ## enum example
 
@@ -494,6 +537,9 @@ export class ExampleComponent implements OnInit {
 	}
 }
 ```
+
+---
+
 ## enabling style override of external component
 
 for example ones from primeng.
@@ -508,6 +554,8 @@ IMHO is bad to use, maybe your application design is not very good
 	encapsulation: ViewEncapsulation.None
 })
 ```
+
+---
 
 ## conditional import @NgModule example
 
@@ -527,6 +575,8 @@ const ENV = 'prod'; // your global ENV variable;
 export class AppModule {}
 ```
 
+---
+
 ## redirect to any page if url path doesn't exists
 
 ```typescript
@@ -538,6 +588,8 @@ export class AppRoutingModule {
   }
 }
 ```
+
+---
 
 ## input validation example (without form)
 
@@ -560,6 +612,8 @@ public checkErrorLastname(): boolean {
     return new RegExp(this.lastnamePattern).test(this.lastname);
 }
 ```
+
+---
 
 ## highcharts (angular2-highcharts): get istance example
 
@@ -614,6 +668,8 @@ html2canvas(document.getElementById("element_id"), options).then((canvas) => {
 });
 ```
 
+---
+
 ## event stop propagation
 
 ```html
@@ -625,6 +681,8 @@ public download(event: any): void {
     console.log("download");
 }
 ```
+
+---
 
 ## ```$(document).ready(function()){}```-like mechanism
 
