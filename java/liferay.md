@@ -379,6 +379,26 @@ List results = LibraryLocalServiceUtil.dynamicQuery(dynamicQuery);
 
 ---
 
+## Random database notes
+
++ Documents library files
+  + DLFileEntry
+  + DLFileRank
+  + DLFileShortcut
+  + DLFileVersion
+  + DLFolder
+
++ Web contents
+  + JournalArticle
+  + JournalArticleImage
+  + JournalArticleResource
+  + JournalContentSearch
+  + JournalFeed
+  + JournalStructure
+  + JournalTemplate
+
+---
+
 ## Liferay saxreaderutil
 
 Usefull to parse xml to Java Object
