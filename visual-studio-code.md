@@ -63,6 +63,19 @@
 }
 ```
 
+### Log Viewer Settings
+
+Example on windows:
+
+```json
+"logViewer.watch": [
+        {
+            "title": "C:\\dev\\lenovo.log",
+            "pattern": "C:\\dev\\lenovo.log"
+        }
+    ]
+```
+
 ---
 
 ## Hotkeys on Windows (trick)
