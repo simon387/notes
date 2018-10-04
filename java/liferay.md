@@ -667,6 +667,12 @@ public static Class<?> classForClassNameId(long classNameId)
 
 ---
 
+## Liferay best practices
+
+In maven or gradle projects, always create a parent module per osgi module... so you can put inside service builders sub-modules (for example)
+
+---
+
 ## Nice links
 
 + [Alternate text for css background images](http://davidmacd.com/blog/alternate-text-for-css-background-images.html)
