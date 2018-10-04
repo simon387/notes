@@ -383,6 +383,7 @@ List results = LibraryLocalServiceUtil.dynamicQuery(dynamicQuery);
 
 + Documents library files
   + DLFileEntry
+    + the version is increased at every update
   + DLFileRank
   + DLFileShortcut
   + DLFileVersion
