@@ -12,6 +12,12 @@
 
 ---
 
+## Open Command Palette default keybinding
+
+<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>P</kbd>
+
+---
+
 ## my settings
 
 ```json
