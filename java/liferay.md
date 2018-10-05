@@ -68,6 +68,8 @@ If the IDE doesn't publish it automatically (maybe the theme module is not in th
 
 How to create and configure (with Liferay IDE):
 
+mavent instrunctions:
+
 1. create an osgi module (portlet, hook, doesn't matter)
 2. create a sub-module, with for the example the name of the entity you want to create/map
    + **Specify the right Location** by hand, ```Liferay Developer Studio Version: 3.3.0.201808240530-ga1``` is bugged and doesn't create the submodule properly
@@ -79,6 +81,7 @@ How to create and configure (with Liferay IDE):
 3. at the end of the wizard, modify the ```service.xml```, see [the doc](https://docs.liferay.com/portal/7.0/definitions/liferay-service-builder_7_0_0.dtd.html)
 4. build services! right click on the module, ```Liferay```, ```build-service```
 5. check if every classes have been generated
+6. add the maven dependency in the project you would like to use the services
 
 #### Common errors
 
