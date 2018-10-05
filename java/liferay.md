@@ -154,7 +154,7 @@ and the run the build of the service builder again!
 
 **DOES NOT WORK ANYWAY**
 
-Just write a dynamic query, *fuck* the listeners!
+Just write a dynamic query, *byebye* the finders!
 
 #### Common errors
 
