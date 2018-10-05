@@ -16,6 +16,8 @@ But not only Liferay infos, I put here even some random web dev tricks learned i
 
 ## Intellij IDEA / other IDE trick
 
+### Sysntax highlight JSP
+
 with this line
 
 ```jsp
@@ -23,6 +25,12 @@ with this line
 ```
 
 you can have syntax highlight inside JSP
+
+---
+
+### OSGI modules with maven
+
+If the module doesn't have the "square" on IDEA GUI, check the ```pom.xml``` configuration, even of the parent one
 
 ---
 
@@ -53,6 +61,60 @@ If the IDE doesn't publish it automatically (maybe the theme module is not in th
 2. build the war
 3. usually you can find the war file in ```...\PROJECT_NAME\themes\THEME_NAME\build\libs\```
 4. put it in the ```deploy``` directory
+
+---
+
+### Service Builder Module(s)
+
+How to create and configure (with Liferay IDE):
+
+1. create an osgi module (portlet, hook, doesn't matter)
+2. create a sub-module, with for the example the name of the entity you want to create/map
+   + **Specify the right Location** by hand, ```Liferay Developer Studio Version: 3.3.0.201808240530-ga1``` is bugged and doesn't create the submodule properly
+   + Project Type: ```Liferay Module Project```
+   + Project Name: something similar to the entity you want to create/map
+   + Build Type: depends on other modules
+   + Project Template Name: ```service-builder```
+   + Package Name: follow the project naming convenction, please
+3. at the end of the wizard, modify the ```service.xml```, see [the doc](https://docs.liferay.com/portal/7.0/definitions/liferay-service-builder_7_0_0.dtd.html)
+4. build services! 
+
+#### Common errors
+
+```[ERROR] No plugin found for prefix 'service-builder' in the current project and in the plugin groups [org.apache.maven.plugins, org.codehaus.mojo] available from the repositories [local (C:\Users\Simone\.m2\repository), central (https://repo.maven.apache.org/maven2)] -> [Help 1]```
+
+You miss the plugin in the ```pom.xml```, example: 
+
+```xml
+<build>
+	<plugins>
+		<plugin>
+			<groupId>com.liferay</groupId>
+			<artifactId>com.liferay.portal.tools.service.builder</artifactId>
+			<version>1.0.228</version>
+			<configuration>
+				<apiDirName>../xx-xxxx-xxxx-xx-persistence-api/src/main/java</apiDirName>
+				<autoNamespaceTables>true</autoNamespaceTables>
+				<buildNumberIncrement>true</buildNumberIncrement>
+				<hbmFileName>src/main/resources/META-INF/module-hbm.xml</hbmFileName>
+				<implDirName>src/main/java</implDirName>
+				<mergeModelHintsConfigs>src/main/resources/META-INF/portlet-model-hints.xml</mergeModelHintsConfigs>
+				<modelHintsFileName>src/main/resources/META-INF/portlet-model-hints.xml</modelHintsFileName>
+				<osgiModule>true</osgiModule>
+				<propsUtil>xx.xxxx.xxxx.xx.persistence.service.util.ServiceProps</propsUtil>
+				<resourcesDirName>src/main/resources</resourcesDirName>
+				<springFileName>src/main/resources/META-INF/spring/module-spring.xml</springFileName>
+				<sqlDirName>src/main/resources/META-INF/sql</sqlDirName>
+				<sqlFileName>tables.sql</sqlFileName>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
+```
+
+**OR**
+
+You need to decrease the ```<version>x.x.xxx</version>``` tag, use the ones of other modules, if any
 
 ---
 
@@ -669,7 +731,7 @@ public static Class<?> classForClassNameId(long classNameId)
 
 ## Liferay best practices
 
-In maven or gradle projects, always create a parent module per osgi module... so you can put inside service builders sub-modules (for example)
++ In maven or gradle projects, always create a parent module per osgi module... so you can put inside service builders sub-modules (for example)
 
 ---
 
