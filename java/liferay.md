@@ -88,28 +88,28 @@ You miss the plugin in the ```pom.xml```, example:
 
 ```xml
 <build>
-	<plugins>
-		<plugin>
-			<groupId>com.liferay</groupId>
-			<artifactId>com.liferay.portal.tools.service.builder</artifactId>
-			<version>1.0.228</version>
-			<configuration>
-				<apiDirName>../xx-xxxx-xxxx-xx-persistence-api/src/main/java</apiDirName>
-				<autoNamespaceTables>true</autoNamespaceTables>
-				<buildNumberIncrement>true</buildNumberIncrement>
-				<hbmFileName>src/main/resources/META-INF/module-hbm.xml</hbmFileName>
-				<implDirName>src/main/java</implDirName>
-				<mergeModelHintsConfigs>src/main/resources/META-INF/portlet-model-hints.xml</mergeModelHintsConfigs>
-				<modelHintsFileName>src/main/resources/META-INF/portlet-model-hints.xml</modelHintsFileName>
-				<osgiModule>true</osgiModule>
-				<propsUtil>xx.xxxx.xxxx.xx.persistence.service.util.ServiceProps</propsUtil>
-				<resourcesDirName>src/main/resources</resourcesDirName>
-				<springFileName>src/main/resources/META-INF/spring/module-spring.xml</springFileName>
-				<sqlDirName>src/main/resources/META-INF/sql</sqlDirName>
-				<sqlFileName>tables.sql</sqlFileName>
-			</configuration>
-		</plugin>
-	</plugins>
+  <plugins>
+    <plugin>
+      <groupId>com.liferay</groupId>
+      <artifactId>com.liferay.portal.tools.service.builder</artifactId>
+      <version>1.0.228</version>
+      <configuration>
+        <apiDirName>../xx-xxxx-xxxx-xx-persistence-api/src/main/java</apiDirName>
+        <autoNamespaceTables>true</autoNamespaceTables>
+        <buildNumberIncrement>true</buildNumberIncrement>
+        <hbmFileName>src/main/resources/META-INF/module-hbm.xml</hbmFileName>
+        <implDirName>src/main/java</implDirName>
+        <mergeModelHintsConfigs>src/main/resources/META-INF/portlet-model-hints.xml</mergeModelHintsConfigs>
+        <modelHintsFileName>src/main/resources/META-INF/portlet-model-hints.xml</modelHintsFileName>
+        <osgiModule>true</osgiModule>
+        <propsUtil>xx.xxxx.xxxx.xx.persistence.service.util.ServiceProps</propsUtil>
+        <resourcesDirName>src/main/resources</resourcesDirName>
+        <springFileName>src/main/resources/META-INF/spring/module-spring.xml</springFileName>
+        <sqlDirName>src/main/resources/META-INF/sql</sqlDirName>
+        <sqlFileName>tables.sql</sqlFileName>
+      </configuration>
+    </plugin>
+  </plugins>
 </build>
 ```
 
