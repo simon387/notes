@@ -77,7 +77,8 @@ How to create and configure (with Liferay IDE):
    + Project Template Name: ```service-builder```
    + Package Name: follow the project naming convenction, please
 3. at the end of the wizard, modify the ```service.xml```, see [the doc](https://docs.liferay.com/portal/7.0/definitions/liferay-service-builder_7_0_0.dtd.html)
-4. build services! 
+4. build services! right click on the module, ```Liferay```, ```build-service```
+5. check if every classes have been generated
 
 #### Common errors
 
@@ -742,5 +743,6 @@ public static Class<?> classForClassNameId(long classNameId)
 + [Override command from Site Admin Portlet](https://community.liferay.com/it/forums/-/message_boards/message/106482937)
 + [Event tracking by JS](https://www.xtivia.com/google-analytics-event-tracking-liferay/)
 + [Portlet filters in Liferay 7 dxp](https://www.liferaystack.com/2017/09/portlet-filters-in-liferay-7-dxp.html)
++ [Top Service Builder Article](http://www.enprowess.com/blogs/service-builder-liferay-dxp/)
 
 ---
