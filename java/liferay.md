@@ -83,6 +83,75 @@ Maven instructions:
 5. check if every classes have been generated
 6. add the maven dependency in the project you would like to use the services
 
+Example of a simple ```service.xml```:
+
+```xml
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="it.simonecelia.liferay">
+    <namespace>blabla_entity</namespace>
+    <!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+    <entity local-service="true" name="EntityName" remote-service="false" uuid="true">
+
+        <!-- PK fields -->
+
+        <column name="entityNameId" primary="true" type="long" />
+
+        <!-- Group instance -->
+
+        <column name="groupId" type="long" />
+
+        <!-- Audit fields -->
+
+        <column name="companyId" type="long" />
+        <column name="userId" type="long" />
+        <column name="userName" type="String" />
+        <column name="createDate" type="Date" />
+        <column name="modifiedDate" type="Date" />
+
+        <!-- Other fields -->
+
+        <column name="name" type="String" primary="true"/>
+        <column name="enabled" type="boolean" />
+<!-- 		<column name="field3" type="int" /> -->
+<!-- 		<column name="field4" type="Date" /> -->
+        <column name="description" type="String" />
+
+        <!-- Order -->
+
+<!-- 		<order by="asc"> -->
+<!-- 			<order-column name="field1" /> -->
+<!-- 		</order> -->
+
+        <!-- Finder methods -->
+
+         <finder name="entityName" return-type="EntityName" unique="true" >
+             <finder-column name="name" />
+         </finder>
+
+        <!-- References -->
+
+<!-- 		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" /> -->
+<!-- 		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" /> -->
+    </entity>
+</service-builder>
+```
+
+**service builder does not generate methods for finders!!!**
+
+You have to manual edit the file ```<entityName>LocalServiceImpl.java```
+
+add for example:
+
+```java
+public EntityName findByName(String name) throws NoSuchEntityNameException {
+	return entityNamePersistence.findBylistenerName(name);
+}
+```
+
+and the run the build of the service builder again!
+
 #### Common errors
 
 ```[ERROR] No plugin found for prefix 'service-builder' in the current project and in the plugin groups [org.apache.maven.plugins, org.codehaus.mojo] available from the repositories [local (C:\Users\Simone\.m2\repository), central (https://repo.maven.apache.org/maven2)] -> [Help 1]```
