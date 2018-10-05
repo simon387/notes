@@ -405,6 +405,7 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 
 + remember to set ```liferay.home``` in ```portal-setup-wizard.properties```
 + delete ```/osgi/state```
++ delete ```temp``` and ```work``` directories
 + change if needed database connection info in ```/tomcat/conf/context.xml```
 + increase if needed ```-Xmx``` and ```-XX:MaxPermSize=``` inside ```tomcat/bin/setenv.*```
 + !! dunno why changing log levels in ```logging.properties``` solved a startup freezing on loading spring context !!
