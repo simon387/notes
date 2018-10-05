@@ -68,7 +68,7 @@ If the IDE doesn't publish it automatically (maybe the theme module is not in th
 
 How to create and configure (with Liferay IDE):
 
-mavent instrunctions:
+Maven instructions:
 
 1. create an osgi module (portlet, hook, doesn't matter)
 2. create a sub-module, with for the example the name of the entity you want to create/map
