@@ -152,6 +152,10 @@ public EntityName findByName(String name) throws NoSuchEntityNameException {
 
 and the run the build of the service builder again!
 
+**DOES NOT WORK ANYWAY**
+
+Just write a dynamic query, *fuck* the listeners!
+
 #### Common errors
 
 ```[ERROR] No plugin found for prefix 'service-builder' in the current project and in the plugin groups [org.apache.maven.plugins, org.codehaus.mojo] available from the repositories [local (C:\Users\Simone\.m2\repository), central (https://repo.maven.apache.org/maven2)] -> [Help 1]```
