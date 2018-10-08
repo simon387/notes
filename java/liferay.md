@@ -30,7 +30,7 @@ you can have syntax highlight inside JSP
 
 ### OSGI modules with maven
 
-If the module doesn't have the "square" on IDEA GUI, check the ```pom.xml``` configuration, even of the parent one
+If the module doesn't have the "square" on IDEA GUI, check the ```pom.xml``` configuration, even of the parent one (take a look at the ```<modules>``` tags)
 
 ---
 
