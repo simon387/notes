@@ -156,6 +156,17 @@ and the run the build of the service builder again!
 
 Just write a dynamic query, *byebye* the finders!
 
+#### Adding data from java
+
+```java
+EntityName entityName = new EntityName();
+EntityNameLocalServiceUtil.addEntityName(entityName);
+```
+
+Doesn't working, the project compiles but the deployment process never ends.//todo
+
+---
+
 #### Common errors
 
 ```[ERROR] No plugin found for prefix 'service-builder' in the current project and in the plugin groups [org.apache.maven.plugins, org.codehaus.mojo] available from the repositories [local (C:\Users\Simone\.m2\repository), central (https://repo.maven.apache.org/maven2)] -> [Help 1]```
@@ -333,6 +344,54 @@ how to redefine lifeportal javascript ? ```//TODO```
 or...
 
 You can avoid this using pure javascript, but is a bad solution(but faster)!
+
+---
+
+## Control Panel Portlets
+
+You can develop a module as a control Panel portlet in a very easy way
+
+Maven Module Structure example:
+
+```
+My-Module
+│   bnd.bnd
+│   mvnw
+│   mvnw.cmd
+│   pom.xml
+├───src
+│   └───main
+│       ├───java
+│       │   └───com
+│       │       └───simonecelia
+│       │           └───backoffice
+│       │               ├───constants
+│       │               │       BackofficePortletKeys.java
+│       │               │
+│       │               ├───panel
+│       │               │       BackofficePanelApp.java
+│       │               │
+│       │               ├───portlet
+│       │               │       BackofficePortlet.java
+│       │               │
+│       │               └───util
+│       │                       BackofficeUtil.java
+│       │
+│       └───resources
+│           ├───content
+│           │       Language.properties
+│           │
+│           └───META-INF
+│               └───resources
+│                   │   init.jsp
+│                   │   view.jsp
+│                   │
+│                   └───css
+│                           main.css
+
+```
+
+//TODO
 
 ---
 
@@ -563,8 +622,6 @@ public class MyNewCustomOnAssetEntryEntityListener extends BaseModelListener<Ass
 	
 	@Override
 	public void onBeforeUpdate(AssetEntry model) throws ModelListenerException {
-		// TODO Auto-generated method stub
-
 		logger.info(model.toString());
 
 		super.onBeforeUpdate(model);
@@ -723,6 +780,8 @@ result:
 
 you got some javascript errors, check the browser javascript console!
 
+---
+
 ### No tag "" defined in tag library imported with prefix "portlet"
 
 add in jsp 
@@ -731,11 +790,19 @@ add in jsp
 <%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 ```
 
+---
+
 ### No login iterface available?
 
 Just go to ```[baseurl]/c/portal/login```
 
 example: ```localhost:8080/c/portal/login```
+
+---
+
+### Deploy for module never ends - no errors in console
+
+NO SOLUTION YET//todo - Commenting out the code in the right places reveled the code causing the problem
 
 ---
 
