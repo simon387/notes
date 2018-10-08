@@ -156,6 +156,16 @@ and the run the build of the service builder again!
 
 Just write a dynamic query, *byebye* the finders!
 
+---
+
+#### Running service builder in cmd
+
+maven (inside the ```service.xml``` folder):
+
+```mvn service-builder:build```
+
+---
+
 #### Adding data from java
 
 ```java
@@ -203,6 +213,13 @@ You miss the plugin in the ```pom.xml```, example:
 **OR**
 
 You need to decrease the ```<version>x.x.xxx</version>``` tag, use the ones of other modules, if any
+
+---
+
+```No entity column exist with column database name ...```
+
++ delete all generated source by the service builder
++ avoid to use column name similar with sql keyboard (like ```name```)
 
 ---
 
