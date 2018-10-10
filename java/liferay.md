@@ -172,10 +172,11 @@ maven (inside the ```service.xml``` folder):
 
 ```java
 EntityName entityName = new EntityName();
+entityName.setBlablablablabla();
 EntityNameLocalServiceUtil.addEntityName(entityName);
 ```
 
-Doesn't working, the project compiles but the deployment process never ends.
+Doesn't work, the project compiles but the deployment process never ends.
 
 Solution:
 
@@ -1093,6 +1094,22 @@ public static Class<?> classForClassNameId(long classNameId)
 ## Liferay best practices
 
 + In maven or gradle projects, always create a parent module per osgi module... so you can put inside service builders sub-modules (for example)
+
+---
+
+## Liferay tricks
+
+```java
+int myEntityCount = MyEntityLocalServiceUtil.getMyEntities(0, Integer.MAX_VALUE).size();
+```
+
+instead of
+
+```java
+int myEntityCount = MyEntityLocalServiceUtil.getMyEntityCount();
+```
+
+gives the correct result even if you edit the database without upgrading index / cache
 
 ---
 
