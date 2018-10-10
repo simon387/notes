@@ -1031,6 +1031,21 @@ to this one:
 DynamicQuery dynamicQuery = MyEntityLocalServiceUtil.dynamicQuery();
 ```
 
+### class file for javax.servlet.http.HttpServletRequest not found
+
+maybe you miss the dependency?
+
+if maven, add something like this to the pom gerarchy
+
+```xml
+<dependency>
+	<groupId>javax.servlet</groupId>
+	<artifactId>javax.servlet-api</artifactId>
+	<version>3.0.1</version>
+	<scope>provided</scope>
+</dependency>
+```
+
 ---
 
 ## Classes
