@@ -164,6 +164,8 @@ maven (inside the ```service.xml``` folder):
 
 ```mvn service-builder:build```
 
+**Note**: remember to delete generated sources and binaries.
+
 ---
 
 #### Adding data from java
@@ -220,6 +222,12 @@ You need to decrease the ```<version>x.x.xxx</version>``` tag, use the ones of o
 
 + delete all generated source by the service builder
 + avoid to use column name similar with sql keyboard (like ```name```)
+
+---
+
+#### Tips
+
++ if Liferay does not generate service builder's sql tables, you can find the definition in the ```*ModelImpl.java``` class
 
 ---
 
@@ -407,6 +415,58 @@ My-Module
 │                           main.css
 
 ```
+
+```java
+@Component(
+		immediate = true,
+		property = {
+				"panel.category.key=" + PanelCategoryKeys.CONTROL_PANEL_CONFIGURATION,
+				"panel.app.order:Integer=301"
+		},
+		service = PanelApp.class
+)
+public class BackofficePanelApp extends BasePanelApp {
+
+	@Override
+	public String getPortletId() {
+		return BackofficePortletKeys.BackofficePortlet;
+	}
+
+	@Override
+	public String getLabel(Locale locale) {
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle("content.Language", locale, getClass());
+
+		return LanguageUtil.get(resourceBundle, "javax.portlet.display-name.backofficePortlet");
+	}
+
+	@Override
+	@Reference(
+			target = "(javax.portlet.name=" + BackofficePortletKeys.BackofficePortlet + ")",
+			unbind = "-"
+	)
+	public void setPortlet(Portlet portlet) {
+		super.setPortlet(portlet);
+	}
+}
+
+```
+
+```java
+@Component(immediate = true, property = { "com.liferay.portlet.display-category=category.hidden",
+		"javax.portlet.display-name=Blabla Backoffice", "javax.portlet.init-param.template-path=/",
+		"com.liferay.portlet.header-portlet-css=/css/main.css", "javax.portlet.init-param.view-template=/view.jsp",
+		"javax.portlet.name=" + BackofficePortletKeys.BackofficePortlet,
+		"javax.portlet.resource-bundle=content.Language",
+		"javax.portlet.security-role-ref=power-user,user" }, service = Portlet.class)
+public class BackofficePortlet extends MVCPortlet {
+
+	@Override
+	public void doView(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
+		super.doView(renderRequest, renderResponse);
+	}
+}
+```
+
 
 //TODO
 
