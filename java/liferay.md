@@ -753,7 +753,8 @@ AssetEntry assetEntry = AssetEntryLocalServiceUtil.getAssetEntry(newAssetEntry.g
 ### DynamicQuery example
 
 ```java
-DynamicQuery dynamicQuery = DynamicQueryFactoryUtil.forClass(Library.class);
+//DynamicQuery dynamicQuery = DynamicQueryFactoryUtil.forClass(Library.class); // <-- possible runtime error
+DynamicQuery dynamicQuery = LibraryLocalServiceUtil.dynamicQuery();
 dynamicQuery.add(RestrictionsFactoryUtil.like("bookName", "java"));
 dynamicQuery.add(RestrictionsFactoryUtil.eq("author", "james"));
 List results = LibraryLocalServiceUtil.dynamicQuery(dynamicQuery);
@@ -975,7 +976,7 @@ add in jsp
 
 ---
 
-### No login iterface available?
+### No login interface available?
 
 Just go to ```[baseurl]/c/portal/login```
 
@@ -986,6 +987,28 @@ example: ```localhost:8080/c/portal/login```
 ### Deploy for module never ends - no errors in console
 
 NO SOLUTION YET//todo - Commenting out the code in the right places reveled the code causing the problem
+
+---
+
+### java.lang.IllegalStateException: No servlet context name specified
+
+or 
+
+```liferay Unable find model ...```
+
+Possible solution if happening while using dynamyc queries:
+
+Change the code from this one:
+
+```java
+DynamicQuery dynamicQuery = DynamicQueryFactoryUtil.forClass(MyEntity.class);
+```
+
+to this one:
+
+```java
+DynamicQuery dynamicQuery = MyEntityLocalServiceUtil.dynamicQuery();
+```
 
 ---
 
