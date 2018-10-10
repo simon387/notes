@@ -464,11 +464,68 @@ public class BackofficePortlet extends MVCPortlet {
 	public void doView(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
 		super.doView(renderRequest, renderResponse);
 	}
+
+	//custom
+	public void enablingXXX(ActionRequest actionRequest, ActionResponse actionResponse) {
+		long auditListenerId = ParamUtil.getLong(actionRequest, FORM_XXX_ID);
+
+		try {
+			
+		} catch (PortalException portalException) {
+			portalException.printStackTrace();
+		}
+		SessionMessages.add(actionRequest, "xxxEnabled");
+	}
 }
 ```
 
+```jsp
+<%@ page import="com.liferay.portal.kernel.language.LanguageUtil" %>
+<%@ page import="com.liferay.portal.kernel.util.Constants" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="package.service.XxxLocalServiceUtil" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-//TODO
+<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
+
+<%@ taglib uri="http://liferay.com/tld/aui" prefix="aui" %>
+<%@ taglib uri="http://liferay.com/tld/portlet" prefix="liferay-portlet" %>
+<%@ taglib uri="http://liferay.com/tld/theme" prefix="liferay-theme" %>
+<%@ taglib uri="http://liferay.com/tld/ui" prefix="liferay-ui" %>
+<%@ taglib uri="http://liferay.com/tld/frontend" prefix="liferay-frontend" %>
+<%@ taglib uri="http://liferay.com/tld/ui" prefix="liferay-ui" %>
+
+<liferay-theme:defineObjects/>
+<liferay-frontend:defineObjects/>
+<portlet:defineObjects/>
+
+<liferay-ui:success key="xxxEnabled" message="package.backoffice.jsp.message.xxx.enabled"/>
+
+<div class="container">
+    <div class="col-md-12">
+        <div class=" ">
+            <h2><liferay-ui:message key="package.backoffice.main.title" /></h2>
+        </div>
+        <div class="backofficeView">
+            <liferay-ui:search-container emptyResultsMessage="package.backoffice.table.empty" total="<%= XxxLocalServiceUtil.getXxxListenersCount() %>" delta="20" deltaConfigurable="false">
+                <liferay-ui:search-container-results
+                        results="<%= XxxListenerLocalServiceUtil.getXxxListeners(searchContainer.getStart(), searchContainer.getEnd() ) %>"
+                />
+                <liferay-ui:search-container-row
+                        className="package.sb.model.XxxListener"
+                        modelVar="aXxxListener"
+                >
+                    <liferay-ui:search-container-column-text cssClass="width-15" name="package.backoffice.form.name" value="<%=aXxxListener.getListenerName()%>" />
+                    <liferay-ui:search-container-column-text cssClass="width-15" name="package.backoffice.form.description" value="<%=aXxxListener.getDescription()%>" />
+                    <liferay-ui:search-container-column-text cssClass="width-15" name="package.backoffice.form.enabled" value="<%=String.valueOf(aXxxListener.isEnabled())%>" />
+                    <liferay-ui:search-container-column-jsp  cssClass="width-10" path="/action.jsp" name="package.backoffice.form.actions" />
+                </liferay-ui:search-container-row>
+                <liferay-ui:search-iterator />
+            </liferay-ui:search-container>
+        </div>
+    </div>
+</div>
+```
 
 ---
 
