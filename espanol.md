@@ -93,6 +93,7 @@
   + documento de identidad
   + licencia de conducir
   + documento del lavoro, template da raffaele ~~compilato da luca di swecat~~
+  + www.nie.cat info@nie.cat
   
 ### Traduccion pagina NIE
 
@@ -116,7 +117,9 @@ ho sonno
 + arenas barcelona -> top del top
 + la monrue -> top nachos, nel Raval
 + **airport: t2 got the train**
+  + e alla stazione barcelona saints le vie per l'aereoporto sono la 9 e la 10
 + a Glories c'e' un bel centro commerciale
++ almo2bar
 
 ---
 
