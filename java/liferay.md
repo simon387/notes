@@ -1109,7 +1109,7 @@ instead of
 int myEntityCount = MyEntityLocalServiceUtil.getMyEntityCount();
 ```
 
-gives the correct result even if you edit the database without upgrading index / cache
+gives the correct result even if you edit the database without updating indexes / cache
 
 ---
 
