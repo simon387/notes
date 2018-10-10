@@ -225,6 +225,14 @@ You need to decrease the ```<version>x.x.xxx</version>``` tag, use the ones of o
 
 ---
 
+```Service builder "error: cannot find symbol```
+
+A client cannot find a method that exists in a new version of service builder generated code?
+
++ Delete state, temp, work folders, remove services and apis module from osgi module, redeploy.
+
+---
+
 #### Tips
 
 + if Liferay does not generate service builder's sql tables, you can find the definition in the ```*ModelImpl.java``` class
@@ -408,6 +416,7 @@ My-Module
 │           │
 │           └───META-INF
 │               └───resources
+│                   │   action.jsp
 │                   │   init.jsp
 │                   │   view.jsp
 │                   │
@@ -476,8 +485,12 @@ public class BackofficePortlet extends MVCPortlet {
 		}
 		SessionMessages.add(actionRequest, "xxxEnabled");
 	}
+
+	...
 }
 ```
+
+```view.jsp```
 
 ```jsp
 <%@ page import="com.liferay.portal.kernel.language.LanguageUtil" %>
@@ -525,6 +538,42 @@ public class BackofficePortlet extends MVCPortlet {
         </div>
     </div>
 </div>
+```
+
+```action.jsp```
+
+```jsp
+<%@ page import="com.liferay.portal.kernel.util.WebKeys"%>
+<%@ page import="com.liferay.portal.kernel.dao.search.ResultRow"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
+<%@ taglib uri="http://liferay.com/tld/aui" prefix="aui" %>
+<%@ taglib uri="http://liferay.com/tld/portlet" prefix="liferay-portlet" %>
+<%@ taglib uri="http://liferay.com/tld/theme" prefix="liferay-theme" %>
+<%@ taglib uri="http://liferay.com/tld/ui" prefix="liferay-ui" %>
+<%@ taglib uri="http://liferay.com/tld/frontend" prefix="liferay-frontend"%>
+<%@ taglib uri="http://liferay.com/tld/ui" prefix="liferay-ui" %>
+<%@ page import="package.model.XxxListener" %>
+
+<liferay-theme:defineObjects />
+<liferay-frontend:defineObjects />
+<portlet:defineObjects />
+<%
+    ResultRow row = (ResultRow)request.getAttribute(WebKeys.SEARCH_CONTAINER_RESULT_ROW);
+    XxxListener aXxxListener = (XxxListener)row.getObject();
+%>
+
+<liferay-ui:icon-menu>
+    <portlet:actionURL name="enablingListener" var="enablingListenerURL">
+        <portlet:param name="listenerId" value="<%= String.valueOf(aXxxListener.getListenerId())%>" />
+    </portlet:actionURL>
+    <liferay-ui:icon message="package.backoffice.form.actions.enabling" iconCssClass="icon-exclamation-sign" url="<%= enablingListenerURL %>" />
+
+    <portlet:actionURL name="disablingListener" var="disablingListenerURL">
+        <portlet:param name="listenerId" value="<%= String.valueOf(aXxxListener.getListenerId())%>" />
+    </portlet:actionURL>
+    <liferay-ui:icon message="package.backoffice.form.actions.disabling" iconCssClass="icon-remove" url="<%= disablingListenerURL %>" />
+</liferay-ui:icon-menu>
 ```
 
 ---
