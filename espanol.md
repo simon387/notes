@@ -115,7 +115,7 @@ ho sonno
 + flaherty https://www.pflaherty.com
 + arenas barcelona -> top del top
 + la monrue -> top nachos, nel Raval
-+ airport: t2 got the train
++ **airport: t2 got the train**
 + a Glories c'e' un bel centro commerciale
 
 ---
