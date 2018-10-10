@@ -175,7 +175,15 @@ EntityName entityName = new EntityName();
 EntityNameLocalServiceUtil.addEntityName(entityName);
 ```
 
-Doesn't working, the project compiles but the deployment process never ends.//todo
+Doesn't working, the project compiles but the deployment process never ends.
+
+Solution:
+
+```java
+EntityName entityName = EntityNameLocalServiceUtil.createEntityName(CounterLocalServiceUtil.increment());
+entityName.setBlablablablabla();
+EntityNameLocalServiceUtil.addEntityName(entityName);
+```
 
 ---
 
@@ -476,7 +484,7 @@ public class BackofficePortlet extends MVCPortlet {
 
 	//custom
 	public void enablingXXX(ActionRequest actionRequest, ActionResponse actionResponse) {
-		long auditListenerId = ParamUtil.getLong(actionRequest, FORM_XXX_ID);
+		long xxxListenerId = ParamUtil.getLong(actionRequest, FORM_XXX_ID);
 
 		try {
 			
@@ -986,7 +994,9 @@ example: ```localhost:8080/c/portal/login```
 
 ### Deploy for module never ends - no errors in console
 
-NO SOLUTION YET//todo - Commenting out the code in the right places reveled the code causing the problem
+Commenting out the code in the right places reveled the code causing the problem...
+
+Was a bad usage of ```xxLocalServiceUtil();```
 
 ---
 
