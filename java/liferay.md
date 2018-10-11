@@ -2,15 +2,16 @@
 
 But not only Liferay infos, I put here even some random web dev tricks learned in my Spain experience
 
-+ [General Java Notes](https://github.com/simon387/notes/blob/master/java/readme.md)
-+ [General HTML Notes](https://github.com/simon387/notes/blob/master/HTML.md)
-+ [General Javascript Notes](https://github.com/simon387/notes/blob/master/javascript/readme.md)
-+ [General CSS Notes](https://github.com/simon387/notes/blob/master/css/readme.md)
-+ [General MySql Notes](https://github.com/simon387/notes/blob/master/sql/readme.md)
-+ [General Freemarker Notes](https://github.com/simon387/notes/blob/master/java/freemarker.md)
-+ [General Velocity Notes](https://github.com/simon387/notes/blob/master/java/velocity.md)
-+ [General Maven Notes](https://github.com/simon387/notes/blob/master/java/maven.md)
-+ [General Gradle Notes](https://github.com/simon387/notes/blob/master/java/gradle.md)
++ [General Java Notes](readme.md)
++ [General HTML Notes](../HTML.md)
++ [General Javascript Notes](../javascript/readme.md)
++ [General CSS Notes](../css/readme.md)
++ [General MySql Notes](../sql/readme.md)
++ [General Freemarker Notes](freemarker.md)
++ [General Velocity Notes](velocity.md)
++ [General Maven Notes](maven.md)
++ [General Gradle Notes](gradle.md)
++ [General jMeter Notes](jmeter.md)
 
 ---
 
@@ -956,6 +957,18 @@ There are two types of Auth Tokens:
 
 1. p_auth: Portal Authentication Token for CSRF protection
 2. p_p_auth: Portlet authentication token for add-default-resource protection
+
+### Example of jMeter regular expression extractor setup
+
+Regular Expression Extractor
+
++ Apply to: ```main sample only```
++ Field to check: ```body```
++ Name of created variable: ```auth_token```
++ RE: ```p_auth&#x3d;(.+?)"```
++ Template: ```$1$```
++ Match No. ```1```
++ Default Value: ```Failed```
 
 ---
 

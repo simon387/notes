@@ -1,6 +1,6 @@
 # General Gradle Notes
 
-+ [GOTO Liferay Notes](https://github.com/simon387/notes/blob/master/java/liferay.md)
++ [GOTO Liferay Notes](liferay.md)
 
 ## Gradle comments
 

@@ -1,6 +1,6 @@
 # General HTML notes
 
-+ [GOTO Liferay Notes](https://github.com/simon387/notes/blob/master/java/liferay.md)
++ [GOTO Liferay Notes](java/liferay.md)
 
 ---
 

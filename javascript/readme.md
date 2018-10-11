@@ -1,6 +1,6 @@
 # General notes on Javascript
 
-+ [GOTO Liferay Notes](https://github.com/simon387/notes/blob/master/java/liferay.md)
++ [GOTO Liferay Notes](../java/liferay.md)
 + [Angular Notes](angular/readme.md)
 + [React Notes](react/readme.md)
 

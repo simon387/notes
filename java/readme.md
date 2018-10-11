@@ -1,6 +1,6 @@
 # Java notes
 
-+ [GOTO Liferay Notes](https://github.com/simon387/notes/blob/master/java/liferay.md)
++ [GOTO Liferay Notes](liferay.md)
 
 ## Eclipse note
 

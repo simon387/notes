@@ -1,5 +1,7 @@
 # General Notes on Apache jMeter
 
++ [GOTO Liferay Notes](liferay.md)
+
 ## Variables
 
 To use them in forms use this syntax:

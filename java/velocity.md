@@ -1,7 +1,7 @@
 # Notes about template and structure develompment in liferay
 
 The main Liferay used template language ~~is~~ was Velocity
-+ [GOTO Liferay Notes](https://github.com/simon387/notes/blob/master/java/liferay.md)
++ [GOTO Liferay Notes](liferay.md)
 
 ---
 

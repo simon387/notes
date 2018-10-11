@@ -1,6 +1,6 @@
 # Maven general Notes
 
-+ [GOTO Liferay Notes](https://github.com/simon387/notes/blob/master/java/liferay.md)
++ [GOTO Liferay Notes](liferay.md)
 
 ## Example of file moving
 
