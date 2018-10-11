@@ -18,3 +18,8 @@ In firefox, you need to manually import from browser settings
 
 ---
 
+## Test Script Recorder
+
+Remember that usually proxy browsers settings bypass localhost / 127.0.0.1 !
+
+---
