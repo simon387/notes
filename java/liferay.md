@@ -950,6 +950,15 @@ try {
 
 ---
 
+## Auth tokens
+
+There are two types of Auth Tokens:
+
+1. p_auth: Portal Authentication Token for CSRF protection
+2. p_p_auth: Portlet authentication token for add-default-resource protection
+
+---
+
 ## Bugs / errors / general problems
 
 Sometime they are not related to Liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
