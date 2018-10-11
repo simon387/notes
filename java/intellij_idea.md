@@ -1,3 +1,5 @@
+# IntelliJ IDEA General Notes
+
 ## .desktop file
 
 ```/usr/local/share/applications/jetbrains-idea.desktop```
@@ -45,5 +47,21 @@ StartupWMClass=jetbrains-idea
 | ```ctrl + alt + l```      | format code              |
 | ```ctrl + shift + F9```   | hot class replacement during debug |
 | ```alt + j```             | find next selected string |
+
+---
+
+## SVN login not working?
+
+But in browser it works?
+
+Turn this option to on:
+
+```Settings -> Subversion -> Enable interactive mode```
+
+Also I usually use a svn binary different from the one integrated in IntelliJ IDEA (if any)
+
+For example i put it in this directory:
+
+```C:\dev\svn\bin\svn.exe```
 
 ---
