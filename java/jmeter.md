@@ -14,7 +14,7 @@ To use them in forms use this syntax:
 
 After generating one (for example after the click on "start recording"), just go in the ```bin``` directory, click on it and follow the install wizard.
 
-In firefox, you need to manually import from browse settings
+In firefox, you need to manually import from browser settings
 
 ---
 
