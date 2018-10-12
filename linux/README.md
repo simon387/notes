@@ -6,6 +6,8 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
 [Commands examples](https://github.com/simon387/notes/blob/master/linux/linux_cmd.md)
 
+---
+
 ## run a graphic program from ssh
 
 Sometime just works with 
@@ -20,6 +22,8 @@ and then this can help
 ```bash
 (setsid <cmd> &)
 ```
+
+---
 
 ## favourite softwares
 
@@ -45,6 +49,8 @@ and then this can help
 + wondershaper
 + youtube-dl
 
+---
+
 ## usefull paths
 
 + repository file conf ```/etc/yum.repos.d```
@@ -65,6 +71,9 @@ and then this can help
   Categories=GTK;GNOME;Utility;
   Icon=/opt/idea-IC-173.3727.127/bin/idea.png
   ```
+
+---
+
 ## example of one way to develop gnome application with javascript!
 
 1. dnf install glade
@@ -105,6 +114,8 @@ and then this can help
 5. make it executable ```chmod +x helloworld.js```
 5. run it ```./helloworld.js```
 
+---
+
 ## example: increasing /home space in a lvm setup
 
 hot one! with out reboot
@@ -120,21 +131,31 @@ lvm pvresize -v  --setphysicalvolumesize 187342848K '/dev/sdb5'
 
 <i>    Wiping internal VG cache<br />    Wiping cache of LVM-capable devices<br />    Cache: Duplicate VG name fedora: Prefer existing qHFC6M-2tRL-4D5N-YV7g-cZen-rINx-n1qQjh vs new 228Bll-51D5-tGPp-AWKz-veLv-0Zne-ScEZIj<br />    Cache: Duplicate VG name fedora: Prefer existing 228Bll-51D5-tGPp-AWKz-veLv-0Zne-ScEZIj vs new qHFC6M-2tRL-4D5N-YV7g-cZen-rINx-n1qQjh<br />    Archiving volume group &quot;fedora&quot; metadata (seqno 22).<br />/dev/sdb5: Requested size 178,66 GiB is less than real size 236,47 GiB. Proceed?  [y/n]: [n]<br />  Physical Volume /dev/sdb5 not resized.<br /></i>
 ```
+
+---
+
 ## how to know if wayland session is on
 
 + ```loginctl show-session <YOUR_NUMBER> -p Type```
 + get number from ```loginctl```
 
+---
+
 ## connecting to a "pulse secure" VPN
 
 example:
+
 ```sudo openconnect --juniper -u=user -p=password -P proxy:port -v https://sslvpn.xxx```
+
+---
 
 ## random numbers
 
 ```bash
 while true; do shuf -i1-100 -n1; sleep 1; done
 ```
+
+---
 
 ## yum/dnf rollback
 
@@ -149,15 +170,22 @@ ID     | Command line             | Date a | Action | Altere
 
 > sudo dnf history undo 160                        # Undo / roll-back install of bleachbit
 ```
+
+---
+
 ## virtual terminal change
 
 <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F1</kbd> / <kbd>F7</kbd>
+
+---
 
 ## VirtualBox error rc=-1912
 
 1. remove virtualbox
 2. remove all virtualbox entries from ```dnf search virtualbox```
 3. download and install new virtualbox from oracle site, do not use npm
+
+---
 
 ## installing and using oracle database on a virtual machine
 
@@ -172,9 +200,13 @@ example:
 7. ssh tunnel : ```ssh -L 1521:localhost:1521 <ip_of_the_vm>```
 8. now yuo can access from the host machine
 
+---
+
 ### sqlplus
 
 ```connect SYSTEM/password@XE```
+
+---
 
 ## setup ssh access with ssh key authentication
 
@@ -220,3 +252,26 @@ $ ssh-add ~/.ssh/id_rsa_key
 ```
 
 + to remove a passphrase ```ssh-keygen -p``` (quickest login)
+
+---
+
+## Random Kali Notes
+
+1. scaricare la iso
+2. inserire usb
+3. ```sudo fdisk -l```
+   + ```umount /dev/sdX```
+   + ```parted /dev/sdX```
+   + ```mklabel gpt```
+4. ```dd if=kali-linux-2017.1-amd64.iso of=/dev/sdb bs=512k```
+
++ root toor
++ ```service stop wicd```
++ ```service start wicd```
+
+1. ```airmon-ng```
+2. ```airmon-ng start wlan0```
+3. ```airodump-ng wlan0mon```
+4. ```airodump-ng -c 00 --bssid 00:ff -w /root/Desktop/ wlan0mon```
+
+---
