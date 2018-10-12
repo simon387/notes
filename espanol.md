@@ -111,6 +111,7 @@ ho sonno
 + [croccantina 1](http://www.todo-claro.com/e_index.php)
 + [croccantina 2](http://www.spanishdict.com/)
 + [series](http://www.seriesyonkis.com)
++ [transmission](http://www.mejortorrent.org)
 
 ---
 
