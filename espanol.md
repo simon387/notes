@@ -1,6 +1,7 @@
 # Español
 
 ## Frases comunes
+
 + Hasta luego! -> see you later!
 + Buenos dias
 + Buenas tardes -> afternoon
@@ -22,6 +23,7 @@
 ---
 
 ## Vocablo
+
 + Mañana -> tomorrow
 + Desayuno -> breakfast
 + comida -> lunch
@@ -49,6 +51,7 @@
 ---
 
 ## cosas muy importantes!
+
 + nunca hablar de ...
 + catalán no es dialecto
 
@@ -107,6 +110,7 @@ ho sonno
 + http://ajuntament.barcelona.cat/calendarifestius/es/
 + [croccantina 1](http://www.todo-claro.com/e_index.php)
 + [croccantina 2](http://www.spanishdict.com/)
++ [series](http://www.seriesyonkis.com)
 
 ---
 
@@ -216,4 +220,3 @@ Traducciones! con musica!
 |que no traje pijama porque no me dio la gana | *Non indossavo il pigiama perché non ne avevo voglia*
 
 ---
-
