@@ -1,5 +1,7 @@
 # oracle database
 
++ [GOTO SQL Notes](readme.md)
+
 ## export schema user tables etc example
 
 ```bash

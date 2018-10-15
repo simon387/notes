@@ -1,5 +1,7 @@
 # mssql
 
++ [GOTO SQL Notes](readme.md)
+
 ## Rebuilding indexes
 
 ```sql

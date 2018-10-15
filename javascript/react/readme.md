@@ -1,5 +1,7 @@
 # react random notes
 
++ [GOTO Javascript Notes](../readme.md)
+
 ## hello react
 
 ```html

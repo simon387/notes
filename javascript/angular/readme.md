@@ -1,5 +1,7 @@
 # angular 5.0 stable
 
++ [GOTO Javascript Notes](../readme.md)
+
 ## quickstart
 
 https://angular.io/guide/quickstart
