@@ -25,3 +25,13 @@ In firefox, you need to manually import from browser settings
 Remember that usually proxy browsers settings bypass localhost / 127.0.0.1 !
 
 ---
+
+## How to set general setting
+
+Modify ```jmeter.properties```
+
+Example:
+
+```resultcollector.action_if_file_exists=DELETE```
+
+---
