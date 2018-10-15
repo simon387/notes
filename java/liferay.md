@@ -956,7 +956,7 @@ try {
 There are two types of Auth Tokens:
 
 1. p_auth: Portal Authentication Token for CSRF protection
-2. p_p_auth: Portlet authentication token for add-default-resource protection
+2. p_p_auth: Portlet Authentication token for add-default-resource protection
 
 ### Example of jMeter regular expression extractor setup
 
