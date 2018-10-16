@@ -801,6 +801,18 @@ List results = LibraryLocalServiceUtil.dynamicQuery(dynamicQuery);
   + JournalStructure
   + JournalTemplate
 
+*Web Content Folders are different from Documents and Media Folders*
+
+---
+
+## service locator
+
+Inside a ```custom.ftl```:
+
+```freemarker
+<#assign xxxToolService = serviceLocator.findService("com.simone.celia.package.service", "com.simone.celia.package.service.xxxToolLocalService") />
+```
+
 ---
 
 ## Liferay saxreaderutil
