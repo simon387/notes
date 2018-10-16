@@ -14,6 +14,12 @@ Because sometime is used to access array-like elements.
 
 ---
 
+## Thread Groups
+
+If more, checks if you want to ```Run Test Group consecutively``` in the Test Plan element
+
+---
+
 ## Certificates
 
 (on Windows, Chrome)
