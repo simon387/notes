@@ -805,7 +805,7 @@ List results = LibraryLocalServiceUtil.dynamicQuery(dynamicQuery);
 
 ---
 
-## service locator
+## ServiceLocator
 
 Inside a ```custom.ftl```:
 
