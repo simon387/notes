@@ -48,6 +48,20 @@
 + vale! -> ...
 + entonces -> ...poi...
 
+### Examples
+
+Hola ,
+
+necesitaría el jueves como día de asuntos propios, tengo cita para hacer el NIE .
+
+Es posible?
+
+:
+
+Ok, ningún problema
+
+Saludos,
+
 ---
 
 ## cosas muy importantes!
@@ -98,10 +112,6 @@
   + documento del lavoro, template da raffaele ~~compilato da luca di swecat~~
   + www.nie.cat info@nie.cat
   + S1/E106 formulario
-  
-### Traduccion pagina NIE
-
-ho sonno
 
 ---
 

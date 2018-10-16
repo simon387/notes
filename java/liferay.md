@@ -964,11 +964,13 @@ Regular Expression Extractor
 
 + Apply to: ```main sample only```
 + Field to check: ```body```
-+ Name of created variable: ```auth_token```
-+ RE: ```p_auth&#x3d;(.+?)"```
++ Name of created variable: ```pauth```
++ RE: ```;p_auth&#x3d;(.+?)"```
 + Template: ```$1$```
 + Match No. ```1```
 + Default Value: ```Failed```
+
+You can put it under every request, with a similar expression for the ```p_p_auth```, and use the variables for the next requests.
 
 ---
 
