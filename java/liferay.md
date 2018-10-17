@@ -1086,7 +1086,7 @@ if maven, add something like this to the pom gerarchy
 
 ### Liferay Ide cannot set SDK ?
 
-Maybe it's too new, download an older version (6.x ones)
+Maybe the ide is too new, download an older version (6.x ones)
 
 ---
 
