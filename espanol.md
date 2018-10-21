@@ -47,6 +47,7 @@
 + madrugar -> to wake up early in the morning
 + vale! -> ...
 + entonces -> ...poi...
++ guiri 
 
 ### Examples
 
