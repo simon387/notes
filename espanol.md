@@ -19,6 +19,7 @@
 + Te apetece tomar una cerveza/caña/vino etc ?
 + Te invito a tomar una cerveza
 + Te invito a tomar algo
++ Por cierto, no tengo palabras para el viernes ... fue maravilloso
 
 ---
 
@@ -47,7 +48,7 @@
 + madrugar -> to wake up early in the morning
 + vale! -> ...
 + entonces -> ...poi...
-+ guiri 
++ guiri -> guirilandia
 
 ### Ejemplos
 
