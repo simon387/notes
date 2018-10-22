@@ -49,7 +49,9 @@
 + entonces -> ...poi...
 + guiri 
 
-### Examples
+### Ejemplos
+
+#### Correo electronico
 
 Hola ,
 
@@ -62,6 +64,26 @@ Es posible?
 Ok, ningún problema
 
 Saludos,
+
+---
+
+Buen día,
+
+Soy el cliente simone celia (tarjeta ##########)
+
+Quería informarte que tengo la tarjeta bloqueada (actualicé los datos bancarios ahora).
+
+entonces que
+
+Mi viaje con la bicicleta ##########) del 21-10-2218 25:69:78 de C / VALÈNCIA, 621
+
+Duró 20 minutos y no casi 4 horas.
+
+Muchas gracias,
+
+Buen día
+
+Simone
 
 ---
 
