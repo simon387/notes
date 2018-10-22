@@ -859,6 +859,49 @@ Example:
 
 ---
 
+## Portlet in Popup window in Liferay 6.2
+
+[Portlet in Popup window in Liferay 6.2](https://community.liferay.com/blogs/-/blogs/portlet-in-popup-window-in-liferay-6-2)
+
+For example:
+
+how do you put the login page inside a bootstrap modal ?
+
+This is code example inside a template/js
+
+```freemarker
+// <%@ taglib uri="http://liferay.com/tld/portlet" prefix="liferay-portlet" %>
+
+// <liferay-portlet:renderURL portletName="58" var="loginPortletURL"  windowState="<%=LiferayWindowState.POP_UP.toString()%>">
+// </liferay-portlet:renderURL>
+ 
+// <aui:button name="login-popup"  id="login-popup"  value="login"> </aui:button>
+// <aui:script>
+AUI().use('aui-base','liferay-util-window','aui-io-plugin-deprecated',function(A){
+
+	// A.one('#<portlet:namespace/>login-popup').on('click', function(event){
+	var login_popup= Liferay.Util.Window.getWindow({
+		dialog: {
+			centered: true,
+			constrain2view: true,
+			modal: true,
+			resizable: false,
+			// width: 475
+		}
+	}).plug(A.Plugin.DialogIframe, {
+		autoLoad: true,
+		iframeCssClass: 'dialog-iframe',
+		uri:'<%=loginPortletURL.toString()%>'
+	}).render();
+	
+	login_popup.show();
+	login_popup.titleNode.html("Login");
+});
+// });
+```
+
+---
+
 ## Liferay AUDIT
 
 + to see if it is installed: ```Control Panel -> Configuration -> System Settings -> Foundation -> Audit```
