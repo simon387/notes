@@ -1195,6 +1195,35 @@ public static Class<?> classForClassNameId(long classNameId)
 
 ---
 
+## Liferay on jBoss
+
+Usually server configuration like datasources are in ```standalone.xml```
+
+Example:
+
+```xml
+<subsystem xmlns="urn:jboss:domain:datasources:1.2">
+	<datasources>
+		<datasource jndi-name="java:/jdbc/nameeeeee" pool-name="namee" enabled="true" use-java-context="true">
+			<connection-url>jdbc:oracle:thin:@xxx.xxx.xxx.xxx:1521:ORCL</connection-url>
+			<driver>oracle</driver>
+			<security>
+				<user-name>xxx</user-name>
+				<password>xxx</password>
+			</security>
+		</datasource>
+		<drivers>
+			<driver name="oracle" module="com.liferay.portal">
+				<driver-class>oracle.jdbc.OracleDriver</driver-class>
+				<xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
+			</driver>
+		</drivers>
+	</datasources>
+</subsystem>
+```
+
+---
+
 ## Liferay Philosophy
 
 + Everything is an Asset!
