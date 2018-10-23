@@ -361,3 +361,16 @@ There are other software examples too, like git, ffmpeg, npm etc..
 + last return code value
 
   ```$?```
+
+---
+
+## Zip
+
+To zip a directory and see the progress:
+
+```bash
+zip -v -r result.zip directory_name
+```
+
+---
+
