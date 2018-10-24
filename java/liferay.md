@@ -1006,6 +1006,23 @@ try {
 
 ---
 
+### Another example of 6.2 setup
+
+Using Liferay Ide (eclipse one)
+And its committed w/o SDK structure
+
+1. check it out from version control
+2. download or get in some way the right SDK
+3. set the SDK in Liferay IDE
+4. copy the theme or hook or portlet or etc.. you need to edit inside the right folder of the SDK (by hand)
+5. in Liferay IDE right click on projects area and chose Import -> Liferay Project from Plugin SDK
+6. follow the wizard, and then you should see new project(s) in workspace
+7. They should be working and you can build them with Ant or Maven or Gradle or...
+
+Thank you me later!
+
+---
+
 ## Auth tokens
 
 There are two types of Auth Tokens:
