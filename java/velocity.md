@@ -42,3 +42,13 @@ $getterUtil.getBoolean($variabileCheckboxosa.getData())
 + use always field "alt" on mutlimedia contents
 
 ---
+
+## String comparison example
+
+```velocity
+#if ($page_url == "login")
+
+#end
+```
+
+---
