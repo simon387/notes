@@ -165,7 +165,7 @@ salutacions cordials
 
 ---
 
-## Locs
+## TOP Locs Barcelona
 
 + rist siete puertas
 + piazza di spagna
@@ -176,6 +176,12 @@ salutacions cordials
   + e alla stazione barcelona saints le vie per l'aereoporto sono la 9 e la 10
 + a Glories c'e' un bel centro commerciale
 + almo2bar
+
+## top 3 Barcelona barbershop
+
+1. Sons Of Barber Barcelona -> Carrer de Sant Pere mes Baix 46, Barcellona
+2. [elijah](https://www.instagram.com/elijah/)
+3. [borntocut](http://www.borntocut.com/prueba/contacto/?lang=en)
 
 ---
 
