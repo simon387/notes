@@ -1242,9 +1242,22 @@ public class SiteAdminPortletKeys {
 
 ---
 
+## Embedding a portlet with preferences 
+
++ Liferay 6.2
++ Velocity
+
+```velocity
+$velocityPortletPreferences.setValue("portlet-setup-show-borders", "false")
+$theme.runtime("82", "", $velocityPortletPreferences.toString())
+$velocityPortletPreferences.reset()
+```
+
+---
+
 ## Code Example of embedding a portlet (login one) in the theme inside a modal
 
-Liferay 6.2
++ Liferay 6.2
 
 portal_normal.vm
 
