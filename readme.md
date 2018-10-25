@@ -1,6 +1,8 @@
-# notes
+# Developer Notes
 
-## random keywords
+[JUMP TO LIFERAY'S NOTE](java/liferay.md)
+
+## Random keywords
 + apache camel
 
   scambio messaggi
