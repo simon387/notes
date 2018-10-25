@@ -1361,6 +1361,10 @@ When you deploy something, you can find the unzipped code here:
 
 ## Liferay tricks
 
++ You can edit files like ```portal_normal.vm``` macros deployed in the server without have to redeploy (hot-editing is working)
+
+---
+
 ```java
 int myEntityCount = MyEntityLocalServiceUtil.getMyEntities(0, Integer.MAX_VALUE).size();
 ```
