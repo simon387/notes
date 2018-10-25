@@ -1362,23 +1362,18 @@ When you deploy something, you can find the unzipped code here:
 ## Liferay tricks
 
 + You can edit files like ```portal_normal.vm``` macros deployed in the server without have to redeploy (hot-editing is working)
++ if you use
+  ```java
+  int myEntityCount = MyEntityLocalServiceUtil.getMyEntities(0, Integer.MAX_VALUE).size();
+  ```
+  instead of
+  ```java
+  int myEntityCount = MyEntityLocalServiceUtil.getMyEntityCount();
+  ```
+  it gives the correct result even if you edit the database without updating indexes / cache
++ If you don't find in the source code piece of rendered html... maybe it's inside the database! (for example as a web content)
 
 ---
-
-```java
-int myEntityCount = MyEntityLocalServiceUtil.getMyEntities(0, Integer.MAX_VALUE).size();
-```
-
-instead of
-
-```java
-int myEntityCount = MyEntityLocalServiceUtil.getMyEntityCount();
-```
-
-gives the correct result even if you edit the database without updating indexes / cache
-
----
-
 ## Nice links
 
 + [Alternate text for css background images](http://davidmacd.com/blog/alternate-text-for-css-background-images.html)
