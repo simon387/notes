@@ -1240,6 +1240,8 @@ public class SiteAdminPortletKeys {
 }
 ```
 
+---
+
 ## Code Example of embedding a portlet (login one) in the theme inside a modal
 
 Liferay 6.2
@@ -1266,6 +1268,8 @@ anywhere in the JS code:
 ```javascript
 $("#loginOne").modal('toggle');
 ```
+
+---
 
 ## Useful Java methods
 
