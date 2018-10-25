@@ -273,7 +273,9 @@ in java generated code
 
 ---
 
-## Java side logging
+## Logging
+
+### Java side logging
 
 Add a private static SLF4J Logger field.
 
@@ -296,6 +298,34 @@ _logger.debug("...");
 _logger.warn("...");
 _logger.error("...");
 ```
+
+---
+
+### JSP side logging
+
+```jsp
+<%@ page import="com.liferay.portal.kernel.log.LogFactoryUtil" %>
+<%@ page import="com.liferay.portal.kernel.log.Log" %>
+<%! private static Log _log = LogFactoryUtil.getLog("mypackage.html.myfile.jsp"); %>
+```
+
+---
+
+## General JSP
+
+### Current page name in JSP
+
+```jsp
+<%@ page import = "com.liferay.portal.kernel.util.WebKeys" %>
+<%@ page import = "com.liferay.portal.theme.ThemeDisplay" %>
+
+<%
+ThemeDisplay themeDisplay = (ThemeDisplay)request.getAttribute(WebKeys.THEME_DISPLAY);
+String pageName = themeDisplay.getLayout().getName(themeDisplay.getLocale());
+%>
+```
+
+For example, in the login page: ```pageName.equals("Login")```
 
 ---
 
@@ -1011,15 +1041,27 @@ try {
 Using Liferay Ide (eclipse one)
 And its committed w/o SDK structure
 
-1. check it out from version control
-2. download or get in some way the right SDK
-3. set the SDK in Liferay IDE
-4. copy the theme or hook or portlet or etc.. you need to edit inside the right folder of the SDK (by hand)
-5. in Liferay IDE right click on projects area and chose Import -> Liferay Project from Plugin SDK
-6. follow the wizard, and then you should see new project(s) in workspace
-7. They should be working and you can build them with Ant or Maven or Gradle or...
+~~1. check it out from version control~~
 
-Thank you me later!
+~~2. download or get in some way the right SDK~~
+
+~~3. set the SDK in Liferay IDE~~
+
+~~4. copy the theme or hook or portlet or etc.. you need to edit inside the right folder of the SDK (by hand)~~
+
+~~5. in Liferay IDE right click on projects area and chose Import -> Liferay Project from Plugin SDK~~
+
+~~6. follow the wizard, and then you should see new project(s) in workspace~~
+
+~~7. They should be working and you can build them with Ant or Maven or Gradle or...~~
+
+just do in this way:
+
+1. download or get in some way the right SDK
+2. set the SDK in Liferay IDE
+3. single checkout the plugin (theme, hook, portlet, whatever) inside the right SDK's directory
+
+Thank me later!
 
 ---
 
@@ -1147,6 +1189,19 @@ if maven, add something like this to the pom gerarchy
 ### Liferay Ide cannot set SDK ?
 
 Maybe the ide is too new, download an older version (6.x ones)
+
+---
+
+### Ant error, dependencies not founds?
+
+Even if the java classpath is correct? 
+
+Use the "save" trick (Eclipse based IDEs):
+
+1. Click on console error, in the class name, should open the java file
+2. Edit it, just whitespace
+3. re run the goal (build, deploy, whatever)
+4. should work
 
 ---
 
