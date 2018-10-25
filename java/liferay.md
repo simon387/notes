@@ -1374,6 +1374,7 @@ When you deploy something, you can find the unzipped code here:
 + If you don't find in the source code piece of rendered html... maybe it's inside the database! (for example as a web content)
 
 ---
+
 ## Nice links
 
 + [Alternate text for css background images](http://davidmacd.com/blog/alternate-text-for-css-background-images.html)
