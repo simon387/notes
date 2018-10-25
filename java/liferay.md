@@ -1240,6 +1240,33 @@ public class SiteAdminPortletKeys {
 }
 ```
 
+## Code Example of embedding a portlet (login one) in the theme inside a modal
+
+Liferay 6.2
+
+portal_normal.vm
+
+```velocity
+#if ($url_pagina == "login")
+	
+#else
+	<div id="loginOne" class="modal modal_custom fade propound regular_form transparent" role="dialog" style="display:none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<a href="javascript:void(0);" title="<@liferay.language key='Exit' />" data-dismiss="modal" data-target="#loginOne" class="sh_icon-close"></a>
+				$theme.runtime("58", "", "")
+			</div>
+		</div>
+	</div>
+#end
+```
+
+anywhere in the JS code:
+
+```javascript
+$("#loginOne").modal('toggle');
+```
+
 ## Useful Java methods
 
 ```java
@@ -1293,6 +1320,12 @@ Example:
 	</datasources>
 </subsystem>
 ```
+
+---
+
+When you deploy something, you can find the unzipped code here:
+
+```.../jboss-eap-x.x/standalone/deployments/```
 
 ---
 
