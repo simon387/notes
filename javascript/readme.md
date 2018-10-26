@@ -203,3 +203,11 @@ Note: when you select items from the *fake* ```<select>``` the *real* one is not
 
 ---
 
+## Another way to debug
+
+This will trigger the browser's debugger
+
+Just write ```debugger``` in the js code
+
+---
+
