@@ -1,6 +1,6 @@
 # Liferay (MAINLY LIFERAY 7 DXP) Notes
 
-But not only Liferay infos, I put here even some random web dev tricks learned in my Spain experience
+But not only Liferay infos, I put here even some random web dev tricks learned in my experience
 
 + [General Java Notes](readme.md)
 + [General HTML Notes](../HTML.md)
