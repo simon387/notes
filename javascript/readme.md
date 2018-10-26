@@ -211,3 +211,10 @@ Just write ```debugger``` in the js code
 
 ---
 
+## Get bootstrap version in javascript console
+
+```javascript
+$.fn.tooltip.Constructor.VERSION
+```
+
+---
