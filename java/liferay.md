@@ -775,6 +775,8 @@ from jsp:
 
 ## Application Display Template (ADT)
 
+They are similar to the templates under web contents, remember to search in both location if you can't find the desidered template.
+
 + database table: ```ddmtemplate```
   + after editing one row, I had to restart Liferay to see the effect (lol)
 + you can edit them as admin user in Liferay under ```Configuration > Application Display Template```
