@@ -36,6 +36,8 @@
 
 ## comment
 
+They are multi-line!
+
 ```html
 {{!-- <div> --}}
 ```
