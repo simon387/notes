@@ -1063,6 +1063,11 @@ just do in this way:
 2. set the SDK in Liferay IDE
 3. single checkout the plugin (theme, hook, portlet, whatever) inside the right SDK's directory
 
+**Liferay IDE bugs appears!**
+
+4. delete the project keeping the files on file system
+5. reimport project from SDK plugin
+
 Thank me later!
 
 ---
@@ -1204,6 +1209,20 @@ Use the "save" trick (Eclipse based IDEs):
 2. Edit it, just whitespace
 3. re run the goal (build, deploy, whatever)
 4. should work
+
+---
+
+### error while deploy com.liferay.util.service cannot be resolved
+
+```
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xxxx.EntityNameLocalService' defined in ServletContext resource [/WEB-INF/classes/META-INF/portlet-spring.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xxx.service.persistence.EntityPersistence' defined in ServletContext resource [/WEB-INF/classes/META-INF/portlet-spring.xml]: Instantiation of bean failed; nested exception is java.lang.Error: Unresolved compilation problems:
+        com.liferay.util.service cannot be resolved
+        com.liferay.util.service cannot be resolved
+        com.liferay.util.service cannot be resolved
+        com.liferay.util.service cannot be resolved
+```
+
+Maybe your Liferay IDE portlet setup is broken, see [here](###-Another-example-of-6.2-setup)
 
 ---
 
