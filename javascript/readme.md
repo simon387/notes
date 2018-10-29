@@ -3,6 +3,7 @@
 + [GOTO Liferay Notes](../java/liferay.md)
 + [Angular Notes](angular/readme.md)
 + [React Notes](react/readme.md)
++ [jsRender Notes](jsRender.md)
 
 ## Chrome's Dev Tools Tricks
 
