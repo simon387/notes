@@ -115,13 +115,13 @@ not having a class
 ```
 
 ```css
-<style type="text/css"> 
-  .mobileShow {display: none;} 
+<style type="text/css">
+  .mobileShow {display: none;}
 
-  /* Smartphone Portrait and Landscape */ 
+  /* Smartphone Portrait and Landscape */
   @media only screen 
-    and (min-device-width : 320px) 
-    and (max-device-width : 480px){ 
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){
       .mobileShow {display: inline;}
   }
 </style>
@@ -137,12 +137,12 @@ not having a class
 
 ```css
 <style type="text/css">
-  .mobileHide { display: inline; } 
+  .mobileHide { display: inline; }
 
-  /* Smartphone Portrait and Landscape */ 
+  /* Smartphone Portrait and Landscape */
   @media only screen 
-    and (min-device-width : 320px) 
-    and (max-device-width : 480px){ 
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){
      .mobileHide { display: none;}
   }
 </style>
