@@ -2,6 +2,7 @@
 
 + [home page](https://www.jsviews.com/)
 + [github](https://github.com/BorisMoore/jsrender)
++ [Go back to Javascript Notes](readme.md)
 
 ---
 
