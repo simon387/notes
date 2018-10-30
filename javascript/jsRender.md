@@ -81,8 +81,18 @@ example: *"if is the first index then ..."*
 {{/for}}
 ```
 
+---
+
+### VERY IMPORTANT
+
 **VERY VERY IMPORTANT**
 
 **SAME THINGS FOR EVERY CODE BLOCK, IF BLOCK TOO!!!**
+
+---
+
+## common errors and mistakes
+
++ variable undefined even if you know it exists? take a look to the ```parent``` notation [here](###-VERY-IMPORTANT)
 
 ---
