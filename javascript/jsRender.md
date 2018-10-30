@@ -58,4 +58,10 @@ They are multi-line!
 {{/for}}
 ```
 
+example: *"if is the first index then ..."*
+
+```html
+{{if #index == 0}}...{{/fi}}
+```
+
 ---
