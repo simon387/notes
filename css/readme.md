@@ -104,3 +104,49 @@ not having a class
 }
 ```
 
+---
+
+## Mobile vs Desktop
+
+### Show content on mobile devices
+
+```html
+<div class="mobileShow">TEXT OR IMAGE FOR MOBILE HERE</div>
+```
+
+```css
+<style type="text/css"> 
+  .mobileShow {display: none;} 
+
+  /* Smartphone Portrait and Landscape */ 
+  @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+      .mobileShow {display: inline;}
+  }
+</style>
+```
+
+---
+
+### Hide content on mobile devices
+
+```html
+<div class="mobileHide"> TEXT OR IMAGE NOT FOR MOBILE HERE </div>
+```
+
+```css
+<style type="text/css">
+  .mobileHide { display: inline; } 
+
+  /* Smartphone Portrait and Landscape */ 
+  @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+     .mobileHide { display: none;}
+  }
+</style>
+```
+
+---
+
