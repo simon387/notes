@@ -59,10 +59,26 @@ They are multi-line!
 {{/for}}
 ```
 
+---
+
 example: *"if is the first index then ..."*
 
 ```html
 {{if #index == 0}}...{{/fi}}
+```
+
+---
+
+**VERY VERY IMPORTANT**
+
+**VARIABLES INSIDE FOR HAVE THEY OWN CONTEXT**
+
+**SO IF YOU WANT TO ACCESS A VARIABLE OUTSIDE THE FOR, YOU HAVE TO USE THIS SYNTAX**
+
+```html
+{{for items}}
+   {{if #parent.parent.data.variableOutsideTheFor)}}{{:#index}}{{/if}}
+{{/for}}
 ```
 
 ---
