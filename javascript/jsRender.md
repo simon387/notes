@@ -45,3 +45,17 @@ They are multi-line!
 ```
 
 ---
+
+## for statement
+
+```{{:index}}``` contain the index number
+
+```html
+{{for myArray}}
+  ...
+  {{:#index}}
+  ...
+{{/for}}
+```
+
+---
