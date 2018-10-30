@@ -81,4 +81,8 @@ example: *"if is the first index then ..."*
 {{/for}}
 ```
 
+**VERY VERY IMPORTANT**
+
+**SAME THINGS FOR EVERY CODE BLOCK, IF BLOCK TOO!!!**
+
 ---
