@@ -43,7 +43,7 @@
 |la pasamos romantic sin piloto automatic | *siamo stati romantici senza pilota automatico*
 |botamos el manual | *buttiamo il manuale*
 |tamos viajando en cannabis | *stiamo viaggiando nella cannabis*
-|siempe he sido una dama | *sono sempre stata una signore*
+|siempe he sido una dama | *sono sempre stata una signora*
 |pero soy una perra en la cama | *ma sono una cagna a letto*
 |asi que dale pum-pum-pum-pum-pum | *percui*
 |ponle carne a mi sazon zon-zon-zon-zon | *metti carne alla mia stagione*
