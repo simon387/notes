@@ -39,7 +39,9 @@
 They are multi-line!
 
 ```html
-{{!-- <div> --}}
+{{!-- <div> 
+      </div>
+--}}
 ```
 
 ---
