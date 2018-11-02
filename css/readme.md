@@ -2,6 +2,12 @@
 
 + [GOTO Liferay Notes](../java/liferay.md)
 
+## Chrome's dev tools tricks
+
++ Want to paste more then one css rule at the same time? open ```inspector-stylesheet``` by Elements tab. You can find it from the link generated when you click on the ```+``` button.
+
+---
+
 ## Ones from [freeCodeCamp](https://medium.freecodecamp.org/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849)
 
 + Class naming convention:
