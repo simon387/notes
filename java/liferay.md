@@ -1226,6 +1226,26 @@ Maybe your Liferay IDE portlet setup is broken, see [here](###-Another-example-o
 
 ---
 
+### Liferay.PortletURL undefined
+
+jsp
+
+```jsp
+<aui:script use="aui-base,aui-io-request,liferay-portlet-url,aui-io-deprecated">
+	A.one('#<portlet:namespace/>loginButton').on('click', function(event) {
+		var resourceURL = Liferay.PortletURL.createResourceURL();
+```
+
+```Liferay.PortletURL``` is undefined.
+
+Adding the taglibrary can help:
+
+```jsp
+<%@ taglib uri="http://liferay.com/tld/aui" prefix="aui" %>
+```
+
+---
+
 ## Classes
 
 + ```SiteAdminPortletKeys```
