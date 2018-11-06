@@ -223,7 +223,7 @@ $.fn.tooltip.Constructor.VERSION
 ## GetURLParameter example
 
 ```javascript
-function GetURLParameter(sParam) {
+function getURLParameter(sParam) {
 	var sPageURL = window.location.search.substring(1);
 	var sURLVariables = sPageURL.split('&');
 	for (var i = 0; i < sURLVariables.length; i++) {
@@ -235,7 +235,7 @@ function GetURLParameter(sParam) {
 }​
 
 //example of usage:
-var tech = GetURLParameter('technology');
+var tech = getURLParameter('technology');
 ```
 
 ---
