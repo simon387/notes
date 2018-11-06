@@ -240,3 +240,18 @@ var tech = GetURLParameter('technology');
 
 ---
 
+## Select option value by its text
+
+```javascript
+$('#mySelect option:contains(' + value + ')').each(function(){
+	if ($(this).text() == value) {
+		$(this).attr('selected', 'selected');
+		return false;
+	}
+	return true;
+});
+```
+
+---
+
+
