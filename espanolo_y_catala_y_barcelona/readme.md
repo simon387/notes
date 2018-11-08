@@ -134,6 +134,14 @@ Español (y Catalán) notes, Barcelona life and stuff!
 
 ---
 
+## estación de policia siempre aperto
+
+Por quejas!
+
+Carrer Nou de la Rambla, 76-78, 08001 Barcelona
+
+---
+
 ## keyboard
 
 |carácter| ASCII|UNICODE
