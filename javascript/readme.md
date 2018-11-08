@@ -204,10 +204,21 @@ Note: when you select items from the *fake* ```<select>``` the *real* one is not
 
 ---
 
-### partial id selection example
+### Partial id selection example
 
 ```javascript
 $("div[id^=sub-stringa-prefissa-croccantina-]").remove();
+```
+
+---
+
+### Cloning and appending example
+
++ cloning is a deep one
++ append to the bottom
+
+```javascript
+$("#id").clone().appendTo("#otherID");
 ```
 
 ---
