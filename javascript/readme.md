@@ -204,6 +204,14 @@ Note: when you select items from the *fake* ```<select>``` the *real* one is not
 
 ---
 
+### partial id selection example
+
+```javascript
+$("div[id^=sub-stringa-prefissa-croccantina-]").remove();
+```
+
+---
+
 ## Another way to debug
 
 This will trigger the browser's debugger
