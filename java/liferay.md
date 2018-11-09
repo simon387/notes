@@ -1413,6 +1413,7 @@ When you deploy something, you can find the unzipped code here:
   ```
   it gives the correct result even if you edit the database without updating indexes / cache
 + If you don't find in the source code piece of rendered html... maybe it's inside the database! (for example as a web content)
++ If you change extension to the ```.war``` files before copying them into the deploy folder, you will get less errors in the hot deploy phase... just put back the right extension after the transfer
 
 ---
 
