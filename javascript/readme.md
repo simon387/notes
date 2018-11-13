@@ -223,6 +223,14 @@ $("#id").clone().appendTo("#otherID");
 
 ---
 
+### Just inserting html in an element
+
+```javascript
+$("#myElement").append('<label>Casa</label>');
+```
+
+---
+
 ## Another way to debug
 
 This will trigger the browser's debugger
