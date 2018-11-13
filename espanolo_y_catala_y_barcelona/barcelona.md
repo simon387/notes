@@ -30,7 +30,7 @@
 
 ---
 
-## top 3 Barcelona barbershop
+## Top 3 Barcelona barbershop
 
 1. Sons Of Barber Barcelona -> Carrer de Sant Pere mes Baix 46, Barcellona
    + 93 154 45 10
