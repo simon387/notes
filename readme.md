@@ -36,6 +36,8 @@
 
   designer -> dev
 
+---
+
 ## random links
 + https://www.packtpub.com/packt/offers/free-learning
 + https://regexr.com
@@ -61,10 +63,21 @@
 + https://rubberduckdebugging.com/
 + https://andreagaleazzi.com
 
+---
+
 ## web dev utilities link
 
 + https://www.albionresearch.com/misc/urlencode.php
 
+---
+
 ## Git vs SVN
 
 https://www.perforce.com/blog/list-of-equivalent-commands-in-git-mercurial-and-svn
+
+---
+
+## License
+
+[MIT](https://github.com/simon387/notes/blob/master/LICENSE)
+
