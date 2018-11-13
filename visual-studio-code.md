@@ -89,3 +89,11 @@ Example on windows:
 For better usage, remember to disable the useless *HD Intel* software (from tray icon)
 
 ---
+
+## Insider info
+
++ bin path example: ```C:\Users\Simone\AppData\Local\Programs\Microsoft VS Code Insiders\bin```
++ command line exmaple: ```code-insiders```
+
+---
+
