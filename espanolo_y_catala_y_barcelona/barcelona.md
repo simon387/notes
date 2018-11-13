@@ -16,6 +16,8 @@
 
 ## TOP Locs Barcelona
 
+**DEPRECATED, see stelline e cuoricini google maps**
+
 + rist siete puertas
 + piazza di spagna
 + flaherty https://www.pflaherty.com
@@ -25,7 +27,6 @@
   + e alla stazione barcelona saints le vie per l'aereoporto sono la 9 e la 10
 + a Glories c'e' un bel centro commerciale
 + almo2bar
-+ see stelline e cuoricini google maps
 
 ---
 
