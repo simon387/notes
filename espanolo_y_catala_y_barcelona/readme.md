@@ -113,6 +113,14 @@ Español (y Catalán) notes, Barcelona life and stuff!
 
 ## keyboard
 
+**HOW TO TYPE ACCENTS WITH A SPANISH KEYBOARD**
+
+(and spanish layout by windows system)
+
+**use this ` or ´ or ^ followed by the vocal!**
+
+or you can use this table:
+
 |carácter| ASCII|UNICODE
 |---|---|---
 |Á | <kbd>ALT</kbd> + 0193|
@@ -132,3 +140,16 @@ Español (y Catalán) notes, Barcelona life and stuff!
 |¡ | <kbd>ALT</kbd> + 173|
 
 ---
+
+## Los días de la semana
+
++ Lunes
++ Martes
++ Miércoles
++ Jueves
++ Viernes
++ Sabado
++ Domingo
+
+---
+
