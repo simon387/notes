@@ -3,6 +3,7 @@
 But not only Liferay infos, I put here even some random web dev tricks learned in my experience
 
 + [General Java Notes](readme.md)
++ [General JSP Notes](jsp.md)
 + [General HTML Notes](../HTML.md)
 + [General Javascript Notes](../javascript/readme.md)
 + [General CSS Notes](../css/readme.md)
