@@ -1398,6 +1398,8 @@ When you deploy something, you can find the unzipped code here:
 
 + In maven or gradle projects, always create a parent module per osgi module... so you can put inside service builders sub-modules (for example)
 + *Always have a liferay portal bundle with tomcat for development*
++ Always use constant fields
++ Always localize strings
 
 ---
 
