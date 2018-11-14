@@ -2,6 +2,8 @@
 
 Español (y Catalán) notes, Barcelona life and stuff!
 
+[MORE BARCELONA INFO](barcelona.md)
+
 ## Frases comunes
 
 + Hasta luego! -> see you later!
