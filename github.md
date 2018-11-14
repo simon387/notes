@@ -7,3 +7,8 @@
 3. link/anchor to chapther/heading [example](##-Tips)
 
 ---
+
+## "We found a potential security vulnerability in one of your dependencies" message
+
+Solution: just click on the Github's alert for information, usually you just need to update dependencies.
+
