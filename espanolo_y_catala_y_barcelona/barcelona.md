@@ -2,15 +2,31 @@
 
 ## Docs
 
-+ NIE
-  + https://sede.administracionespublicas.gob.es/icpplus/index.html
-    + selezionate "Barcelona" come provincia, e poi "Certificados UE"
-  + pasaporte
-  + documento de identidad
-  + licencia de conducir
-  + documento del lavoro, template da raffaele ~~compilato da luca di swecat~~
-  + www.nie.cat info@nie.cat
-  + S1/E106 formulario
+### NIE
+
++ https://sede.administracionespublicas.gob.es/icpplus/index.html
+  + selezionate "Barcelona" come provincia, e poi "Certificados UE"
++ pasaporte
++ documento de identidad
++ licencia de conducir
++ documento del lavoro, template da raffaele ~~compilato da luca di swecat~~
++ www.nie.cat info@nie.cat
++ S1/E106 formulario
+
+---
+
+### Empadronamiento Barcelona
+
+Imprimir:
+
+1. appuntamento
+2. ci giunta (BOSS)
+3. autorización de inscripción
+4. ultimo cedolino
+5. contratto
+6. bolletta
+7. passaporto
+8. NIE
 
 ---
 
