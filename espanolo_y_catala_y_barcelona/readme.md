@@ -97,6 +97,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 
 + guardar -> to save
 + añadir -> to add / aggiungere
++ borrar -> to delete / cancellare
 
 ---
 
