@@ -289,3 +289,16 @@ $('#mySelect option:contains(' + value + ')').each(function(){
 
 Does nothing and doesn't reload the page.
 
+---
+
+## Intercept browser's back button
+
+```javascript
+(function() {
+  if (window.history && window.history.pushState) {
+    $(window).on('popstate', function() {
+      alert('Back button was pressed.');
+    });
+  }
+})();
+```
