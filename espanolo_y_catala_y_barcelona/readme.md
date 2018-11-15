@@ -66,6 +66,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + vale! -> ...
 + entonces -> ...poi...
 + guiri -> guirilandia
++ entre -> tra, between
 
 ## cosas muy importantes!
 
