@@ -1388,6 +1388,16 @@ When you deploy something, you can find the unzipped code here:
 
 ---
 
+## How to know if user is logged in?
+
+Javascript:
+
+```javascript
+themeDisplay.isSignedIn();
+```
+
+---
+
 ## Liferay Philosophy
 
 + Everything is an Asset!
