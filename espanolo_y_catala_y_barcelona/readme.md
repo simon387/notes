@@ -96,6 +96,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 |Ellos|han sido|habian sido|hubieron sido|habran sido|
 
 + guardar -> to save
++ añadir -> to add / aggiungere
 
 ---
 
