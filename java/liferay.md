@@ -1396,6 +1396,12 @@ Javascript:
 themeDisplay.isSignedIn();
 ```
 
+Always in javascript context, you can get current user id with:
+
+```javascript
+themeDisplay.getUserId();
+```
+
 ---
 
 ## Liferay Philosophy
