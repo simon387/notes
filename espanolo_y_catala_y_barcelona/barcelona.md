@@ -44,6 +44,16 @@ Imprimir:
 + a Glories c'e' un bel centro commerciale
 + almo2bar
 
+### Locs croccanti
+
+Born:
+
+combo: llamber o bornmuth in combo con paradiso
+
++ llamber
++ bornmuth
++ paradiso
+
 ---
 
 ## Top 3 Barcelona barbershop
