@@ -59,3 +59,10 @@ bold text ```**text**``` **text**
 italic text ```*text*``` *text*
 
 ---
+
+Comments are like html
+
+```html
+<!-- croccantina -->
+```
+
