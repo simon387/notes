@@ -1446,3 +1446,8 @@ themeDisplay.getUserId();
 + [Top Service Builder Article](http://www.enprowess.com/blogs/service-builder-liferay-dxp/)
 
 ---
+
+## TEST ZONE
+
+https://github.com/simon387/notes/blob/efdf77dfc11cd8ca6b7a0f2d9cddca93f910d68a/java/src/Test.java#L1
+
