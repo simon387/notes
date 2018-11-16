@@ -291,7 +291,7 @@ Does nothing and doesn't reload the page.
 
 ---
 
-## Intercept browser's back button
+## Intercept browser's back button example
 
 ```javascript
 (function() {
@@ -302,3 +302,16 @@ Does nothing and doesn't reload the page.
   }
 })();
 ```
+
+For example, force reloading after that event:
+
+```javascript
+(function() {
+  if (window.history && window.history.pushState) {
+    $(window).on('popstate', function(event) {
+      window.location.href = window.location.href;
+    });
+  }
+})();
+```
+g
