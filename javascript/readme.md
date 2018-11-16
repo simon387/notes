@@ -314,4 +314,3 @@ For example, force reloading after that event:
   }
 })();
 ```
-g
