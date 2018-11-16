@@ -21,7 +21,8 @@ Imprimir:
 
 1. appuntamento
 2. ci giunta (BOSS)
-3. autorización de inscripción
+3. autorización de inscripción...
+   + **MUST BE ORIGINAL AND SIGNED**
 4. ultimo cedolino
 5. contratto
 6. bolletta
