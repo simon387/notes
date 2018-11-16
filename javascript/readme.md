@@ -297,6 +297,7 @@ Does nothing and doesn't reload the page.
 (function() {
   if (window.history && window.history.pushState) {
     $(window).on('popstate', function() {
+      event.stopPropagation();
       alert('Back button was pressed.');
     });
   }
@@ -309,6 +310,7 @@ For example, force reloading after that event:
 (function() {
   if (window.history && window.history.pushState) {
     $(window).on('popstate', function(event) {
+      event.stopPropagation();
       window.location.href = window.location.href;
     });
   }
