@@ -1454,6 +1454,19 @@ themeDisplay.getUserId();
 
 ---
 
+## My favourite tools / IDE
+
++ Intellij IDEA
++ Liferay IDE
++ Visual Studio Code [(tips here)](../visual-studio-code.md)
++ Notepad++
++ Meld
++ Chrome
++ Firefox (you can see events on DOM elements)
++ MobaXterm
+
+---
+
 ## Nice links
 
 + [Alternate text for css background images](http://davidmacd.com/blog/alternate-text-for-css-background-images.html)
