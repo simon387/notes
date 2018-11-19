@@ -9,3 +9,4 @@
 - [ ] seguridad social
 - [ ] finisci il pdf di spring boot
 - [ ] impara il catalano
+- [ ] impara il castigliano
