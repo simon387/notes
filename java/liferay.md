@@ -1080,6 +1080,12 @@ just do in this way:
 
 4. delete the project keeping the files on file system
 5. reimport project from SDK plugin
+6. for sure you have also to fix ```.classpath```
+   1. right click on project
+   2. Java Build Path
+   3. double click on unbound things, and replace with correct value (if necessary, for example, copy lib jar from server to your local environment)
+
+
 
 Thank me later!
 
