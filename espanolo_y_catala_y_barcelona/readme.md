@@ -96,9 +96,10 @@ Español (y Catalán) notes, Barcelona life and stuff!
 |Vosotros|habeis sido|habiais sido|hubisteis sido|habreis sido|
 |Ellos|han sido|habian sido|hubieron sido|habran sido|
 
-+ guardar -> to save
++ guardar -> to save / salveare
 + añadir -> to add / aggiungere
 + borrar -> to delete / cancellare
++ dejar -> lasciare
 
 ---
 
