@@ -45,7 +45,7 @@ Imprimir:
 + a Glories c'e' un bel centro commerciale
 + almo2bar
 
-### Locs croccanti
+### Locs croccanti (es. date seri)
 
 Born:
 
@@ -55,12 +55,26 @@ combo: llamber o bornmuth in combo con paradiso
 + bornmuth
 + paradiso
 
+### List
+
++ luz de gas - MILF
++ el dorado - good on saturday, until 3PM
++ parisien - solo sud americane!
+
+---
+
+### Foods & Drinks
+
++ la monrues -> top catalan & fusion, top nachos
++ el nacional -> buene tapas, loc fighetta
++ llamber -> fico, fighetto ma non troppo
+
 ---
 
 ## Top 3 Barcelona barbershop
 
 1. Sons Of Barber Barcelona -> Carrer de Sant Pere mes Baix 46, Barcellona
-   + 93 154 45 10
+   + 93 154 45 10, ask Andrea
 2. [elijah](https://www.instagram.com/elijah/)
 3. [borntocut](http://www.borntocut.com/prueba/contacto/?lang=en)
 
@@ -71,6 +85,15 @@ combo: llamber o bornmuth in combo con paradiso
 Por quejas!
 
 Carrer Nou de la Rambla, 76-78, 08001 Barcelona
+
+---
+
+## Tips & Tricks
+
+1. Believe in no one.
+2. Pay attention to everything, especially in Guiri-land.
+3. When out with a girl (especially asian ones), always check for her personal objects like bags, mobile phone, cameras, etc... .
+4. Use it or lose it *"ogni lasciata, è persa"*
 
 ---
 

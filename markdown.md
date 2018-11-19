@@ -66,3 +66,7 @@ Comments are like html
 <!-- croccantina -->
 ```
 
+---
+
+You can use element like ```<br>``` when you want
+
