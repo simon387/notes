@@ -1229,7 +1229,7 @@ Caused by: org.springframework.beans.factory.BeanCreationException: Error creati
         com.liferay.util.service cannot be resolved
 ```
 
-Maybe your Liferay IDE portlet setup is broken, see [here](###-Another-example-of-6.2-setup)
+Maybe your Liferay IDE portlet setup is broken, see [here - Another-example-of-6.2-setup](###-Another-example-of-6.2-setup)
 
 ---
 
