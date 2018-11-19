@@ -659,7 +659,7 @@ LanguageUtil.get(locale, "key.value");
 in Java inside JSP:
 
 ```jsp
-"<%=LanguageUtil.get(pageContext, "key.value.croccantina")%>"
+"<%=LanguageUtil.get(pageContext, 'key.value.croccantina')%>"
 ```
 
 ### Properties with parameters
