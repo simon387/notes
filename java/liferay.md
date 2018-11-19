@@ -656,9 +656,15 @@ in Java:
 LanguageUtil.get(locale, "key.value");
 ```
 
+in Java inside JSP:
+
+```jsp
+"<%=LanguageUtil.get(pageContext, "key.value.croccantina")%>"
+```
+
 ### Properties with parameters
 
-in jsp:
+in JSP:
 
 ```jsp
 <liferay-ui:message key="welcome-x" arguments="<%= user.getScreenName() %>" />
