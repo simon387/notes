@@ -650,6 +650,12 @@ example:
 
 ## Language.properties
 
+in Java:
+
+```java
+LanguageUtil.get(locale, "key.value");
+```
+
 ### Properties with parameters
 
 in jsp:
