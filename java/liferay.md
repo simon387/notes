@@ -1454,7 +1454,7 @@ themeDisplay.getUserId();
 
 ---
 
-## My favourite tools / IDE
+## My favourite tools / IDE for Liferay Development
 
 + Intellij IDEA
 + Liferay IDE
