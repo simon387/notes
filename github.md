@@ -14,3 +14,10 @@
 
 Solution: just click on the Github's alert for information, usually you just need to update dependencies.
 
+---
+
+## "Something went really wrong and we can’t process that picture."
+
+While switching profile's picture.
+
+Solution: switched browser and it worked.
