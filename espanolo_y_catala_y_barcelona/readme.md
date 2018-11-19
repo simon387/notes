@@ -102,6 +102,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + añadir -> to add / aggiungere
 + borrar -> to delete / cancellare
 + dejar -> lasciare
++ cerrar -> to close / chiudere
 
 ---
 
