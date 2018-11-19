@@ -70,3 +70,16 @@ Comments are like html
 
 You can use element like ```<br>``` when you want
 
+---
+
+CheckList!
+
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+
+```markdown
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+```
