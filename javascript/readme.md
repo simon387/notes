@@ -293,6 +293,8 @@ Does nothing and doesn't reload the page.
 
 ## Intercept browser's back button example
 
+**NOTE: THIS EXAMPLE WILL FIRE A JS STACKOVERFLOW WHEN CLICKIN ON AN ```<a>``` WITH ```href='#'```**
+
 ```javascript
 (function() {
   if (window.history && window.history.pushState) {
