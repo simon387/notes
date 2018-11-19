@@ -60,6 +60,7 @@ combo: llamber o bornmuth in combo con paradiso
 + luz de gas - MILF
 + el dorado - good on saturday, until 3PM
 + parisien - solo sud americane!
++ l'antica pizzeria da michele -> top pizza
 
 ---
 
