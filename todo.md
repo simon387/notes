@@ -11,3 +11,15 @@
 - [ ] impara il catalano
 - [ ] impara il castigliano
 - [X] stampa il pdf per l'empadroniamento del 27
+- [ ] da prendere a PV: catene moto
+- [ ] da prendere a PV: giubbotto moto
+- [ ] da prendere a PV: kit acqua moto
+- [ ] da prendere a PV: guanti moto
+- [ ] da prendere a PV: se c'e' altro zaino da non regalare a ragazze taiwanesi
+- [ ] da prendere a PV: felpe
+- [ ] da prendere a PV: guanti da barbone
+- [ ] da prendere a PV: cuffie
+- [ ] da fare a PV: dentista
+- [ ] da fare a PV: magari passa da jessica soldati se c'e'
+- [ ] da prendere a PV: se trovi altre scarpe
+- [ ] da prendere a PV: il robo del cellulare al braccio se funziona
