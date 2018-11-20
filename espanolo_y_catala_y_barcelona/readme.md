@@ -68,6 +68,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + guiri -> guirilandia
 + entre -> tra, between
 + estoy agotado -> sono fuso
++ pestañas -> schede
 
 ## cosas muy importantes!
 
