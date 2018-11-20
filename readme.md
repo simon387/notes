@@ -5,7 +5,7 @@ It's just a repository I use to save my developer's note... no copyright stuffs 
 ## Random keywords
 + apache camel
 
-  scambio messaggi
+  messages exchange
 + Amazon Chime
 + CQ5
 + dynatrace
