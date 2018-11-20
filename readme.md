@@ -2,8 +2,6 @@
 
 It's just a repository I use to save my developer's note... no copyright stuffs ofc
 
-[JUMP TO LIFERAY'S NOTE](java/liferay.md)
-
 ## Random keywords
 + apache camel
 
