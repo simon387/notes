@@ -22,6 +22,29 @@ Java code block
 
 ---
 
+Java code outside ```doGet()``` and ```doPost()```
+
+```jsp
+<%! code %>
+```
+
+The exclamation mark makes all the difference. Since it's outside any method, such code typically includes things like variable declarations and complete method declarations. For example:
+
+```jsp
+<%! public static MyType varbl;
+
+public long
+countEm()
+{
+    long retval = 0L;
+    retval *= varbl.toLong();
+    return retval;
+}
+%>
+```
+
+---
+
 ## pageContext
 
 ```pageContext``` is an implicit object
