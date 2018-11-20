@@ -260,9 +260,37 @@ in java generated code
 
 ---
 
+## Liferay web service
+
+example
+
+```javascript
+Liferay.Service('/name-portlet.bla/method-name', {
+  jsonString: '{"userid":' + themeDisplay.getUserId() + ', "signed":' + themeDisplay.isSignedIn()
+  + ', "inputField":"' + inputField + '"}'
+},
+function(obj) {
+  var obj = jQuery.parseJSON(obj);
+  //process response
+});
+```
+
+```java
+public class BlaServiceImpl extends BlaServiceBaseImpl {
+
+  @JSONWebService
+  @AccessControlled(guestAccessEnabled = false)
+  public String methodName(String jsonString) {
+    //accept json, return json
+  }
+}
+```
+
+---
+
 ## Liferay modules (old plugins) installation location
 
-```......./bundles/osgi/modules```
+```/bundles/osgi/modules```
 
 ---
 
