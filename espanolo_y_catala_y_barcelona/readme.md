@@ -106,6 +106,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + borrar -> to delete / cancellare
 + dejar -> lasciare
 + cerrar -> to close / chiudere
++ no me acuerdo -> non mi ricordo
 
 ---
 
