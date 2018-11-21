@@ -1,8 +1,8 @@
-# windows notes
+# Window notes
 
 [.bat files note](bat.md)
 
-## how to know if windows is activated
+## How to know if windows is activated
 
 1. ```windows + r```
 1. digit ```cmd```
@@ -10,13 +10,13 @@
 
 ---
 
-## random cmd commands
+## Random cmd commands
 
 + ```netstat -na```
 
 ---
 
-## web page with autojoin for a skype for business / microsoft lync call
+## Web page with autojoin for a skype for business / microsoft lync call
 
 ```html
 <a href="https://webconf.company.it/companygroup/meet/s.celia/H9HZQ390">Join Skype Meeting</a>
