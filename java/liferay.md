@@ -1412,7 +1412,7 @@ public class MyController extends MVCPortlet {
 
 models java classes are just POJOs with getters and setters (```toString()``` not needed)...
 
-view
+View:
 
 ```jsp
 <%@ include file="/html/init.jsp"%>
