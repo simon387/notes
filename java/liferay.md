@@ -1545,6 +1545,7 @@ themeDisplay.getUserId();
 + Meld
 + Chrome
 + Firefox (you can see events on DOM elements)
++ Opera browser (javascript debugger and <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> are more *aggressive*)
 + MobaXterm
 
 ---
