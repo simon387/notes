@@ -108,6 +108,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + cerrar -> to close / chiudere
 + no me acuerdo -> non mi ricordo
 + despliegar -> deployare, non esiste, solo in ambiente informatico/nerd
++ arreglado -> fixed
 
 ---
 
