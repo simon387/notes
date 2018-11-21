@@ -1540,15 +1540,17 @@ themeDisplay.getUserId();
 
 Note: I prefer to use Linux environments, but most clients require to use window :worried:
 
-+ Intellij IDEA (indexed search is great)
++ Intellij IDEA Ultimate (indexed search is great)
 + Liferay IDE
 + Visual Studio Code [(tips here)](../visual-studio-code.md)
-+ Notepad++
-+ Meld
++ Notepad++ (old but faster than VSC for large files)
++ Meld (Folder comparison is *brutal*)
 + Chrome
 + Firefox (you can see events on DOM elements)
 + Opera browser (javascript debugger and <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> are more *aggressive*)
 + MobaXterm
+
+When on linux, Fedora Project in my opinion is the best one for this kind of development.
 
 ---
 
