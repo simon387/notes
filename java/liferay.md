@@ -1343,6 +1343,70 @@ $velocityPortletPreferences.reset()
 
 ---
 
+## Example of adding a portlet preferences field
+
++ field name: ```myField```
+
+```myAction.java```:
+
+```java
+public class myAction extends MVCPortlet {
+	@Override
+	public void serveResource(ResourceRequest resourceRequest, ResourceResponse resourceResponse) throws IOException, PortletException {
+
+	@ProcessAction(name = "saveConfiguration")
+	public void saveConfiguration(ActionRequest request, ActionResponse response) throws PortletException, IOException {
+		String myField = ParamUtil.getString(request, "myField");
+		PortletPreferences portletPreferences = request.getPreferences();
+		if (myField != null && !myField.isEmpty()) {
+			portletPreferences.setValue("myField", myField);
+			portletPreferences.store();
+			response.setPortletMode(PortletMode.VIEW);
+		}
+	}
+
+	@Override
+	public void doEdit(RenderRequest request, RenderResponse response) throws IOException, PortletException {
+		PortletPreferences portletPreferences = request.getPreferences();
+		String myField = portletPreferences.getValue("myField", StringPool.BLANK);
+		request.setAttribute("myField", myField);
+		super.doEdit(request, response);
+	}
+}
+
+```
+
+Usage in ```edit.jsp```:
+
+```jsp
+<liferay-ui:error key="internal-error" message="internal-error" />
+<portlet:actionURL name="saveConfiguration" var="saveConfigurationURL" />
+<jsp:useBean id="myField" class="java.lang.String" scope="request" />
+
+<aui:form name="formName" action="<%=saveConfigurationURL.toString()%>" method="post">
+	<aui:fieldset> 
+		<aui:input maxlength="5" name="myField" value="<%=myField%>" label="myField"></aui:input>
+	</aui:fieldset>
+	<aui:button-row>
+		<aui:button value="save" type="submit"></aui:button>
+	</aui:button-row>
+</aui:form>
+```
+
+Usage in ```view.jsp```:
+
+```jsp
+<%@page import="com.liferay.portal.kernel.util.PropsUtil"%>
+<%@page import="com.liferay.util.portlet.PortletProps"%>
+<%@ include file="/html/init.jsp"%>
+
+<%
+String myField = portletPreferences.getValue("myField", "no-string-value"); 
+%>
+```
+
+---
+
 ## Code Example of embedding a portlet (login one) in the theme inside a modal
 
 + Liferay 6.2
