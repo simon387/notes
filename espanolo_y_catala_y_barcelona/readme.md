@@ -69,6 +69,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + entre -> tra, between
 + estoy agotado -> sono fuso
 + pestañas -> schede
++ izquierda -> sinistra
 
 ## cosas muy importantes!
 
