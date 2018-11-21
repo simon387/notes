@@ -1532,7 +1532,7 @@ themeDisplay.getUserId();
   ```
   it gives the correct result even if you edit the database without updating indexes / cache
 + If you can't find a piece of rendered html in the source code... maybe it's inside the database! (for example as a web content)
-+ If you change extension to the ```.war``` files before copying them into the deploy folder, you will get less errors in the hot deploy phase... just put back the right extension after the transfer
++ If you change extension to the ```.war``` files before copying them into the deploy folder, you will get less errors in the hot deploy phase... just put back the right extension after the transfer. This trick is usefull only for large ```.war``` (typically >1MB)
 
 ---
 
