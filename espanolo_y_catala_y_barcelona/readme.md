@@ -71,6 +71,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + pestañas -> schede
 + izquierda -> sinistra
 + tamaño -> dimensione
++ tampoco -> neppure
 
 ## cosas muy importantes!
 
