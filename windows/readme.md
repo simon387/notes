@@ -1,5 +1,7 @@
 # windows notes
 
+[.bat files note](bat.md)
+
 ## how to know if windows is activated
 
 1. ```windows + r```
