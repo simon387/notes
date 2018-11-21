@@ -23,3 +23,4 @@
 - [ ] da fare a PV: magari passa da jessica soldati se c'e'
 - [ ] da prendere a PV: se trovi altre scarpe
 - [ ] da prendere a PV: il robo del cellulare al braccio se funziona
+- [ ] roba per la musica in camera, magari blu tooth
