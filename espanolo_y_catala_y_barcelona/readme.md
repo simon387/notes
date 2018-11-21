@@ -70,6 +70,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + estoy agotado -> sono fuso
 + pestañas -> schede
 + izquierda -> sinistra
++ tamaño -> dimensione
 
 ## cosas muy importantes!
 
