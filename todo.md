@@ -1,7 +1,7 @@
 # TODO
 
 - [X] controlla biglietti aerei
-- [ ] chiama il dentista per doppio robo
+- [X] chiama il dentista per doppio robo
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
