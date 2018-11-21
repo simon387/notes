@@ -38,6 +38,7 @@ code
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
+
 Absolute link
 
 ```[a link](https://github.com/user/repo/blob/branch/other_file.md)```

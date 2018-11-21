@@ -1538,6 +1538,8 @@ themeDisplay.getUserId();
 
 ## My favourite tools / IDE for Liferay Development
 
+Note: I prefer to use Linux environments, but most clients require to use window `:worried:`
+
 + Intellij IDEA (indexed search is great)
 + Liferay IDE
 + Visual Studio Code [(tips here)](../visual-studio-code.md)
