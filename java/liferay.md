@@ -1538,7 +1538,7 @@ themeDisplay.getUserId();
 
 ## My favourite tools / IDE for Liferay Development
 
-+ Intellij IDEA
++ Intellij IDEA (indexed search is great)
 + Liferay IDE
 + Visual Studio Code [(tips here)](../visual-studio-code.md)
 + Notepad++
