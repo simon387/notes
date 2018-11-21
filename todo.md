@@ -24,4 +24,4 @@
 - [ ] da prendere a PV: se trovi altre scarpe
 - [ ] da prendere a PV: il robo del cellulare al braccio se funziona
 - [ ] roba per la musica in camera, magari blu tooth
-- [ ] fai il lazygit per window
+- [X] fai il lazygit per window
