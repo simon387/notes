@@ -84,3 +84,12 @@ CheckList!
 - [ ] Push my commits to GitHub
 - [ ] Open a pull request
 ```
+
+---
+
+Emoticons (GitHub): 
+
+:worried: -> ```:worried:```
+
+[Complete list](https://gist.github.com/rxaviers/7360908) 
+
