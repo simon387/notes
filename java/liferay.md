@@ -1372,6 +1372,60 @@ $("#loginOne").modal('toggle');
 
 ---
 
+## Example reading from a Web Content and rendering it in a portlet
+
++ Structure present
++ Template not present
++ Web Content created with specific structure
++ Example with only one field in one model class
+
+Controller:
+
+```java
+public class MyController extends MVCPortlet {
+	public void doView(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
+		ThemeDisplay themeDisplay = (ThemeDisplay) renderRequest.getAttribute(WebKeys.THEME_DISPLAY);
+		Layout layout = themeDisplay.getLayout();
+		Locale locale = themeDisplay.getLocale();
+		long groupId = themeDisplay.getScopeGroupId();
+		String articleId = (String) layout.getExpandoBridge().getAttribute(" name ");
+		String structureId = PropsUtil.get(" structure.name ");
+		Long lStructureId = new Long(structureId);
+
+		JournalArticle journalArticle = JournalArticleLocalServiceUtil.getArticle(groupId, articleId);
+		journalArticle = JournalArticleLocalServiceUtil.getLatestArticle(journalArticle.getGroupId(), journalArticle.getArticleId());
+		DDMStructure ddmStructure = DDMStructureLocalServiceUtil.getDDMStructure(lStructureId);
+		
+		Fields fields = JournalConverterUtil.getDDMFields(ddmStructure, journalArticle.getContent());
+		String imgUrl = Validator.isNotNull(fields.get("imgUrl")) ? (String) fields.get("imgUrl").getValue(locale) : StringPool.BLANK;
+
+		MyModelClass myModelClass = new MyModelClass();
+		myModelClass.setImgUrl(imgUrl);
+
+		renderRequest.setAttribute("myModelClass", myModelClass);		
+
+		super.doView(renderRequest, renderResponse);
+	}
+}
+
+```
+
+models java classes are just POJOs with getters and setters (```toString()``` not needed)...
+
+view
+
+```jsp
+<%@ include file="/html/init.jsp"%>
+
+<%
+MyModelClass myModelClass = (MyModelClass)request.getAttribute("myModelClass");
+%>
+
+<div style="background-image: url(${myModelClass.imgUrl});"></div>
+```
+
+---
+
 ## Useful Java methods
 
 ```java
