@@ -33,12 +33,10 @@ The exclamation mark makes all the difference. Since it's outside any method, su
 ```jsp
 <%! public static MyType varbl;
 
-public long
-countEm()
-{
-    long retval = 0L;
-    retval *= varbl.toLong();
-    return retval;
+public long countEm() {
+  long retval = 0L;
+  retval *= varbl.toLong();
+  return retval;
 }
 %>
 ```
