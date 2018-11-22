@@ -72,6 +72,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + izquierda -> sinistra
 + tamaño -> dimensione
 + tampoco -> neppure
++ comarca -> zona, regione
 
 ## cosas muy importantes!
 
