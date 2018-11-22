@@ -73,6 +73,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + tamaño -> dimensione
 + tampoco -> neppure
 + comarca -> zona, regione
++ fecha -> data, date
 
 ## cosas muy importantes!
 
