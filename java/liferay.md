@@ -358,6 +358,19 @@ For example, in the login page: ```pageName.equals("Login")```
 
 ---
 
+### Current page url in JSP
+
+```jsp
+<%
+ThemeDisplay themeDisplay  = (ThemeDisplay) renderRequest.getAttribute(WebKeys.THEME_DISPLAY);
+String urlCurrent = themeDisplay.getURLCurrent();
+%>
+```
+
+Output example: ```/web/guest/search?paramMode=v&paramType=r&a=barcelona-croccante-&paramLang=es_ES```
+
+---
+
 ## How to add custom functions in javascript aui context
 
 inside a jsp file
