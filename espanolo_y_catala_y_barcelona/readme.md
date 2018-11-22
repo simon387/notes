@@ -59,7 +59,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + nivel -> level
 + correo -> mail
 + mientras -> while
-+ duda -> question
++ duda -> question -> dubbio!
 + cualquier -> any
 + callate -> taci!
 + madrugar -> to wake up early in the morning
