@@ -25,3 +25,4 @@
 - [ ] da prendere a PV: il robo del cellulare al braccio se funziona
 - [ ] roba per la musica in camera, magari blu tooth
 - [X] fai il lazygit per window
+- [ ] aggiorna sito personale
