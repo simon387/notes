@@ -1373,7 +1373,6 @@ public class myAction extends MVCPortlet {
 		super.doEdit(request, response);
 	}
 }
-
 ```
 
 Usage in ```edit.jsp```:
