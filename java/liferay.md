@@ -154,7 +154,7 @@ public EntityName findByName(String name) throws NoSuchEntityNameException {
 
 and the run the build of the service builder again!
 
-**DOES NOT WORK ANYWAY**
+**DOES NOT WORK ANYWAY?**
 
 Just write a dynamic query, *byebye* the finders!
 
@@ -1576,6 +1576,36 @@ Always in javascript context, you can get current user id with:
 
 ```javascript
 themeDisplay.getUserId();
+```
+
+---
+
+## java.sql.Blob to com.liferay.portal.kernel.json.JSONObject conversion!
+
+```java
+import com.liferay.portal.kernel.json.JSONFactoryUtil;
+
+Blob blob = //input Blob Object got from somewhere
+int blobLength = (int) blob.length();
+byte[] blobAsBytes = blob.getBytes(1, blobLength);
+blob.free();//release the blob and free up memory. (since JDBC 4.0)
+String blobAsString = new String(blobAsBytes, StandardCharsets.UTF_8);
+JSONObject jSONObject = JSONFactoryUtil.createJSONObject(blobAsString);
+```
+
+---
+
+## com.liferay.portal.kernel.json.JSONObject to java.sql.Blob conversion!
+
+```java
+import com.liferay.portal.kernel.json.JSONFactoryUtil;
+import java.io.ByteArrayInputStream;
+import com.liferay.portal.kernel.dao.jdbc.OutputBlob;
+
+JSONObject jSONObject = //input JSONObject Object got from somewhere
+String jSONObjectAsString = jSONObject.toString();
+InputStream inputStream = new ByteArrayInputStream(jSONObjectAsString.getBytes(StandardCharsets.UTF_8));
+OutputBlob blob = new OutputBlob(inputStream, jSONObjectAsString.length());
 ```
 
 ---
