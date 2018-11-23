@@ -75,6 +75,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + comarca -> zona, regione
 + fecha -> data, date
 + miga, migas (dev context) -> Breadcrumb
++ tal vez -> forse, maybe
 
 ## cosas muy importantes!
 
