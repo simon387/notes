@@ -27,3 +27,4 @@
 - [X] fai il lazygit per window
 - [ ] aggiorna sito personale
 - [X] non chiamare croccantina#2
+- [ ] parla con Giorgia
