@@ -26,3 +26,4 @@
 - [ ] roba per la musica in camera, magari blu tooth
 - [X] fai il lazygit per window
 - [ ] aggiorna sito personale
+- [X] non chiamare croccantina#2
