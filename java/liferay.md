@@ -260,6 +260,22 @@ in java generated code
 
 ---
 
+## More about service builder
+
+### Specify fields lenght
+
+Columns length: locate ```portlet-model-hints.xml``` in your project, there you can define length and other things for columns. Example:
+
+```xml
+<field name="fieldName" type="String">
+	<hint name="max-length">256</hint>
+</field>
+```
+
+This file does **not** get overwritten when running again *build services*.
+
+---
+
 ## Liferay web service
 
 example
