@@ -72,6 +72,13 @@ combo: llamber o bornmuth in combo con paradiso
 
 ---
 
+### Moto :heart:
+
++ [hamamatsumotor](https://www.facebook.com/hamamatsumotor/) di [Fabio Nardella](https://www.facebook.com/fabio.nardella?fref=gc&dti=118536958250243&hc_location=ufi)
++ altro contatto facebook [Valerio Fuscá](https://www.facebook.com/valerio.fusca.1?hc_location=ufi)
+
+---
+
 ## Top 3 Barcelona barbershop
 
 1. Sons Of Barber Barcelona -> Carrer de Sant Pere mes Baix 46, Barcellona
