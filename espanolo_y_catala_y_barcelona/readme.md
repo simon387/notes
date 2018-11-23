@@ -74,6 +74,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + tampoco -> neppure
 + comarca -> zona, regione
 + fecha -> data, date
++ miga, migas (dev context) -> Breadcrumb
 
 ## cosas muy importantes!
 
