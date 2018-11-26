@@ -21,3 +21,11 @@
 ```html
 <a href="https://webconf.company.it/companygroup/meet/s.celia/H9HZQ390">Join Skype Meeting</a>
 ```
+
+---
+
+## How to show window's event log
+
+For example show shutdown time
+
+run ```eventvwr.msc```
