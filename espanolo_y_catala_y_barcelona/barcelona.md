@@ -101,12 +101,12 @@ Carrer Nou de la Rambla, 76-78, 08001 Barcelona
 1. Believe in no one.
 2. Pay attention to everything, especially in Guiri-land.
 3. When out with a girl (especially asian ones), always check for her personal objects like bags, mobile phone, camera, etc... .
-4. Use it or lose it *"ogni lasciata, è persa"*
-5. Download offline google maps
-6. Download offline google translate
-7. Shops closed on Domingo 
-8. No grip when rain
-
+4. Use it or lose it *"ogni lasciata, è persa"*.
+5. Download offline google maps.
+6. Download offline google translate.
+7. Shops closed on Domingo.
+8. No grip when rain.
+9. No grounded @home
 
 ---
 
