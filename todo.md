@@ -27,5 +27,5 @@
 - [X] fai il lazygit per window
 - [ ] aggiorna sito personale
 - [X] non chiamare croccantina#2
-- [ ] scrivi a G
+- [X] scrivi a G
 - [ ] crea carta virtuale per provare a far scalare il bicing
