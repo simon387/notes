@@ -106,7 +106,7 @@ Carrer Nou de la Rambla, 76-78, 08001 Barcelona
 6. Download offline google translate.
 7. Shops closed on Domingo.
 8. No grip when rain.
-9. No grounded @home
+9. Electrical outlet have No grounded @home
 
 ---
 
