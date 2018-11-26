@@ -29,3 +29,4 @@
 - [X] non chiamare croccantina#2
 - [X] scrivi a G
 - [ ] crea carta virtuale per provare a far scalare il bicing
+- [ ] aggiorna i CV
