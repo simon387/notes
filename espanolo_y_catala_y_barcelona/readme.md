@@ -77,6 +77,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + miga, migas (dev context) -> Breadcrumb
 + tal vez -> forse, maybe
 + atascado -> bloccato nel senso che non stai scrivendo codice!
++ acabo -> finisco
 
 ## cosas muy importantes!
 
