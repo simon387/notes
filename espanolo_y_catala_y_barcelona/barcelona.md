@@ -104,6 +104,9 @@ Carrer Nou de la Rambla, 76-78, 08001 Barcelona
 4. Use it or lose it *"ogni lasciata, è persa"*
 5. Download offline google maps
 6. Download offline google translate
+7. Shops closed on Domingo 
+8. No grip when rain
+
 
 ---
 
