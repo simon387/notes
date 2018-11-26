@@ -46,14 +46,11 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + Desayuno -> breakfast
 + comida -> lunch
 + tarea -> job, task
-+ empezar -> to start
 + codigo fuente -> source code
 + entorno -> environment
 + vez -> time
 + desarrollo -> development
-+ hecho -> done
 + enfoque -> approach
-+ descargar -> download
 + desde -> from/since
 + despliegue -> deployment
 + nivel -> level
@@ -61,13 +58,10 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + mientras -> while
 + duda -> question -> dubbio!
 + cualquier -> any
-+ callate -> taci!
-+ madrugar -> to wake up early in the morning
 + vale! -> ...
 + entonces -> ...poi...
 + guiri -> guirilandia
 + entre -> tra, between
-+ estoy agotado -> sono fuso
 + pestañas -> schede
 + izquierda -> sinistra
 + tamaño -> dimensione
@@ -76,8 +70,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + fecha -> data, date
 + miga, migas (dev context) -> Breadcrumb
 + tal vez -> forse, maybe
-+ atascado -> bloccato nel senso che non stai scrivendo codice!
-+ acabo -> finisco
+
 
 ## cosas muy importantes!
 
@@ -118,6 +111,14 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + no me acuerdo -> non mi ricordo
 + despliegar -> deployare, non esiste, solo in ambiente informatico/nerd
 + arreglado -> fixed
++ callate -> taci!
++ madrugar -> to wake up early in the morning
++ descargar -> download
++ empezar -> to start
++ hecho -> done
++ estoy agotado -> sono fuso
++ atascado -> bloccato nel senso che non stai scrivendo codice!
++ acabo -> finisco
 
 ---
 
