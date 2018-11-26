@@ -76,6 +76,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + fecha -> data, date
 + miga, migas (dev context) -> Breadcrumb
 + tal vez -> forse, maybe
++ atascado -> bloccato nel senso che non stai scrivendo codice!
 
 ## cosas muy importantes!
 
