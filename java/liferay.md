@@ -1722,10 +1722,4 @@ When on linux, Fedora Project in my opinion is the best one for this kind of dev
 https://github.com/simon387/notes/blob/efdf77dfc11cd8ca6b7a0f2d9cddca93f910d68a/java/src/Test.java#L1
 
 
-Liferay.Service
-
-11:22:38,027 ERROR [http-/192.168.1.116:8080-29][JSONWebServiceServiceAction:107] No JSON web service action with path /busquedas/guardar-busqueda and method null for //servihabitat-retail-busquedas-usuario-portlet
-
-11:23:04,658 ERROR [http-/192.168.1.116:8080-29][JSONWebServiceServiceAction:107] No JSON web service action with path /busquedas/guardar-busquedaMod and method null for //servihabitat-retail-busquedas-usuario-portlet
-
 -->
