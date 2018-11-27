@@ -30,3 +30,4 @@
 - [X] scrivi a G
 - [X] crea carta virtuale per provare a far scalare il bicing
 - [ ] aggiorna i CV
+- [ ] mail a bicing per la fatturazione
