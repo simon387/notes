@@ -1322,6 +1322,22 @@ Adding the taglibrary can help:
 
 ---
 
+### ERROR [http-/xxx][JSONWebServiceServiceAction:xxx] No JSON web service action with path /yyy/zzz-www and method null for //name-of-a-portlet
+
+When calling from javascript ```Liferay.Service()```
+
+Solution:
+
+1. re-build the service
+2. copy the service's ```jar``` (the one inside ```WEB-INF/lib```) into the remote server library runtime (for example ```/opt/jboss-eap-x.y/modules/com/liferay/portal/main```)
+3. copy it in your local server for development (to avoid compilation error)
+4. empty the folder ```WEB-INF/lib```
+5. build the portlet
+6. deploy the portlet
+7. restart the server
+
+---
+
 ## Classes
 
 + ```SiteAdminPortletKeys```
