@@ -1596,6 +1596,14 @@ When you deploy something, you can find the unzipped code here:
 
 ---
 
+if ```jar``` files inside here ```/opt/jboss-eap-x.y/modules/com/liferay/portal/main/```
+
+are missing inside this declaration ```/opt/jboss-eap-x.y/modules/com/liferay/portal/main/module.xml```
+
+**Jboss will not start!**
+
+---
+
 ## How to know if user is logged in?
 
 Javascript:
