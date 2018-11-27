@@ -1142,7 +1142,7 @@ just do in this way:
    2. Java Build Path
    3. double click on unbound things, and replace with correct value (if necessary, for example, copy lib jar from server to your local environment)
 
-
+Tips: sometime you need to play with checkboxes (Java Build Path -> Order and Export tab)
 
 Thank me later!
 
@@ -1702,7 +1702,7 @@ Note: I prefer to use Linux environments, but most clients require to use window
 + Opera browser (javascript debugger and <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> are more *aggressive*)
 + MobaXterm
 
-When on linux, Fedora Project in my opinion is the best one for this kind of development.
+When on linux, Fedora Project Distribution in my opinion is the best one for this kind of development.
 
 ---
 
