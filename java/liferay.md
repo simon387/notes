@@ -1626,6 +1626,12 @@ OutputBlob blob = new OutputBlob(inputStream, jSONObjectAsString.length());
 
 ---
 
+## JSONWS API Page
+
+To open this page, just add this to baseurl: ```/api/jsonws```
+
+---
+
 ## Liferay Philosophy
 
 + Everything is an Asset!
