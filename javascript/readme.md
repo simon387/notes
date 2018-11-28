@@ -329,3 +329,11 @@ var url = new URL(url_string);
 var c = url.searchParams.get("c");
 console.log(c);
 ```
+
+---
+
+## Counting match in string
+
+```javascript
+var slashCount = (pathName.match(/\//g) || []).length;
+```
