@@ -103,7 +103,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 
 <br>
 
-+ guardar -> to save / salveare
++ guardar -> to save / salvare
 + añadir -> to add / aggiungere
 + borrar -> to delete / cancellare
 + dejar -> lasciare
