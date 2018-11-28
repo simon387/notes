@@ -121,6 +121,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + acabo -> finisco
 + flipando -> andare fuori di testa
 + olvidado -> forgotten
++ arrancado -> avviato
 
 ---
 
