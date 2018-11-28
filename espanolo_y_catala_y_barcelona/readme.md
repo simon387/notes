@@ -119,6 +119,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + estoy agotado -> sono fuso
 + atascado -> bloccato nel senso che non stai scrivendo codice!
 + acabo -> finisco
++ flipando -> andare fuori di testa
 
 ---
 
