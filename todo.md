@@ -31,4 +31,4 @@
 - [ ] roba per la musica in camera, magari blu tooth
 - [ ] aggiorna sito personale
 - [ ] aggiorna i CV
-- [ ] stampa il pdf empa del 13 dicembre
+- [X] stampa il pdf empa del 13 dicembre
