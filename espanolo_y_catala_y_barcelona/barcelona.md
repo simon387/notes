@@ -110,6 +110,14 @@ Carrer Nou de la Rambla, 76-78, 08001 Barcelona
 
 ---
 
+## Bicing
+
++ Always convalidar
++ billing daemon is at 2am
++ full of bug, always pay caution! 
+
+---
+
 ## Links
 
 + http://ajuntament.barcelona.cat/calendarifestius/es/
