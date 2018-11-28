@@ -8,6 +8,7 @@
 - [X] scrivi a G
 - [X] crea carta virtuale per provare a far scalare il bicing
 - [X] mail a bicing per la fatturazione
+- [X] stampa il pdf empa del 13 dicembre
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
@@ -31,4 +32,3 @@
 - [ ] roba per la musica in camera, magari blu tooth
 - [ ] aggiorna sito personale
 - [ ] aggiorna i CV
-- [X] stampa il pdf empa del 13 dicembre
