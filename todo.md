@@ -31,3 +31,4 @@
 - [X] crea carta virtuale per provare a far scalare il bicing
 - [ ] aggiorna i CV
 - [X] mail a bicing per la fatturazione
+- [ ] stampa il pdf empa del 13 dicembre
