@@ -120,6 +120,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + atascado -> bloccato nel senso che non stai scrivendo codice!
 + acabo -> finisco
 + flipando -> andare fuori di testa
++ olvidado -> forgotten
 
 ---
 
