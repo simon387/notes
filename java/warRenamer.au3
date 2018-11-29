@@ -4,7 +4,7 @@
 #include <File.au3>
 #include <FileConstants.au3>
 
-$aFileList = _FileListToArray ( @ScriptDir, "*.war",  $FLTA_FILES, True)
+$aFileList = _FileListToArray (@ScriptDir, "*.war",  $FLTA_FILES, True)
 
 ;~ _ArrayDisplay($aFileList, "$aFileList")
 
