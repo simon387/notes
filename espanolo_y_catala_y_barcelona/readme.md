@@ -70,6 +70,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + fecha -> data, date
 + miga, migas (dev context) -> Breadcrumb
 + tal vez -> forse, maybe
++ papelera de reciclaje -> cestino, trash bin
 
 
 ## cosas muy importantes!
