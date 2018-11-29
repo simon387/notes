@@ -148,7 +148,7 @@ add for example:
 
 ```java
 public EntityName findByName(String name) throws NoSuchEntityNameException {
-	return entityNamePersistence.findBylistenerName(name);
+    return entityNamePersistence.findBylistenerName(name);
 }
 ```
 
@@ -282,8 +282,8 @@ example
 
 ```javascript
 Liferay.Service('/name-portlet.bla/method-name', {
-  jsonString: '{"userid":' + themeDisplay.getUserId() + ', "signed":' + themeDisplay.isSignedIn()
-  + ', "inputField":"' + inputField + '"}'
+    jsonString: '{"userid":' + themeDisplay.getUserId() + ', "signed":' + themeDisplay.isSignedIn()
+    + ', "inputField":"' + inputField + '"}'
 },
 function(obj) {
   var obj = jQuery.parseJSON(obj);
@@ -294,11 +294,11 @@ function(obj) {
 ```java
 public class BlaServiceImpl extends BlaServiceBaseImpl {
 
-  @JSONWebService
-  @AccessControlled(guestAccessEnabled = false)
-  public String methodName(String jsonString) {
-    //accept json, return json
-  }
+    @JSONWebService
+    @AccessControlled(guestAccessEnabled = false)
+    public String methodName(String jsonString) {
+        //accept json, return json
+    }
 }
 ```
 
@@ -394,10 +394,10 @@ inside a jsp file
 ```javascript
 <aui:script>
 Liferay.provide(window, 'functionNameExample', 
-  function(variable1, variable2, variable3, ...) {
-    var A = AUI();
-    ...
-  },
+    function(variable1, variable2, variable3, ...) {
+        var A = AUI();
+        ...
+    },
 ['aui-base']
 );
 </aui:script>
@@ -411,13 +411,13 @@ Liferay.provide(window, 'functionNameExample',
 
 ```jsp
 <portlet:renderURL var="force_back">
-	<portlet:param name="mvcPath" value="/html/blabla/view.jsp"/>
+    <portlet:param name="mvcPath" value="/html/blabla/view.jsp"/>
 </portlet:renderURL>
 
 <aui:form action="<%= blablaURL %>" method="post" name="nameBla" >
-	<aui:button-row>
-		<aui:button href="<%= force_back %>" type="cancel" />
-	</aui:button-row>
+    <aui:button-row>
+        <aui:button href="<%= force_back %>" type="cancel" />
+    </aui:button-row>
 </aui:form>
 ```
 
@@ -433,15 +433,15 @@ and the choose element
 
 ```jsp
 <c:choose>
-	<c:when test="${a boolean expr}">
-		do something
-	</c:when>
-	<c:when test="${another boolean expr}">
-		do something else
-	</c:when>
-	<c:otherwise>
-		do this when nothing else is true
-	</c:otherwise>
+    <c:when test="${a boolean expr}">
+        do something
+    </c:when>
+    <c:when test="${another boolean expr}">
+        do something else
+    </c:when>
+    <c:otherwise>
+        do this when nothing else is true
+    </c:otherwise>
 </c:choose>
 ```
 
@@ -465,9 +465,9 @@ rendered html:
 
 ```html
 <fieldset class="fieldset accessibleLegend">
-	<legend class="fieldset-legend">
-		<span class="legend">value here</span></legend><div class=""> 
-		...
+    <legend class="fieldset-legend">
+        <span class="legend">value here</span></legend><div class=""> 
+        ...
 ```
 
 ### Override a jsp
