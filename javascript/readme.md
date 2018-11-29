@@ -337,3 +337,11 @@ console.log(c);
 ```javascript
 var slashCount = (pathName.match(/\//g) || []).length;
 ```
+
+---
+
+## .min
+
+Use this site!
+
+[javascript-minifier.com](https://javascript-minifier.com/)
