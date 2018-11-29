@@ -11,6 +11,6 @@ $aFileList = _FileListToArray (@ScriptDir, "*.war",  $FLTA_FILES, True)
 If IsArray($aFileList) Then
    For $i = 1 to $aFileList[0]
 ;~ 	  ConsoleWrite($aFileList[$i] & @LF)
-	  FileMove($aFileList[$i], $aFileList[$i] & "A", $FC_OVERWRITE + $FC_CREATEPATH)
+	  FileMove($aFileList[$i], $aFileList[$i] & "A", $FC_NOOVERWRITE  + $FC_CREATEPATH)
    Next
 EndIf
