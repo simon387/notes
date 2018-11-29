@@ -535,66 +535,66 @@ My-Module
 
 ```java
 @Component(
-		immediate = true,
-		property = {
-				"panel.category.key=" + PanelCategoryKeys.CONTROL_PANEL_CONFIGURATION,
-				"panel.app.order:Integer=301"
-		},
-		service = PanelApp.class
+    immediate = true,
+    property = {
+            "panel.category.key=" + PanelCategoryKeys.CONTROL_PANEL_CONFIGURATION,
+            "panel.app.order:Integer=301"
+    },
+    service = PanelApp.class
 )
 public class BackofficePanelApp extends BasePanelApp {
 
-	@Override
-	public String getPortletId() {
-		return BackofficePortletKeys.BackofficePortlet;
-	}
+    @Override
+    public String getPortletId() {
+        return BackofficePortletKeys.BackofficePortlet;
+    }
 
-	@Override
-	public String getLabel(Locale locale) {
-		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle("content.Language", locale, getClass());
+    @Override
+    public String getLabel(Locale locale) {
+        ResourceBundle resourceBundle = ResourceBundleUtil.getBundle("content.Language", locale, getClass());
 
-		return LanguageUtil.get(resourceBundle, "javax.portlet.display-name.backofficePortlet");
-	}
+        return LanguageUtil.get(resourceBundle, "javax.portlet.display-name.backofficePortlet");
+    }
 
-	@Override
-	@Reference(
-			target = "(javax.portlet.name=" + BackofficePortletKeys.BackofficePortlet + ")",
-			unbind = "-"
-	)
-	public void setPortlet(Portlet portlet) {
-		super.setPortlet(portlet);
-	}
+    @Override
+    @Reference(
+            target = "(javax.portlet.name=" + BackofficePortletKeys.BackofficePortlet + ")",
+            unbind = "-"
+    )
+    public void setPortlet(Portlet portlet) {
+        super.setPortlet(portlet);
+    }
 }
 
 ```
 
 ```java
 @Component(immediate = true, property = { "com.liferay.portlet.display-category=category.hidden",
-		"javax.portlet.display-name=Blabla Backoffice", "javax.portlet.init-param.template-path=/",
-		"com.liferay.portlet.header-portlet-css=/css/main.css", "javax.portlet.init-param.view-template=/view.jsp",
-		"javax.portlet.name=" + BackofficePortletKeys.BackofficePortlet,
-		"javax.portlet.resource-bundle=content.Language",
-		"javax.portlet.security-role-ref=power-user,user" }, service = Portlet.class)
+        "javax.portlet.display-name=Blabla Backoffice", "javax.portlet.init-param.template-path=/",
+        "com.liferay.portlet.header-portlet-css=/css/main.css", "javax.portlet.init-param.view-template=/view.jsp",
+        "javax.portlet.name=" + BackofficePortletKeys.BackofficePortlet,
+        "javax.portlet.resource-bundle=content.Language",
+        "javax.portlet.security-role-ref=power-user,user" }, service = Portlet.class)
 public class BackofficePortlet extends MVCPortlet {
 
-	@Override
-	public void doView(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
-		super.doView(renderRequest, renderResponse);
-	}
+    @Override
+    public void doView(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
+        super.doView(renderRequest, renderResponse);
+    }
 
-	//custom
-	public void enablingXXX(ActionRequest actionRequest, ActionResponse actionResponse) {
-		long xxxListenerId = ParamUtil.getLong(actionRequest, FORM_XXX_ID);
+    //custom
+    public void enablingXXX(ActionRequest actionRequest, ActionResponse actionResponse) {
+        long xxxListenerId = ParamUtil.getLong(actionRequest, FORM_XXX_ID);
 
-		try {
-			
-		} catch (PortalException portalException) {
-			portalException.printStackTrace();
-		}
-		SessionMessages.add(actionRequest, "xxxEnabled");
-	}
+        try {
 
-	...
+        } catch (PortalException portalException) {
+            portalException.printStackTrace();
+        }
+        SessionMessages.add(actionRequest, "xxxEnabled");
+    }
+
+    ...
 }
 ```
 
@@ -931,19 +931,19 @@ Example of a BaseModelListener:
 
 ```java
 @Component(
-		service = ModelListener.class,
-		immediate = true
+    service = ModelListener.class,
+    immediate = true
 )
 public class MyNewCustomOnAssetEntryEntityListener extends BaseModelListener<AssetEntry> {
 
-	private static final Log logger = LogFactoryUtil.getLog(MyNewCustomOnAssetEntryEntityListener.class);
-	
-	@Override
-	public void onBeforeUpdate(AssetEntry model) throws ModelListenerException {
-		logger.info(model.toString());
+    private static final Log logger = LogFactoryUtil.getLog(MyNewCustomOnAssetEntryEntityListener.class);
 
-		super.onBeforeUpdate(model);
-	}
+    @Override
+    public void onBeforeUpdate(AssetEntry model) throws ModelListenerException {
+        logger.info(model.toString());
+
+        super.onBeforeUpdate(model);
+    }
 }
 ```
 
@@ -981,23 +981,23 @@ This is code example inside a template/js
 // <aui:script>
 AUI().use('aui-base','liferay-util-window','aui-io-plugin-deprecated',function(A){
 
-	// A.one('#<portlet:namespace/>login-popup').on('click', function(event){
-	var login_popup= Liferay.Util.Window.getWindow({
-		dialog: {
-			centered: true,
-			constrain2view: true,
-			modal: true,
-			resizable: false,
-			// width: 475
-		}
-	}).plug(A.Plugin.DialogIframe, {
-		autoLoad: true,
-		iframeCssClass: 'dialog-iframe',
-		uri:'<%=loginPortletURL.toString()%>'
-	}).render();
-	
-	login_popup.show();
-	login_popup.titleNode.html("Login");
+    // A.one('#<portlet:namespace/>login-popup').on('click', function(event){
+    var login_popup= Liferay.Util.Window.getWindow({
+        dialog: {
+            centered: true,
+            constrain2view: true,
+            modal: true,
+            resizable: false,
+            // width: 475
+        }
+    }).plug(A.Plugin.DialogIframe, {
+        autoLoad: true,
+        iframeCssClass: 'dialog-iframe',
+        uri:'<%=loginPortletURL.toString()%>'
+    }).render();
+
+    login_popup.show();
+    login_popup.titleNode.html("Login");
 });
 // });
 ```
@@ -1019,38 +1019,38 @@ Example inside an ```BaseModelListener```
 ```java
 //assetEntry is an Entity, Model
 try {
-	String eventType = "event bla";
-	long companyId = CompanyThreadLocal.getCompanyId().longValue();
-	long userId = 0L;
-	if (null != PrincipalThreadLocal.getName()) {
-		userId = GetterUtil.getLong(PrincipalThreadLocal.getName());
-	}
-	AuditRequestThreadLocal auditRequestThreadLocal = AuditRequestThreadLocal.getAuditThreadLocal();
-	long realUserId = auditRequestThreadLocal.getRealUserId();
-	String realUserName = PortalUtil.getUserName(realUserId, "");
-	JSONObject additionalInfo = JSONFactoryUtil.createJSONObject();
-	
-	if ((realUserId > 0L) && (userId != realUserId)) {
-		additionalInfo.put("doAsUserId", String.valueOf(userId));
-		additionalInfo.put("doAsUserName", PortalUtil.getUserName(userId, ""));
-	}
-	additionalInfo.put("name", organization.getName());
-	additionalInfo.put("type",organization.getType());
-	additionalInfo.put("countryId", organization.getCountryId());
-	additionalInfo.put("regionId", organization.getRegionId());
-	if(organization.getParentOrganization() != null) {
-		additionalInfo.put("parentName", organization.getParentOrganization().getName());
-	}
-	
-	AuditMessage auditMessage = new AuditMessage(
-		eventType, companyId, realUserId, realUserName, AssetEntry.class.getName(), String.valueOf(assetEntry.getEntryId()), null, additionalInfo);
-	
-	AuditRouterUtil.route(auditMessage);
-	
+    String eventType = "event bla";
+    long companyId = CompanyThreadLocal.getCompanyId().longValue();
+    long userId = 0L;
+    if (null != PrincipalThreadLocal.getName()) {
+        userId = GetterUtil.getLong(PrincipalThreadLocal.getName());
+    }
+    AuditRequestThreadLocal auditRequestThreadLocal = AuditRequestThreadLocal.getAuditThreadLocal();
+    long realUserId = auditRequestThreadLocal.getRealUserId();
+    String realUserName = PortalUtil.getUserName(realUserId, "");
+    JSONObject additionalInfo = JSONFactoryUtil.createJSONObject();
+
+    if ((realUserId > 0L) && (userId != realUserId)) {
+        additionalInfo.put("doAsUserId", String.valueOf(userId));
+        additionalInfo.put("doAsUserName", PortalUtil.getUserName(userId, ""));
+    }
+    additionalInfo.put("name", organization.getName());
+    additionalInfo.put("type",organization.getType());
+    additionalInfo.put("countryId", organization.getCountryId());
+    additionalInfo.put("regionId", organization.getRegionId());
+    if(organization.getParentOrganization() != null) {
+        additionalInfo.put("parentName", organization.getParentOrganization().getName());
+    }
+
+    AuditMessage auditMessage = new AuditMessage(
+        eventType, companyId, realUserId, realUserName, AssetEntry.class.getName(), String.valueOf(assetEntry.getEntryId()), null, additionalInfo);
+
+    AuditRouterUtil.route(auditMessage);
+
 } catch(Exception exception) {
-	throw new ModelListenerException(exception);
+    throw new ModelListenerException(exception);
 } finally {
-	super.onAfterUpdate(assetEntry);
+    super.onAfterUpdate(assetEntry);
 }
 ```
 
@@ -1180,14 +1180,14 @@ Sometime they are not related to Liferay, but I put them here anyway because I s
 ```
 2018-09-05 16:17:35.292 ERROR [Framework Event Dispatcher: Equinox Container: d0fb4625-27b1-0018-117c-b64379ebebfd][XXX:97] FrameworkEvent ERROR 
 org.osgi.framework.BundleException: Could not resolve module: XXX [84]_  Unresolved requirement: Import-Package: com.liferay.faces.portal.context_ [Sanitized]
-	at org.eclipse.osgi.container.Module.start(Module.java:429)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1562)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
-	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+    at org.eclipse.osgi.container.Module.start(Module.java:429)
+    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1562)
+    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+    at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+    at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
 ```
 
 was a fake error, inside the ```osgi/war``` folder there was the XXX.war, it was deprecated and not used in the environment
@@ -1260,10 +1260,10 @@ if maven, add something like this to the pom gerarchy
 
 ```xml
 <dependency>
-	<groupId>javax.servlet</groupId>
-	<artifactId>javax.servlet-api</artifactId>
-	<version>3.0.1</version>
-	<scope>provided</scope>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.0.1</version>
+    <scope>provided</scope>
 </dependency>
 ```
 
@@ -1292,10 +1292,10 @@ Use the "save" trick (Eclipse based IDEs):
 
 ```
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xxxx.EntityNameLocalService' defined in ServletContext resource [/WEB-INF/classes/META-INF/portlet-spring.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xxx.service.persistence.EntityPersistence' defined in ServletContext resource [/WEB-INF/classes/META-INF/portlet-spring.xml]: Instantiation of bean failed; nested exception is java.lang.Error: Unresolved compilation problems:
-        com.liferay.util.service cannot be resolved
-        com.liferay.util.service cannot be resolved
-        com.liferay.util.service cannot be resolved
-        com.liferay.util.service cannot be resolved
+    com.liferay.util.service cannot be resolved
+    com.liferay.util.service cannot be resolved
+    com.liferay.util.service cannot be resolved
+    com.liferay.util.service cannot be resolved
 ```
 
 Maybe your Liferay IDE portlet setup is broken, see [here - Another-example-of-6.2-setup](###-Another-example-of-6.2-setup)
@@ -1308,8 +1308,8 @@ jsp
 
 ```jsp
 <aui:script use="aui-base,aui-io-request,liferay-portlet-url,aui-io-deprecated">
-	A.one('#<portlet:namespace/>loginButton').on('click', function(event) {
-		var resourceURL = Liferay.PortletURL.createResourceURL();
+    A.one('#<portlet:namespace/>loginButton').on('click', function(event) {
+        var resourceURL = Liferay.PortletURL.createResourceURL();
 ```
 
 ```Liferay.PortletURL``` is undefined.
@@ -1364,11 +1364,11 @@ package com.liferay.site.admin.web.internal.constants;
  */
 public class SiteAdminPortletKeys {
 
-	public static final String SITE_ADMIN =
-		"com_liferay_site_admin_web_portlet_SiteAdminPortlet";
+    public static final String SITE_ADMIN =
+        "com_liferay_site_admin_web_portlet_SiteAdminPortlet";
 
-	public static final String SITE_SETTINGS =
-		"com_liferay_site_admin_web_portlet_SiteSettingsPortlet";
+    public static final String SITE_SETTINGS =
+        "com_liferay_site_admin_web_portlet_SiteSettingsPortlet";
 
 }
 ```
@@ -1396,27 +1396,27 @@ $velocityPortletPreferences.reset()
 
 ```java
 public class myAction extends MVCPortlet {
-	@Override
-	public void serveResource(ResourceRequest resourceRequest, ResourceResponse resourceResponse) throws IOException, PortletException {
+    @Override
+    public void serveResource(ResourceRequest resourceRequest, ResourceResponse resourceResponse) throws IOException, PortletException {
 
-	@ProcessAction(name = "saveConfiguration")
-	public void saveConfiguration(ActionRequest request, ActionResponse response) throws PortletException, IOException {
-		String myField = ParamUtil.getString(request, "myField");
-		PortletPreferences portletPreferences = request.getPreferences();
-		if (myField != null && !myField.isEmpty()) {
-			portletPreferences.setValue("myField", myField);
-			portletPreferences.store();
-			response.setPortletMode(PortletMode.VIEW);
-		}
-	}
+    @ProcessAction(name = "saveConfiguration")
+    public void saveConfiguration(ActionRequest request, ActionResponse response) throws PortletException, IOException {
+        String myField = ParamUtil.getString(request, "myField");
+        PortletPreferences portletPreferences = request.getPreferences();
+        if (myField != null && !myField.isEmpty()) {
+            portletPreferences.setValue("myField", myField);
+            portletPreferences.store();
+            response.setPortletMode(PortletMode.VIEW);
+        }
+    }
 
-	@Override
-	public void doEdit(RenderRequest request, RenderResponse response) throws IOException, PortletException {
-		PortletPreferences portletPreferences = request.getPreferences();
-		String myField = portletPreferences.getValue("myField", StringPool.BLANK);
-		request.setAttribute("myField", myField);
-		super.doEdit(request, response);
-	}
+    @Override
+    public void doEdit(RenderRequest request, RenderResponse response) throws IOException, PortletException {
+        PortletPreferences portletPreferences = request.getPreferences();
+        String myField = portletPreferences.getValue("myField", StringPool.BLANK);
+        request.setAttribute("myField", myField);
+        super.doEdit(request, response);
+    }
 }
 ```
 
@@ -1428,12 +1428,12 @@ Usage in ```edit.jsp```:
 <jsp:useBean id="myField" class="java.lang.String" scope="request" />
 
 <aui:form name="formName" action="<%=saveConfigurationURL.toString()%>" method="post">
-	<aui:fieldset> 
-		<aui:input maxlength="5" name="myField" value="<%=myField%>" label="myField"></aui:input>
-	</aui:fieldset>
-	<aui:button-row>
-		<aui:button value="save" type="submit"></aui:button>
-	</aui:button-row>
+    <aui:fieldset> 
+        <aui:input maxlength="5" name="myField" value="<%=myField%>" label="myField"></aui:input>
+    </aui:fieldset>
+    <aui:button-row>
+        <aui:button value="save" type="submit"></aui:button>
+    </aui:button-row>
 </aui:form>
 ```
 
@@ -1461,14 +1461,14 @@ portal_normal.vm
 #if ($url_pagina == "login")
 	
 #else
-	<div id="loginOne" class="modal modal_custom fade propound regular_form transparent" role="dialog" style="display:none;">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<a href="javascript:void(0);" title="<@liferay.language key='Exit' />" data-dismiss="modal" data-target="#loginOne" class="sh_icon-close"></a>
-				$theme.runtime("58", "", "")
-			</div>
-		</div>
-	</div>
+    <div id="loginOne" class="modal modal_custom fade propound regular_form transparent" role="dialog" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0);" title="<@liferay.language key='Exit' />" data-dismiss="modal" data-target="#loginOne" class="sh_icon-close"></a>
+                $theme.runtime("58", "", "")
+            </div>
+        </div>
+    </div>
 #end
 ```
 
@@ -1491,29 +1491,29 @@ Controller:
 
 ```java
 public class MyController extends MVCPortlet {
-	public void doView(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
-		ThemeDisplay themeDisplay = (ThemeDisplay) renderRequest.getAttribute(WebKeys.THEME_DISPLAY);
-		Layout layout = themeDisplay.getLayout();
-		Locale locale = themeDisplay.getLocale();
-		long groupId = themeDisplay.getScopeGroupId();
-		String articleId = (String) layout.getExpandoBridge().getAttribute(" name ");
-		String structureId = PropsUtil.get(" structure.name ");
-		Long lStructureId = new Long(structureId);
+    public void doView(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
+        ThemeDisplay themeDisplay = (ThemeDisplay) renderRequest.getAttribute(WebKeys.THEME_DISPLAY);
+        Layout layout = themeDisplay.getLayout();
+        Locale locale = themeDisplay.getLocale();
+        long groupId = themeDisplay.getScopeGroupId();
+        String articleId = (String) layout.getExpandoBridge().getAttribute(" name ");
+        String structureId = PropsUtil.get(" structure.name ");
+        Long lStructureId = new Long(structureId);
 
-		JournalArticle journalArticle = JournalArticleLocalServiceUtil.getArticle(groupId, articleId);
-		journalArticle = JournalArticleLocalServiceUtil.getLatestArticle(journalArticle.getGroupId(), journalArticle.getArticleId());
-		DDMStructure ddmStructure = DDMStructureLocalServiceUtil.getDDMStructure(lStructureId);
-		
-		Fields fields = JournalConverterUtil.getDDMFields(ddmStructure, journalArticle.getContent());
-		String imgUrl = Validator.isNotNull(fields.get("imgUrl")) ? (String) fields.get("imgUrl").getValue(locale) : StringPool.BLANK;
+        JournalArticle journalArticle = JournalArticleLocalServiceUtil.getArticle(groupId, articleId);
+        journalArticle = JournalArticleLocalServiceUtil.getLatestArticle(journalArticle.getGroupId(), journalArticle.getArticleId());
+        DDMStructure ddmStructure = DDMStructureLocalServiceUtil.getDDMStructure(lStructureId);
 
-		MyModelClass myModelClass = new MyModelClass();
-		myModelClass.setImgUrl(imgUrl);
+        Fields fields = JournalConverterUtil.getDDMFields(ddmStructure, journalArticle.getContent());
+        String imgUrl = Validator.isNotNull(fields.get("imgUrl")) ? (String) fields.get("imgUrl").getValue(locale) : StringPool.BLANK;
 
-		renderRequest.setAttribute("myModelClass", myModelClass);		
+        MyModelClass myModelClass = new MyModelClass();
+        myModelClass.setImgUrl(imgUrl);
 
-		super.doView(renderRequest, renderResponse);
-	}
+        renderRequest.setAttribute("myModelClass", myModelClass);		
+
+        super.doView(renderRequest, renderResponse);
+    }
 }
 
 ```
