@@ -112,9 +112,9 @@ Carrer Nou de la Rambla, 76-78, 08001 Barcelona
 
 ## Bicing
 
-+ Always convalidar
++ Always validar
 + billing daemon is at 2am
-+ full of bug, always pay caution! 
++ full of bug, always pay caution!
 
 ---
 
