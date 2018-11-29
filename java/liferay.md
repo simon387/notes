@@ -1656,6 +1656,28 @@ To open this page, just add this to baseurl: ```/api/jsonws```
 
 ---
 
+## header-portlet-javascript
+
+Inside ```liferay-portlet.xml```
+
+Example:
+
+```xml
+<?xml version="1.0"?>
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 6.2.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_6_2_0.dtd">
+
+<liferay-portlet-app>
+    <portlet>
+        <portlet-name>croccantina</portlet-name>
+        <icon>/icon.png</icon>
+        <configuration-action-class>com.liferay.portal.kernel.portlet.DefaultConfigurationAction</configuration-action-class>	
+        ...
+        <header-portlet-javascript>/js/jsrender.min.js</header-portlet-javascript>
+        ...
+```
+
+---
+
 ## Liferay Philosophy
 
 + Everything is an Asset!
