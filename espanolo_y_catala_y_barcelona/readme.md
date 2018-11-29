@@ -135,7 +135,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 ## Links
 
 + [croccantina 1](http://www.todo-claro.com/e_index.php)
-+ [croccantina 2](http://www.spanishdict.com/)
++ [croccantina 1bis](http://www.spanishdict.com/)
 + [series](http://www.seriesyonkis.com)
 + [transmission](http://www.mejortorrent.org)
 
