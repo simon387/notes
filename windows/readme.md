@@ -2,6 +2,25 @@
 
 [.bat files note](bat.md)
 
+---
+
+## exe folder content
+
+The content of the exe folder of this repository are free software utilities:
+
+(all portables)
+
++ Apache-Subversion-1.9.7.zip -> svn binaries for IDEs or other softwares
++ DoubleKiller.exe -> find duplicates files
++ Everything-1.4.1.895.x64.zip -> find files
++ Procmon.exe -> process monitor
++ RegDelNull.exe -> Delete Registry keys with embedded Nulls
++ regjump.exe -> e.g.: regjump HKLM\Software\Microsoft\Windows
++ ShowMan.exe -> disk usage utility
++ SpaceSniffer.exe -> disk usage utility
+
+---
+
 ## How to know if windows is activated
 
 1. ```windows + r```
