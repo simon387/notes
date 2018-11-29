@@ -32,3 +32,4 @@
 - [ ] roba per la musica in camera, magari blu tooth
 - [ ] aggiorna sito personale
 - [ ] aggiorna i CV
+- [ ] trova dell'incenso
