@@ -33,3 +33,4 @@
 - [ ] aggiorna sito personale
 - [ ] aggiorna i CV
 - [ ] trova dell'incenso
+- [ ] aggiorna linkedin
