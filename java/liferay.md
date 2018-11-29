@@ -1537,25 +1537,23 @@ MyModelClass myModelClass = (MyModelClass)request.getAttribute("myModelClass");
 ## Useful Java methods
 
 ```java
-public static long classNameIdForClass(Class<?> clazz)
-  throws SystemException {
- return ClassNameLocalServiceUtil
-   .getClassName(clazz.getName())
-   .getClassNameId();
+public static long classNameIdForClass(Class<?> clazz) throws SystemException {
+    return ClassNameLocalServiceUtil
+        .getClassName(clazz.getName())
+        .getClassNameId();
 }
 ```
 
 ```java
-public static Class<?> classForClassNameId(long classNameId)
-  throws PortalException, SystemException {
- try {
-  String modelClassName = ClassNameLocalServiceUtil
-    .getClassName(classNameId)
-    .getValue();
-  return Class.forName(modelClassName);
- } catch (ClassNotFoundException e) {
-  throw new SystemException(e);
- }
+public static Class<?> classForClassNameId(long classNameId) throws PortalException, SystemException {
+    try {
+        String modelClassName = ClassNameLocalServiceUtil
+            .getClassName(classNameId)
+            .getValue();
+        return Class.forName(modelClassName);
+    } catch (ClassNotFoundException e) {
+        throw new SystemException(e);
+    }
 }
 ```
 
@@ -1569,22 +1567,22 @@ Example:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:datasources:1.2">
-	<datasources>
-		<datasource jndi-name="java:/jdbc/nameeeeee" pool-name="namee" enabled="true" use-java-context="true">
-			<connection-url>jdbc:oracle:thin:@xxx.xxx.xxx.xxx:1521:ORCL</connection-url>
-			<driver>oracle</driver>
-			<security>
-				<user-name>xxx</user-name>
-				<password>xxx</password>
-			</security>
-		</datasource>
-		<drivers>
-			<driver name="oracle" module="com.liferay.portal">
-				<driver-class>oracle.jdbc.OracleDriver</driver-class>
-				<xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
-			</driver>
-		</drivers>
-	</datasources>
+    <datasources>
+        <datasource jndi-name="java:/jdbc/nameeeeee" pool-name="namee" enabled="true" use-java-context="true">
+            <connection-url>jdbc:oracle:thin:@xxx.xxx.xxx.xxx:1521:ORCL</connection-url>
+            <driver>oracle</driver>
+            <security>
+                <user-name>xxx</user-name>
+                <password>xxx</password>
+            </security>
+        </datasource>
+        <drivers>
+            <driver name="oracle" module="com.liferay.portal">
+                <driver-class>oracle.jdbc.OracleDriver</driver-class>
+                <xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
+            </driver>
+        </drivers>
+    </datasources>
 </subsystem>
 ```
 
