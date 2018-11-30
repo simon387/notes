@@ -65,7 +65,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + pestañas -> schede
 + izquierda -> sinistra
 + tamaño -> dimensione
-+ tampoco -> neppure
++ tampoco -> neppure, neanche
 + comarca -> zona, regione
 + fecha -> data, date
 + miga, migas (dev context) -> Breadcrumb
@@ -127,6 +127,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + subir -> (nerd) committare
 + todavía -> ancora
 + hago ... -> faccio ...
++ quitar -> rimuovere
 
 ---
 
