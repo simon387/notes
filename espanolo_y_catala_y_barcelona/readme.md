@@ -71,7 +71,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + miga, migas (dev context) -> Breadcrumb
 + tal vez -> forse, maybe
 + papelera de reciclaje -> cestino, trash bin
-
++ flecha -> arrow -> freccia
 
 ## cosas muy importantes!
 
