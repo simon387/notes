@@ -11,19 +11,22 @@
 #include <FileConstants.au3>
 
 #Region Global Variables and Constants
+
 Global Static $WAR_EXTENSION = "*.war"
 Global Static $APPEND_STRING = "A"
+
 #EndRegion Global Variables and Constants
 
 renameWarFiles()
 
 #Region Functions list
+
 ; #FUNCTION# ====================================================================================================================
 ; Author ........: Simone Celia
 ; Modified.......: Simone Celia
 ; ===============================================================================================================================
 Func renameWarFiles()
-   $aFileList = _FileListToArray (@ScriptDir, $WAR_EXTENSION, $FLTA_FILES, True)
+   Local $aFileList = _FileListToArray (@ScriptDir, $WAR_EXTENSION, $FLTA_FILES, True)
 
    ;~ _ArrayDisplay($aFileList, "$aFileList")
 
@@ -34,4 +37,5 @@ Func renameWarFiles()
 	  Next
    EndIf
 EndFunc
+
 #EndRegion Functions list
