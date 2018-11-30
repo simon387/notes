@@ -124,6 +124,8 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + olvidado -> forgotten
 + arrancado -> avviato
 + levantado -> server up and running
++ subir -> 
++ todavía -> ancora
 
 ---
 
