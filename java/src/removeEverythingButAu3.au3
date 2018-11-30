@@ -1,7 +1,7 @@
 ; #INDEX# =======================================================================================================================
 ; Title .........: warRenamer
 ; AutoIt Version : 3.3.14.5
-; Description ...: rename .war files on current directory
+; Description ...: remove all files in current directory but Autoit scripts
 ; Author(s) .....: Simone Celia
 ; ===============================================================================================================================
 
@@ -12,12 +12,11 @@
 
 #Region Global Variables and Constants
 
-Global Static $WAR_EXTENSION = "*.war"
-Global Static $APPEND_STRING = "A"
+Global Static $AU3_EXTENSION = ".au3"
 
 #EndRegion Global Variables and Constants
 
-renameWarFiles()
+removeFilesButAutoitScript()
 
 #Region Functions list
 
@@ -25,15 +24,17 @@ renameWarFiles()
 ; Author ........: Simone Celia
 ; Modified.......: Simone Celia
 ; ===============================================================================================================================
-Func renameWarFiles()
-	Local $aFileList = _FileListToArray (@ScriptDir, $WAR_EXTENSION, $FLTA_FILES, True)
+Func removeFilesButAutoitScript()
+	Local $aFileList = _FileListToArray (@ScriptDir, Default, $FLTA_FILES, True)
 
-;~ _ArrayDisplay($aFileList, "$aFileList")
+;~    _ArrayDisplay($aFileList, "$aFileList")
 
 	If IsArray($aFileList) Then
 		For $i = 1 to $aFileList[0]
-;~ 	  ConsoleWrite($aFileList[$i] & @LF)
-			FileMove($aFileList[$i], $aFileList[$i] & $APPEND_STRING, $FC_NOOVERWRITE  + $FC_CREATEPATH)
+;~ 		 ConsoleWrite(StringRight($aFileList[$i], 4) & @LF)
+		 If StringRight($aFileList[$i], StringLen($AU3_EXTENSION)) <> $AU3_EXTENSION Then
+			FileDelete($aFileList[$i])
+		 EndIf
 		Next
 	EndIf
 EndFunc
