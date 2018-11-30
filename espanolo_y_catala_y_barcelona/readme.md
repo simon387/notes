@@ -126,6 +126,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + levantado -> server up and running
 + subir -> (nerd) committare
 + todavía -> ancora
++ hago ... -> faccio ...
 
 ---
 
