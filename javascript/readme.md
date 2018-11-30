@@ -143,8 +143,8 @@ Example of listening an "element injection"
 ```javascript
 var tagContainer = document.querySelector("#<portlet:namespace />searchTokensContent");
 tagContainer.addEventListener("DOMNodeInserted", function (ev) {
-	console.log("EVENT TOKEN ADDED INTERCEPTED");
-	
+    console.log("EVENT TOKEN ADDED INTERCEPTED");
+
 }, false);
 ```
 
@@ -160,35 +160,35 @@ tagContainer.addEventListener("DOMNodeInserted", function (ev) {
 
 ```javascript
 function a() {
-	/* get all nodes by class and not having the flag class
-	 * cycling:
-	 * 	adding class to flag it off 
-	 *	add the span
-	 */
-	var elements = document.getElementsByClassName("random-class");
-	var i;
-	for (i = 0; i < elements.length; i++) {
-		if (elements[i].classList.contains("random-class-elaborated")) {
-			//do nothing
-		} else {
-			elements[i].classList.add("random-class-elaborated");
-			var newSpan = document.createElement("span");
-			newSpan.style.textIndent = '-1000px';
-			newSpan.style.position = 'absolute';
-			newSpan.style.left = '-999em';
-			newSpan.appendChild(document.createTextNode('Tag:'));
-			elements[i].insertBefore(newSpan, elements[i].firstChild);
-		}
-	}
+    /* get all nodes by class and not having the flag class
+     * cycling:
+     * 	adding class to flag it off 
+     *	add the span
+     */
+    var elements = document.getElementsByClassName("random-class");
+    var i;
+    for (i = 0; i < elements.length; i++) {
+        if (elements[i].classList.contains("random-class-elaborated")) {
+            //do nothing
+        } else {
+            elements[i].classList.add("random-class-elaborated");
+            var newSpan = document.createElement("span");
+            newSpan.style.textIndent = '-1000px';
+            newSpan.style.position = 'absolute';
+            newSpan.style.left = '-999em';
+            newSpan.appendChild(document.createTextNode('Tag:'));
+            elements[i].insertBefore(newSpan, elements[i].firstChild);
+        }
+    }
 }
 
 function b() {
-	var elements = document.getElementsByClassName('random-class');
-	var i;
-	for (i = 0; i < elements.length; i++) {
-		var tagName = elements[i].parentElement.children[1].textContent;
-		elements[i].title = 'title ' + tagName;
-	}
+    var elements = document.getElementsByClassName('random-class');
+    var i;
+    for (i = 0; i < elements.length; i++) {
+        var tagName = elements[i].parentElement.children[1].textContent;
+        elements[i].title = 'title ' + tagName;
+    }
 }
 ```
 
@@ -251,14 +251,14 @@ $.fn.tooltip.Constructor.VERSION
 
 ```javascript
 function getURLParameter(sParam) {
-	var sPageURL = window.location.search.substring(1);
-	var sURLVariables = sPageURL.split('&');
-	for (var i = 0; i < sURLVariables.length; i++) {
-		var sParameterName = sURLVariables[i].split('=');
-		if (sParameterName[0] == sParam) {
-			return sParameterName[1];
-		}
-	}
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) {
+            return sParameterName[1];
+        }
+    }
 }​
 
 //example of usage:
@@ -271,11 +271,11 @@ var tech = getURLParameter('technology');
 
 ```javascript
 $('#mySelect option:contains(' + value + ')').each(function(){
-	if ($(this).text() == value) {
-		$(this).attr('selected', 'selected');
-		return false;
-	}
-	return true;
+    if ($(this).text() == value) {
+        $(this).attr('selected', 'selected');
+        return false;
+    }
+    return true;
 });
 ```
 
