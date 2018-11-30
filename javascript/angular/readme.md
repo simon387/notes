@@ -500,43 +500,43 @@ style
 
 ```typescript
 enum GenerationStatus {
-	initial,
-	secondPage,
-	final,
+    initial,
+    secondPage,
+    final,
 }
 
 @Component({
-	selector: 'app-example',
-	templateUrl: './example.component.html',
-	styleUrls: ['./example.component.css']
+    selector: 'app-example',
+    templateUrl: './example.component.html',
+    styleUrls: ['./example.component.css']
 })
 export class ExampleComponent implements OnInit {
 
-	private currentStatus: GenerationStatus;
-	private readonly statusesCount: number = this.getStatusesCount();
+    private currentStatus: GenerationStatus;
+    private readonly statusesCount: number = this.getStatusesCount();
 
-	constructor(
-	) { }
+    constructor(
+    ) { }
 
-	ngOnInit() {
-		this.currentStatus = GenerationStatus.initial;
-	}
+    ngOnInit() {
+        this.currentStatus = GenerationStatus.initial;
+    }
 
-	private getStatusesCount(): number {
-		return Object.keys(GenerationStatus).length / 2 - 1;
-	}
+    private getStatusesCount(): number {
+        return Object.keys(GenerationStatus).length / 2 - 1;
+    }
 
-	private backClicked() {
-		if (this.currentStatus > 0) {
-			this.currentStatus--;
-		}
-	}
+    private backClicked() {
+        if (this.currentStatus > 0) {
+            this.currentStatus--;
+        }
+    }
 
-	private nextClicked() {
-		if (this.currentStatus !== this.statusesCount) {
-			this.currentStatus++;
-		}
-	}
+    private nextClicked() {
+        if (this.currentStatus !== this.statusesCount) {
+            this.currentStatus++;
+        }
+    }
 }
 ```
 
@@ -550,10 +550,10 @@ IMHO is bad to use, maybe your application design is not very good
 
 ```typescript
 @Component({
-	selector: '',
-	templateUrl: '.',
-	styleUrls: ['.'],
-	encapsulation: ViewEncapsulation.None
+    selector: '',
+    templateUrl: '.',
+    styleUrls: ['.'],
+    encapsulation: ViewEncapsulation.None
 })
 ```
 
