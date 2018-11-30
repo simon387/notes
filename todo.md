@@ -36,3 +36,4 @@
 - [ ] aggiorna linkedin
 - [ ] aggiorna programmatori
 - [ ] aggiorna monster
+- [ ] ts spagnolo
