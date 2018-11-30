@@ -19,54 +19,54 @@
 
 ```java
 private Optional<Map<String, Object>> getComponentField(String componentName, String componentVariation, String field) {
-		if (this.map.containsKey(COMPONENTS)) {
-			Map<String, List<Object>> components = (Map<String, List<Object>>) this.map.get(COMPONENTS);
-			for (Map.Entry pair: components.entrySet()) {
-				ArrayList<Map<String, Object>> component = (ArrayList) pair.getValue();
-				for (Map<String, Object> o : component) {
-					if (o.containsKey(NAME) && o.containsKey(VARIATION) && o.containsKey(field)) {
-						if (((String) o.get(NAME)).equalsIgnoreCase(componentName) &&
-								((String) o.get(VARIATION)).equalsIgnoreCase(componentVariation)) {
-							return Optional.of((Map<String, Object>)o.get(field));
-						}
-					}
-				}
-			}
-		}
-		return Optional.absent();
-	}
+    if (this.map.containsKey(COMPONENTS)) {
+        Map<String, List<Object>> components = (Map<String, List<Object>>) this.map.get(COMPONENTS);
+        for (Map.Entry pair: components.entrySet()) {
+            ArrayList<Map<String, Object>> component = (ArrayList) pair.getValue();
+            for (Map<String, Object> o : component) {
+                if (o.containsKey(NAME) && o.containsKey(VARIATION) && o.containsKey(field)) {
+                    if (((String) o.get(NAME)).equalsIgnoreCase(componentName) &&
+                            ((String) o.get(VARIATION)).equalsIgnoreCase(componentVariation)) {
+                        return Optional.of((Map<String, Object>)o.get(field));
+                    }
+                }
+            }
+        }
+    }
+    return Optional.absent();
+}
 ```
 ```json
 {
-	"a": "a",
-	"b": "b",
-	"c": "c",
-	"d": "d",
-	"e": "e",
-	"f": "f",
-	"components": {
-		"name-name": [
-			{
-				"name": "name",
-				"variation": "variation",
-				"field": {
-					"a": "a",
-					"b": {
-						"c": "c"
-					}
-				},
-				"features": {
-					"a": {
-						"b": "b",
-						"c": "c"
-					},
-					"d": {
-						"e": "e"
-					}
-				}
-			}
-		]
-	}
+    "a": "a",
+    "b": "b",
+    "c": "c",
+    "d": "d",
+    "e": "e",
+    "f": "f",
+    "components": {
+        "name-name": [
+            {
+                "name": "name",
+                "variation": "variation",
+                "field": {
+                    "a": "a",
+                    "b": {
+                        "c": "c"
+                    }
+                },
+                "features": {
+                    "a": {
+                        "b": "b",
+                        "c": "c"
+                    },
+                    "d": {
+                        "e": "e"
+                    }
+                }
+            }
+        ]
+    }
 }
 ```
 
@@ -158,16 +158,16 @@ import java.net.URLClassLoader;
 
 public class PrintClasspath {
 
-	@Test
-	public void printClasspath() {
-		ClassLoader cl = ClassLoader.getSystemClassLoader();
+    @Test
+    public void printClasspath() {
+        ClassLoader cl = ClassLoader.getSystemClassLoader();
 
-		URL[] urls = ((URLClassLoader)cl).getURLs();
+        URL[] urls = ((URLClassLoader)cl).getURLs();
 
-		for(URL url: urls){
-			System.out.println(url.getFile());
-		}
-	}
+        for(URL url: urls){
+            System.out.println(url.getFile());
+        }
+    }
 }
 ```
 
@@ -198,7 +198,7 @@ Date date = new SimpleDateFormat("yyyyMMdd").parse(sDate);
 
 ```java
 private static final Set<String> VALUES = new HashSet<String>(Arrays.asList(
-     new String[] {"AB","BC","CD","AE"}
+    new String[] {"AB","BC","CD","AE"}
 ));
 
 VALUES.contains(s)
