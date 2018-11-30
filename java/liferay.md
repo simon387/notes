@@ -1710,7 +1710,7 @@ Example:
 
 ## My favourite tools / IDE for Liferay Development
 
-Note: I prefer to use Linux environments, but most clients require to use window :worried:
+Note: I prefer to use Linux environments, but most clients require to use Window :worried:
 
 + Intellij IDEA Ultimate (indexed search is great)
 + Liferay IDE
@@ -1721,6 +1721,7 @@ Note: I prefer to use Linux environments, but most clients require to use window
 + Firefox (you can see events on DOM elements)
 + Opera browser (javascript debugger and <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> are more *aggressive*)
 + MobaXterm
++ Autoit with SciTE editor, for Window automation
 
 When on linux, Fedora Project Distribution in my opinion is the best one for this kind of development.
 
