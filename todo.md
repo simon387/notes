@@ -34,3 +34,5 @@
 - [ ] aggiorna i CV
 - [ ] trova dell'incenso
 - [ ] aggiorna linkedin
+- [ ] aggiorna programmatori
+- [ ] aggiorna monster
