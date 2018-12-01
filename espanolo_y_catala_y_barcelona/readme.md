@@ -6,6 +6,13 @@ Español (y Catalán) notes, Barcelona life and stuff!
 
 ## Frases comunes
 
+
++ *QUIEN NO APOYA NO FOLLA*
++ *QUIEN NO RECORRE NO SE CORRE*
++ *QUIEN NO ROZA NO GOZA*
++ *Y POR LA VIRGEN DE GUADALUPE*
++ *QUE SI NO FOLLO QUE ME LO CHUPEN*
+
 + Hasta luego! -> see you later!
 + Buenos dias
 + Buenas tardes -> afternoon
