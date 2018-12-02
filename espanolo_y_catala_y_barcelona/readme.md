@@ -79,6 +79,7 @@ Español (y Catalán) notes, Barcelona life and stuff!
 + tal vez -> forse, maybe
 + papelera de reciclaje -> cestino, trash bin
 + flecha -> arrow -> freccia
++ gossos-> polizia catalana 
 
 ## cosas muy importantes!
 
