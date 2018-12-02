@@ -12,8 +12,8 @@
 
 #Region Global Variables and Constants
 
-Global Static $WAR_EXTENSION = "*.war"
-Global Static $APPEND_STRING = "A"
+Global Const $WAR_EXTENSION = "*.war"
+Global Const $APPEND_STRING = "A"
 
 #EndRegion Global Variables and Constants
 
