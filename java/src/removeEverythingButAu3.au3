@@ -12,7 +12,7 @@
 
 #Region Global Variables and Constants
 
-Global Static $AU3_EXTENSION = ".au3"
+Global Const $AU3_EXTENSION = ".au3"
 
 #EndRegion Global Variables and Constants
 
