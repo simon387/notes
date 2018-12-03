@@ -26,15 +26,11 @@ removeFilesButAutoitScript()
 ; ===============================================================================================================================
 Func removeFilesButAutoitScript()
 	Local $aFileList = _FileListToArray (@ScriptDir, Default, $FLTA_FILES, True)
-
-;~    _ArrayDisplay($aFileList, "$aFileList")
-
 	If IsArray($aFileList) Then
 		For $i = 1 to $aFileList[0]
-;~ 		 ConsoleWrite(StringRight($aFileList[$i], 4) & @LF)
-		 If StringRight($aFileList[$i], StringLen($AU3_EXTENSION)) <> $AU3_EXTENSION Then
-			FileDelete($aFileList[$i])
-		 EndIf
+			If StringRight($aFileList[$i], StringLen($AU3_EXTENSION)) <> $AU3_EXTENSION Then
+				FileDelete($aFileList[$i])
+			EndIf
 		Next
 	EndIf
 EndFunc
