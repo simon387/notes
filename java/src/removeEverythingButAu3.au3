@@ -1,5 +1,5 @@
 ; #INDEX# =======================================================================================================================
-; Title .........: warRenamer
+; Title .........: removeEverythingButAu3
 ; AutoIt Version : 3.3.14.5
 ; Description ...: remove all files in current directory but Autoit scripts
 ; Author(s) .....: Simone Celia
