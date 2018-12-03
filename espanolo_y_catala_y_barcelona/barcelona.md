@@ -128,6 +128,7 @@ Carrer Nou de la Rambla, 76-78, 08001 Barcelona
 ## Links
 
 + http://ajuntament.barcelona.cat/calendarifestius/es/
++ http://www.bcncheckpoint.com/
 
 ---
 
