@@ -37,3 +37,4 @@
 - [ ] aggiorna programmatori
 - [ ] aggiorna monster
 - [ ] ts spagnolo
+- [ ] fai controlli
