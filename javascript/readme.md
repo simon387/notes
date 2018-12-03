@@ -345,3 +345,12 @@ var slashCount = (pathName.match(/\//g) || []).length;
 Use this site!
 
 [javascript-minifier.com](https://javascript-minifier.com/)
+
+---
+
+## click by js
+
+```javascript
+document.getElementById('yourLinkID').click();
+```
+
