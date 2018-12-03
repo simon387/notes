@@ -80,7 +80,7 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + tal vez -> forse, maybe
 + papelera de reciclaje -> cestino, trash bin
 + flecha -> arrow -> freccia
-+ gossos-> polizia catalana 
++ mossos-> polizia catalana
 
 ## cosas muy importantes!
 
