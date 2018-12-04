@@ -82,6 +82,7 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + flecha -> arrow -> freccia
 + mossos-> polizia catalana
 + ambos -> entrambi, both
++ tan -> avverbio cosí
 
 ## cosas muy importantes!
 
