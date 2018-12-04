@@ -81,6 +81,7 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + papelera de reciclaje -> cestino, trash bin
 + flecha -> arrow -> freccia
 + mossos-> polizia catalana
++ ambos -> entrambi, both
 
 ## cosas muy importantes!
 
