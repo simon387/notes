@@ -91,6 +91,18 @@ example: *"if is the first index then ..."*
 
 ---
 
+## script inside the script!
+
+Use this kind of trick:
+
+```javascript
+{{:"<"}}script>
+    alert('1');
+{{:"<"}}/script>
+```
+
+---
+
 ## common errors and mistakes
 
 + variable undefined even if you know it exists? take a look to the ```parent``` notation [here](###-VERY-IMPORTANT)
