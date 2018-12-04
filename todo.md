@@ -38,3 +38,5 @@
 - [ ] aggiorna monster
 - [ ] ts spagnolo
 - [ ] fai controlli
+- [ ] cambiare operatore telefonico del cellulare principale... PORCA PUTTANA MI TOCCA ANDARE IN ITALIA PER QUESTA CAZZATA
+- [ ] sim nuova spagnola
