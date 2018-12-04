@@ -340,7 +340,7 @@ var slashCount = (pathName.match(/\//g) || []).length;
 
 ---
 
-## .min
+## Online Minifier (.min)
 
 Use this site!
 
