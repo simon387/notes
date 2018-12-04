@@ -1338,6 +1338,26 @@ Solution:
 
 ---
 
+### Do not mix template directives in jsp!
+
+Example:
+
+This is from template:
+
+```
+${propsUtil.get("kek.asd.lol")}
+${languageUtil.format(locale, "mex.kek")}
+```
+
+And this is the jsp equivalent:
+
+```jsp
+'<%=LanguageUtil.get(locale, "kek.asd.lol")%>'/>
+'<%=PropsUtil.get("mex.kek")%>'/>
+```
+
+---
+
 ## Classes
 
 + ```SiteAdminPortletKeys```
