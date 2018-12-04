@@ -348,9 +348,20 @@ Use this site!
 
 ---
 
-## click by js
+## Click by js
 
 ```javascript
 document.getElementById('yourLinkID').click();
 ```
 
+---
+
+## Intercepting windows resize by device switch
+
+Note: does not work on window reside by mouse.
+
+```javascript
+$(window).on('orientationchange', function(event) {
+    location.reload();
+});
+```
