@@ -223,6 +223,14 @@ $("#id").clone().appendTo("#otherID");
 
 ---
 
+### Appending as first element
+
+```javascript
+$("#target").prepend($("#readFrom").clone());
+```
+
+---
+
 ### Just inserting html in an element
 
 ```javascript
