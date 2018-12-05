@@ -35,15 +35,32 @@ Imprimir:
 
 **DEPRECATED, see stelline e cuoricini google maps**
 
-+ rist siete puertas
-+ piazza di spagna
-+ flaherty https://www.pflaherty.com
-+ arenas barcelona -> top del top
-+ la monrue -> top nachos, nel Raval
++ flaherty https://www.flaherty.com
 + **airport: t2 got the train**
   + e alla stazione barcelona saints le vie per l'aereoporto sono la 9 e la 10
 + a Glories c'e' un bel centro commerciale
+
+### Only Drinks
+
 + almo2bar
++ oviso -> piazza george orwell -> locale delle milf francesi
++ bikini -> lista di tristan
++ luz de gas - MILF
++ el dorado - good on saturday, until 3PM
++ parisien - solo sud americane! panini chimici pure!
+
+---
+
+### Foods & Drinks
+
++ la monrues -> top catalan & fusion, top nachos, nel Raval
++ el nacional -> buene tapas, loc fighetta
++ llamber -> fico, fighetto ma non troppo
++ ristorante siete puertas (mai provato ma dicono che e' buono)
++ piazza di spagna (ci sono posto dove mangiare molto buoni, ma commerciali e non caratteristici)
++ l'antica pizzeria da michele -> top pizza
+
+---
 
 ### Locs croccanti (es. date seri)
 
@@ -54,21 +71,6 @@ combo: llamber o bornmuth in combo con paradiso
 + llamber
 + bornmuth
 + paradiso
-
-### List
-
-+ luz de gas - MILF
-+ el dorado - good on saturday, until 3PM
-+ parisien - solo sud americane!
-+ l'antica pizzeria da michele -> top pizza
-
----
-
-### Foods & Drinks
-
-+ la monrues -> top catalan & fusion, top nachos
-+ el nacional -> buene tapas, loc fighetta
-+ llamber -> fico, fighetto ma non troppo
 
 ---
 
@@ -107,6 +109,7 @@ Carrer Nou de la Rambla, 76-78, 08001 Barcelona
 7. Shops closed on Domingo.
 8. No grip when rain.
 9. Electrical outlet have No grounded @home
+10. Usalo sempre!
 
 ---
 
