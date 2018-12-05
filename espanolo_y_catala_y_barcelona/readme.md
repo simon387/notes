@@ -83,6 +83,7 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + mossos-> polizia catalana
 + ambos -> entrambi, both
 + tan -> avverbio cosí
++ avíon -> aereoplano
 
 ## cosas muy importantes!
 
