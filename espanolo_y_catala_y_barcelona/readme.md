@@ -140,6 +140,7 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + todavía -> ancora
 + hago ... -> faccio ...
 + quitar -> rimuovere
++ bromear -> scherzare
 
 ---
 
