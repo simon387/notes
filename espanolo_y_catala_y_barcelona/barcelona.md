@@ -106,7 +106,7 @@ Carrer Nou de la Rambla, 76-78, 08001 Barcelona
 4. Use it or lose it *"ogni lasciata, è persa"*.
 5. Download offline google maps.
 6. Download offline google translate.
-7. Shops closed on Domingo.
+7. Shops *mostly* closed on Domingo.
 8. No grip when rain.
 9. Electrical outlet have No grounded @home
 10. Usalo sempre!
@@ -116,7 +116,7 @@ Carrer Nou de la Rambla, 76-78, 08001 Barcelona
 ## Bicing
 
 + Always validar
-+ billing daemon is at 2am
++ billing daemon is at 2am cerca
 + full of bug, always pay caution!
 
 ---
