@@ -1657,8 +1657,8 @@ JSONObject jSONObject = JSONFactoryUtil.createJSONObject(blobAsString);
 
 ```java
 import com.liferay.portal.kernel.json.JSONFactoryUtil;
-import java.io.ByteArrayInputStream;
 import com.liferay.portal.kernel.dao.jdbc.OutputBlob;
+import java.io.ByteArrayInputStream;
 
 JSONObject jSONObject = //input JSONObject Object got from somewhere
 String jSONObjectAsString = jSONObject.toString();
