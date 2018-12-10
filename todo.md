@@ -40,3 +40,4 @@
 - [ ] fai controlli
 - [ ] cambiare operatore telefonico del cellulare principale... PORCA PUTTANA MI TOCCA ANDARE IN ITALIA PER QUESTA CAZZATA
 - [ ] sim nuova spagnola
+- [ ] pingare fino alla morte questi figli di puttane del bicing
