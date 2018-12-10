@@ -34,7 +34,7 @@
 - [ ] aggiorna i CV
 - [ ] trova dell'incenso
 - [ ] aggiorna linkedin
-- [ ] aggiorna programmatori
+- [X] aggiorna programmatori
 - [ ] aggiorna monster
 - [ ] ts spagnolo
 - [ ] fai controlli
