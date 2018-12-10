@@ -275,3 +275,9 @@ $ ssh-add ~/.ssh/id_rsa_key
 4. ```airodump-ng -c 00 --bssid 00:ff -w /root/Desktop/ wlan0mon```
 
 ---
+
+## Handle dnf conflicts
+
+```bash
+dnf update -y --best --allowerasing
+```
