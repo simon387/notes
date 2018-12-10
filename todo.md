@@ -9,6 +9,7 @@
 - [X] crea carta virtuale per provare a far scalare il bicing
 - [X] mail a bicing per la fatturazione
 - [X] stampa il pdf empa del 13 dicembre
+- [X] aggiorna programmatori
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
@@ -34,11 +35,11 @@
 - [ ] aggiorna i CV
 - [ ] trova dell'incenso
 - [ ] aggiorna linkedin
-- [X] aggiorna programmatori
-- [ ] aggiorna monster
 - [ ] ts spagnolo
 - [ ] fai controlli
 - [ ] cambiare operatore telefonico del cellulare principale... PORCA PUTTANA MI TOCCA ANDARE IN ITALIA PER QUESTA CAZZATA
 - [ ] sim nuova spagnola
 - [ ] pingare fino alla morte questi figli di puttane del bicing
 - [ ] regali
+- [ ] conto corrente spagnolo
+- [ ] aggiorna monster
