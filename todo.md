@@ -10,6 +10,7 @@
 - [X] mail a bicing per la fatturazione
 - [X] stampa il pdf empa del 13 dicembre
 - [X] aggiorna programmatori
+- [X] fai controlli
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
@@ -36,7 +37,6 @@
 - [ ] trova dell'incenso
 - [ ] aggiorna linkedin
 - [ ] ts spagnolo
-- [ ] fai controlli
 - [ ] cambiare operatore telefonico del cellulare principale... PORCA PUTTANA MI TOCCA ANDARE IN ITALIA PER QUESTA CAZZATA
 - [ ] sim nuova spagnola
 - [ ] pingare fino alla morte questi figli di puttane del bicing
@@ -44,3 +44,4 @@
 - [ ] conto corrente spagnolo
 - [ ] aggiorna monster
 - [ ] backup mobile
+- [ ] fai controlli ancora tipo a feb/marzo
