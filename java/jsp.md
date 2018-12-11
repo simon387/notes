@@ -48,3 +48,13 @@ public long countEm() {
 ```pageContext``` is an implicit object
 
 ---
+
+## Never do that!
+
+Stupid comment -.-
+
+```jsp
+<% } else { //elsecomment %>
+```
+
+But IDE like eclipse doesn't recognize that as an error!
