@@ -13,6 +13,7 @@
 - [X] fai controlli
 - [X] backup mobile
 - [X] aggiorna sito personale
+- [X] aggiorna monster
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
@@ -34,7 +35,7 @@
 - [ ] da prendere a PV: se trovi altre scarpe
 - [ ] da prendere a PV: il robo del cellulare al braccio se funziona
 - [ ] roba per la musica in camera, magari blu tooth
-- [ ] aggiorna i CV
+- [ ] aggiorna i CV git
 - [ ] trova dell'incenso
 - [ ] aggiorna linkedin (aspetta f)
 - [ ] ts spagnolo (aspetta internet)
@@ -43,5 +44,4 @@
 - [X] pingare fino alla morte questi figli di puttane del bicing
 - [ ] regali
 - [ ] conto corrente spagnolo
-- [ ] aggiorna monster
 - [ ] fai controlli ancora tipo a feb/marzo
