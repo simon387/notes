@@ -12,6 +12,7 @@
 - [X] aggiorna programmatori
 - [X] fai controlli
 - [X] backup mobile
+- [X] aggiorna sito personale
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
@@ -33,7 +34,6 @@
 - [ ] da prendere a PV: se trovi altre scarpe
 - [ ] da prendere a PV: il robo del cellulare al braccio se funziona
 - [ ] roba per la musica in camera, magari blu tooth
-- [ ] aggiorna sito personale
 - [ ] aggiorna i CV
 - [ ] trova dell'incenso
 - [ ] aggiorna linkedin (aspetta f)
