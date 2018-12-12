@@ -84,6 +84,7 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + ambos -> entrambi, both
 + tan -> avverbio cosí
 + avíon -> aereoplano
++ dale -> dai!
 
 ## cosas muy importantes!
 
