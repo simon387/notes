@@ -48,3 +48,10 @@ The content of the exe folder of this repository are free software utilities:
 For example show shutdown time
 
 run ```eventvwr.msc```
+
+---
+
+## How to read and alter memory in the easy way
+
+[Cheat Engine !](https://www.cheatengine.org/)
+
