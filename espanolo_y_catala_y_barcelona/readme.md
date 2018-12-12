@@ -86,6 +86,7 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + avíon -> aereoplano
 + dale -> dai!
 + sobre -> sopra, su / over
++ palabra -> parola
 
 ## cosas muy importantes!
 
