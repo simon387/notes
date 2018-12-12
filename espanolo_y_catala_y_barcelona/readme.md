@@ -85,6 +85,7 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + tan -> avverbio cosí
 + avíon -> aereoplano
 + dale -> dai!
++ sobre -> sopra, su / over
 
 ## cosas muy importantes!
 
