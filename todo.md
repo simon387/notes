@@ -11,6 +11,7 @@
 - [X] stampa il pdf empa del 13 dicembre
 - [X] aggiorna programmatori
 - [X] fai controlli
+- [X] backup mobile
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
@@ -35,13 +36,12 @@
 - [ ] aggiorna sito personale
 - [ ] aggiorna i CV
 - [ ] trova dell'incenso
-- [ ] aggiorna linkedin
-- [ ] ts spagnolo
+- [ ] aggiorna linkedin (aspetta f)
+- [ ] ts spagnolo (aspetta internet)
 - [ ] cambiare operatore telefonico del cellulare principale... PORCA PUTTANA MI TOCCA ANDARE IN ITALIA PER QUESTA CAZZATA
 - [ ] sim nuova spagnola
 - [X] pingare fino alla morte questi figli di puttane del bicing
 - [ ] regali
 - [ ] conto corrente spagnolo
 - [ ] aggiorna monster
-- [ ] backup mobile
 - [ ] fai controlli ancora tipo a feb/marzo
