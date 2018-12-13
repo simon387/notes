@@ -16,7 +16,7 @@ But not only Liferay infos, I put here even some random web dev tricks learned i
 
 ---
 
-## Intellij IDEA / other IDE trick
+## IntelliJ IDEA / other IDE trick
 
 ### Sysntax highlight JSP
 
@@ -1732,7 +1732,7 @@ Example:
 
 Note: I prefer to use Linux environments, but most clients require to use Window :worried:
 
-+ Intellij IDEA Ultimate (indexed search is great)
++ IntelliJ IDEA Ultimate (indexed search is great)
 + Liferay IDE
 + Visual Studio Code [(tips here)](../visual-studio-code.md)
 + Notepad++ (old but faster than VSC for large files)
