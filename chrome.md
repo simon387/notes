@@ -10,4 +10,4 @@
 + <kbd>ctrl</kbd> + <kbd>l</kbd> : clear console
 + <kbd>esc</kbd> inside all tabs but console: toggle console
 + <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>n</kbd> : new incognito window
-
++ <kbd>ctrl</kbd> + j : open download window
