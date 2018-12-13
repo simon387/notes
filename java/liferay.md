@@ -1739,7 +1739,7 @@ Note: I prefer to use Linux environments, but most clients require to use Window
 + Meld (Folder comparison is *brutal*)
 + Chrome
 + Firefox (you can see events on DOM elements)
-+ Opera browser (javascript debugger and <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> are more *aggressive*)
++ Opera browser (javascript's debugger and <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> are more *aggressive*)
 + MobaXterm
 + Autoit with SciTE editor, for Window automation
 
