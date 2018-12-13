@@ -17,6 +17,16 @@
 </div>
 ```
 
+<br>
+
+### access parent variable
+
+Example:
+
+```html
+onclick="showCallMeModal({{:#parent.parent.data.parentVariableName}})"
+```
+
 ---
 
 ## if statement
