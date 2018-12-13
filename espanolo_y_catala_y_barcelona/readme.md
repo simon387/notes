@@ -89,11 +89,6 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + palabra -> parola
 + vacío -> vuoto
 
-## cosas muy importantes!
-
-+ nunca hablar de ...
-+ catalán no es dialecto
-
 ---
 
 ## Verbos
