@@ -59,6 +59,12 @@ run ```eventvwr.msc```
 
 ## PowerShell
 
+The best way to get profile location!
+
+```shell
+echo $profile
+```
+
 ### Create new alias
 
 ```shell
