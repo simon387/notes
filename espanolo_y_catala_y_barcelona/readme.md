@@ -87,6 +87,7 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + dale -> dai!
 + sobre -> sopra, su / over
 + palabra -> parola
++ vacío -> vuoto
 
 ## cosas muy importantes!
 
