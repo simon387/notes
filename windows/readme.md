@@ -55,3 +55,21 @@ run ```eventvwr.msc```
 
 [Cheat Engine !](https://www.cheatengine.org/)
 
+---
+
+## PowerShell
+
+### Create new alias
+
+```shell
+New-Alias ll ls
+```
+
+---
+
+### Example of where to store startup scripts
+
+Create ```profile.ps1``` in ```"$Home\Documents" (C:\Users\yourname\Documents)```
+
+---
+
