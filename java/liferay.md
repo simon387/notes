@@ -1737,9 +1737,9 @@ Note: I prefer to use Linux environments, but most clients require to use Window
 + Visual Studio Code [(tips here)](../visual-studio-code.md)
 + Notepad++ (old but faster than VSC for large files)
 + Meld (Folder comparison is *brutal*)
-+ Chrome
-+ Firefox (you can see events on DOM elements)
-+ Opera browser (javascript's debugger and <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> are more *aggressive*)
++ Chrome [(tips here)](../chrome.md)
++ Firefox (you can see events on DOM elements) [(tips here)](../firefox.md)
++ Opera browser (javascript's debugger and <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> are more *aggressive*) [(tips here)](../opera.md)
 + MobaXterm
 + Autoit with SciTE editor, for Window automation
 
