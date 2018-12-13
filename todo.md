@@ -14,6 +14,7 @@
 - [X] backup mobile
 - [X] aggiorna sito personale
 - [X] aggiorna monster
+- [X] pingare fino alla morte questi figli di puttane del bicing
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
@@ -41,7 +42,7 @@
 - [ ] ts spagnolo (aspetta internet)
 - [ ] cambiare operatore telefonico del cellulare principale... PORCA PUTTANA MI TOCCA ANDARE IN ITALIA PER QUESTA CAZZATA
 - [ ] sim nuova spagnola
-- [X] pingare fino alla morte questi figli di puttane del bicing
+- [ ] fixare il bicing
 - [ ] regali
 - [ ] conto corrente spagnolo
 - [ ] fai controlli ancora tipo a feb/marzo
