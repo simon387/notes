@@ -11,3 +11,4 @@
 + <kbd>esc</kbd> inside all tabs but console: toggle console
 + <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>n</kbd> : new incognito window
 + <kbd>ctrl</kbd> + j : open download window
++ <kbd>ctrl</kbd> + <kbd>shift</kbd> + b : toggle favourites bar
