@@ -1740,7 +1740,7 @@ Note: I prefer to use Linux environments, but most clients require to use Window
 + Chrome [(tips here)](../chrome.md)
 + Firefox (you can see events on DOM elements) [(tips here)](../firefox.md)
 + Opera browser (javascript's debugger and <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> are more *aggressive*) [(tips here)](../opera.md)
-+ MobaXterm
++ MobaXterm [(tips here)](../windows/MobaXterm.md)
 + Autoit with SciTE editor, for Window automation
 
 When on linux, Fedora Project Distribution in my opinion is the best one for this kind of development.
