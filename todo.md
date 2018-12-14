@@ -1,5 +1,11 @@
 # TODO
 
+## Pelo
+
+20181214 ven
+
+## TODO
+
 - [X] controlla biglietti aerei
 - [X] chiama il dentista per doppio robo
 - [X] stampa il pdf per l'empadroniamento del 27
