@@ -28,7 +28,7 @@ renameWarFiles()
 Func renameWarFiles()
 	Local $aFileList = _FileListToArray (@ScriptDir, $WAR_EXTENSION, $FLTA_FILES, True)
 	If IsArray($aFileList) Then
-		For $i = 1 to $aFileList[0]
+		For $i = 1 To $aFileList[0]
 			FileMove($aFileList[$i], $aFileList[$i] & $APPEND_STRING, $FC_NOOVERWRITE + $FC_CREATEPATH)
 		Next
 	EndIf

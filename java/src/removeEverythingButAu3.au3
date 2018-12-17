@@ -27,7 +27,7 @@ removeFilesButAutoitScript()
 Func removeFilesButAutoitScript()
 	Local $aFileList = _FileListToArray (@ScriptDir, Default, $FLTA_FILES, True)
 	If IsArray($aFileList) Then
-		For $i = 1 to $aFileList[0]
+		For $i = 1 To $aFileList[0]
 			If StringRight($aFileList[$i], StringLen($AU3_EXTENSION)) <> $AU3_EXTENSION Then
 				FileDelete($aFileList[$i])
 			EndIf
