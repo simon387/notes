@@ -52,3 +52,4 @@
 - [ ] regali
 - [ ] conto corrente spagnolo
 - [ ] fai controlli ancora tipo a feb/marzo
+- [ ] chiama il dentista per gennaio
