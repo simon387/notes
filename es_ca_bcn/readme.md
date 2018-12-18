@@ -88,6 +88,7 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + sobre -> sopra, su / over
 + palabra -> parola
 + vacío -> vuoto
++ trastero -> ripostiglio
 
 ---
 
