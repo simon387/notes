@@ -1696,6 +1696,57 @@ Example:
 
 ---
 
+## Groovy Scripts
+
+You can execute server side script in Liferay Admin Panel.
+
+Here: ```localhost/en/group/control_panel/manage/-/server/script```
+
+Example:
+
+```groovy
+import java.text.SimpleDateFormat;
+import com.liferay.portal.kernel.util.StringPool;
+import com.liferay.portal.kernel.util.StringUtil;
+import com.liferay.portal.kernel.util.Validator;
+import com.liferay.portal.template.ServiceLocator;
+
+String separator = StringPool.SEMICOLON;
+
+ServiceLocator serviceLocator = ServiceLocator.getInstance();
+
+itemLocalService = serviceLocator.findService("name-of-the-portlet-inside-bundle-xml", "com.full.package.path.ItemLocalService");
+
+java.util.List<T> list = itemLocalService.getItems(-1, -1);
+
+out.println(
+        "uuid" + separator +
+        "resourcePrimKey" + separator +
+        "ref" + separator +
+        "companyId" + separator +
+        "groupId" + separator +
+        "createDate" + separator +
+        "modifiedDate"
+    );
+
+SimpleDateFormat dateFormatDate = new SimpleDateFormat("yyyy/MM/dd");
+
+for (item in list) {
+    out.println(
+        item.getUuid() + separator +
+        item.getResourcePrimKey() + separator +
+        item.getRef() + separator +
+        item.getCompanyId() + separator +
+        item.getGroupId() + separator +
+        dateFormatDate.format(item.getCreateDate()) + separator +
+        dateFormatDate.format(item.getModifiedDate())
+    );
+}
+
+```
+
+---
+
 ## Liferay Philosophy
 
 + Everything is an Asset!
