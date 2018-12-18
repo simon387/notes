@@ -53,4 +53,4 @@
 - [ ] conto corrente spagnolo
 - [ ] fai controlli ancora tipo a feb/marzo
 - [ ] chiama il dentista per gennaio
-- [ ] recuperare dal portatile thinkopen l'estensione styler di opera
+- [X] recuperare dal portatile thinkopen l'estensione styler di opera
