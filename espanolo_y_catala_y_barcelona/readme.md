@@ -132,7 +132,7 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + atascado -> bloccato nel senso che non stai scrivendo codice!
 + acabo -> finisco
 + flipando -> andare fuori di testa
-+ olvidado -> forgotten
++ olvidado -> forgotten, olvidar = dimentica
 + arrancado -> avviato
 + levantado -> server up and running
 + subir -> (nerd) committare
