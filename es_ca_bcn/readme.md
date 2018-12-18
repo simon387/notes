@@ -157,6 +157,7 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + [croccantina 1bis](http://www.spanishdict.com/)
 + [series](http://www.seriesyonkis.com)
 + [transmission](http://www.mejortorrent.org)
++ [spagnolo-online.de](http://www.spagnolo-online.de/)
 
 ---
 
