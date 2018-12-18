@@ -140,6 +140,7 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + hago ... -> faccio ...
 + quitar -> rimuovere
 + bromear -> scherzare
++ almorzar -> pranzare
 
 ---
 
