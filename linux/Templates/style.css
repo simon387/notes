@@ -1,0 +1,6 @@
+/*!important*/
+@media (important) {
+	#important .important {
+		important: !important;
+	}
+}
