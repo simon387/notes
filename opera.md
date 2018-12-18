@@ -50,3 +50,12 @@ Exec=opera %U
 Terminal=false
 Icon=/home/scelia/Pictures/kisspng-opera-mobile-computer-icons-web-browser-opera-ico-5ab1b5040a1ba9.5062036715215956520414.png
 ```
+
+---
+
+## Extensions I use
+
++ [Edit This Cookie](https://addons.opera.com/en/extensions/details/edit-this-cookie/)
++ [Modify Header Value](https://addons.opera.com/en/extensions/details/modify-header-value/)
++ [Video Downloader Pro](https://addons.opera.com/en/extensions/details/all-in-all-downloader/)
++ [Stylish](https://addons.opera.com/en/extensions/details/stylish/)
