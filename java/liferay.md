@@ -1720,14 +1720,14 @@ itemLocalService = serviceLocator.findService("name-of-the-portlet-inside-bundle
 java.util.List<T> list = itemLocalService.getItems(-1, -1);
 
 out.println(
-        "uuid" + separator +
-        "resourcePrimKey" + separator +
-        "ref" + separator +
-        "companyId" + separator +
-        "groupId" + separator +
-        "createDate" + separator +
-        "modifiedDate"
-    );
+    "uuid" + separator +
+    "resourcePrimKey" + separator +
+    "ref" + separator +
+    "companyId" + separator +
+    "groupId" + separator +
+    "createDate" + separator +
+    "modifiedDate"
+);
 
 SimpleDateFormat dateFormatDate = new SimpleDateFormat("yyyy/MM/dd");
 
