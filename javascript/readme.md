@@ -371,3 +371,24 @@ $(window).on('orientationchange', function(event) {
 <a href="javascript:void()" onclick="return myMethod('test');">
 ```
 
+---
+
+## Arrays checks
+
+```javascript
+var isEmptyArray = function(arr) {
+    return (arr || []).length === 0;
+}
+
+var arr1 = [1, 2, 3];
+var arr2 = [];
+var arr3 = undefined;
+
+console.log(isEmptyArray(arr1));  // false
+console.log(isEmptyArray(arr2));  // true
+console.log(isEmptyArray(arr3));  // true
+```
+
+---
+
+
