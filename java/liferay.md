@@ -1696,6 +1696,14 @@ Example:
 
 ---
 
+## Portlet refresh by JS
+
+```javascript
+Liferay.Portlet.refresh("#p_p_id_portlet_name_" );
+```
+
+---
+
 ## Groovy Scripts
 
 You can execute server side script in Liferay Admin Panel.
