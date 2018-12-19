@@ -112,7 +112,7 @@ example: *"if is the first index then ..."*
 Use this kind of trick:
 
 ```javascript
-{{:"<"}}script>
+{{:"<"}}script type="text/javascript">
     alert('1');
 {{:"<"}}/script>
 ```
