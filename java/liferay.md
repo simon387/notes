@@ -1755,6 +1755,20 @@ for (item in list) {
 
 ---
 
+### See exceptions
+
+```groovy
+try {
+    nullVar = null
+    out.println(nullVar.length())
+} catch(e) {
+    out.println("""<div class="portlet-msg-error">${e}</div>""")
+    e.printStackTrace(out)
+}
+```
+
+---
+
 ## Liferay Philosophy
 
 + Everything is an Asset!
