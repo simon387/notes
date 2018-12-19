@@ -4,6 +4,10 @@
 
 20181214 ven
 
+## Note
+
++ il portatile thinkopen sta dando dei problemi al monitor
+
 ## TODO
 
 - [X] controlla biglietti aerei
@@ -21,6 +25,7 @@
 - [X] aggiorna sito personale
 - [X] aggiorna monster
 - [X] pingare fino alla morte questi figli di puttane del bicing
+- [X] recuperare dal portatile thinkopen l'estensione styler di opera
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
@@ -53,4 +58,4 @@
 - [ ] conto corrente spagnolo
 - [ ] fai controlli ancora tipo a feb/marzo
 - [ ] chiama il dentista per gennaio
-- [X] recuperare dal portatile thinkopen l'estensione styler di opera
+
