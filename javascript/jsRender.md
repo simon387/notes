@@ -27,6 +27,12 @@ Example:
 onclick="showCallMeModal({{:#parent.parent.data.parentVariableName}})"
 ```
 
+<br>
+
+### access sub variable
+
+Dot.notation!
+
 ---
 
 ## if statement
