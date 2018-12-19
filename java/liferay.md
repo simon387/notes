@@ -1832,6 +1832,12 @@ When on linux, Fedora Project Distribution in my opinion is the best one for thi
 
 ---
 
+## Acronyms
+
++ (IPC) Inter portlet communication
+
+---
+
 <!-- ## TEST ZONE
 
 https://github.com/simon387/notes/blob/efdf77dfc11cd8ca6b7a0f2d9cddca93f910d68a/java/src/Test.java#L1
