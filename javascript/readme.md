@@ -362,3 +362,12 @@ $(window).on('orientationchange', function(event) {
     location.reload();
 });
 ```
+
+---
+
+## Dynamic href
+
+```javascript
+<a href="javascript:void()" onclick="return myMethod('test');">
+```
+
