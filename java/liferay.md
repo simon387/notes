@@ -1668,7 +1668,7 @@ OutputBlob blob = new OutputBlob(inputStream, jSONObjectAsString.length());
 
 ---
 
-## Sorting JSONArray in JSP
+## Sorting JSONArray in JSP Example
 
 ```jsp
 <%@page import="com.liferay.portal.kernel.json.JSONFactoryUtil"%>
