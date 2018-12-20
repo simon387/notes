@@ -1668,6 +1668,42 @@ OutputBlob blob = new OutputBlob(inputStream, jSONObjectAsString.length());
 
 ---
 
+## Sorting JSONArray in JSP
+
+```jsp
+<%@page import="com.liferay.portal.kernel.json.JSONFactoryUtil"%>
+<%@page import="java.util.Collections"%>
+<%@page import="java.util.Comparator" %>
+
+<%
+JSONArray myJSONArray = //input
+JSONArray sortedJsonArray = JSONFactoryUtil.createJSONArray();
+List<JSONObject> jsonValues = new ArrayList<JSONObject>();
+for (int i = 0; i < myJSONArray.length(); i++) {
+    jsonValues.add(myJSONArray.getJSONObject(i));
+}
+Collections.sort(jsonValues, new Comparator<JSONObject>() {
+    private static final String KEY_NAME = "name";
+    public int compare(JSONObject a, JSONObject b) {
+        String valA = new String();
+        String valB = new String();
+        try {
+            valA = (String) a.getString(KEY_NAME);
+            valB = (String) b.getString(KEY_NAME);
+        } 
+        catch (Exception e) {
+        }
+        return valA.compareTo(valB);
+    }
+});
+for (int i = 0; i < myJSONArray.length(); i++) {
+    sortedJsonArray.put(jsonValues.get(i));
+}
+%>
+```
+
+---
+
 ## JSONWS API Page
 
 To open this page, just add this to baseurl: ```/api/jsonws```
