@@ -84,6 +84,14 @@ You can sort elements!
 {{for array sort="firstName" }}...{{/for}}
 ```
 
+**pay caution to sub variables!**
+
+es:
+
+```html
+{{for array sort="com.asd.firstName" }}...{{/for}}
+```
+
 ---
 
 example: *"if is the first index then ..."*
