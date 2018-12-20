@@ -1673,7 +1673,7 @@ OutputBlob blob = new OutputBlob(inputStream, jSONObjectAsString.length());
 ```jsp
 <%@page import="com.liferay.portal.kernel.json.JSONFactoryUtil"%>
 <%@page import="java.util.Collections"%>
-<%@page import="java.util.Comparator" %>
+<%@page import="java.util.Comparator"%>
 
 <%
 JSONArray myJSONArray = //input
