@@ -102,12 +102,6 @@ Override
 
 ---
 
-## Common errors
-
-+ ```ORA-00928: missing SELECT keyword``` in an insert, during an Hibernate Transaction with Oracle... I was using a reserved oracle keyword (```FILE```)
-
----
-
 ## Tomcat(7) setting VM options on windows
 
 inside catalina.bat
@@ -130,14 +124,21 @@ set "JAVA_OPTS=%JAVA_OPTS% -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspen
 
 ## Common errors
 
-```javax.naming.CommunicationException: anonymous bind failed: package.class.eu:636 [Root exception is javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]```
+### ```javax.naming.CommunicationException: anonymous bind failed: package.class.eu:636 [Root exception is javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]```
 
 solution's example:
 
 setting the tomcat VM option
+
 ```
 -Djavax.net.ssl.trustStore=path_to_keystore.jks -Djavax.net.ssl.trustStorePassword=password 
 ```
+
+---
+
+### ```ORA-00928: missing SELECT keyword```
+
+In an insert, during an Hibernate Transaction with Oracle... I was using a reserved oracle keyword (```FILE```)
 
 ---
 
