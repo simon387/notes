@@ -75,6 +75,15 @@ They are multi-line!
 {{/for}}
 ```
 
+
+### for sort
+
+You can sort elements!
+
+```html
+{{for array sort="firstName" }}...{{/for}}
+```
+
 ---
 
 example: *"if is the first index then ..."*
