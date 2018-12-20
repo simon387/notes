@@ -2,13 +2,6 @@
 
 + [GOTO Liferay Notes](liferay.md)
 
-## Eclipse note
-
-+ debugs stop execution without breakpoints? Windows -> Preferences -> Java -> Debug -> Suspend execution on uncaught exceptions
-+ in eclipse search form (<kbd>ctrl</kbd> + <kbd>f</kbd>), turn on ```Incremental search```!
-
----
-
 ## Log4j
 
 [log4j property file example](https://github.com/simon387/Log4jEx/blob/master/src/main/resources/log4j.properties)
