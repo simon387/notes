@@ -79,3 +79,8 @@ Create ```profile.ps1``` in ```"$Home\Documents" (C:\Users\yourname\Documents)``
 
 ---
 
+### Window 10 app recorder
+
+<kbd>win</kbd> + <kbd>g</kbd>
+
+---
