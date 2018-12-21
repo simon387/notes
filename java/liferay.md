@@ -1852,6 +1852,7 @@ Note: I prefer to use Linux environments, but most clients require to use Window
 + Opera browser (javascript's debugger and <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> are more *aggressive*) [(tips here)](../opera.md)
 + MobaXterm [(tips here)](../windows/MobaXterm.md)
 + Autoit with SciTE editor, for Window automation
++ [Everything](http://www.voidtools.com/) Locate files and folders by name instantly.
 
 When on linux, Fedora Project Distribution in my opinion is the best one for this kind of development.
 
