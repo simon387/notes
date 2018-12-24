@@ -4,6 +4,7 @@
 
 20181214 ven
 20181221 ven
+20181224 ven solo barba
 
 ## Note
 
@@ -53,9 +54,9 @@
 - [ ] aggiorna linkedin (aspetta f)
 - [ ] ts spagnolo (aspetta internet)
 - [ ] cambiare operatore telefonico del cellulare principale... PORCA PUTTANA MI TOCCA ANDARE IN ITALIA PER QUESTA CAZZATA
-- [ ] sim nuova spagnola
-- [ ] fixare il bicing
-- [ ] regali
+- [ ] sim nuova spagnola (meglio con cc es)
+- [X] fixare il bicing
+- [X] regali
 - [ ] conto corrente spagnolo
 - [ ] fai controlli ancora tipo a feb/marzo
 - [ ] chiama il dentista per gennaio
