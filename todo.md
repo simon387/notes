@@ -11,6 +11,7 @@
 ## Note
 
 + il portatile thinkopen sta dando dei problemi al monitor
++ 8160
 
 ## TODO
 
