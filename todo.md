@@ -30,6 +30,9 @@
 - [X] aggiorna monster
 - [X] pingare fino alla morte questi figli di puttane del bicing
 - [X] recuperare dal portatile thinkopen l'estensione styler di opera
+- [X] sim nuova spagnola
+- [X] fixare il bicing
+- [X] regali
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
@@ -56,10 +59,6 @@
 - [ ] aggiorna linkedin (aspetta f)
 - [ ] ts spagnolo (aspetta internet)
 - [ ] cambiare operatore telefonico del cellulare principale... PORCA PUTTANA MI TOCCA ANDARE IN ITALIA PER QUESTA CAZZATA
-- [ ] sim nuova spagnola (meglio con cc es)
-- [X] fixare il bicing
-- [X] regali
 - [ ] conto corrente spagnolo
 - [ ] fai controlli ancora tipo a feb/marzo
 - [ ] chiama il dentista per gennaio
-
