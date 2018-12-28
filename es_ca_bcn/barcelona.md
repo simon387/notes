@@ -134,6 +134,13 @@ https://www.helpmycash.com/cuentas/cuentas-online/
 
 ---
 
+## mobile sim
+
++ La Fabrica del Cartucho el Clot Placa de Font i Sague, 2, 08018 Barcelona, Espana
++ centro orange che vende anche schede simyo https://goo.gl/maps/TKYhYDfgN192
+
+---
+
 ## Links
 
 + http://ajuntament.barcelona.cat/calendarifestius/es/
