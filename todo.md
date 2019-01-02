@@ -67,3 +67,4 @@
 - [ ] chiama il dentista per gennaio
 - [ ] robo degli occhiali
 - [ ] rifixa il pd di bicing
+- [ ] deploy fast solo jsp
