@@ -116,43 +116,46 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 
 <br>
 
-1 cogn
+### -ar
 
--ar
-
- yo hablo
-  tú hablas
-  él habla
-  ella habla
-  nosotros hablamos
-  nosotras hablamos
-  vosotros habláis
-  vosotras habláis 
-  ellos hablan
-  ellas hablan
+| |
+|-|
+|yo hablo|
+|tú hablas|
+|él habla|
+|ella habla|
+|nosotros hablamos|
+|nosotras hablamos|
+|vosotros habláis|
+|vosotras habláis|
+|ellos hablan|
+|ellas hablan|
   
-2
+### -ir
 
--ir
-
- yo recibo
-  tú recibes
-  él recibe
-  ella recibe
-  nosotros recibimos
-  nosotras recibimos
-  vosotros recibís
-  vosotras recibís
-  ellos reciben
-  ellas reciben
+| |
+|-|
+|yo recibo|
+|tú recibes|
+|él recibe|
+|ella recibe|
+|nosotros recibimos|
+|nosotras recibimos|
+|vosotros recibís|
+|vosotras recibís|
+|ellos reciben|
+|ellas reciben|
   
-  -er
-  com-o 
-  com-es 
-  com-e 
-  com-emos 
-  com-éis 
-  com-en 
+### -er
+
+| |
+|-|
+|com-o|
+|com-es|
+|com-e|
+|com-emos|
+|com-éis|
+|com-en|
 
 <br>
 

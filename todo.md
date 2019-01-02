@@ -4,9 +4,15 @@
 
 20181214 ven
 
+20181221 ven
+
+20181224 ven solo barba
+
+
 ## Note
 
 + il portatile thinkopen sta dando dei problemi al monitor
++ 8160
 
 ## TODO
 
@@ -26,6 +32,9 @@
 - [X] aggiorna monster
 - [X] pingare fino alla morte questi figli di puttane del bicing
 - [X] recuperare dal portatile thinkopen l'estensione styler di opera
+- [X] sim nuova spagnola
+- [X] fixare il bicing
+- [X] regali
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
@@ -52,6 +61,7 @@
 - [ ] aggiorna linkedin (aspetta f)
 - [ ] ts spagnolo (aspetta internet)
 - [ ] cambiare operatore telefonico del cellulare principale... PORCA PUTTANA MI TOCCA ANDARE IN ITALIA PER QUESTA CAZZATA
+<<<<<<< HEAD
 - [ ] sim nuova spagnola
 - [ ] fixare il bicing
 - [ ] regali
@@ -59,3 +69,8 @@
 - [ ] fai controlli ancora tipo a feb/marzo
 - [ ] chiama il dentista per gennaio
 
+=======
+- [ ] conto corrente spagnolo
+- [ ] fai controlli ancora tipo a feb/marzo
+- [ ] chiama il dentista per gennaio
+>>>>>>> 3ab5faca833c68ed4c68501729fbaccb3082daca

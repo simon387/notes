@@ -1,5 +1,7 @@
 # Barcelona info
 
+csp el clot bcn: 08018
+
 ## Docs
 
 ### NIE
@@ -125,6 +127,19 @@ Carrer Nou de la Rambla, 76-78, 08001 Barcelona
 
 + [milanuncios](https://www.milanuncios.es/)
 + Wallapop app
+
+---
+
+## Banks accounts
+
+https://www.helpmycash.com/cuentas/cuentas-online/
+
+---
+
+## mobile sim
+
++ Simyo: La Fabrica del Cartucho el Clot Placa de Font i Sague, 2, 08018 Barcelona, Espana
++ centro orange che vende anche schede simyo https://goo.gl/maps/TKYhYDfgN192
 
 ---
 
