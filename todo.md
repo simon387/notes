@@ -65,6 +65,6 @@
 - [ ] conto corrente spagnolo
 - [ ] fai controlli ancora tipo a feb/marzo
 - [ ] chiama il dentista per gennaio
-- [ ] robo degli occhiali
+- [x] robo degli occhiali
 - [ ] rifixa il pd di bicing
 - [ ] deploy fast solo jsp
