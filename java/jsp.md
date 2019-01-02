@@ -58,3 +58,13 @@ Stupid comment -.-
 ```
 
 But IDE like eclipse doesn't recognize that as an error!
+
+---
+
+## Double double quotes?
+
+This code is valid!
+
+```jsp
+"<%=LanguageUtil.get(pageContext, "key.value")%>";
+```
