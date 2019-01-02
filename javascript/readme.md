@@ -355,7 +355,7 @@ document.getElementById('yourLinkID').click();
 
 ## Intercepting windows resize by device switch
 
-Note: does not work on window reside by mouse.
+Note: does not work on window resize by mouse.
 
 ```javascript
 $(window).on('orientationchange', function(event) {
