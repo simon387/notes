@@ -36,6 +36,7 @@
 - [X] sim nuova spagnola
 - [X] fixare il bicing
 - [X] regali
+- [X] trova dell'incenso
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
@@ -58,20 +59,9 @@
 - [ ] da prendere a PV: il robo del cellulare al braccio se funziona
 - [ ] roba per la musica in camera, magari blu tooth
 - [ ] aggiorna i CV git
-- [ ] trova dell'incenso
 - [ ] aggiorna linkedin (aspetta f)
 - [ ] ts spagnolo (aspetta internet)
 - [ ] cambiare operatore telefonico del cellulare principale... PORCA PUTTANA MI TOCCA ANDARE IN ITALIA PER QUESTA CAZZATA
-<<<<<<< HEAD
-- [ ] sim nuova spagnola
-- [ ] fixare il bicing
-- [ ] regali
 - [ ] conto corrente spagnolo
 - [ ] fai controlli ancora tipo a feb/marzo
 - [ ] chiama il dentista per gennaio
-
-=======
-- [ ] conto corrente spagnolo
-- [ ] fai controlli ancora tipo a feb/marzo
-- [ ] chiama il dentista per gennaio
->>>>>>> 3ab5faca833c68ed4c68501729fbaccb3082daca
