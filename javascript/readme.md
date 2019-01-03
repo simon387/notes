@@ -11,6 +11,16 @@
 
 ---
 
+## Escape!
+
+**Inside Strings**
+
+```'``` becomes ```\x27```
+
+```"``` becomes ```\x22```
+
+---
+
 ## Style on logs
 
 ```javascript
