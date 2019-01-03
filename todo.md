@@ -39,6 +39,7 @@
 - [X] trova dell'incenso
 - [x] chiama il dentista per gennaio
 - [x] robo degli occhiali
+- [x] deploy fast solo jsp
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
@@ -67,4 +68,3 @@
 - [ ] conto corrente spagnolo
 - [ ] fai controlli ancora tipo a feb/marzo
 - [ ] rifixa il pd di bicing
-- [ ] deploy fast solo jsp
