@@ -37,6 +37,8 @@
 - [X] fixare il bicing
 - [X] regali
 - [X] trova dell'incenso
+- [x] chiama il dentista per gennaio
+- [x] robo degli occhiali
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
@@ -64,7 +66,5 @@
 - [ ] cambiare operatore telefonico del cellulare principale... PORCA PUTTANA MI TOCCA ANDARE IN ITALIA PER QUESTA CAZZATA
 - [ ] conto corrente spagnolo
 - [ ] fai controlli ancora tipo a feb/marzo
-- [x] chiama il dentista per gennaio
-- [x] robo degli occhiali
 - [ ] rifixa il pd di bicing
 - [ ] deploy fast solo jsp
