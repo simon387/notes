@@ -89,6 +89,7 @@ QUE SI NO FOLLO QUE ME LO CHUPEN
 + palabra -> parola
 + vacío -> vuoto
 + trastero -> ripostiglio
++ casi -> quasi
 
 ---
 
