@@ -45,7 +45,6 @@
 - [ ] trova una moto
 - [ ] empadroniamento
 - [ ] seguridad social
-- [ ]  ~~~finisci il pdf di spring boot ~~~
 - [ ] impara il catalano
 - [ ] impara il castigliano
 - [ ] da prendere a PV: catene moto
