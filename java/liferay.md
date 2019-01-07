@@ -1791,7 +1791,7 @@ for (item in list) {
 
 ---
 
-### See exceptions
+### To see exceptions
 
 ```groovy
 try {
