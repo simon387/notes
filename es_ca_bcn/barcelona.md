@@ -1,6 +1,13 @@
 # Barcelona info
 
-csp el clot bcn: 08018
+```
+THINKOPEN
+VALENCIA 662-664 5-5
+08026 BARCELONA
+BARCELONA
+```
+
+csp coworking bcn: 08018
 
 ## Docs
 
