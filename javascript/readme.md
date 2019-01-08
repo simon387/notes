@@ -323,7 +323,7 @@ $('#mySelect option:contains(' + value + ')').each(function(){
 
 ---
 
-## link with ```href="javascript:void(0)"```
+## Link with ```href="javascript:void(0)"```
 
 ```html
 <a href="javascript:void(0)"></a>
