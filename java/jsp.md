@@ -68,3 +68,12 @@ This code is valid!
 ```jsp
 "<%=LanguageUtil.get(pageContext, "key.value")%>";
 ```
+
+---
+
+## JSP size got a limit!
+
+```GENERATED JSP IS EXCEEDING THE 65535 BYTES LIMIT```
+
+**You are a bad programmer!**
+
