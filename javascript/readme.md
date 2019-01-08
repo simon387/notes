@@ -468,4 +468,12 @@ function removeParam(key, sourceURL) {
 }
 ```
 
+---
 
+## Function on element sub tree change
+
+```javascript
+$('#elementId').bind("DOMSubtreeModified", function(){
+   myFunction();
+});
+```
