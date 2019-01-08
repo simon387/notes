@@ -472,6 +472,8 @@ function removeParam(key, sourceURL) {
 
 ## Function on element sub tree change
 
+It's bad design and deprecated but... whatever!
+
 ```javascript
 $('#elementId').bind("DOMSubtreeModified", function(){
    myFunction();
