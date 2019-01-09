@@ -68,3 +68,7 @@
 - [ ] fai controlli ancora tipo a feb/marzo
 - [ ] rifixa il pd di bicing
 - [ ] fixa repo privati github
+
+## nuova contra
+
+13GattiScacchi!
