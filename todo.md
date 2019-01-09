@@ -67,3 +67,4 @@
 - [ ] conto corrente spagnolo
 - [ ] fai controlli ancora tipo a feb/marzo
 - [ ] rifixa il pd di bicing
+- [ ] fixa repo privati github
