@@ -1288,6 +1288,26 @@ Use the "save" trick (Eclipse based IDEs):
 
 ---
 
+### Ant error, XXX is not allowed for source level below x.y
+
+1. Do as other Ant error, adding whitespace on file, etc...
+2. Check if the project setup is correct: source level x.y
+
+   example:
+   
+   ```
+   Right-click on the project.
+   Choose Properties.
+   Choose Java Compiler on the left.
+   Choose 1.7 for the Compiler Compliance level.
+   If the 2 drop-downs below that aren't 1.7, uncheck Use default compliance settings and set those to 1.7.
+   ```
+
+3. clean
+4. rerun task
+
+---
+
 ### error while deploy com.liferay.util.service cannot be resolved
 
 ```
