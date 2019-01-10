@@ -40,6 +40,7 @@
 - [x] chiama il dentista per gennaio
 - [x] robo degli occhiali
 - [x] deploy fast solo jsp
+- [x] fixa repo privati github
 - [ ] uchelele
 - [ ] rollerblade
 - [ ] trova una moto
@@ -67,7 +68,6 @@
 - [ ] conto corrente spagnolo
 - [ ] fai controlli ancora tipo a feb/marzo
 - [ ] rifixa il pd di bicing
-- [ ] fixa repo privati github
 
 ## nuova contra
 
