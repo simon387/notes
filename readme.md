@@ -39,6 +39,8 @@ It's just a repository I use to save my developer's note... no copyright stuffs 
 ---
 
 ## random links
+
++ [codersrank](https://codersrank.io/)
 + https://www.packtpub.com/packt/offers/free-learning
 + https://regexr.com
 + https://asoftmurmur.com
