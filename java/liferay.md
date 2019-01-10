@@ -1837,6 +1837,7 @@ try {
 + *Always have a liferay portal bundle with tomcat for development*
 + Always use constant fields
 + Always localize strings
++ Always execute the task clean before building ```war``` when switching workspace!
 
 ---
 
