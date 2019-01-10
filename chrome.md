@@ -13,3 +13,11 @@
 + <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>n</kbd> : new incognito window
 + <kbd>ctrl</kbd> + j : open download window
 + <kbd>ctrl</kbd> + <kbd>shift</kbd> + b : toggle favourites bar
+
+## Errors
+
+```
+Unchecked runtime.lastError: The message port closed before a response was received.
+```
+
+Was a plugin error, unistall/disable it and the error disappear
