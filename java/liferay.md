@@ -1856,6 +1856,7 @@ try {
 + If you can't find a piece of rendered html in the source code... maybe it's inside the database! (for example as a web content)
 + If you change extension to the ```.war``` files before copying them into the deploy folder, you will get less errors in the hot deploy phase... just put back the right extension after the transfer. This trick is usefull only for large ```.war``` (typically >1MB)
   + see [warRenamer.au3](src/warRenamer.au3) for automatic renaming in Window systems.
++ If you can't create a local database, use the dev one (duplicate it from the original one)
 
 ---
 
