@@ -24,3 +24,14 @@ mysql> SHOW VARIABLES LIKE "general_log%";
 mysql> SET GLOBAL general_log = 'ON';
 ```
 
+---
+
+## Window
+
+To install it on Window you have to download the MySQL installer and install it via Admin with PowerShell
+
+Or the setup somtime never ends (I hate window)
+
+```
+C:\> .\mysql-installer-community-8.0.13.0.msi
+```
