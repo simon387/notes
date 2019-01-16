@@ -1888,6 +1888,7 @@ When on linux, Fedora Project Distribution in my opinion is the best one for thi
 + [Event tracking by JS](https://www.xtivia.com/google-analytics-event-tracking-liferay/)
 + [Portlet filters in Liferay 7 dxp](https://www.liferaystack.com/2017/09/portlet-filters-in-liferay-7-dxp.html)
 + [Top Service Builder Article](http://www.enprowess.com/blogs/service-builder-liferay-dxp/)
++ [Liferay 7 pop up](https://vianneyfaiv.re/2015/09/15/liferay-6-get-dlfileentry-download-url/)
 
 ---
 
