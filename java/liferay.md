@@ -1378,6 +1378,12 @@ And this is the jsp equivalent:
 
 ---
 
+### MVCPortlet: null is not a valid include
+
+Remove ```return;``` on ```public void serveResource()``` method of class extending ```MVCPortlet```
+
+---
+
 ## Classes
 
 + ```SiteAdminPortletKeys```
