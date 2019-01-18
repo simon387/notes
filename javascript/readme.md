@@ -479,3 +479,21 @@ $('#elementId').bind("DOMSubtreeModified", function(){
    myFunction();
 });
 ```
+
+---
+
+## Best on change for html input
+
+```javascript
+(function () {
+    var oldVal;
+    $("#myInput").on('change textInput input', function () {
+        var val = this.value;
+        if (val !== oldVal) {
+            oldVal = val;
+            myOnChangeFunction();
+        }
+    });
+}());
+```
+
