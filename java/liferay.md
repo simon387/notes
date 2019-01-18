@@ -735,6 +735,18 @@ welcome-x=Welcome{0}!
 
 ---
 
+## Read portal-ext.properties
+
+Liferay 7.x example:
+
+```java
+import com.liferay.portal.kernel.util.PropsUtil;
+
+String myKey = PropsUtil.get("my.key");
+```
+
+---
+
 ## Gogo shell
 
 ### Access
