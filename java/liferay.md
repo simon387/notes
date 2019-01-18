@@ -1133,6 +1133,29 @@ public class MyModule extends MVCPortlet {
 
 ---
 
+## Reading JournalArticle content (xml) and XPath example
+
+```java
+//linkName is a field of the structure (can be an url in this example)
+//it is the current name inside the database (xml field)
+private boolean isLinkNotEmpty(long groupId, String uuid, String linkName) {
+    JournalArticle journalArticle = JournalArticleLocalServiceUtil.fetchJournalArticleByUuidAndGroupId(uuid, groupId);
+    String content = journalArticle.getContent();
+    Document contentDoc;
+    try {
+        contentDoc = SAXReaderUtil.read(content);
+        Node node = contentDoc.selectSingleNode("/root/dynamic-element[@name='" + linkName + "']/dynamic-content");
+        String url = node.getText();
+        return !url.isEmpty();
+    } catch (DocumentException e) {
+        e.printStackTrace();
+    }
+    return true;
+}
+```
+
+---
+
 ## Liferay AUDIT
 
 + to see if it is installed: ```Control Panel -> Configuration -> System Settings -> Foundation -> Audit```
