@@ -1016,6 +1016,30 @@ AUI().use('aui-base','liferay-util-window','aui-io-plugin-deprecated',function(A
 
 ---
 
+## Modal Popup example
+
+```jsp
+<div id="<portlet:namespace/>render-popup-container"></div>
+
+<aui:script use="aui-modal,aui-overlay-manager">
+    var dialog = new A.Modal({
+        title: "title",
+        bodyContent: "<div><img src=""></div>",
+        headerContent: "title",
+        centered: true,
+        modal: true,
+        height: 400,
+        width: 750,
+        render: '#<portlet:namespace/>render-popup-container',
+        close: true
+    });
+    dialog.render();
+</aui:script>
+
+```
+
+---
+
 ## Liferay AUDIT
 
 + to see if it is installed: ```Control Panel -> Configuration -> System Settings -> Foundation -> Audit```
