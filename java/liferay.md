@@ -1039,6 +1039,100 @@ AUI().use('aui-base','liferay-util-window','aui-io-plugin-deprecated',function(A
 
 ---
 
+## AJAX example
+
+```jsp
+<portlet:resourceURL var="baseResourceUrl" ></portlet:resourceURL>
+
+<script>
+    $("#<portlet:namespace/>myButton").on("click", function(event) {
+        var urlAjax = "${baseResourceUrl}&<portlet:namespace/>cmd=getMyData";
+        var var1js = "asd";
+        var var2js = "lol";
+        jQuery.ajax({
+            url: urlAjax,
+            type: "POST",
+            dataType: "json",
+            async: false,
+            cache: false,
+            data:{
+                <portlet:namespace/>var1: var1js,
+                <portlet:namespace/>var2: var2js
+            },
+            success:function(data,textStatus, XMLHttpRequest) {
+                if (data.length === 0) {
+                    //error
+                } else {
+                    $.each(data, function(index, value) {
+                        //if data is an array of jsons, its just an example
+                        console.log("id=" + value.id);
+                        console.log("name=" + value.name);
+                    });
+                }
+            },
+            error:function(data,textStatus, XMLHttpRequest) {
+                console.log("request failed: getMyData");
+            }
+        });
+    });
+</script>
+```
+
+```java
+@Component(
+    immediate = true,
+    property = {
+        "com.liferay.portlet.display-category=category.sample", 
+        "com.liferay.portlet.instanceable=false",
+        "javax.portlet.init-param.template-path=/",
+        "javax.portlet.init-param.view-template=/view.jsp",
+        "javax.portlet.name=" + MyModulePortletKeys.PortletName,
+        "javax.portlet.resource-bundle=content.Language",
+        "javax.portlet.security-role-ref=power-user,user",
+    },
+    service = Portlet.class
+)
+public class MyModule extends MVCPortlet {
+    
+    @Override
+    public void doView(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
+        //
+    }
+    
+    @Override
+    public void serveResource(ResourceRequest resourceRequest, ResourceResponse resourceResponse) throws IOException, PortletException {
+
+        ThemeDisplay themeDisplay = (ThemeDisplay) resourceRequest.getAttribute(WebKeys.THEME_DISPLAY);
+        Locale locale = themeDisplay.getLocale();
+        Layout layout = themeDisplay.getLayout();
+        long groupID = layout.getGroupId();
+        HttpServletRequest hsr = PortalUtil.getOriginalServletRequest(PortalUtil.getHttpServletRequest(resourceRequest));
+        String cmd = ParamUtil.getString(resourceRequest, "cmd");
+
+        if("getMyData".equalsIgnoreCase(cmd)) {
+            String var1js = resourceRequest.getParameter("var1js");//reading variables from the data POSTed... you can use them
+            String var2js = resourceRequest.getParameter("var2js");
+
+            JSONArray jsonList = JSONFactoryUtil.createJSONArray();
+            JSONObject jsonObj = JSONFactoryUtil.createJSONObject();
+
+            jsonObj.put("id", 0);
+            jsonObj.put("name", LanguageUtil.get(hsr , "key.0.inside.language.properties"));
+            jsonList.put(jsonObj);
+
+            jsonObj = JSONFactoryUtil.createJSONObject();
+            jsonObj.put("id", 1);
+            jsonObj.put("name",  LanguageUtil.get(hsr, "key.1.inside.language.properties"));
+            jsonList.put(jsonObj);
+
+            resourceResponse.getWriter().print(jsonList.toString());//write json
+        }
+    }
+}
+```
+
+---
+
 ## Liferay AUDIT
 
 + to see if it is installed: ```Control Panel -> Configuration -> System Settings -> Foundation -> Audit```
