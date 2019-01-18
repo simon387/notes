@@ -1025,7 +1025,7 @@ AUI().use('aui-base','liferay-util-window','aui-io-plugin-deprecated',function(A
     var dialog = new A.Modal({
         title: "title",
         bodyContent: "<div><img src=""></div>",
-        headerContent: "title",
+        headerContent: "title",//this is the real title
         centered: true,
         modal: true,
         height: 400,
