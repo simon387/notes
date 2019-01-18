@@ -1035,7 +1035,6 @@ AUI().use('aui-base','liferay-util-window','aui-io-plugin-deprecated',function(A
     });
     dialog.render();
 </aui:script>
-
 ```
 
 ---
