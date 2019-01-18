@@ -1996,6 +1996,7 @@ try {
 + Always use constant fields
 + Always localize strings
 + Always execute the task clean before building ```war``` when switching workspace!
++ In JSP, always use ```<portlet:namespace/>``` before any html element id!
 
 ---
 
