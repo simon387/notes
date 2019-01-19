@@ -91,6 +91,16 @@ combo: llamber o bornmuth in combo con paradiso
 
 ---
 
+#### search engine
+
+| Nombre         | Sitio                 | Location  | Note |
+| -------------  |:---------------------:| ----------|------|
+| Maquina Motors | [filtro](http://maquinamotors.com/moto-ocasion/filtro/mm_provincia-barcelona/mm_cc-1000-1001) | -      | - |
+| SPAI MOTO      | [filtro](http://www.spaimoto.com/#servicios)|-|-|
+| Roger Motos    | https://motos.coches.net/ocasion/default.aspx|-|-|
+
+---
+
 ## Top 3 Barcelona barbershop
 
 1. Sons Of Barber Barcelona -> Carrer de Sant Pere mes Baix 46, Barcellona
