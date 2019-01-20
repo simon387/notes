@@ -1,3 +1,0 @@
-# Cancion
-
-Traducciones! con musica!
