@@ -1997,6 +1997,9 @@ try {
 + Always localize strings
 + Always execute the task clean before building ```war``` when switching workspace!
 + In JSP, always use ```<portlet:namespace/>``` before any html element id!
++ Always use methods with Locale when using methods that use database data!!
+  example: ```String content = jArticle.getContentByLocale(themeDisplay.getLocale().toString());```
+
 
 ---
 
