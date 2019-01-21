@@ -2032,6 +2032,8 @@ Note: I prefer to use Linux environments, but most clients require to use Window
 + Firefox (you can see events on DOM elements) [(tips here)](../firefox.md)
 + Opera browser (javascript's debugger and <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>f</kbd> are more *aggressive*) [(tips here)](../opera.md)
 + MobaXterm [(tips here)](../windows/MobaXterm.md)
++ WinSCP
++ MySQL Workbench
 + Autoit with SciTE editor, for Window automation
 + [Everything](http://www.voidtools.com/) Locate files and folders by name instantly.
 
