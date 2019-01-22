@@ -1983,6 +1983,12 @@ try {
 
 ---
 
+## EE License
+
+If it is missing you need to shutdown the server and place license ```xml``` in the ```deploy``` dir and restart the server.
+
+---
+
 ## Liferay Philosophy
 
 + Everything is an Asset!
@@ -1999,6 +2005,7 @@ try {
 + In JSP, always use ```<portlet:namespace/>``` before any html element id!
 + Always use methods with Locale when using methods that use database data!!
   example: ```String content = jArticle.getContentByLocale(themeDisplay.getLocale().toString());```
++ Always use Logs framework, never ```sout``` or ```printstacktrace``` or similar!
 
 
 ---
