@@ -2006,7 +2006,7 @@ If it is missing you need to shutdown the server and place license ```xml``` in 
 + Always use methods with Locale when using methods that use database data!!
   example: ```String content = jArticle.getContentByLocale(themeDisplay.getLocale().toString());```
 + Always use Logs framework, never ```sout``` or ```printstacktrace``` or similar!
-
++ Always use Liferay Portal to change log's levels
 
 ---
 
