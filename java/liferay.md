@@ -2007,6 +2007,7 @@ If it is missing you need to shutdown the server and place license ```xml``` in 
   example: ```String content = jArticle.getContentByLocale(themeDisplay.getLocale().toString());```
 + Always use Logs framework, never ```sout``` or ```printstacktrace``` or similar!
 + Always use Liferay Portal to change log's levels
++ Liferay 7.x: if you want to create a new Portlet in Liferay IDE (Eclipse based) you have to: right click on parent module -> New -> Other -> Liferay -> Liferay Module Project
 
 ---
 
