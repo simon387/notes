@@ -2048,6 +2048,7 @@ If it is missing you need to shutdown the server and place license ```xml``` in 
 + If you change extension to the ```.war``` files before copying them into the deploy folder, you will get less errors in the hot deploy phase... just put back the right extension after the transfer. This trick is usefull only for large ```.war``` (typically >1MB)
   + see [warRenamer.au3](src/warRenamer.au3) for automatic renaming in Window systems.
 + If you can't create a local database, use the dev one (duplicate it from the original one)
++ Every time you edit a structure, Liferay (lucene i.e.) reindexes everything and can be a very long process. Go in server page to enable logs (search lucene) so you can see when reindex ends. 
 
 ---
 
