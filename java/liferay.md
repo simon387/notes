@@ -1335,6 +1335,12 @@ You can put it under every request, with a similar expression for the ```p_p_aut
 
 Sometime they are not related to Liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
 
+### Cannot cast on same package.class
+
+Maybe there is a level of cache, clear it in the server administration's page
+
+---
+
 ### Could not resolve module
 
 ```
