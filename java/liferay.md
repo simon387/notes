@@ -747,6 +747,14 @@ String myKey = PropsUtil.get("my.key");
 
 ---
 
+## Read portal.properties
+
+For example the one inside an hook...
+
+Is the same thing of the ```portal-ext.properties``` !
+
+---
+
 ## Gogo shell
 
 ### Access
