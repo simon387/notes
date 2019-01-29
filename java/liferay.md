@@ -1341,6 +1341,17 @@ Maybe there is a level of cache, clear it in the server administration's page
 
 ---
 
+### PropsUtil
+
+There are 2 PropsUtil class, switch them when things don't working
+
+```java
+com.liferay.portal.kernel.util.PropsUtil
+com.liferay.portal.util.PropsUtil
+```
+
+---
+
 ### Could not resolve module
 
 ```
