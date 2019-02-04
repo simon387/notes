@@ -1331,236 +1331,6 @@ You can put it under every request, with a similar expression for the ```p_p_aut
 
 ---
 
-## Bugs / errors / general problems
-
-Sometime they are not related to Liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
-
-### Cannot cast on same package.class
-
-Maybe there is a level of cache, clear it in the server administration's page
-
----
-
-### PropsUtil
-
-There are 2 PropsUtil class, switch them when things don't working
-
-```java
-com.liferay.portal.kernel.util.PropsUtil
-com.liferay.portal.util.PropsUtil
-```
-
----
-
-### Could not resolve module
-
-```
-2018-09-05 16:17:35.292 ERROR [Framework Event Dispatcher: Equinox Container: d0fb4625-27b1-0018-117c-b64379ebebfd][XXX:97] FrameworkEvent ERROR 
-org.osgi.framework.BundleException: Could not resolve module: XXX [84]_  Unresolved requirement: Import-Package: com.liferay.faces.portal.context_ [Sanitized]
-    at org.eclipse.osgi.container.Module.start(Module.java:429)
-    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
-    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1562)
-    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
-    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
-    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
-    at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
-    at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
-```
-
-was a fake error, inside the ```osgi/war``` folder there was the XXX.war, it was deprecated and not used in the environment
-
-gogo shell helpfull command:
-
-```g! packages com.liferay.faces.portal.context_```
-
-result:
-
-```No exported packages```
-
-### Html elements not working properly inside the portal
-
-you got some javascript errors, check the browser javascript console!
-
----
-
-### No tag "" defined in tag library imported with prefix "portlet"
-
-add in jsp 
-
-```jsp
-<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
-```
-
----
-
-### No login interface available?
-
-Just go to ```[baseurl]/c/portal/login```
-
-example: ```localhost:8080/c/portal/login```
-
----
-
-### Deploy for module never ends - no errors in console
-
-Commenting out the code in the right places reveled the code causing the problem...
-
-Was a bad usage of ```xxLocalServiceUtil();```
-
----
-
-### java.lang.IllegalStateException: No servlet context name specified
-
-or 
-
-```liferay Unable find model ...```
-
-Possible solution if happening while using dynamyc queries:
-
-Change the code from this one:
-
-```java
-DynamicQuery dynamicQuery = DynamicQueryFactoryUtil.forClass(MyEntity.class);
-```
-
-to this one:
-
-```java
-DynamicQuery dynamicQuery = MyEntityLocalServiceUtil.dynamicQuery();
-```
-
-### class file for javax.servlet.http.HttpServletRequest not found
-
-maybe you miss the dependency?
-
-if maven, add something like this to the pom gerarchy
-
-```xml
-<dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>javax.servlet-api</artifactId>
-    <version>3.0.1</version>
-    <scope>provided</scope>
-</dependency>
-```
-
----
-
-### Liferay Ide cannot set SDK ?
-
-Maybe the ide is too new, download an older version (6.x ones)
-
----
-
-### Ant error, dependencies not founds?
-
-Even if the java classpath is correct? 
-
-Use the "save" trick (Eclipse based IDEs):
-
-1. Click on console error, in the class name, should open the java file
-2. Edit it, just whitespace
-3. re run the goal (build, deploy, whatever)
-4. should work
-
----
-
-### Ant error, XXX is not allowed for source level below x.y
-
-1. Do as other Ant error, adding whitespace on file, etc...
-2. Check if the project setup is correct: source level x.y
-
-   example:
-   
-   ```
-   Right-click on the project.
-   Choose Properties.
-   Choose Java Compiler on the left.
-   Choose 1.7 for the Compiler Compliance level.
-   If the 2 drop-downs below that aren't 1.7, uncheck Use default compliance settings and set those to 1.7.
-   ```
-
-3. clean
-4. rerun task
-
----
-
-### error while deploy com.liferay.util.service cannot be resolved
-
-```
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xxxx.EntityNameLocalService' defined in ServletContext resource [/WEB-INF/classes/META-INF/portlet-spring.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xxx.service.persistence.EntityPersistence' defined in ServletContext resource [/WEB-INF/classes/META-INF/portlet-spring.xml]: Instantiation of bean failed; nested exception is java.lang.Error: Unresolved compilation problems:
-    com.liferay.util.service cannot be resolved
-    com.liferay.util.service cannot be resolved
-    com.liferay.util.service cannot be resolved
-    com.liferay.util.service cannot be resolved
-```
-
-Maybe your Liferay IDE portlet setup is broken, see [here - Another-example-of-6.2-setup](###-Another-example-of-6.2-setup)
-
----
-
-### Liferay.PortletURL undefined
-
-jsp
-
-```jsp
-<aui:script use="aui-base,aui-io-request,liferay-portlet-url,aui-io-deprecated">
-    A.one('#<portlet:namespace/>loginButton').on('click', function(event) {
-        var resourceURL = Liferay.PortletURL.createResourceURL();
-```
-
-```Liferay.PortletURL``` is undefined.
-
-Adding the taglibrary can help:
-
-```jsp
-<%@ taglib uri="http://liferay.com/tld/aui" prefix="aui" %>
-```
-
----
-
-### ERROR [http-/xxx][JSONWebServiceServiceAction:xxx] No JSON web service action with path /yyy/zzz-www and method null for //name-of-a-portlet
-
-When calling from javascript ```Liferay.Service()```
-
-Solution:
-
-1. re-build the service
-2. copy the service's ```jar``` (the one inside ```WEB-INF/lib```) into the remote server library runtime (for example ```/opt/jboss-eap-x.y/modules/com/liferay/portal/main```)
-3. copy it in your local server for development (to avoid compilation error)
-4. empty the folder ```WEB-INF/lib```
-5. build the portlet
-6. deploy the portlet
-7. restart the server
-
----
-
-### Do not mix template directives in jsp!
-
-Example:
-
-This is from template:
-
-```
-${propsUtil.get("kek.asd.lol")}
-${languageUtil.format(locale, "mex.kek")}
-```
-
-And this is the jsp equivalent:
-
-```jsp
-'<%=LanguageUtil.get(locale, "kek.asd.lol")%>'/>
-'<%=PropsUtil.get("mex.kek")%>'/>
-```
-
----
-
-### MVCPortlet: null is not a valid include
-
-Remove ```return;``` on ```public void serveResource()``` method of class extending ```MVCPortlet```
-
----
-
 ## Classes
 
 + ```SiteAdminPortletKeys```
@@ -2115,6 +1885,244 @@ When on linux, Fedora Project Distribution in my opinion is the best one for thi
 ## Acronyms
 
 + (IPC) Inter portlet communication
+
+---
+
+## Bugs / errors / general problems
+
+Sometime they are not related to Liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
+
+### Cannot cast on same package.class
+
+Maybe there is a level of cache, clear it in the server administration's page
+
+---
+
+### PropsUtil
+
+There are 2 PropsUtil class, switch them when things don't working
+
+```java
+com.liferay.portal.kernel.util.PropsUtil
+com.liferay.portal.util.PropsUtil
+```
+
+---
+
+### Could not resolve module
+
+```
+2018-09-05 16:17:35.292 ERROR [Framework Event Dispatcher: Equinox Container: d0fb4625-27b1-0018-117c-b64379ebebfd][XXX:97] FrameworkEvent ERROR 
+org.osgi.framework.BundleException: Could not resolve module: XXX [84]_  Unresolved requirement: Import-Package: com.liferay.faces.portal.context_ [Sanitized]
+    at org.eclipse.osgi.container.Module.start(Module.java:429)
+    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1562)
+    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+    at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+    at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+    at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+```
+
+was a fake error, inside the ```osgi/war``` folder there was the XXX.war, it was deprecated and not used in the environment
+
+gogo shell helpfull command:
+
+```g! packages com.liferay.faces.portal.context_```
+
+result:
+
+```No exported packages```
+
+### Html elements not working properly inside the portal
+
+you got some javascript errors, check the browser javascript console!
+
+---
+
+### No tag "" defined in tag library imported with prefix "portlet"
+
+add in jsp 
+
+```jsp
+<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
+```
+
+---
+
+### No login interface available?
+
+Just go to ```[baseurl]/c/portal/login```
+
+example: ```localhost:8080/c/portal/login```
+
+---
+
+### Deploy for module never ends - no errors in console
+
+Commenting out the code in the right places reveled the code causing the problem...
+
+Was a bad usage of ```xxLocalServiceUtil();```
+
+---
+
+### java.lang.IllegalStateException: No servlet context name specified
+
+or 
+
+```liferay Unable find model ...```
+
+Possible solution if happening while using dynamyc queries:
+
+Change the code from this one:
+
+```java
+DynamicQuery dynamicQuery = DynamicQueryFactoryUtil.forClass(MyEntity.class);
+```
+
+to this one:
+
+```java
+DynamicQuery dynamicQuery = MyEntityLocalServiceUtil.dynamicQuery();
+```
+
+### class file for javax.servlet.http.HttpServletRequest not found
+
+maybe you miss the dependency?
+
+if maven, add something like this to the pom gerarchy
+
+```xml
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.0.1</version>
+    <scope>provided</scope>
+</dependency>
+```
+
+---
+
+### Liferay Ide cannot set SDK ?
+
+Maybe the ide is too new, download an older version (6.x ones)
+
+---
+
+### Ant error, dependencies not founds?
+
+Even if the java classpath is correct? 
+
+Use the "save" trick (Eclipse based IDEs):
+
+1. Click on console error, in the class name, should open the java file
+2. Edit it, just whitespace
+3. re run the goal (build, deploy, whatever)
+4. should work
+
+---
+
+### Ant error, XXX is not allowed for source level below x.y
+
+1. Do as other Ant error, adding whitespace on file, etc...
+2. Check if the project setup is correct: source level x.y
+
+   example:
+   
+   ```
+   Right-click on the project.
+   Choose Properties.
+   Choose Java Compiler on the left.
+   Choose 1.7 for the Compiler Compliance level.
+   If the 2 drop-downs below that aren't 1.7, uncheck Use default compliance settings and set those to 1.7.
+   ```
+
+3. clean
+4. rerun task
+
+---
+
+### error while deploy com.liferay.util.service cannot be resolved
+
+```
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xxxx.EntityNameLocalService' defined in ServletContext resource [/WEB-INF/classes/META-INF/portlet-spring.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xxx.service.persistence.EntityPersistence' defined in ServletContext resource [/WEB-INF/classes/META-INF/portlet-spring.xml]: Instantiation of bean failed; nested exception is java.lang.Error: Unresolved compilation problems:
+    com.liferay.util.service cannot be resolved
+    com.liferay.util.service cannot be resolved
+    com.liferay.util.service cannot be resolved
+    com.liferay.util.service cannot be resolved
+```
+
+Maybe your Liferay IDE portlet setup is broken, see [here - Another-example-of-6.2-setup](###-Another-example-of-6.2-setup)
+
+---
+
+### Liferay.PortletURL undefined
+
+jsp
+
+```jsp
+<aui:script use="aui-base,aui-io-request,liferay-portlet-url,aui-io-deprecated">
+    A.one('#<portlet:namespace/>loginButton').on('click', function(event) {
+        var resourceURL = Liferay.PortletURL.createResourceURL();
+```
+
+```Liferay.PortletURL``` is undefined.
+
+Adding the taglibrary can help:
+
+```jsp
+<%@ taglib uri="http://liferay.com/tld/aui" prefix="aui" %>
+```
+
+---
+
+### ERROR [http-/xxx][JSONWebServiceServiceAction:xxx] No JSON web service action with path /yyy/zzz-www and method null for //name-of-a-portlet
+
+When calling from javascript ```Liferay.Service()```
+
+Solution:
+
+1. re-build the service
+2. copy the service's ```jar``` (the one inside ```WEB-INF/lib```) into the remote server library runtime (for example ```/opt/jboss-eap-x.y/modules/com/liferay/portal/main```)
+3. copy it in your local server for development (to avoid compilation error)
+4. empty the folder ```WEB-INF/lib```
+5. build the portlet
+6. deploy the portlet
+7. restart the server
+
+---
+
+### Do not mix template directives in jsp!
+
+Example:
+
+This is from template:
+
+```
+${propsUtil.get("kek.asd.lol")}
+${languageUtil.format(locale, "mex.kek")}
+```
+
+And this is the jsp equivalent:
+
+```jsp
+'<%=LanguageUtil.get(locale, "kek.asd.lol")%>'/>
+'<%=PropsUtil.get("mex.kek")%>'/>
+```
+
+---
+
+### MVCPortlet: null is not a valid include
+
+Remove ```return;``` on ```public void serveResource()``` method of class extending ```MVCPortlet```
+
+---
+
+### Error creating Liferay plugin project.
+
+```org.eclipse.core.runtime.CoreException: Could not resolve archetype com.liferay.maven.archetypes:liferay-portlet-archetype:6.2.2 from any of the configured repositories.```
+
+Solution: take a look to maven profile settings.xml
 
 ---
 
