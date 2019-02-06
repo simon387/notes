@@ -1317,6 +1317,10 @@ Not sure! but it worked!
 3. set SDK (i.e. 1.7)
 4. use command line ```sh create.sh``` to create portlets with ant
 
+or
+
+1. use maven
+
 ---
 
 ## Auth tokens
