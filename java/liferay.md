@@ -1308,6 +1308,17 @@ Thank me later!
 
 ---
 
+### INTELLIJ IDEA LIFERAY 6.X SETUP
+
+Not sure! but it worked!
+
+1. download liferay-sdk and extract it
+2. open intellij IDEA and import from existing source
+3. set SDK (i.e. 1.7)
+4. use command line ```sh create.sh``` to create portlets with ant
+
+---
+
 ## Auth tokens
 
 There are two types of Auth Tokens:
