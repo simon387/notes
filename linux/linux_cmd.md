@@ -362,6 +362,10 @@ There are other software examples too, like git, ffmpeg, npm etc..
 
   ```$?```
 
++ shutdown logs
+
+  ```last -x```
+
 ---
 
 ## Zip
