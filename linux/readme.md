@@ -48,6 +48,9 @@ and then this can help
 + trash-cli
 + wondershaper
 + youtube-dl
++ digikam
+  
+  duplicate images resized
 
 ---
 
