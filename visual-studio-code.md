@@ -34,7 +34,7 @@
 	"terminal.integrated.scrollback": 8192,
 	// "window.zoomLevel": 0,
 	"workbench.statusBar.visible": true,
-	// "window.menuBarVisibility": "toggle",
+	"window.menuBarVisibility": "toggle",
 	"extensions.ignoreRecommendations": true,
 	"window.title": "${dirty}${activeEditorLong}${separator}${folderName}${separator}${appName}",
 	"files.autoSave": "afterDelay",
@@ -60,11 +60,11 @@
 	"javascript.implicitProjectConfig.experimentalDecorators": true,
 	"workbench.startupEditor": "newUntitledFile",
 	"vsicons.projectDetection.autoReload": true,
-	"workbench.colorTheme": "Darcula Theme from IntelliJ",
 	"[html]": {
 		"editor.tabSize": 2
 	},
-	"editor.wordBasedSuggestions": false
+	"git.autofetch": true,
+	"terminal.integrated.fontSize": 16
 	//
 }
 ```
