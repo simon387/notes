@@ -29,6 +29,8 @@ locate libffmpeg.so
 sudo cp /home/scelia/dev/nwjs-ffmpeg-prebuilt/build/src/out/nw/lib/libffmpeg.so /usr/lib64/opera/libffmpeg.so
 ```
 
+Example of ```libffmpeg.so``` in this repository: [download link](https://github.com/simon387/notes/raw/master/assets/libffmpeg.so)
+
 ---
 
 ## how to fix icon on Fedora + Gnome
