@@ -52,3 +52,8 @@ or (faster) (windows example with MINGW64)
 
 ```ffmpeg -i v.mp4 -i a.wav -c:v copy -map 0:v:0 -map 1:a:0 new.mp4```
 
+---
+
+## Whatsapp Video
+
+```ffmpeg -i output2.mp4 -b 640000 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p working.mp4```
