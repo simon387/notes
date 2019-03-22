@@ -735,6 +735,12 @@ welcome-x=Welcome{0}!
 
 ---
 
+## portal-ext.properties
+
+location: ```/liferay-portal-6.2-ce-ga6/tomcat-7.0.62/webapps/ROOT/WEB-INF/classes/```
+
+---
+
 ## Read portal-ext.properties
 
 Liferay 7.x example:
