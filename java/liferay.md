@@ -1329,6 +1329,99 @@ or
 
 ---
 
+## File upload example
+
+upload_file.jsp
+
+```jsp
+<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
+<%@ taglib uri="http://liferay.com/tld/aui" prefix="aui" %>
+
+<portlet:defineObjects />
+
+<portlet:actionURL name='uploadFile' var="uploadFileURL" windowState="normal" />
+
+<aui:form action="<%= uploadFileURL %>" method="POST" name="fm" enctype="multipart/form-data">
+  <aui:fieldset>
+
+    <aui:input type="file" name="file-to-upload"/>
+
+    <aui:button-row>
+      <aui:button type="submit" />
+    </aui:button-row>
+
+  </aui:fieldset>
+</aui:form>
+```
+
+MyPortlet.java
+
+```java
+public class MyPortlet extends MVCPortlet {
+
+//action method
+public void uploadFile(ActionRequest request, ActionResponse response)
+        throws Exception {
+
+    UploadPortletRequest uploadRequest 
+        = PortalUtil.getUploadPortletRequest(request);
+
+    ServiceContext serviceContext = ServiceContextFactory.getInstance(
+            MyPortlet.class.getName(), uploadRequest);
+
+    this.uploadFileEntity(serviceContext, uploadRequest);
+
+    response.setRenderParameter("mvcPath", "/html/view.jsp");
+}
+
+// Create a folder called "A_FOLDER" in Documents & Media
+private void uploadFileEntity(ServiceContext serviceContext, 
+        UploadPortletRequest request) 
+                throws PortalException, SystemException {
+
+    String filename = "";
+    String description = "File description";
+
+    try{
+
+        // serviceContext.scopeGroupId is the groupId of a site
+        long repositoryId = DLFolderConstants.getDataRepositoryId(
+            serviceContext.getScopeGroupId(), 
+            DLFolderConstants.DEFAULT_PARENT_FOLDER_ID);
+
+
+        Folder f = DLAppLocalServiceUtil.getFolder(
+            repositoryId, 0L, "A_FOLDER");
+        long folderId = f.getFolderId();
+
+
+        File file = request.getFile("file-to-upload");
+        filename = request.getFileName("file-to-upload");
+        String mimeType =  MimeTypesUtil.getContentType(file);
+
+        FileEntry entry = DLAppLocalServiceUtil.addFileEntry(serviceContext.getUserId(), 
+                repositoryId, folderId, filename, 
+                mimeType, filename, description, "", 
+                file, serviceContext
+        );  
+
+    }catch(PortalException e){
+        _log.error("An exception occured uploading file: " 
+                + e.getMessage());
+        throw e;
+    }catch(SystemException e ){
+        _log.error("An exception occured uploading file: " 
+                + e.getMessage());
+        throw e;
+    }
+}
+
+private static Log _log = LogFactoryUtil.getLog(MyPortlet.class);
+}
+```
+
+---
+
 ## Auth tokens
 
 There are two types of Auth Tokens:
