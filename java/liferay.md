@@ -2002,7 +2002,7 @@ When on linux, Fedora Project Distribution in my opinion is the best one for thi
 
 ---
 
-## Bugs / errors / general problems
+## Bugs / common errors / general problems
 
 Sometime they are not related to Liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
 
@@ -2237,6 +2237,12 @@ Remove ```return;``` on ```public void serveResource()``` method of class extend
 ```org.eclipse.core.runtime.CoreException: Could not resolve archetype com.liferay.maven.archetypes:liferay-portlet-archetype:6.2.2 from any of the configured repositories.```
 
 Solution: take a look to maven profile settings.xml
+
+---
+
+### org.hibernate.MappingException: Unknown entity
+
+Try to give a look at ```portlet-hbm.xml```
 
 ---
 
