@@ -1920,6 +1920,24 @@ try {
 + https://web.liferay.com/es/marketplace/-/mp/application/35025281
 + https://proliferay.com/liferay-quartz-scheduler/
 
+### com.liferay.portal.kernel.xml.DocumentException
+
+Solution: put the ```xlm``` in the first portlet of the project!
+
+```xml
+<scheduler-entry>
+        <scheduler-event-listener-class>
+                package.class
+        </scheduler-event-listener-class>
+        <trigger>
+                <simple>
+                        <simple-trigger-value>1</simple-trigger-value>
+                        <time-unit>minute</time-unit>
+                </simple>
+        </trigger>
+</scheduler-entry>
+```
+
 ---
 
 ## EE License
