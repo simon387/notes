@@ -1913,6 +1913,15 @@ try {
 
 ---
 
+## Scheduling - scheduler
+
++ https://www.finalist.nl/techblog/2017/02/adding-scheduled-tasks-to-liferay/
++ https://community.liferay.com/es/forums/-/message_boards/message/43151575
++ https://web.liferay.com/es/marketplace/-/mp/application/35025281
++ https://proliferay.com/liferay-quartz-scheduler/
+
+---
+
 ## EE License
 
 If it is missing you need to shutdown the server and place license ```xml``` in the ```deploy``` dir and restart the server.
