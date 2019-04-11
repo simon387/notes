@@ -1840,36 +1840,36 @@ Liferay.Portlet.refresh("#p_p_id_portlet_name_" );
 ```
 
 ```java
-    public static void sendMail(String subject, String body, String from, String to)
-            throws AddressException {
-        InternetAddress fromAddress;
-        InternetAddress toAddress;
-        fromAddress = new InternetAddress(from);
-        toAddress = new InternetAddress(to);
-        MailMessage mailMessage = new MailMessage();
-        mailMessage.setTo(toAddress);
-        mailMessage.setFrom(fromAddress);
-        mailMessage.setSubject(subject);
-        mailMessage.setBody(body);
-        mailMessage.setHTMLFormat(true);
-        MailServiceUtil.sendEmail(mailMessage);
-    }
+public static void sendMail(String subject, String body, String from, String to)
+        throws AddressException {
+    InternetAddress fromAddress;
+    InternetAddress toAddress;
+    fromAddress = new InternetAddress(from);
+    toAddress = new InternetAddress(to);
+    MailMessage mailMessage = new MailMessage();
+    mailMessage.setTo(toAddress);
+    mailMessage.setFrom(fromAddress);
+    mailMessage.setSubject(subject);
+    mailMessage.setBody(body);
+    mailMessage.setHTMLFormat(true);
+    MailServiceUtil.sendEmail(mailMessage);
+}
 ```
 
 or
 
 ```java
-    MailMessage mailMessage = new MailMessage();
-    mailMessage.setHTMLFormat(false);
-    mailMessage.setSubject("subject");
-    mailMessage.setBody("body");
-    try {
-        mailMessage.setFrom(new InternetAddress("from@gmail.com", "from name as title of the mail"));
-        mailMessage.setTo(new InternetAddress("to@gmail.com"));
-        MailEngine.send(mailMessage);
-    } catch (AddressException | MailEngineException | UnsupportedEncodingException e1) {
-        e1.printStackTrace();
-    }
+MailMessage mailMessage = new MailMessage();
+mailMessage.setHTMLFormat(false);
+mailMessage.setSubject("subject");
+mailMessage.setBody("body");
+try {
+    mailMessage.setFrom(new InternetAddress("from@gmail.com", "from name as title of the mail"));
+    mailMessage.setTo(new InternetAddress("to@gmail.com"));
+    MailEngine.send(mailMessage);
+} catch (AddressException | MailEngineException | UnsupportedEncodingException e1) {
+    e1.printStackTrace();
+}
 ```
 
 ---
