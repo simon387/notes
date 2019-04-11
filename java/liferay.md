@@ -116,15 +116,15 @@ Example of a simple ```service.xml```:
 
         <column name="name" type="String" primary="true"/>
         <column name="enabled" type="boolean" />
-<!-- 		<column name="field3" type="int" /> -->
-<!-- 		<column name="field4" type="Date" /> -->
+<!--         <column name="field3" type="int" /> -->
+<!--         <column name="field4" type="Date" /> -->
         <column name="description" type="String" />
 
         <!-- Order -->
 
-<!-- 		<order by="asc"> -->
-<!-- 			<order-column name="field1" /> -->
-<!-- 		</order> -->
+<!--         <order by="asc"> -->
+<!--             <order-column name="field1" /> -->
+<!--         </order> -->
 
         <!-- Finder methods -->
 
@@ -134,8 +134,8 @@ Example of a simple ```service.xml```:
 
         <!-- References -->
 
-<!-- 		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" /> -->
-<!-- 		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" /> -->
+<!--         <reference entity="AssetEntry" package-path="com.liferay.portlet.asset" /> -->
+<!--         <reference entity="AssetTag" package-path="com.liferay.portlet.asset" /> -->
     </entity>
 </service-builder>
 ```
@@ -268,7 +268,7 @@ Columns length: locate ```portlet-model-hints.xml``` in your project, there you 
 
 ```xml
 <field name="fieldName" type="String">
-	<hint name="max-length">256</hint>
+    <hint name="max-length">256</hint>
 </field>
 ```
 
@@ -425,7 +425,7 @@ Liferay.provide(window, 'functionNameExample',
 
 ```jsp
 <c:if test="${user.age ge 40}">
-	You are over the hill.
+    You are over the hill.
 </c:if>
 ```
 
@@ -1566,7 +1566,7 @@ portal_normal.vm
 
 ```velocity
 #if ($url_pagina == "login")
-	
+
 #else
     <div id="loginOne" class="modal modal_custom fade propound regular_form transparent" role="dialog" style="display:none;">
         <div class="modal-dialog">
@@ -1617,7 +1617,7 @@ public class MyController extends MVCPortlet {
         MyModelClass myModelClass = new MyModelClass();
         myModelClass.setImgUrl(imgUrl);
 
-        renderRequest.setAttribute("myModelClass", myModelClass);		
+        renderRequest.setAttribute("myModelClass", myModelClass);
 
         super.doView(renderRequest, renderResponse);
     }
@@ -1811,7 +1811,7 @@ Example:
     <portlet>
         <portlet-name>croccantina</portlet-name>
         <icon>/icon.png</icon>
-        <configuration-action-class>com.liferay.portal.kernel.portlet.DefaultConfigurationAction</configuration-action-class>	
+        <configuration-action-class>com.liferay.portal.kernel.portlet.DefaultConfigurationAction</configuration-action-class>
         ...
         <header-portlet-javascript>/js/jsrender.min.js</header-portlet-javascript>
         ...
