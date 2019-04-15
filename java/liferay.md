@@ -2059,6 +2059,21 @@ When on linux, Fedora Project Distribution in my opinion is the best one for thi
 
 Sometime they are not related to Liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
 
+### Database not updating after deploy of a new "service builder" portlet version
+
+The database get automatically update only when ```build.number``` is greater then deployed one
+
+```service.propierties```:
+
+```
+build.namespace=
+build.number=9999
+build.date=1555312282027
+build.auto.upgrade=true
+```
+
+---
+
 ### Cannot cast on same package.class
 
 Maybe there is a level of cache, clear it in the server administration's page
