@@ -1709,6 +1709,16 @@ are missing inside this declaration ```/opt/jboss-eap-x.y/modules/com/liferay/po
 
 ---
 
+## Custom fields
+
+Always pay attenction to permissions on them (control panel)! or you will get nullpointers!
+
+```java
+String ufficioVenditeDellUser = (String)user.getExpandoBridge().getAttribute(UFFICIO_VENDITE_CUSTOM_FIELD);
+```
+
+---
+
 ## How to know if user is logged in?
 
 Javascript:
@@ -2058,6 +2068,12 @@ When on linux, Fedora Project Distribution in my opinion is the best one for thi
 ## Bugs / common errors / general problems
 
 Sometime they are not related to Liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
+
+### ParallelDestination:74] Unable to process 
+
+Changed ```Calendar.getInstance()``` to ```new GregorianCalendar()``` solved the issues... but I think is a locale setting problem.
+
+---
 
 ### Database not updating after deploy of a new "service builder" portlet version
 
