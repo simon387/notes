@@ -994,6 +994,8 @@ Modify these files and restart the server
 ```/liferay-portal-6.2-ce-ga6/tomcat-7.0.62/webapps/ROOT/WEB-INF/web.xml```  
 ```/liferay-portal-6.2-ce-ga6/tomcat-7.0.62/conf/web.xml```
 
+You can see the result on the control panel, server properties tab
+
 ---
 
 ## Portlet in Popup window in Liferay 6.2
