@@ -987,6 +987,15 @@ Example:
 
 ---
 
+## Session timeouts
+
+Modify these files and restart the server
+
+```/liferay-portal-6.2-ce-ga6/tomcat-7.0.62/webapps/ROOT/WEB-INF/web.xml```  
+```/liferay-portal-6.2-ce-ga6/tomcat-7.0.62/conf/web.xml```
+
+---
+
 ## Portlet in Popup window in Liferay 6.2
 
 [Portlet in Popup window in Liferay 6.2](https://community.liferay.com/blogs/-/blogs/portlet-in-popup-window-in-liferay-6-2)
