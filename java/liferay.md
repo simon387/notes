@@ -2029,7 +2029,7 @@ If it is missing you need to shutdown the server and place license ```xml``` in 
   it gives the correct result even if you edit the database without updating indexes / cache
 + If you can't find a piece of rendered html in the source code... maybe it's inside the database! (for example as a web content)
 + If you change extension to the ```.war``` files before copying them into the deploy folder, you will get less errors in the hot deploy phase... just put back the right extension after the transfer. This trick is usefull only for large ```.war``` (typically >1MB)
-  + see [warRenamer.au3](src/warRenamer.au3) for automatic renaming in Window systems.
+  + see [warRenamer.au3](src/warRenamer.au3) for automatic renaming in Windows systems.
 + If you can't create a local database, use the dev one (duplicate it from the original one)
 + Every time you edit a structure, Liferay (lucene i.e.) reindexes everything and can be a very long process. Go in server page to enable logs (search lucene) so you can see when reindex ends. 
 
@@ -2037,7 +2037,7 @@ If it is missing you need to shutdown the server and place license ```xml``` in 
 
 ## My favourite tools / IDE for Liferay Development
 
-Note: I prefer to use Linux environments, but most clients require to use Window :worried:
+Note: I prefer to use Linux environments, but most clients require to use Windows :worried:
 
 + IntelliJ IDEA Ultimate (indexed search is great)
 + Liferay IDE
@@ -2050,7 +2050,7 @@ Note: I prefer to use Linux environments, but most clients require to use Window
 + MobaXterm [(tips here)](../windows/MobaXterm.md)
 + WinSCP
 + MySQL Workbench
-+ Autoit with SciTE editor, for Window automation
++ Autoit with SciTE editor, for Windows automation
 + [Everything](http://www.voidtools.com/) Locate files and folders by name instantly.
 
 When on linux, Fedora Project Distribution in my opinion is the best one for this kind of development.
