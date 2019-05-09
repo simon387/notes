@@ -318,6 +318,20 @@ public class BlaServiceImpl extends BlaServiceBaseImpl {
 
 ---
 
+## How to debug java with Intellij IDEA and Liferay 6.x
+
+1. edit ```startup.sh``` adding ```jpda``` to the script  
+   ```exec "$PRGDIR"/"$EXECUTABLE" jpda start "$@"```
+2. Run Menu Entry > Edit Configurations > Add New Remote Configuration > Configure your host and debug port  
+   example:  
+   + Debugger mode: ```Attach to remote JVM```
+   + Host: ```localhost```
+   + Port: ```8000```
+   + Command Line: ```-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8000```
+   + Use module classpath!! You have to select something here
+
+---
+
 ## Logging
 
 ### Java side logging
