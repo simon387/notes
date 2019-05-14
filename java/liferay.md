@@ -1354,6 +1354,36 @@ or
 
 ---
 
+## Alert, dialog, popup example (liferay 6.2)
+
+```html
+<div class="yui3-skin-sam">
+    <div id="modal"></div>
+</div>
+```
+
+```jsp
+<aui:script>
+YUI().use(
+    'aui-modal',
+    function(Y) {
+        var modal = new Y.Modal(
+            {
+                bodyContent: 'Modal body',
+                centered: true,
+                headerContent: '<h3>Modal header</h3>',
+                modal: true,
+                render: '#modal',
+                width: 450
+            }
+        ).render();
+    }
+);
+</aui:script>
+```
+
+---
+
 ## File upload example
 
 upload_file.jsp
