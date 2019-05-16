@@ -1856,6 +1856,14 @@ for (int i = 0; i < myJSONArray.length(); i++) {
 
 ---
 
+## Increase tomcat memory
+
+On Windows, Liferay 6.2 edit ```setenv.bat```  
+Example:  
+```set "JAVA_OPTS=%JAVA_OPTS% -Dfile.encoding=UTF8 -Djava.net.preferIPv4Stack=true -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xmx2048m -XX:MaxPermSize=512m"```
+
+---
+
 ## JSONWS API Page
 
 To open this page, just add this to baseurl: ```/api/jsonws```
