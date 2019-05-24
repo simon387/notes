@@ -2052,6 +2052,21 @@ Solution: put the ```xlm``` in the first portlet of the project!
 
 ---
 
+## How to run Liferay Portal(tomcat) 6.x from Intellij Idea
+
+Note: I always prefer to run in from command line, like production environment
+
+Example on linux, similar on Windows:
+1. Run Configuration
+2. Bash
+3. Script: ```/home/scelia/dev/servers/idea_liferay-portal-6.2-ce-ga6/tomcat-7.0.62/bin/startup.sh```
+4. Interpreter path: ```/bin/sh```
+5. Working directory: ```/home/scelia/dev/servers/idea_liferay-portal-6.2-ce-ga6/tomcat-7.0.62/bin```
+
+Similar configuration to stop it, just use ```shutdown.sh``` as the script.
+
+---
+
 ## EE License
 
 If it is missing you need to shutdown the server and place license ```xml``` in the ```deploy``` dir and restart the server.
