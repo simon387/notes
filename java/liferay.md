@@ -1642,6 +1642,19 @@ $("#loginOne").modal('toggle');
 
 ---
 
+## How to "navigate" from an ActionUrl with Javascript
+
+```jsp
+<portlet:actionURL var="chiudiContratto" name="chiudiContrattoAction">
+</portlet:actionURL>
+```
+
+```javascript
+window.location.href = '<%=chiudiContratto%>';
+```
+
+---
+
 ## Example reading from a Web Content and rendering it in a portlet
 
 + Structure present
