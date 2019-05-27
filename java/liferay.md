@@ -2073,6 +2073,13 @@ If it is missing you need to shutdown the server and place license ```xml``` in 
 
 ---
 
+## How to avoid browser startup with Liferay server
+
+Put this properties on ```portal-ext.properties``` to blank:  
+```browser.launcher.url=```
+
+---
+
 ## Liferay Philosophy
 
 + Everything is an Asset!
