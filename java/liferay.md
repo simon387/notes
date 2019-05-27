@@ -1642,11 +1642,11 @@ $("#loginOne").modal('toggle');
 
 ---
 
-## How to know if an user got a specifig role
+## How to know if an user got a specific role
 
 From JSP java code:  
 ```java
-request.isUserInRole("custom role or standard one");
+request.isUserInRole("custom role name or standard one");
 ```
 
 ---
