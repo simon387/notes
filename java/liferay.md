@@ -2050,6 +2050,8 @@ Solution: put the ```xlm``` in the first portlet of the project!
 </scheduler-entry>
 ```
 
+**NOTE: if the class name of the scheduler is too long, it's not going to work!!!**
+
 ---
 
 ## How to run Liferay Portal(tomcat) 6.x from Intellij Idea
