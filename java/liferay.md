@@ -1642,6 +1642,15 @@ $("#loginOne").modal('toggle');
 
 ---
 
+## How to know if an user got a specifig role
+
+From JSP java code:  
+```java
+request.isUserInRole("custom role or standard one");
+```
+
+---
+
 ## How to "navigate" from an ActionUrl with Javascript
 
 ```jsp
