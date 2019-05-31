@@ -775,6 +775,38 @@ Is the same thing of the ```portal-ext.properties``` !
 
 ---
 
+## Change permission to a FileEntry programmatically
+
+
+```java
+public static void setFilePermissions(FileEntry fileEntry) throws Exception {
+    ResourcePermission resourcePermission = null;
+    final Role siteMemberRole = RoleLocalServiceUtil.getRole(fileEntry.getCompanyId(), RoleConstants.USER);
+    ResourceAction resourceAction = ResourceActionLocalServiceUtil.getResourceAction(DLFileEntry.class.getName(), ActionKeys.VIEW);
+    try {
+        resourcePermission = ResourcePermissionLocalServiceUtil.getResourcePermission(fileEntry.getCompanyId(),
+                DLFileEntry.class.getName(), ResourceConstants.SCOPE_INDIVIDUAL, String.valueOf(fileEntry
+                        .getPrimaryKey()), siteMemberRole.getRoleId());
+        if (Validator.isNotNull(resourcePermission)) {
+            resourcePermission.setActionIds(resourceAction.getBitwiseValue());
+            ResourcePermissionLocalServiceUtil.updateResourcePermission(resourcePermission);
+        }
+    } catch (com.liferay.portal.NoSuchResourcePermissionException e) {
+        resourcePermission = ResourcePermissionLocalServiceUtil
+                .createResourcePermission(CounterLocalServiceUtil.increment());
+        resourcePermission.setCompanyId(fileEntry.getCompanyId());
+        resourcePermission.setName(DLFileEntry.class.getName());
+        resourcePermission.setScope(ResourceConstants.SCOPE_INDIVIDUAL);
+        resourcePermission.setPrimKey(String.valueOf(fileEntry.getPrimaryKey()));
+        resourcePermission.setRoleId(siteMemberRole.getRoleId());
+        resourcePermission.setActionIds(resourceAction.getBitwiseValue());// (ActionKeys.VIEW);
+        ResourcePermissionLocalServiceUtil.addResourcePermission(resourcePermission);
+    }
+}
+```
+
+---
+
 ## Gogo shell
 
 ### Access
