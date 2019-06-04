@@ -1498,6 +1498,8 @@ liferayForm.formValidator.get('rules')['ID-OF-YOUR-INPUT-FIELD'] = {required : t
 
 ## How to get the previous url in JSP
 
+(The best way)
+
 In first jsp page set the value of current url(themeDisplay.getURLCurrent) in renderURL which you used to navigate to another jsp page...
 
 ```
