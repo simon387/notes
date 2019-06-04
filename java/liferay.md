@@ -1496,6 +1496,29 @@ liferayForm.formValidator.get('rules')['ID-OF-YOUR-INPUT-FIELD'] = {required : t
 
 ---
 
+## How to get the previous url in JSP
+
+In first jsp page set the value of current url(themeDisplay.getURLCurrent) in renderURL which you used to navigate to another jsp page...
+
+```
+renderURL.setParameter("backURL", themeDisplay.getURLCurrent());
+```
+
+And in second jsp page get that paramter value and use as back url
+
+```
+<%
+String backURL = ParamUtil.getString(request, "backURL");
+%>
+<liferay-ui:header
+backLabel="&laquo; Back to first jsp"
+title=""
+backURL="<%= backURL %>"
+/>
+```
+
+---
+
 ## File upload example
 
 upload_file.jsp
