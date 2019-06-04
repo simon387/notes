@@ -1487,6 +1487,15 @@ YUI().use(
 
 ---
 
+## How to add 'required' validation to aui:input dynamically from js
+
+```javascript
+var liferayForm = Liferay.Form.get('YOUR-FORM-ID');
+liferayForm.formValidator.get('rules')['ID-OF-YOUR-INPUT-FIELD'] = {required : true};
+```
+
+---
+
 ## File upload example
 
 upload_file.jsp
