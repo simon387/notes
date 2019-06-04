@@ -1279,6 +1279,76 @@ try {
 
 ---
 
+## Example of AUI checkboxes
+
+This script enables/disables a button according to a random number of checkboxes.  
+
+(this table and button are inside a form)  
+```jsp
+<table id="" class="table table-bordered table-striped" style="width: 100%">
+    <thead>
+    <tr>
+        <th>Id Odv (Sap)</th>
+        <th>Data Odv</th>
+        <th>Data Scadenza</th>
+        <th>Id Fattura</th>
+        <th>Data Fattura</th>
+        <th>Incasso su Odv</th>
+        <th>Selezione</th>
+    </tr>
+    </thead>
+    <tbody>
+    <c:forEach items="${odvList}" var="odv">
+        <c:if test="${odv.prestazioneId == prestazione.id}">
+        <tr>
+            <td>${odv.idODV}</td>
+            <td>${odv.dataODV.toLocaleString().substring(0,12)}</td>
+            <td>${odv.dataScadenza.toLocaleString().substring(0,12)}</td>
+            <td>${odv.idFattura}</td>
+            <td>${odv.dataFattura.toLocaleString().substring(0,12)}</td>
+            <td>${odv.incassoSuODV}</td>
+            <td>
+                <aui:input name="selezione" label="Seleziona" value="${odv.id}" type="checkbox" checked="false"/>
+                <aui:input name="idODV" value="${odv.id}" type="hidden"/>
+            </td>
+        </tr>
+        </c:if>
+    </c:forEach>
+    </tbody>
+</table>
+<aui:button id="${pns}ordinaButton" type="submit" value="ORDINA" disabled="true"/>
+```
+
+```jsp
+<aui:script>
+AUI().ready('aui-node', function(A) {
+    let mappa = new Map();
+    A.all(':checkbox').each(function() {
+        this.on('click', function() {
+            const id = A.one(this).val();
+            const value = A.one(this).attr("checked");
+            mappa.set(id, value);
+            let enableButton = false;
+            for (let [k, v] of mappa) {
+                if (true == v) {
+                    enableButton = true;
+                }
+            }
+            if (enableButton) {
+                A.one('#${pns}ordinaButton').attr({'disabled' : false});
+                A.one('#${pns}ordinaButton').attr({'class' : 'btn btn-primary'});
+            } else {
+                A.one('#${pns}ordinaButton').attr({'disabled' : true});
+                A.one('#${pns}ordinaButton').attr({'class' : 'btn disabled btn-primary'});
+            }
+        });
+    });
+});
+</aui:script>
+```
+
+---
+
 ## Location of urlrewrite.xml
 
 ```...\tomcat-8.0.32\webapps\ROOT\WEB-INF\urlrewrite.xml```
