@@ -1308,7 +1308,7 @@ This script enables/disables a button according to a random number of checkboxes
             <td>${odv.dataFattura.toLocaleString().substring(0,12)}</td>
             <td>${odv.incassoSuODV}</td>
             <td>
-                <aui:input name="selezione" label="Seleziona" value="${odv.id}" type="checkbox" checked="false"/>
+               <aui:input name="selezione" label="Seleziona" checked="false" id="${odv.id}" type="checkbox"/>
                 <aui:input name="idODV" value="${odv.id}" type="hidden"/>
             </td>
         </tr>
@@ -1325,7 +1325,7 @@ AUI().ready('aui-node', function(A) {
     let mappa = new Map();
     A.all(':checkbox').each(function() {
         this.on('click', function() {
-            const id = A.one(this).val();
+            const id = A.one(this).attr("id");
             const value = A.one(this).attr("checked");
             mappa.set(id, value);
             let enableButton = false;
