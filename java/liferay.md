@@ -1332,6 +1332,7 @@ AUI().ready('aui-node', function(A) {
             for (let [k, v] of mappa) {
                 if (true == v) {
                     enableButton = true;
+                    break;
                 }
             }
             if (enableButton) {
