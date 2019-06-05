@@ -2106,7 +2106,7 @@ try {
 
 ---
 
-## How to send notification (dockbar)
+## How to send notifications to users (dockbar)
 
 Add this to ```liferay-portlet.xml```
 
