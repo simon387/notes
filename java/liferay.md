@@ -2106,6 +2106,111 @@ try {
 
 ---
 
+## How to send notification (dockbar)
+
+Add this to ```liferay-portlet.xml```
+
+```xml
+<portlet>
+    ...
+    <user-notification-definitions>
+        dockbar-user-notification-definitions.xml
+    </user-notification-definitions>
+    <user-notification-handler-class>
+        custom.package.path.DockBarUserNotificationHandler
+    </user-notification-handler-class>
+```
+
+Create this new Class
+
+```java
+package custom.p_ackage.path.notification;
+
+public class DockBarUserNotificationHandler extends BaseUserNotificationHandler {
+    public static final String PORTLET_ID = "dockbarnotificationaction_WAR_DockBarCustomNotificationportlet";
+
+    public DockBarUserNotificationHandler() {
+        setPortletId(DockBarUserNotificationHandler.PORTLET_ID);
+    }
+
+    @Override
+    protected String getBody(UserNotificationEvent userNotificationEvent, ServiceContext serviceContext) throws Exception {
+        JSONObject jsonObject = JSONFactoryUtil.createJSONObject(userNotificationEvent.getPayload());
+//long userId = jsonObject.getLong("userId");
+        String notificationText = jsonObject.getString("notificationText");
+        String title = "<strong>Dockbar Custom User Notification for You</strong>";
+        String body = StringUtil.replace(getBodyTemplate(), new String[]{
+                        "[$TITLE$]", "[$BODY_TEXT$]"},
+                new String[]{title, notificationText});
+        return body;
+    }
+
+    protected String getBodyTemplate() {
+        StringBundler sb = new StringBundler(5);
+        sb.append("<div class=\"title\">[$TITLE$]</div><div ");
+        sb.append("class=\"body\">[$BODY_TEXT$]</div>");
+        return sb.toString();
+    }
+}
+```
+
+Create this new xml and add it inside the a correct class path location (example: ```portlet/src/main/resources/dockbar-user-notification-definitions.xml```)
+
+```xml
+<?xml version="1.0"?>
+<!DOCTYPE user-notification-definitions
+        PUBLIC "-//Liferay//DTD User Notification Definitions 6.2.0//EN"
+        "http://www.liferay.com/dtd/liferay-user-notification-definitions_6_2_0.dtd">
+<user-notification-definitions>
+    <definition>
+        <notification-type>${custom.p_ackage.path.notification.DockBarUserNotificationHandler.PORTLET_ID}</notification-type>
+        <description>receive-a-notification-when-administrator-triggered</description>
+        <delivery-type>
+            <name>email</name>
+            <type>${com.liferay.portal.model.UserNotificationDeliveryConstants.TYPE_EMAIL}</type>
+            <default>false</default>
+            <modifiable>true</modifiable>
+        </delivery-type>
+        <delivery-type>
+            <name>website</name>
+            <type>${com.liferay.portal.model.UserNotificationDeliveryConstants.TYPE_WEBSITE}</type>
+            <default>true</default>
+            <modifiable>true</modifiable>
+        </delivery-type>
+    </definition>
+</user-notification-definitions>
+
+```
+
+And you can use it
+
+```java
+//	public void sendUserNotification(ActionRequest actionRequest, ActionResponse actionResponse) {
+public void sendUserNotification(RenderRequest renderRequest) {
+    try {
+        List<User> users = UserLocalServiceUtil.getUsers(0,
+                UserLocalServiceUtil.getUsersCount());
+//			ServiceContext serviceContext = ServiceContextFactory.getInstance(actionRequest);
+        ServiceContext serviceContext = ServiceContextFactory.getInstance(renderRequest);
+//			String notificationText = ParamUtil.getString(actionRequest,"notifciationText");
+        String notificationText = "test text";
+        for (User user : users) {
+            JSONObject payloadJSON = JSONFactoryUtil.createJSONObject();
+            payloadJSON.put("userId", user.getUserId());
+            payloadJSON.put("notificationText", notificationText);
+
+            UserNotificationEventLocalServiceUtil.addUserNotificationEvent(
+                    user.getUserId(), DockBarUserNotificationHandler.PORTLET_ID,
+                    (new Date()).getTime(), user.getUserId(),payloadJSON.toString(),false, serviceContext);
+        }
+    } catch (Exception e) {
+        _log.error(e);
+    }
+}
+```
+
+---
+
 ## Groovy Scripts
 
 You can execute server side script in Liferay Admin Panel.
@@ -2314,6 +2419,13 @@ When on linux, Fedora Project Distribution in my opinion is the best one for thi
 ## Bugs / common errors / general problems
 
 Sometime they are not related to Liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
+
+### portlet has a null pointer bag
+
+Shutdown the server, delete ```temp```, ```work```, the portlet and restart the server.
+Now maybe another error will occurs, but its more specific.
+
+---
 
 ### ParallelDestination:74] Unable to process 
 
