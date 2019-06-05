@@ -2211,6 +2211,18 @@ public void sendUserNotification(RenderRequest renderRequest) {
 
 ---
 
+## Example of getting ServiceContext
+
+```java
+List<Company> companies = CompanyLocalServiceUtil.getCompanies(0,1);
+User user = UserLocalServiceUtil.getUserByEmailAddress(companies.get(0).getCompanyId(), to);
+Group group = GroupLocalServiceUtil.getCompanyGroup(companies.get(0).getCompanyId());
+ServiceContext serviceContext = new ServiceContext();
+serviceContext.setScopeGroupId(group.getGroupId());
+```
+
+---
+
 ## Groovy Scripts
 
 You can execute server side script in Liferay Admin Panel.
