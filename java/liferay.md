@@ -2117,7 +2117,7 @@ Add this to ```liferay-portlet.xml```
         dockbar-user-notification-definitions.xml
     </user-notification-definitions>
     <user-notification-handler-class>
-        custom.package.path.DockBarUserNotificationHandler
+        custom.p_ackage.path.DockBarUserNotificationHandler
     </user-notification-handler-class>
 ```
 
