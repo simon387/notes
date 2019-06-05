@@ -33,6 +33,8 @@ It's just a repository I use to save my developer's note... no copyright stuffs 
   The main goal of Thymeleaf is to provide an elegant and well-formed way of creating templates.
 + wetransfer
 + zeplin
++ Xournal(from dnf)  
+  edit pdf
 
   designer -> dev
 
