@@ -502,6 +502,22 @@ You can avoid this using pure javascript, but is a bad solution(but faster)!
 
 ---
 
+## Disable AUI autocomplete input example
+
+```javascript
+<script type="text/javascript">
+window.onload = function() {
+    for(var i = 0, l = document.getElementsByTagName('input').length; i < l; i++) {
+        if(document.getElementsByTagName('input').item(i).type == 'text') {
+            document.getElementsByTagName('input').item(i).setAttribute('autocomplete', 'off');
+        };
+    };
+};
+</script>
+```
+
+---
+
 ## Control Panel Portlets
 
 You can develop a module as a control Panel portlet in a very easy way
