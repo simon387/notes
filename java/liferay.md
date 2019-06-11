@@ -502,6 +502,16 @@ You can avoid this using pure javascript, but is a bad solution(but faster)!
 
 ---
 
+## Disable p_auth
+
+Put this on ```portal-ext.properties```
+
+```properties
+auth.token.check.enabled=false
+```
+
+---
+
 ## Disable AUI autocomplete input example
 
 ```javascript
