@@ -1545,6 +1545,12 @@ backURL="<%= backURL %>"
 />
 ```
 
+or
+
+```jsp
+<aui:button onClick="javascript:history.back(1)" value="Back"/>
+```
+
 ---
 
 ## File upload example
