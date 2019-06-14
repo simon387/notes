@@ -2463,6 +2463,22 @@ When on linux, Fedora Project Distribution in my opinion is the best one for thi
 
 Sometime they are not related to Liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
 
+### PermissionChecker not initialized
+
+Add this to the java code before the line that create the error
+
+```java
+Company companyqq = CompanyLocalServiceUtil.getCompanyByWebId("liferay.com");
+Role adminRole = RoleLocalServiceUtil.getRole(companyqq.getCompanyId(),"Administrator");
+List<User> adminUsers = UserLocalServiceUtil.getRoleUsers(adminRole.getRoleId());
+List<ODV> odvList = ODVLocalServiceUtil.getODVs(0, ODVLocalServiceUtil.getODVsCount());
+PrincipalThreadLocal.setName(adminUsers.get(0).getUserId());
+PermissionChecker permissionChecker = PermissionCheckerFactoryUtil.create(adminUsers.get(0), true);
+PermissionThreadLocal.setPermissionChecker(permissionChecker);
+```
+
+---
+
 ### portlet has a null pointer bag
 
 Shutdown the server, delete ```temp```, ```work```, the portlet and restart the server.
