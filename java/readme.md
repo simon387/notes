@@ -200,3 +200,14 @@ VALUES.contains(s)
 
 ---
 
+## Strange issues
+
+Why I don't see stack trace on logs?
+
+After many errors, jvm omit them!
+
+add this parameter to the jvm (1.6+)
+
+```properties
+-XX:-OmitStackTraceInFastThrow
+```
