@@ -2524,6 +2524,12 @@ com.liferay.portal.util.PropsUtil
 
 ---
 
+### javax.portlet.PortletException: Path xxx.jsp is not accessible by this portlet
+
+Solution: removed numbers from jsp name, clean work, temp, application, server restarted.
+
+---
+
 ### Could not resolve module
 
 ```
