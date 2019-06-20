@@ -65,3 +65,10 @@ For example i put it in this directory:
 ```C:\dev\svn\bin\svn.exe```
 
 ---
+
+## Java debug not working?
+
+Solved: there was an error on a plugin! I had to disabled it
+
+---
+
