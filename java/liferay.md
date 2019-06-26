@@ -1005,6 +1005,15 @@ List results = LibraryLocalServiceUtil.dynamicQuery(dynamicQuery);
 
 ---
 
+## How to convert ActionRequest to HttpServletRequest in a Liferay portlet?
+
+```java
+HttpServletRequest request = PortalUtil.getHttpServletRequest(actionRequest);
+HttpServletResponse response = PortalUtil.getHttpServletResponse(actionResponse);
+```
+
+---
+
 ## ServiceLocator
 
 Inside a ```custom.ftl```:
