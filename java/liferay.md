@@ -2581,6 +2581,8 @@ com.liferay.portal.util.PropsUtil
 
 Solution: removed numbers from jsp name, clean work, temp, application, server restarted.
 
+Other solution: remove parameter from the render/action URL, they are wrong! (see example of backButton)
+
 ---
 
 ### Could not resolve module
