@@ -1566,7 +1566,7 @@ contractList.jsp
 ```jsp
 <portlet:actionURL var="visualizzaContratto" name="dettagliContrattoHelper">
     <portlet:param name="jspPage" value="/html/contract/dettaglioContratto.jsp"/>
-    <portlet:param name="backURL" value="<%=themeDisplay.getURLCurrent()%>>"/>
+    <portlet:param name="backURL" value="<%=themeDisplay.getURLCurrent()%>"/>
     <portlet:param name="idContratto" value="${contratto.id}"/>
 </portlet:actionURL>
 ```
