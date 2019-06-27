@@ -1554,7 +1554,7 @@ backURL="<%= backURL %>"
 />
 ```
 
-or
+or (because the shit above is not working)
 
 ```jsp
 <aui:button onClick="javascript:history.back(1)" value="Back"/>
