@@ -1554,10 +1554,54 @@ backURL="<%= backURL %>"
 />
 ```
 
-or (because the shit above is not working)
+or
 
 ```jsp
 <aui:button onClick="javascript:history.back(1)" value="Back"/>
+```
+
+working example:
+
+contractList.jsp
+```jsp
+<portlet:actionURL var="visualizzaContratto" name="dettagliContrattoHelper">
+    <portlet:param name="jspPage" value="/html/contract/dettaglioContratto.jsp"/>
+    <portlet:param name="backURL" value="<%=themeDisplay.getURLCurrent()%>>"/>
+    <portlet:param name="idContratto" value="${contratto.id}"/>
+</portlet:actionURL>
+```
+
+Java Portlet Class
+```java
+public void dettagliContrattoHelper(final ActionRequest actionRequest, final ActionResponse actionResponse) throws SystemException, PortalException {
+    String backURL = actionRequest.getParameter(BACK_URL);
+    Contract contract = dettagliContrattoUffVenditeActionHelper(actionRequest, actionResponse);
+    actionRequest.setAttribute(BACK_URL, backURL);
+    if (null != backURL) {
+        actionResponse.setRenderParameter(BACK_URL, backURL);
+    }
+    List<String> allegati = new ArrayList();
+    List<String> nomiAllegati = new ArrayList();
+    DynamicQuery query = DynamicQueryFactoryUtil.forClass(Allegato.class, ALLEGATO, PortletClassLoaderUtil.getClassLoader());
+    query.add(RestrictionsFactoryUtil.eq(CONTRACT_ID, contract.getId()));
+    List<Allegato> allegatoList = AllegatoLocalServiceUtil.dynamicQuery(query);
+    for (Allegato allegato : allegatoList) {
+        loadAllegatiListHelper(allegato, actionRequest, allegati);
+        nomiAllegati.add(allegato.getName());
+    }
+    String[] fileUrls = allegati.toArray(new String[0]);
+    String[] nomiAllegatiString = nomiAllegati.toArray(new String[0]);
+    actionRequest.setAttribute(FILE_URLS, fileUrls);
+    actionRequest.setAttribute(NOMI_ALLEGATI_STRING, nomiAllegatiString);
+}
+```
+
+dettaglioContratto.jsp
+```jsp
+<%
+    String backURL = ParamUtil.getString(request, BACK_URL);
+%>
+<aui:button onClick="<%=backURL%>" value="Indietro" iconAlign="right"/>
 ```
 
 ---
