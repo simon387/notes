@@ -2,6 +2,5 @@
 
 ## old stuff
 
-vecchio sito pre redirect github-io
+in htdocs di questo repo -> vecchio sito pre redirect github-io
 
-<!-- secrets on drive -->
