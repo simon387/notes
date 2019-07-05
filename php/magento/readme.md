@@ -233,4 +233,74 @@ sudo chown -R www-data:www-data /var/www/html/magento2/
 sudo chmod -R 755 /var/www/html/magento2/
 ```
 
-### 
+### Step 6: Configure Apache2
+
+Finally, configure Apahce2 site configuration file for Magento 2. This file will control how users access Magento 2 content. Run the commands below to create a new configuration file called **magento2.conf**
+
+```
+sudo nano /etc/apache2/sites-available/magento2.conf
+```
+
+Then copy and paste the content below into the file and save it. Replace the highlighted line with your own domain name and directory root location.
+
+```
+<VirtualHost *:80>
+     ServerAdmin admin@example.com
+     DocumentRoot /var/www/html/magento2/
+     ServerName example.com
+     ServerAlias www.example.com
+
+     <Directory /var/www/html/magento2/>
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride All
+        Order allow,deny
+        allow from all
+     </Directory>
+
+     ErrorLog ${APACHE_LOG_DIR}/error.log
+     CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+
+Save the file and exit.
+
+### Step 7: Enable the Magento 2 and Rewrite Module
+
+After configuring the VirtualHost above, enable it by running the commands below
+
+```
+sudo a2ensite magento2.conf
+sudo a2enmod rewrite
+```
+
+### Step 8 : Restart Apache2
+
+To load all the settings above, restart Apache2 by running the commands below.
+
+```
+sudo systemctl restart apache2.service
+```
+
+Then open your browser and browse to the server domain name. You should see Magento 2 setup wizard to complete. Please follow the wizard carefully.
+
+http://example.com/
+
+Congratulation! You have successfully installed Magento 2 on Ubuntu 16.04 | 18.04 and may work on upcoming 18.10…
+
+In the future when you want to upgrade to a new released version, simply run the commands below to upgrade…
+
+```
+cd /var/www/html/magento2
+sudo bin/magento maintenance:enable
+sudo composer require magento/product-community-edition 2.2.5 --no-update
+sudo composer update
+sudo php bin/magento setup:upgrade
+sudo php bin/magento setup:di:compile
+sudo php bin/magento indexer:reindex
+sudo php bin/magento maintenance:disable
+```
+
+You may have to re-run the to update Apache2 directory permissions…
+
+That’s it!
+
