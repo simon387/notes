@@ -2,7 +2,7 @@
 
 ## mage2TV
 
-todo
+https://www.mage2.tv
 
 ---
 
