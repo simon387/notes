@@ -4,6 +4,8 @@
 
 todo
 
+---
+
 ## installation on Ubuntu 18.04.2 LTS example
 
 copied from [here](https://websiteforstudents.com/install-magento-2-using-composer-on-ubuntu-16-04-18-04-with-apache2-mariadb-and-php-7-1-support/)
@@ -304,3 +306,22 @@ You may have to re-run the to update Apache2 directory permissions…
 
 That’s it!
 
+---
+
+## Problems 
+
+### Post intallation blank page
+
+```
+php bin/magento setup:di:compile
+```
+
+```
+chmod 777 -R genarated/ var/ pub/static
+```
+
+```
+php bin/magento cache:flush
+```
+
+---
