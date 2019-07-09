@@ -2429,6 +2429,53 @@ Put this properties on ```portal-ext.properties``` to blank:
 
 ---
 
+## Dynamic Query on JournalArticle for Liferay using `between date` criteria
+
+```java
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+
+import com.liferay.portal.kernel.dao.orm.DynamicQuery;
+import com.liferay.portal.kernel.dao.orm.DynamicQueryFactoryUtil;
+import com.liferay.portal.kernel.dao.orm.OrderFactoryUtil;
+import com.liferay.portal.kernel.dao.orm.Property;
+import com.liferay.portal.kernel.dao.orm.PropertyFactoryUtil;
+import com.liferay.portlet.journal.model.JournalArticle;
+import com.liferay.portlet.journal.service.JournalArticleLocalServiceUtil;
+
+try {
+    DynamicQuery dynamicQuery = DynamicQueryFactoryUtil.forClass(JournalArticle.class);
+    String structureId = 12345 + ""; // replace with real structure ID
+    int status = 0;
+    long[] userIds = new long[1];
+    userIds[0] = 12345; // replace with real user ID
+    List results = null;
+    Calendar calendar = Calendar.getInstance();
+    Date statusDate = calendar.getTime();
+    calendar.add(Calendar.DATE, -30);
+    Date fromDate = calendar.getTime();
+
+    Property structureIdProperty = PropertyFactoryUtil.forName("structureId");
+    Property statusProperty = PropertyFactoryUtil.forName("status");
+    Property userIdProperty = PropertyFactoryUtil.forName("userId");
+    Property statusDateProperty = PropertyFactoryUtil.forName("createDate");
+
+    dynamicQuery.add(structureIdProperty.eq(structureId));
+    dynamicQuery.add(statusProperty.eq(status));
+    dynamicQuery.add(userIdProperty.in(userIds));
+    dynamicQuery.add(statusDateProperty.between(fromDate, statusDate));
+    dynamicQuery.addOrder(OrderFactoryUtil.desc("modifiedDate"));
+    results = JournalArticleLocalServiceUtil.dynamicQuery(dynamicQuery);
+    // out.println(results);
+
+} catch (Exception e) {
+    e.printStackTrace();
+}
+```
+
+---
+
 ## Liferay Philosophy
 
 + Everything is an Asset!
