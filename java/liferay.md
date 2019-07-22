@@ -370,6 +370,13 @@ _logger.error("...");
 
 ---
 
+### Enabling All logs on Liferay FE
+
+Add this category:  
+```com.liferay```
+
+---
+
 ## General JSP
 
 ### Current page name in JSP
