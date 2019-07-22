@@ -2570,6 +2570,32 @@ When on linux, Fedora Project Distribution in my opinion is the best one for thi
 
 Sometime they are not related to Liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
 
+### Liferay Search Container pagination issue: When we click on next or page no # it will redirect to default render method and default jsp is called
+
+You need to specify the **iteratorURL**
+
+Example:
+
+gestioneCodiceArticolo.jsp
+```jsp
+<liferay-portlet:renderURL varImpl="iteratorURL">
+    <portlet:param name="mvcPath" value="/html/articolo/gestioneCodiceArticolo.jsp" />
+</liferay-portlet:renderURL>
+<liferay-ui:search-container var="articolo" iteratorURL="<%=iteratorURL%>">
+    <liferay-ui:search-container-results
+            results="<%=ArticoloLocalServiceUtil.getArticolos(articolo.getStart(), articolo.getEnd())%>"
+            total="<%=ArticoloLocalServiceUtil.getArticolosCount()%>"
+    />
+    <liferay-ui:search-container-row className="it.thinkopen.educatt.sb.model.Articolo" modelVar="aArticolo">
+        <liferay-ui:search-container-column-text property="wbs" name="WBS"/>
+        <liferay-ui:search-container-column-jsp path="/html/articolo/action_articolo.jsp" align="right" name="Azioni"/>
+    </liferay-ui:search-container-row>
+    <liferay-ui:search-iterator/>
+</liferay-ui:search-container>
+```
+
+---
+
 ### PermissionChecker not initialized
 
 Add this to the java code before the line that create the error
