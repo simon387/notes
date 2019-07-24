@@ -1538,6 +1538,103 @@ liferayForm.formValidator.get('rules')['ID-OF-YOUR-INPUT-FIELD'] = {required : t
 
 ---
 
+## Backend validation example
+
+jsp:
+```jsp
+<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
+<%@ taglib uri="http://liferay.com/tld/ui" prefix="liferay-ui" %>
+
+<portlet:defineObjects />
+
+<portlet:actionURL var="submitProfileUrl">
+ <portlet:param name="action" value="submitProfile"></portlet:param>
+</portlet:actionURL>
+
+<liferay-ui:error key="name-is-required" message="Name is Required"></liferay-ui:error>
+<liferay-ui:error key="age-is-required" message="Age is Required"></liferay-ui:error>
+<liferay-ui:error key="email-is-required" message="Email is Required"></liferay-ui:error>
+
+<h1>MyProfile</h1> <Br>
+
+ <form action="${submitProfileUrl}" method="post">
+  <table>
+   <tr>
+    <td>Name</td>
+    <td><input type="text" name="name"></td>
+   </tr>
+   <tr>
+    <td>Age</td>
+    <td><input type="text" name="age"> Years</td>
+   </tr>
+   <tr>
+    <td>Email</td>
+    <td><input type="text" name="email"></td>
+   </tr>
+   <tr>
+    <td colspan="2" align="center">
+     <input type="submit">
+    </td> 
+   <tr>
+  </table>
+ </form>
+```
+
+java:
+```java
+import javax.portlet.ActionRequest;
+import javax.portlet.ActionResponse;
+import javax.portlet.RenderRequest;
+import javax.portlet.RenderResponse;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.portlet.bind.annotation.ActionMapping;
+import org.springframework.web.portlet.bind.annotation.RenderMapping;
+
+import com.liferay.portal.kernel.log.Log;
+import com.liferay.portal.kernel.log.LogFactoryUtil;
+import com.liferay.portal.kernel.servlet.SessionErrors;
+import com.liferay.portal.kernel.util.ParamUtil;
+
+@Controller(value = "ServerSideValidationTestViewController")
+@RequestMapping("VIEW")
+public class ServerSideValidationTestViewController {
+ private static Log log = LogFactoryUtil.getLog(ServerSideValidationTestViewController.class);
+ /*
+  * maps the incoming portlet request to this method
+  * Since no request parameters are specified, therefore the default
+  * render method will always be this method
+  */
+ @RenderMapping
+ public String handleRenderRequest(RenderRequest request,RenderResponse response,Model model){
+  
+  return "profile";
+ }
+ 
+ @ActionMapping(params = "action=submitProfile") 
+ public void submitProfileAction(ActionRequest request, ActionResponse response) {
+  String name=ParamUtil.get(request, "name", "");
+  String age=ParamUtil.get(request, "age", "");
+  String email=ParamUtil.get(request, "email", "");
+  
+  if(name ==null || "".equalsIgnoreCase(name)){
+   SessionErrors.add(request, "name-is-required");
+  }
+  if(age == null || "".equalsIgnoreCase(age)){
+   SessionErrors.add(request, "age-is-required");
+  }
+  if(email == null || "".equalsIgnoreCase(email)){
+   SessionErrors.add(request, "email-is-required");
+  }
+ }
+
+}
+```
+
+---
+
 ## How to get the previous url in JSP
 
 (The best way)
