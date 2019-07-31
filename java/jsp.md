@@ -77,3 +77,12 @@ This code is valid!
 
 **You are a bad programmer!**
 
+---
+
+## Static include
+
+Poor practice but it works.
+
+```jsp
+<%@include file="db.jsp" %>
+```
