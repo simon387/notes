@@ -2602,6 +2602,12 @@ $(document).ready(function () {
     }());
 });
 </aui:script>
+
+<div class="yui3-skin-sam">
+    <div id="modal"></div>
+</div>
+```
+
 ---
 
 ## Scheduling - scheduler
