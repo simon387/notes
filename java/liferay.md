@@ -2476,6 +2476,134 @@ try {
 
 ---
 
+## liferay-ui:input-date usage example
+
+```jsp
+<%
+    String modificaClickedString = ParamUtil.getString(request, MODIFICA_CLICKED_STRING);
+    boolean modificaClicked = modificaClickedString.equalsIgnoreCase(StringPool.TRUE);
+    Calendar calendar = new GregorianCalendar();
+    Integer ultimaFatturaDay = calendar.get(Calendar.DATE);
+    Integer ultimaFatturaMonth = calendar.get(Calendar.MONTH);
+    Integer ultimaFatturaYear = calendar.get(Calendar.YEAR);
+
+    //...
+
+    String idPrestazione = ParamUtil.getString(request, ID_PRESTAZIONE);
+    Prestazione prestazione = PrestazioneLocalServiceUtil.getPrestazione(Long.parseLong(idPrestazione));
+    Date date = prestazione.getDataUltimaFattura();
+    calendar.setTime(date);
+    ultimaFatturaDay = calendar.get(Calendar.DAY_OF_MONTH);
+    ultimaFatturaMonth = calendar.get(Calendar.MONTH);
+    ultimaFatturaYear = calendar.get(Calendar.YEAR);
+%>
+
+<!-- ... -->
+
+<aui:col span="3">
+    <aui:fieldset>
+        <aui:field-wrapper label="Data Ultima Fattura" helpMessage="<%=WARNING_DATE_REQUIRED%>" required="true">
+            <liferay-ui:input-date name="dataUltimaFattura" formName="date"
+                                    nullable="<%=!modificaClicked%>"
+                                    yearValue="<%=ultimaFatturaYear%>"
+                                    monthValue="<%=ultimaFatturaMonth%>" dayValue="<%=ultimaFatturaDay%>"
+                                    dayParam="dayDataUltimaFattura" monthParam="monthDataUltimaFattura"
+                                    yearParam="yearDataUltimaFattura"/>
+        </aui:field-wrapper>
+    </aui:fieldset>
+</aui:col>
+
+<!-- ... -->
+
+<aui:script>
+function checkDate(bypass) {
+    var hid = $('.popover-hidden').length;
+    $(".modal").remove();
+    if (bypass == true) {
+    } else {
+        if (0 == hid) {
+            return;
+        }
+    }
+    var dayDataPrimaFattura = parseInt(document.getElementById("<portlet:namespace/>dayDataPrimaFattura").value);
+    var monthDataPrimaFattura = parseInt(document.getElementById("<portlet:namespace/>monthDataPrimaFattura").value);
+    var yearDataPrimaFattura = parseInt(document.getElementById("<portlet:namespace/>yearDataPrimaFattura").value);
+    var dayDataUltimaFattura = parseInt(document.getElementById("<portlet:namespace/>dayDataUltimaFattura").value);
+    var monthDataUltimaFattura = parseInt(document.getElementById("<portlet:namespace/>monthDataUltimaFattura").value);
+    var yearDataUltimaFattura = parseInt(document.getElementById("<portlet:namespace/>yearDataUltimaFattura").value);
+    var dataScadenzaDay = parseInt(document.getElementById("<portlet:namespace/>dataScadenzaDay").value);
+    var dataScadenzaMonth = parseInt(document.getElementById("<portlet:namespace/>dataScadenzaMonth").value);
+    var dataScadenzaYear = parseInt(document.getElementById("<portlet:namespace/>dataScadenzaYear").value);
+    var dataPrimaFattura = new Date(Date.UTC(yearDataPrimaFattura, monthDataPrimaFattura, dayDataPrimaFattura));
+    var dataUltimaFattura = new Date(Date.UTC(yearDataUltimaFattura, monthDataUltimaFattura, dayDataUltimaFattura));
+    var dataScadenza = new Date(Date.UTC(dataScadenzaYear, dataScadenzaMonth, dataScadenzaDay));
+    <%--	console.log("dataUltimaFattura=" + dataUltimaFattura);--%>
+    <%--	console.log("dataScadenza     =" + dataScadenza);--%>
+    <%--	console.log("dataPrimaFattura =" + dataPrimaFattura);--%>
+    if (dataUltimaFattura > dataScadenza) {
+        YUI().use(
+            'aui-modal',
+            function(Y) {
+                new Y.Modal({
+                    bodyContent: 'Data di Ultima Fattura maggiore della data di scadenza del Contratto',
+                    centered: true,
+                    headerContent: '<h3>Avviso!</h3>',
+                    modal: true,
+                    render: '#modal',
+                    width: 450
+                }).render();
+            }
+        );
+    }
+    if (dataPrimaFattura > dataScadenza) {
+        YUI().use(
+            'aui-modal',
+            function(Y) {
+                new Y.Modal({
+                    bodyContent: 'Data di Prima Fattura maggiore della data di scadenza del Contratto',
+                    centered: true,
+                    headerContent: '<h3>Avviso!</h3>',
+                    modal: true,
+                    render: '#modal',
+                    width: 450
+                }).render();
+            }
+        );
+    }
+}
+</aui:script>
+
+<aui:script>
+function setFocusOut() {
+    $(".datepicker-popover").on("click", function() {
+        checkDate();
+    });
+}
+$(document).ready(function () {
+    $("#<portlet:namespace/>dataScadenza").on("click", setFocusOut);
+    $("#<portlet:namespace/>dataPrimaFattura").on("click", setFocusOut);
+    $("#<portlet:namespace/>dataUltimaFattura").on("click", setFocusOut);
+    (function () {
+<%--    var oldVal;--%>
+<%--    $("#<portlet:namespace/>dataUltimaFattura").on('change textInput input', function () {--%>
+        $("#<portlet:namespace/>dataUltimaFattura").on('change', function () {
+<%--        var val = this.value;--%>
+<%--        if (val !== oldVal) {--%>
+<%--            oldVal = val;--%>
+            checkDate(true);
+<%--        }--%>
+        });
+        $("#<portlet:namespace/>dataPrimaFattura").on('change', function () {
+            checkDate(true);
+        });
+        $("#<portlet:namespace/>dataScadenza").on('change', function () {
+            checkDate(true);
+        });
+    }());
+});
+</aui:script>
+---
+
 ## Scheduling - scheduler
 
 + https://www.finalist.nl/techblog/2017/02/adding-scheduled-tasks-to-liferay/
