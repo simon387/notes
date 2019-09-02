@@ -497,3 +497,19 @@ $('#elementId').bind("DOMSubtreeModified", function(){
 }());
 ```
 
+---
+
+## Example of onsubmit
+
+```html
+<form onSubmit="return checkDateOnSubmit(event)">
+...
+```
+
+```javascript
+function checkDateOnSubmit(event) {
+    if (!checkDate()) {//other function that does the check
+        event.preventDefault();
+    }
+}
+```
