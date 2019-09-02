@@ -2635,6 +2635,16 @@ Solution: put the ```xlm``` in the first portlet of the project!
 </scheduler-entry>
 ```
 
+Example of every day at 8AM trigger:
+
+```xml
+<trigger>
+    <cron>
+        <cron-trigger-value>0 8 * * *</cron-trigger-value>
+    </cron>
+</trigger>
+```
+
 **NOTE: if the class name of the scheduler is too long, it's not going to work!!!**
 
 ---
