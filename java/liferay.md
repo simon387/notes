@@ -2619,7 +2619,7 @@ $(document).ready(function () {
 
 ### com.liferay.portal.kernel.xml.DocumentException
 
-Solution: put the ```xlm``` in the first portlet of the project!
+Solution: put the ```xml``` in the first portlet of the project!
 
 ```xml
 <scheduler-entry>
