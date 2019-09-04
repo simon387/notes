@@ -2635,12 +2635,12 @@ Solution: put the ```xml``` in the first portlet of the project!
 </scheduler-entry>
 ```
 
-Example of every day at 8AM trigger:
+Example of every day run trigger:
 
 ```xml
 <trigger>
     <cron>
-        <cron-trigger-value>0 8 * * *</cron-trigger-value>
+        <cron-trigger-value>0 30 06 ? * *</cron-trigger-value>
     </cron>
 </trigger>
 ```
