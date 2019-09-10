@@ -752,6 +752,31 @@ example:
 
 ---
 
+### Get User Role with Javascript 
+
+**bad practice**
+
+```javascript
+Liferay.Service(
+  '/role/get-user-roles',
+  {
+    userId: Liferay.ThemeDisplay.getUserId()
+  },
+  function(response) {
+    console.log(response);
+
+    var roles = [];
+    response.forEach(function(e){
+        roles.push(e.name); // or e.roleId
+    });
+
+    console.log(roles);
+  }
+);
+```
+
+---
+
 ## Language.properties
 
 in Java:
