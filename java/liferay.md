@@ -2749,6 +2749,15 @@ try {
 
 ---
 
+## Default Liferay user password
+
+```
+user: test@liferay.com
+pass: test
+```
+
+---
+
 ## Liferay Philosophy
 
 + Everything is an Asset!
