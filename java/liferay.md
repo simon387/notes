@@ -274,6 +274,16 @@ Columns length: locate ```portlet-model-hints.xml``` in your project, there you 
 
 This file does **not** get overwritten when running again *build services*.
 
+### How to remove a field
+
+Service Builder just generate code (classes and config files), if you remove a field it doesn't remove it for you!
+
+1. ```service.xml```
+2. delete all java code generate (**if you don't have modified it**)
+3. ```portlet-hbm.xml```
+4. ```portlet-model-hints.xml```
+5. ```portlet-orm.xml```
+
 ---
 
 ## Liferay web service
