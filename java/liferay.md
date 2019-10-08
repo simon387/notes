@@ -1934,6 +1934,12 @@ com.liferay.portal.servlet.filters.header.HeaderFilter=false
 com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true
 ```
 
+### tips:
+
++ open en edit mode the theme folder with IDEA, so you don't need to build and deploy
++ use ```<finalName>theme-name-theme</finalName>``` in the pom
++ use ```src="/theme-name-theme/img/logo-blu.png"``` for images
+
 ---
 
 ## Embedding a portlet with preferences 
