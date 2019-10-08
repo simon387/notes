@@ -1898,6 +1898,44 @@ public class SiteAdminPortletKeys {
 
 ---
 
+## Theme development 6.2 with Intellij Idea
+
+1. create a empty theme with Liferay IDE or eclipse (LOL)
+2. choose maven
+3. open it with IDEA
+4. set the server in DEV mode
+
+```tomcat-7.0.62/webapps/ROOT/WEB-INF/classes/portal.ext.properties```
+```properties
+theme.css.fast.load=false
+theme.images.fast.load=false
+
+javascript.fast.load=true
+javascript.log.enabled=false
+
+layout.template.cache.enabled=false
+
+browser.launcher.url=
+
+combo.check.timestamp=true
+
+freemarker.engine.cache.storage=soft:1
+freemarker.engine.resource.modification.check.interval=0
+
+log.sanitizer.enabled=false
+
+minifier.enabled=false
+
+openoffice.cache.enabled=false
+
+com.liferay.portal.servlet.filters.cache.CacheFilter=false
+com.liferay.portal.servlet.filters.etag.ETagFilter=false
+com.liferay.portal.servlet.filters.header.HeaderFilter=false
+com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true
+```
+
+---
+
 ## Embedding a portlet with preferences 
 
 + Liferay 6.2
