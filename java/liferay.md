@@ -1940,6 +1940,23 @@ com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true
 + use ```<finalName>theme-name-theme</finalName>``` in the pom
 + use ```src="/theme-name-theme/img/logo-blu.png"``` for images
 
+#### examples
+
+Select with idiomas on the theme:
+
+```freemarker
+#set ($cur_idioma = "$themeDisplay.getLocale().getISO3Language()")
+<select id="header__select" onChange="window.document.location.href=this.options[this.selectedIndex].value;">
+#foreach( $language in $languageUtil.getAvailableLocales() )
+	#set ($selected = "")
+	#if ($cur_idioma == $language.getISO3Language())
+		#set ($selected = "selected")
+	#end
+	<option $selected class="header__select__option" value="/$language.getLanguage()/group$themeDisplay.getLayout().getGroup().getFriendlyURL()">$language.getISO3Language()</option>
+#end
+</select>
+```
+
 ---
 
 ## Embedding a portlet with preferences 
