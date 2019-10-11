@@ -1952,7 +1952,7 @@ Select with idiomas on the theme:
 	#if ($cur_idioma == $language.getISO3Language())
 		#set ($selected = "selected")
 	#end
-	<option $selected class="header__select__option" value="/$language.getLanguage()/group$themeDisplay.getLayout().getGroup().getFriendlyURL()">$language.getISO3Language()</option>
+	<option $selected class="header__select__option" value="/$language.getLanguage()/web$themeDisplay.getLayout().getGroup().getFriendlyURL()">$language.getISO3Language()</option>
 #end
 </select>
 ```
