@@ -2,6 +2,12 @@
 
 ## how to fix ffmpeg not rendering Encode/H.264 gif / videos
 
+on windows 10:
+
+install ```Windows_MediaFeaturePack_x64_1903_V1```
+
+---
+
 on linux fedora 28:
 
 1. cloning this repo
