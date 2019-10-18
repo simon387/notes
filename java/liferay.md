@@ -1934,7 +1934,41 @@ com.liferay.portal.servlet.filters.header.HeaderFilter=false
 com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true
 ```
 
-### tips:
+### how to create a custom layout:
+
+(30 70 example)
+
+```liferay-look-and-feel.xml```
+```xml
+<theme id="ADRTEL-theme" name="ADRTEL-theme">
+		
+	<layout-templates>
+		<custom>
+			<layout-template id="layoutAdrtelTwoCol3070" name="Adrtel Grid 30-70 1 Row">
+				<template-path>/layout/30_70_ADRTEL/layout_ADRTEL_30_70.tpl</template-path>
+				<wap-template-path>/layout/30_70_ADRTEL/layout_ADRTEL_30_70.tpl</wap-template-path>
+				<thumbnail-path>/layout/30_70_ADRTEL/layout_ADRTEL_30_70.png</thumbnail-path>
+			</layout-template>
+```
+
+```layout_ADRTEL_30_70.tpl```
+```xml
+<div class="columns-2" id="main-content" role="main">
+	<div class="portlet-layout row-fluid">
+		<div class="portlet-column portlet-column-first span4" id="column-1">
+			$processor.processColumn("column-1", "portlet-column-content portlet-column-content-first")
+		</div>
+
+		<div class="portlet-column portlet-column-last span8" id="column-2">
+			$processor.processColumn("column-2", "portlet-column-content portlet-column-content-last")
+		</div>
+	</div>
+</div>
+```
+
+---
+
+### theme tips:
 
 + open en edit mode the theme folder with IDEA, so you don't need to build and deploy
 + use ```<finalName>theme-name-theme</finalName>``` in the pom
