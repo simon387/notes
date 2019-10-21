@@ -52,3 +52,12 @@ $getterUtil.getBoolean($variabileCheckboxosa.getData())
 ```
 
 ---
+
+## language key value
+
+```velocity
+#language ("powered-by")
+```
+
+---
+
