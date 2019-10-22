@@ -1973,6 +1973,7 @@ com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true
 + open en edit mode the theme folder with IDEA, so you don't need to build and deploy
 + use ```<finalName>theme-name-theme</finalName>``` in the pom
 + use ```src="/theme-name-theme/img/logo-blu.png"``` for images
++ ```liferay-plugin-package.properties``` there are the name of the theme/hook/app that final admin user can see in the portal's control panel.
 
 #### examples
 
