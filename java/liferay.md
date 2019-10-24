@@ -1982,7 +1982,7 @@ Select with idiomas on the theme:
 ```freemarker
 #set ($cur_idioma = "$themeDisplay.getLocale().getISO3Language()")
 <select id="header__select" onChange="window.document.location.href=this.options[this.selectedIndex].value;">
-#foreach( $language in $languageUtil.getAvailableLocales() )
+#foreach( $language in $languageUtil.getAvailableLocales($layout.getGroup().getGroupId()))
 	#set ($selected = "")
 	#if ($cur_idioma == $language.getISO3Language())
 		#set ($selected = "selected")
