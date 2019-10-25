@@ -2864,6 +2864,23 @@ pass: test
 
 ---
 
+## How to include a no-maven jar in a maven portlet
+
+1. Move the ```jar``` in ```WEB-INF/lib```
+2. Set the ```pom.xml``` in this way:
+
+```xml
+<dependency>
+	<groupId>com.sample</groupId>
+	<artifactId>sample</artifactId>
+	<version>1.0</version>
+	<scope>system</scope>
+	<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/yourExactJarName.jar</systemPath>
+</dependency>
+```
+
+---
+
 ## Liferay Philosophy
 
 + Everything is an Asset!
