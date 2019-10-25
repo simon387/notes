@@ -262,6 +262,8 @@ in java generated code
 
 ## More about service builder
 
+You can create it witout any ide help, just create the ```service.xml``` inside the portlet's ```WEB-INF``` folder. And yes, after that you can generate all the classes and conf file with an ide like Intellij Idea.
+
 ### Specify fields lenght
 
 Columns length: locate ```portlet-model-hints.xml``` in your project, there you can define length and other things for columns. Example:
