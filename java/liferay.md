@@ -2971,6 +2971,39 @@ When on linux, Fedora Project Distribution in my opinion is the best one for thi
 
 Sometime they are not related to Liferay, but I put them here anyway because I suppose they are pretty common in a LF environment!
 
+---
+
+### BeanLocator has not been set for servlet context ...
+
+Solution: added ```<pluginName>ADRTEL-contacts-portlet</pluginName>``` in the ```pom.xml```
+
+```xml
+<plugin>
+    <groupId>com.liferay.maven.plugins</groupId>
+    <artifactId>liferay-maven-plugin</artifactId>
+    <version>${liferay.maven.plugin.version}</version>
+    <executions>
+        <execution>
+            <phase>generate-sources</phase>
+            <goals>
+                <goal>build-css</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <autoDeployDir>${liferay.auto.deploy.dir}</autoDeployDir>
+        <appServerDeployDir>${liferay.app.server.deploy.dir}</appServerDeployDir>
+        <appServerLibGlobalDir>${liferay.app.server.lib.global.dir}</appServerLibGlobalDir>
+        <appServerPortalDir>${liferay.app.server.portal.dir}</appServerPortalDir>
+        <liferayVersion>${liferay.version}</liferayVersion>
+        <pluginType>portlet</pluginType>
+        <pluginName>ADRTEL-contacts-portlet</pluginName>
+    </configuration>
+</plugin>
+```
+
+---
+
 ### Liferay Search Container pagination issue: When we click on next or page no # it will redirect to default render method and default jsp is called
 
 You need to specify the **iteratorURL**
