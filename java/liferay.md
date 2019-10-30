@@ -803,6 +803,13 @@ in Java inside JSP:
 '<%=LanguageUtil.get(pageContext, "key.value.croccantina")%>'
 ```
 
+or:
+
+```jsp
+<aui:input type="submit" name="submit" value='<%=LanguageUtil.get(themeDisplay.getLocale(), "contacts-portlet-submit-button-value") %>' label=""/>
+
+```
+
 ### Properties with parameters
 
 in JSP:
@@ -816,6 +823,25 @@ properties file
 ```properties
 welcome-x=Welcome{0}!
 ```
+
+---
+
+### How to put them inside a portlet
+
+Create ```liferay-hook.xml```
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hook PUBLIC "-//Liferay//DTD Hook 6.2.0//EN" "http://www.liferay.com/dtd/liferay-hook_6_2_0.dtd">
+
+<hook>
+    <language-properties>Language.properties</language-properties>
+    <language-properties>Language_en.properties</language-properties>
+    <language-properties>Language_it.properties</language-properties>
+</hook>
+```
+
+Create ```Language.properties``` in the ```resources``` directory.
 
 ---
 
