@@ -977,6 +977,8 @@ Running example:
 
 put jars under ```/deploy/``` dir
 
+If not working, check liferay home directory in file property like the wizard one
+
 ---
 
 ## CSS
