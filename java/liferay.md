@@ -3001,6 +3001,23 @@ Sometime they are not related to Liferay, but I put them here anyway because I s
 
 ---
 
+### Form submit not working? and not getting inputs value?
+
+Not using AUI...
+
++ put ```method=post``` in the ```<form>``` tag
++ use ```UploadPortletRequest``` class in the portlet
+
+Example:
+```java
+@SuppressWarnings("unused")
+public void richiediUnaConsulenzaAction(final ActionRequest actionRequest, final ActionResponse actionResponse) {
+    UploadPortletRequest uploadPortletRequest = PortalUtil.getUploadPortletRequest(actionRequest);
+    String nome = ParamUtil.getString(uploadPortletRequest, "nome", StringPool.BLANK);
+```
+
+---
+
 ### BeanLocator has not been set for servlet context ...
 
 Solution: added ```<pluginName>ADRTEL-contacts-portlet</pluginName>``` in the ```pom.xml```
