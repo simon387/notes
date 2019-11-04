@@ -2409,6 +2409,29 @@ Liferay.Portlet.refresh("#p_p_id_portlet_name_" );
 
 ---
 
+## Liferay ui messages request ok/ko
+
+Example:
+
+Portlet class:
+```java
+if (sendMail(nome, email, telefono, motivo)) {
+    SessionMessages.add(actionRequest, REQUEST_OK);
+    log.info("Mail sent!");
+} else {
+    SessionErrors.add(actionRequest, REQUEST_KO);
+    log.error("Can't send mail.");
+}
+```
+
+JSP:
+```jsp
+<liferay-ui:success key="<%=REQUEST_OK%>" message="contacts-portlet-request-ok" />
+<liferay-ui:error key="<%=REQUEST_KO%>" message="contacts-portlet-request-ko" />
+```
+
+---
+
 ## Mail Example
 
 ```xml
