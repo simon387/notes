@@ -2098,6 +2098,23 @@ String myField = portletPreferences.getValue("myField", "no-string-value");
 %>
 ```
 
+How to abilitate portlet edit-mode:
+
+```portlet.xml```
+```xml
+...
+<init-param>
+    <name>edit-template</name>
+    <value>/html/contacts/edit.jsp</value>
+</init-param>
+...
+<supports>
+    <mime-type>text/html</mime-type>
+    <portlet-mode>view</portlet-mode>
+    <portlet-mode>edit</portlet-mode>
+</supports>
+```
+
 ---
 
 ## Code Example of embedding a portlet (login one) in the theme inside a modal
