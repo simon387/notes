@@ -2024,6 +2024,23 @@ Select with idiomas on the theme:
 
 ---
 
+Theme settings example
+
+```xml
+<look-and-feel>
+    <compatibility>
+        <version>6.2.2+</version>
+    </compatibility>
+    <theme id="Tema-Restyle2015B" name="Tema-Restyle2015B" >
+        <settings>
+            <setting configurable="true" key="portlet-setup-show-borders-default" type="checkbox" value="false"></setting>
+            <setting configurable="false" key="show-site-name-default" value="false"></setting>
+            <setting configurable="false" key="show-site-name-supported" value="true"></setting>
+        </settings>
+```
+
+---
+
 ## Embedding a portlet with preferences 
 
 + Liferay 6.2
