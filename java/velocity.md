@@ -61,3 +61,15 @@ $getterUtil.getBoolean($variabileCheckboxosa.getData())
 
 ---
 
+## For with counter
+
+```velocity
+#foreach($entry in $entries)    
+    <p>In for Loop count is : $velocityCount</p>     
+#end
+```
+
+---
+
+
+
