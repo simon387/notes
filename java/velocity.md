@@ -71,5 +71,34 @@ $getterUtil.getBoolean($variabileCheckboxosa.getData())
 
 ---
 
+# For example
 
+```velocity
+<div class="prodotti-linee" id="cmsEditoriale">
+    <img class="header-image" src="$headerImmagine.data">
+    <h2 class="incipit-description">
+        $headerTitolo.data
+    </h2>
+    <p>
+        $headerTesto.data
+    </p>
+    <h2 class="cat-title">$categorieTesto.data</h2>
+    <div class="prodlist">
+        #foreach($item in $prodotto.getSiblings() )
+            <div class="prod">
+                <div class="prod-img">
+                <a href="$item.link.getFriendlyUrl()">
+                    <img src="$item.immagine.data">
+                </a>
+                </div>
+                <div class="prod-title">
+                    $item.titolo.data
+                </div>
+            </div>
+        #end
+    </div>
+    <br clear="all">
+</div>
+```
 
+---
