@@ -71,7 +71,7 @@ $getterUtil.getBoolean($variabileCheckboxosa.getData())
 
 ---
 
-# For example
+## For example
 
 ```velocity
 <div class="prodotti-linee" id="cmsEditoriale">
@@ -99,6 +99,16 @@ $getterUtil.getBoolean($variabileCheckboxosa.getData())
     </div>
     <br clear="all">
 </div>
+```
+
+---
+
+## Check if variable is not used from model
+
+```velocity
+#if ($item.botton_right_img.getData() != "")
+			 <img src="$item.botton_right_img.data" />
+#end
 ```
 
 ---
