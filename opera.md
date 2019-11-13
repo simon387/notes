@@ -67,3 +67,16 @@ Icon=/home/scelia/Pictures/kisspng-opera-mobile-computer-icons-web-browser-opera
 + [Modify Header Value](https://addons.opera.com/en/extensions/details/modify-header-value/)
 + [Video Downloader Pro](https://addons.opera.com/en/extensions/details/all-in-all-downloader/)
 + [Stylish](https://addons.opera.com/en/extensions/details/stylish/)
+
+---
+
+## How to fix netflix
+
+Just look here:
+```
+vi /usr/lib64/opera/resources/widevine_config.json
+```
+Copy it from last Chrome
+```
+cp /opt/google/chrome/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so /opt/google/chrome/libwidevinecdm.so
+```
