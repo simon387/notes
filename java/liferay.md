@@ -2943,13 +2943,17 @@ try {
 ---
 
 ## Default Liferay user password
-
 ```
 user: test@liferay.com
 pass: test
 ```
-
 ---
+## Password encryption OFF
+```
+passwords.encryption.algorithm=NONE
+```
+---
+
 
 ## How to include a no-maven jar in a maven portlet
 
