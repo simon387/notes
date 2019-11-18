@@ -69,6 +69,19 @@ $getterUtil.getBoolean($variabileCheckboxosa.getData())
 #end
 ```
 
+### Reverse foreach
+
+```velocity
+<ol style="list-style: decimal!important;">
+    #set($c = $item.siblings.size())
+    #foreach ($i in $item.siblings)
+        #set($c = $c - 1)
+        #set($sibling = $item.siblings.get($c))
+        <li>$sibling.data</li>
+    #end
+</ol>
+```
+
 ---
 
 ## For example
