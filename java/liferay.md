@@ -988,6 +988,12 @@ If not working, check liferay home directory in file property like the wizard on
 ```css
 .ie .example {
 }
+/* IE 11*/
+@media screen and (-ms-high-contrast: none) {
+    #heading.heading__img {
+        background-image: url("/ADRTEL-theme/img/header-explorer.png");
+    }
+}
 .firefox .example {
 }
 /* EDGE ONLY */
