@@ -2064,13 +2064,10 @@ $velocityPortletPreferences.reset()
 
 + field name: ```myField```
 
-```myAction.java```:
+```MyPortlet.java```:
 
 ```java
-public class myAction extends MVCPortlet {
-    @Override
-    public void serveResource(ResourceRequest resourceRequest, ResourceResponse resourceResponse) throws IOException, PortletException {
-
+public class MyPortlet extends MVCPortlet {
     @ProcessAction(name = "saveConfiguration")
     public void saveConfiguration(ActionRequest request, ActionResponse response) throws PortletException, IOException {
         String myField = ParamUtil.getString(request, "myField");
