@@ -150,3 +150,39 @@ not having a class
 
 ---
 
+## scss
+
+1. install sass
+2. run ```sass --watch assets/scss/app.scss:css/app.css``` (example of path)
+
+```
+[scelia@job Project_folder]$ tree
+.
+├── assets
+│   ├── css
+│   │   ├── app.css
+│   │   ├── app.css.map
+│   │   └── modules
+│   ├── fonts
+│   ├── images
+│   │   ├── phone.svg
+│   │   ├── Wind-Turbine-front@2x.png
+│   │   ├── Wind-Turbine-left@2x.png
+│   │   └── Wind-Turbine-right@2x.png
+│   ├── js
+│   │   ├── app
+│   │   │   └── app.js
+│   │   └── lib
+│   └── scss
+│       ├── app.scss
+│       └── modules
+├── company-dashboard-2-1.html
+├── css
+│   ├── app.css
+│   ├── app.css.map
+│   └── index.css
+└── oldo_main.html
+
+11 directories, 15 files
+[scelia@job Project_folder]$ 
+```
