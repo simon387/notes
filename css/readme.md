@@ -153,7 +153,7 @@ not having a class
 ## scss
 
 1. install sass
-2. run ```sass --watch assets/scss/app.scss:css/app.css``` (example of path)
+2. run ```sass --watch assets/scss/app.scss:assets/css/app.css``` (example of path)
 
 ```
 [scelia@job Project_folder]$ tree
