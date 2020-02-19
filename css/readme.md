@@ -186,3 +186,28 @@ not having a class
 11 directories, 15 files
 [scelia@job Project_folder]$ 
 ```
+
+---
+
+## position bottom-right example of a button
+
+example bootstrap-less
+
+```html
+<div className="form-group col-md-6 " >
+    <div className="btn-container">
+        <button className="btn btn-primary" >
+            <p>Save</p>
+        </button>
+    </div>
+</div>
+```
+
+```css
+.btn-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+```
+
