@@ -211,3 +211,13 @@ add this parameter to the jvm (1.6+)
 ```properties
 -XX:-OmitStackTraceInFastThrow
 ```
+
+---
+
+## Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.util.Set<javax.persistence.EntityManager>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+
+Fixed putting this in application.properties file: ```spring.data.jpa.repositories.enabled=false```
+
+---
+
+
