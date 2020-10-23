@@ -9,3 +9,4 @@
 + GWS = Global Web Services
 + SEO = Search Engine Optimization
 + TBC = To Be Confirmed
++ ERP = Enterprise resource planning – sistema informativo di pianificazione delle risorse
