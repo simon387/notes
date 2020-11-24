@@ -1,8 +1,14 @@
 #!/bin/bash
-#funziona se chiami i branch come feature/1234-blabla
-#funziona se chiami i branch come bug/1234-blabla
-#funziona se chiami i branch come blabla/1234-blabla
-#il primo parametro, se presente, è la descrizione
+#
+# This script automatic add all mod files to commit list, commit and push the files
+# with a commit message prefix that is the Jira id, read from branch name.
+#
+# First script arg parameter is the description of the commit
+#
+# it works if you names the branchs in this way: feature/1234-blabla
+# it works if you names the branchs in this way: bug/1234-blabla
+# it works if you names the branchs in this way: blabla/1234-blabla
+#
 branchName=$(git rev-parse --abbrev-ref HEAD)
 #echo "${branchName}"
 IFS='/'
@@ -16,7 +22,7 @@ read -a strarr <<<"$part"
 ticketNumber="${strarr[0]}"
 #echo "$ticketNumber-$1"
 if [ -z "$1" ]; then
-  echo "nessuna descrizione inserita"
+  echo "Missing commit description!"
 else
   git add .
   git commit -a -m "$ticketNumber-$1"
