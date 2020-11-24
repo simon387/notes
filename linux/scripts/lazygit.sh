@@ -6,10 +6,13 @@
 branchName=$(git rev-parse --abbrev-ref HEAD)
 #echo "${branchName}"
 IFS='/'
-read -ar strarr <<<"$branchName"
+# shellcheck disable=SC2162
+read -a strarr <<<"$branchName"
 part="${strarr[1]}"
+#echo "$part"
 IFS='-'
-read -ar strarr <<<"$part"
+# shellcheck disable=SC2162
+read -a strarr <<<"$part"
 ticketNumber="${strarr[0]}"
 #echo "$ticketNumber-$1"
 if [ -z "$1" ]; then
