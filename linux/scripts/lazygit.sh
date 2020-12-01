@@ -5,9 +5,9 @@
 #
 # First script arg parameter is the description of the commit
 #
-# it works if you names the branchs in this way: feature/1234-blabla
+# it works if you names the branchs in this way: feature/123-blabla
 # it works if you names the branchs in this way: bug/1234-blabla
-# it works if you names the branchs in this way: blabla/1234-blabla
+# it works if you names the branchs in this way: blabla/0-blabla
 #
 branchName=$(git rev-parse --abbrev-ref HEAD)
 #echo "${branchName}"
