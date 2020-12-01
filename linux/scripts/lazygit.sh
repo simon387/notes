@@ -25,6 +25,6 @@ if [ -z "$1" ]; then
   echo "Missing commit description!"
 else
   git add .
-  git commit -a -m "$ticketNumber-$1"
+  git commit -a -m "$ticketNumber - $1"
   git push
 fi
