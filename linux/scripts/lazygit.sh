@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This script automatic add all mod files to commit list, commit and push the files
+# This script automatic add all modified files to commit list, commit and push the files
 # with a commit message prefix that is the Jira id, read from branch name.
 #
 # First script arg parameter is the description of the commit
