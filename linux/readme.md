@@ -38,6 +38,7 @@ and then this can help
 + fslint
 
   find duplicate files
++ ```fdupes -d -N <percorso>```
 + gimp
 + htop
 + opera
