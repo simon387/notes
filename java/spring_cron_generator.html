@@ -1,0 +1,190 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/multi-select/0.9.12/css/multi-select.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/multi-select/0.9.12/js/jquery.multi-select.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js"></script>
+
+<style>
+	ms-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 3em;
+  padding-right: 3em;
+  background: none !important;
+  padding-bottom: 5em;
+}
+</style>
+
+<script type="application/javascript">
+$(document).ready(function () {
+
+
+$('.select2').select2({
+  width: '100%'
+});
+
+//// Init ////////////
+$dropdown = $("#secondsSelect");
+for (let i = 1; i < 60; i++) {
+  $dropdown.append($("<option />").val(i).text(i));
+}
+$dropdown = $("#minSelect");
+for (let i = 1; i < 60; i++) {
+  $dropdown.append($("<option />").val(i).text(i));
+}
+$dropdown = $("#hoursSelect");
+for (let i = 1; i < 24; i++) {
+  $dropdown.append($("<option />").val(i).text(i));
+}
+$dropdown = $("#dayOfMonthSelect");
+for (let i = 1; i < 32; i++) {
+  $dropdown.append($("<option />").val(i).text(i));
+}
+//// Init End ////////////
+
+
+$('.select2').on('select2:select', function(e) {
+  let value = e.params.data.id;
+  let prevValue = $(this).val().length > 0 ? $(this).val()[0] : null;
+
+  if (value != parseInt(value)) {
+    $(this).val(value).change();
+  } else if (prevValue != parseInt(prevValue)) {
+    $(this).val(value).change();
+  }
+  calculateSpringCron();
+});
+
+let r = function(dropdown) {
+  return dropdown.val().join(",");
+
+}
+
+let calculateSpringCron = function() {
+
+  let result = [
+    r($("#secondsSelect")),
+    r($("#minSelect")),
+    r($("#hoursSelect")),
+    r($("#dayOfMonthSelect")),
+    r($("#monthsSelect")),
+    r($("#weekdaySelect")),
+  ];
+
+  $("#result").val(result.join(" "));
+
+  $("#result-expand").html(result.join(" &nbsp; &nbsp;"))
+
+}
+
+calculateSpringCron();
+});
+
+</script>
+<div class="row">
+  <div class="col-12">
+    <h1>Spring Schedule Cron Generator</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-4">
+    Seconds:
+    <select id="secondsSelect" class="select2" name="states[]" multiple="multiple">
+      <option value="*" selected="selected">Every seconds</option>
+      <option value="*/2">Every even seconds</option>
+      <option value="1-59/2">Every odd seconds</option>
+      <option value="*/5">Every 5 seconds</option>
+      <option value="*/10">Every 10 seconds</option>
+      <option value="*/15">Every 15 seconds</option>
+      <option value="*/30">Every 30 seconds</option>
+    </select>
+  </div>
+  <div class="col-4">
+    Minutes:
+    <select id="minSelect" class="select2" name="states[]" multiple="multiple">
+      <option value="*" selected="selected">Every minutes</option>
+      <option value="*/2">Every even minutes</option>
+      <option value="1-59/2">Every odd minutes</option>
+      <option value="*/5">Every 5 minutes</option>
+      <option value="*/10">Every 10 minutes</option>
+      <option value="*/15">Every 15 minutes</option>
+      <option value="*/30">Every 30 minutes</option>
+    </select>
+  </div>
+  <div class="col-4">
+    Hours:
+    <select id="hoursSelect" class="select2" name="states[]" multiple="multiple">
+      <option value="*" selected="selected">Every hour</option>
+      <option value="*/2">Every even hour</option>
+      <option value="1-11/2">Every odd hour</option>
+      <option value="*/3">Every 3 hour</option>
+      <option value="*/4">Every 4 hour</option>
+      <option value="*/6">Every 6 hour</option>
+    </select>
+  </div>
+</div>
+
+<div class="row">
+</div>
+
+<div class="row">
+  <div class="col-4">
+    Days of month:
+    <select id="dayOfMonthSelect" class="select2" name="states[]" multiple="multiple">
+      <option value="*" selected="selected">Every day of month</option>
+      <option value="*/2">Even day of month</option>
+      <option value="1-31/2">Odd day of month</option>
+      <option value="*/5">Every 5 days of month (5,10,15...)</option>
+      <option value="*/10">Every 10 days of month (10,20,30...)</option>
+    </select>
+  </div>
+  <div class="col-4">
+    Months:
+    <select id="monthsSelect" class="select2" name="states[]" multiple="multiple">
+      <option value="*" selected="selected">Every month</option>
+      <option value="*/2">Even months</option>
+      <option value="1-11/2">Odd months</option>
+      <option value="*/4">Every 4 months</option>
+      <option value="*/6">Every 6 months(half year)</option>
+      <option value="1">Jan</option>
+      <option value="2">Feb</option>
+      <option value="3">Mar</option>
+      <option value="4">Apr</option>
+      <option value="5">May</option>
+      <option value="6">Jun</option>
+      <option value="7">Jul</option>
+      <option value="8">Aug</option>
+      <option value="9">Sep</option>
+      <option value="10">Oct</option>
+      <option value="11">Nov</option>
+      <option value="12">Dec</option>
+    </select>
+  </div>
+  <div class="col-4">
+    Weekday:
+    <select id="weekdaySelect" class="select2" name="states[]" multiple="multiple">
+      <option value="*" selected="selected">Every weekday</option>
+      <option value="MON-FRI">Weekdays (MON-FRI)</option>
+      <option value="SAT,SUN">Weekend</option>
+      <option value="SUN">SUN</option>
+      <option value="MON">MON</option>
+      <option value="TUE">TUE</option>
+      <option value="WED">WED</option>
+      <option value="THU">THU</option>
+      <option value="FRI">FRI</option>
+      <option value="SAT">MON</option>
+    </select>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    Result:
+    <input id="result" class="form-control" /> With a bit of seperation for better viewing:<br/>
+    <h1 id="result-expand"></h1>
+  </div>
+</div>
