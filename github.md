@@ -22,3 +22,21 @@ Solution: just click on the Github's alert for information, usually you just nee
 While switching profile's picture.
 
 Solution: switched browser and it worked.
+
+---
+
+## Hide forever a file
+
+Example: remove ```README.md``` from history and everywhere:
+
+```
+git filter-branch --force --index-filter \
+  'git rm --cached --ignore-unmatch README.md' \
+  --prune-empty --tag-name-filter cat -- --all
+```
+
+and
+
+```
+git push --all --force
+```
