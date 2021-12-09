@@ -2,6 +2,11 @@
 
 [Markdown General Infos](markdown.md)
 
+## add a pc to github
++ ssh-keygen -t ed25519 -C "simon387@hotmail.it"
++ ssh-add ~/.ssh/id_ed25519
++ vim ~/.ssh/id_ed25519.pub
+
 ## Tips
 
 1. To reference a commit in a issues comment, simply write its SHA-hash, and it'll automatically get turned into a link
