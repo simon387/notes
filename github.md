@@ -2,10 +2,12 @@
 
 [Markdown General Infos](markdown.md)
 
-## add a pc to github
+## Add a pc to github
 + ssh-keygen -t ed25519 -C "simon387@hotmail.it"
 + ssh-add ~/.ssh/id_ed25519
-+ vim ~/.ssh/id_ed25519.pub
++ vim ~/.ssh/id_ed25519.pub and paste it in github page settings
++ eval `ssh-agent -s`
++ ssh-add ~/.ssh/id_rsa_key
 
 ## Tips
 
