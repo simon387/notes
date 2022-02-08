@@ -513,3 +513,7 @@ function checkDateOnSubmit(event) {
     }
 }
 ```
+
+## Chrome Developer tool: html script is blank (in source) debugging tutorial
+
+Solution:  just found that disabling "Enable Javascript Source Maps" from the Inspector settings window (F1) solved it
