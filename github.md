@@ -59,3 +59,15 @@ git branch -D master # Deletes the master branch
 git branch -m master # Rename the current branch to master
 git push -f origin master # Force push master branch to Git server
 ```
+
+## Change commit email
+
+```
+git config user.email "simone.celia@eng.it"
+```
+
+Check it:
+
+```
+git config user.email
+```
