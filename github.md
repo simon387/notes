@@ -3,6 +3,7 @@
 [Markdown General Infos](markdown.md)
 
 ## Add a pc to github
+
 + ssh-keygen -t ed25519 -C "simon387@hotmail.it"
 + ssh-add ~/.ssh/id_ed25519
 + vim ~/.ssh/id_ed25519.pub and paste it in github page settings
@@ -46,4 +47,15 @@ and
 
 ```
 git push --all --force
+```
+
+## Hide forever history of an entire branch
+
+```
+git checkout --orphan tmp-master # create a temporary branch
+git add -A  # Add all files and commit them
+git commit -m 'Add files'
+git branch -D master # Deletes the master branch
+git branch -m master # Rename the current branch to master
+git push -f origin master # Force push master branch to Git server
 ```
