@@ -49,6 +49,13 @@ and
 git push --all --force
 ```
 
+**Updated** version 2022, removing ```__pycache__``` folder
+
+```
+git filter-branch --force --index-filter  'git rm --cached --ignore-unmatch __pycache__'  --prune-empty --tag-name-filter cat -- --all
+git push --all --force
+```
+
 ## Hide forever history of an entire branch
 
 ```
