@@ -70,7 +70,7 @@ git push -f origin master # Force push master branch to Git server
 ## Change commit email
 
 ```
-git config user.email "simone.celia@eng.it"
+git config --global user.email "simone.celia@eng.it"
 ```
 
 Check it:
