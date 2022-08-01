@@ -74,12 +74,12 @@ Maven instructions:
 
 1. create an osgi module (portlet, hook, doesn't matter)
 2. create a sub-module, with for the example the name of the entity you want to create/map
-   + **Specify the right Location** by hand, ```Liferay Developer Studio Version: 3.3.0.201808240530-ga1``` is bugged and doesn't create the submodule properly
-   + Project Type: ```Liferay Module Project```
-   + Project Name: something similar to the entity you want to create/map
-   + Build Type: depends on other modules
-   + Project Template Name: ```service-builder```
-   + Package Name: follow the project naming convenction, please
+    + **Specify the right Location** by hand, ```Liferay Developer Studio Version: 3.3.0.201808240530-ga1``` is bugged and doesn't create the submodule properly
+    + Project Type: ```Liferay Module Project```
+    + Project Name: something similar to the entity you want to create/map
+    + Build Type: depends on other modules
+    + Project Template Name: ```service-builder```
+    + Package Name: follow the project naming convenction, please
 3. at the end of the wizard, modify the ```service.xml```, see [the doc](https://docs.liferay.com/portal/7.0/definitions/liferay-service-builder_7_0_0.dtd.html)
 4. build services! right click on the module, ```Liferay```, ```build-service```
 5. check if every classes have been generated
@@ -92,51 +92,51 @@ Example of a simple ```service.xml```:
 <!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
 
 <service-builder package-path="it.simonecelia.liferay">
-    <namespace>blabla_entity</namespace>
-    <!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
-    <entity local-service="true" name="EntityName" remote-service="false" uuid="true">
+	<namespace>blabla_entity</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="EntityName" remote-service="false" uuid="true">
 
-        <!-- PK fields -->
+		<!-- PK fields -->
 
-        <column name="entityNameId" primary="true" type="long" />
+		<column name="entityNameId" primary="true" type="long"/>
 
-        <!-- Group instance -->
+		<!-- Group instance -->
 
-        <column name="groupId" type="long" />
+		<column name="groupId" type="long"/>
 
-        <!-- Audit fields -->
+		<!-- Audit fields -->
 
-        <column name="companyId" type="long" />
-        <column name="userId" type="long" />
-        <column name="userName" type="String" />
-        <column name="createDate" type="Date" />
-        <column name="modifiedDate" type="Date" />
+		<column name="companyId" type="long"/>
+		<column name="userId" type="long"/>
+		<column name="userName" type="String"/>
+		<column name="createDate" type="Date"/>
+		<column name="modifiedDate" type="Date"/>
 
-        <!-- Other fields -->
+		<!-- Other fields -->
 
-        <column name="name" type="String" primary="true"/>
-        <column name="enabled" type="boolean" />
-<!--         <column name="field3" type="int" /> -->
-<!--         <column name="field4" type="Date" /> -->
-        <column name="description" type="String" />
+		<column name="name" type="String" primary="true"/>
+		<column name="enabled" type="boolean"/>
+		<!--         <column name="field3" type="int" /> -->
+		<!--         <column name="field4" type="Date" /> -->
+		<column name="description" type="String"/>
 
-        <!-- Order -->
+		<!-- Order -->
 
-<!--         <order by="asc"> -->
-<!--             <order-column name="field1" /> -->
-<!--         </order> -->
+		<!--         <order by="asc"> -->
+		<!--             <order-column name="field1" /> -->
+		<!--         </order> -->
 
-        <!-- Finder methods -->
+		<!-- Finder methods -->
 
-         <finder name="entityName" return-type="EntityName" unique="true" >
-             <finder-column name="name" />
-         </finder>
+		<finder name="entityName" return-type="EntityName" unique="true">
+			<finder-column name="name"/>
+		</finder>
 
-        <!-- References -->
+		<!-- References -->
 
-<!--         <reference entity="AssetEntry" package-path="com.liferay.portlet.asset" /> -->
-<!--         <reference entity="AssetTag" package-path="com.liferay.portlet.asset" /> -->
-    </entity>
+		<!--         <reference entity="AssetEntry" package-path="com.liferay.portlet.asset" /> -->
+		<!--         <reference entity="AssetTag" package-path="com.liferay.portlet.asset" /> -->
+	</entity>
 </service-builder>
 ```
 
@@ -147,9 +147,9 @@ You have to manual edit the file ```<entityName>LocalServiceImpl.java```
 add for example:
 
 ```java
-public EntityName findByName(String name) throws NoSuchEntityNameException {
-    return entityNamePersistence.findBylistenerName(name);
-}
+public EntityName findByName(String name)throws NoSuchEntityNameException{
+				return entityNamePersistence.findBylistenerName(name);
+				}
 ```
 
 and the run the build of the service builder again!
@@ -173,9 +173,9 @@ maven (inside the ```service.xml``` folder):
 #### Adding data from java
 
 ```java
-EntityName entityName = new EntityName();
-entityName.setBlablablablabla();
-EntityNameLocalServiceUtil.addEntityName(entityName);
+EntityName entityName=new EntityName();
+				entityName.setBlablablablabla();
+				EntityNameLocalServiceUtil.addEntityName(entityName);
 ```
 
 Doesn't work, the project compiles but the deployment process never ends.
@@ -183,9 +183,9 @@ Doesn't work, the project compiles but the deployment process never ends.
 Solution:
 
 ```java
-EntityName entityName = EntityNameLocalServiceUtil.createEntityName(CounterLocalServiceUtil.increment());
-entityName.setBlablablablabla();
-EntityNameLocalServiceUtil.addEntityName(entityName);
+EntityName entityName=EntityNameLocalServiceUtil.createEntityName(CounterLocalServiceUtil.increment());
+				entityName.setBlablablablabla();
+				EntityNameLocalServiceUtil.addEntityName(entityName);
 ```
 
 ---
@@ -194,32 +194,33 @@ EntityNameLocalServiceUtil.addEntityName(entityName);
 
 ```[ERROR] No plugin found for prefix 'service-builder' in the current project and in the plugin groups [org.apache.maven.plugins, org.codehaus.mojo] available from the repositories [local (C:\Users\Simone\.m2\repository), central (https://repo.maven.apache.org/maven2)] -> [Help 1]```
 
-You miss the plugin in the ```pom.xml```, example: 
+You miss the plugin in the ```pom.xml```, example:
 
 ```xml
+
 <build>
-  <plugins>
-    <plugin>
-      <groupId>com.liferay</groupId>
-      <artifactId>com.liferay.portal.tools.service.builder</artifactId>
-      <version>1.0.228</version>
-      <configuration>
-        <apiDirName>../xx-xxxx-xxxx-xx-persistence-api/src/main/java</apiDirName>
-        <autoNamespaceTables>true</autoNamespaceTables>
-        <buildNumberIncrement>true</buildNumberIncrement>
-        <hbmFileName>src/main/resources/META-INF/module-hbm.xml</hbmFileName>
-        <implDirName>src/main/java</implDirName>
-        <mergeModelHintsConfigs>src/main/resources/META-INF/portlet-model-hints.xml</mergeModelHintsConfigs>
-        <modelHintsFileName>src/main/resources/META-INF/portlet-model-hints.xml</modelHintsFileName>
-        <osgiModule>true</osgiModule>
-        <propsUtil>xx.xxxx.xxxx.xx.persistence.service.util.ServiceProps</propsUtil>
-        <resourcesDirName>src/main/resources</resourcesDirName>
-        <springFileName>src/main/resources/META-INF/spring/module-spring.xml</springFileName>
-        <sqlDirName>src/main/resources/META-INF/sql</sqlDirName>
-        <sqlFileName>tables.sql</sqlFileName>
-      </configuration>
-    </plugin>
-  </plugins>
+	<plugins>
+		<plugin>
+			<groupId>com.liferay</groupId>
+			<artifactId>com.liferay.portal.tools.service.builder</artifactId>
+			<version>1.0.228</version>
+			<configuration>
+				<apiDirName>../xx-xxxx-xxxx-xx-persistence-api/src/main/java</apiDirName>
+				<autoNamespaceTables>true</autoNamespaceTables>
+				<buildNumberIncrement>true</buildNumberIncrement>
+				<hbmFileName>src/main/resources/META-INF/module-hbm.xml</hbmFileName>
+				<implDirName>src/main/java</implDirName>
+				<mergeModelHintsConfigs>src/main/resources/META-INF/portlet-model-hints.xml</mergeModelHintsConfigs>
+				<modelHintsFileName>src/main/resources/META-INF/portlet-model-hints.xml</modelHintsFileName>
+				<osgiModule>true</osgiModule>
+				<propsUtil>xx.xxxx.xxxx.xx.persistence.service.util.ServiceProps</propsUtil>
+				<resourcesDirName>src/main/resources</resourcesDirName>
+				<springFileName>src/main/resources/META-INF/spring/module-spring.xml</springFileName>
+				<sqlDirName>src/main/resources/META-INF/sql</sqlDirName>
+				<sqlFileName>tables.sql</sqlFileName>
+			</configuration>
+		</plugin>
+	</plugins>
 </build>
 ```
 
@@ -262,15 +263,17 @@ in java generated code
 
 ## More about service builder
 
-You can create it witout any ide help, just create the ```service.xml``` inside the portlet's ```WEB-INF``` folder. And yes, after that you can generate all the classes and conf file with an ide like Intellij Idea.
+You can create it witout any ide help, just create the ```service.xml``` inside the portlet's ```WEB-INF``` folder. And yes, after that you can generate all the
+classes and conf file with an ide like Intellij Idea.
 
 ### Specify fields lenght
 
 Columns length: locate ```portlet-model-hints.xml``` in your project, there you can define length and other things for columns. Example:
 
 ```xml
+
 <field name="fieldName" type="String">
-    <hint name="max-length">256</hint>
+	<hint name="max-length">256</hint>
 </field>
 ```
 
@@ -294,23 +297,23 @@ example
 
 ```javascript
 Liferay.Service('/name-portlet.bla/method-name', {
-    jsonString: '{"userid":' + themeDisplay.getUserId() + ', "signed":' + themeDisplay.isSignedIn()
-    + ', "inputField":"' + inputField + '"}'
-},
-function(obj) {
-  var obj = jQuery.parseJSON(obj);
-  //process response
-});
+		jsonString: '{"userid":' + themeDisplay.getUserId() + ', "signed":' + themeDisplay.isSignedIn()
+			+ ', "inputField":"' + inputField + '"}'
+	},
+	function (obj) {
+		var obj = jQuery.parseJSON(obj);
+		//process response
+	});
 ```
 
 ```java
 public class BlaServiceImpl extends BlaServiceBaseImpl {
 
-    @JSONWebService
-    @AccessControlled(guestAccessEnabled = false)
-    public String methodName(String jsonString) {
-        //accept json, return json
-    }
+	@JSONWebService
+	@AccessControlled ( guestAccessEnabled = false )
+	public String methodName ( String jsonString ) {
+		//accept json, return json
+	}
 }
 ```
 
@@ -335,12 +338,12 @@ public class BlaServiceImpl extends BlaServiceBaseImpl {
 1. edit ```startup.sh``` adding ```jpda``` to the script  
    ```exec "$PRGDIR"/"$EXECUTABLE" jpda start "$@"```
 2. Run Menu Entry > Edit Configurations > Add New Remote Configuration > Configure your host and debug port  
-   example:  
-   + Debugger mode: ```Attach to remote JVM```
-   + Host: ```localhost```
-   + Port: ```8000```
-   + Command Line: ```-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8000```
-   + Use module classpath!! You have to select something here
+   example:
+    + Debugger mode: ```Attach to remote JVM```
+    + Host: ```localhost```
+    + Port: ```8000```
+    + Command Line: ```-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8000```
+    + Use module classpath!! You have to select something here
 
 ---
 
@@ -357,7 +360,7 @@ private static Logger _logger;
 Instantiate the logger.
 
 ```java
-_logger = LoggerFactory.getLogger(this.getClass().getName());
+_logger=LoggerFactory.getLogger(this.getClass().getName());
 ```
 
 Throughout your class, log messages where noteworthy things happen.
@@ -366,8 +369,8 @@ For example,
 
 ```java
 _logger.debug("...");
-_logger.warn("...");
-_logger.error("...");
+				_logger.warn("...");
+				_logger.error("...");
 ```
 
 ---
@@ -426,13 +429,13 @@ inside a jsp file
 
 ```javascript
 <aui:script>
-Liferay.provide(window, 'functionNameExample', 
-    function(variable1, variable2, variable3, ...) {
-        var A = AUI();
-        ...
-    },
-['aui-base']
-);
+	Liferay.provide(window, 'functionNameExample',
+	function(variable1, variable2, variable3, ...) {
+	var A = AUI();
+	...
+},
+	['aui-base']
+	);
 </aui:script>
 ```
 
@@ -494,13 +497,15 @@ you can use it inside your own portlet in this way:
 <aui:fieldset label="value here" cssClass="accessibleLegend"> 
 ```
 
-rendered html: 
+rendered html:
 
 ```html
+
 <fieldset class="fieldset accessibleLegend">
-    <legend class="fieldset-legend">
-        <span class="legend">value here</span></legend><div class=""> 
-        ...
+	<legend class="fieldset-legend">
+		<span class="legend">value here</span></legend>
+	<div class="">
+		...
 ```
 
 ### Override a jsp
@@ -535,12 +540,12 @@ auth.token.check.enabled=false
 
 ```javascript
 <script type="text/javascript">
-window.onload = function() {
-    for(var i = 0, l = document.getElementsByTagName('input').length; i < l; i++) {
-        if(document.getElementsByTagName('input').item(i).type == 'text') {
-            document.getElementsByTagName('input').item(i).setAttribute('autocomplete', 'off');
-        }
-    }
+	window.onload = function() {
+	for(var i = 0, l = document.getElementsByTagName('input').length; i < l; i++) {
+	if(document.getElementsByTagName('input').item(i).type == 'text') {
+	document.getElementsByTagName('input').item(i).setAttribute('autocomplete', 'off');
+}
+}
 }
 </script>
 ```
@@ -593,65 +598,65 @@ My-Module
 ```
 
 ```java
-@Component(
-    immediate = true,
-    property = {
-            "panel.category.key=" + PanelCategoryKeys.CONTROL_PANEL_CONFIGURATION,
-            "panel.app.order:Integer=301"
-    },
-    service = PanelApp.class
+@Component (
+				immediate = true,
+				property = {
+								"panel.category.key=" + PanelCategoryKeys.CONTROL_PANEL_CONFIGURATION,
+								"panel.app.order:Integer=301"
+				},
+				service = PanelApp.class
 )
 public class BackofficePanelApp extends BasePanelApp {
 
-    @Override
-    public String getPortletId() {
-        return BackofficePortletKeys.BackofficePortlet;
-    }
+	@Override
+	public String getPortletId () {
+		return BackofficePortletKeys.BackofficePortlet;
+	}
 
-    @Override
-    public String getLabel(Locale locale) {
-        ResourceBundle resourceBundle = ResourceBundleUtil.getBundle("content.Language", locale, getClass());
+	@Override
+	public String getLabel ( Locale locale ) {
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle ( "content.Language", locale, getClass () );
 
-        return LanguageUtil.get(resourceBundle, "javax.portlet.display-name.backofficePortlet");
-    }
+		return LanguageUtil.get ( resourceBundle, "javax.portlet.display-name.backofficePortlet" );
+	}
 
-    @Override
-    @Reference(
-            target = "(javax.portlet.name=" + BackofficePortletKeys.BackofficePortlet + ")",
-            unbind = "-"
-    )
-    public void setPortlet(Portlet portlet) {
-        super.setPortlet(portlet);
-    }
+	@Override
+	@Reference (
+					target = "(javax.portlet.name=" + BackofficePortletKeys.BackofficePortlet + ")",
+					unbind = "-"
+	)
+	public void setPortlet ( Portlet portlet ) {
+		super.setPortlet ( portlet );
+	}
 }
 
 ```
 
 ```java
-@Component(immediate = true, property = { "com.liferay.portlet.display-category=category.hidden",
-        "javax.portlet.display-name=Blabla Backoffice", "javax.portlet.init-param.template-path=/",
-        "com.liferay.portlet.header-portlet-css=/css/main.css", "javax.portlet.init-param.view-template=/view.jsp",
-        "javax.portlet.name=" + BackofficePortletKeys.BackofficePortlet,
-        "javax.portlet.resource-bundle=content.Language",
-        "javax.portlet.security-role-ref=power-user,user" }, service = Portlet.class)
+@Component ( immediate = true, property = { "com.liferay.portlet.display-category=category.hidden",
+				"javax.portlet.display-name=Blabla Backoffice", "javax.portlet.init-param.template-path=/",
+				"com.liferay.portlet.header-portlet-css=/css/main.css", "javax.portlet.init-param.view-template=/view.jsp",
+				"javax.portlet.name=" + BackofficePortletKeys.BackofficePortlet,
+				"javax.portlet.resource-bundle=content.Language",
+				"javax.portlet.security-role-ref=power-user,user" }, service = Portlet.class )
 public class BackofficePortlet extends MVCPortlet {
 
-    @Override
-    public void doView(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
-        super.doView(renderRequest, renderResponse);
-    }
+	@Override
+	public void doView ( RenderRequest renderRequest, RenderResponse renderResponse ) throws IOException, PortletException {
+		super.doView ( renderRequest, renderResponse );
+	}
 
-    //custom
-    public void enablingXXX(ActionRequest actionRequest, ActionResponse actionResponse) {
-        long xxxListenerId = ParamUtil.getLong(actionRequest, FORM_XXX_ID);
+	//custom
+	public void enablingXXX ( ActionRequest actionRequest, ActionResponse actionResponse ) {
+		long xxxListenerId = ParamUtil.getLong ( actionRequest, FORM_XXX_ID );
 
-        try {
+		try {
 
-        } catch (PortalException portalException) {
-            portalException.printStackTrace();
-        }
-        SessionMessages.add(actionRequest, "xxxEnabled");
-    }
+		} catch ( PortalException portalException ) {
+			portalException.printStackTrace ();
+		}
+		SessionMessages.add ( actionRequest, "xxxEnabled" );
+	}
 
     ...
 }
@@ -764,26 +769,26 @@ example:
 
 ---
 
-### Get User Role with Javascript 
+### Get User Role with Javascript
 
 **bad practice**
 
 ```javascript
 Liferay.Service(
-  '/role/get-user-roles',
-  {
-    userId: Liferay.ThemeDisplay.getUserId()
-  },
-  function(response) {
-    console.log(response);
+	'/role/get-user-roles',
+	{
+		userId: Liferay.ThemeDisplay.getUserId()
+	},
+	function (response) {
+		console.log(response);
 
-    var roles = [];
-    response.forEach(function(e){
-        roles.push(e.name); // or e.roleId
-    });
+		var roles = [];
+		response.forEach(function (e) {
+			roles.push(e.name); // or e.roleId
+		});
 
-    console.log(roles);
-  }
+		console.log(roles);
+	}
 );
 ```
 
@@ -794,7 +799,7 @@ Liferay.Service(
 in Java:
 
 ```java
-LanguageUtil.get(locale, "key.value");
+LanguageUtil.get(locale,"key.value");
 ```
 
 in Java inside JSP:
@@ -835,9 +840,9 @@ Create ```liferay-hook.xml```
 <!DOCTYPE hook PUBLIC "-//Liferay//DTD Hook 6.2.0//EN" "http://www.liferay.com/dtd/liferay-hook_6_2_0.dtd">
 
 <hook>
-    <language-properties>Language.properties</language-properties>
-    <language-properties>Language_en.properties</language-properties>
-    <language-properties>Language_it.properties</language-properties>
+	<language-properties>Language.properties</language-properties>
+	<language-properties>Language_en.properties</language-properties>
+	<language-properties>Language_it.properties</language-properties>
 </hook>
 ```
 
@@ -858,7 +863,7 @@ Liferay 7.x example:
 ```java
 import com.liferay.portal.kernel.util.PropsUtil;
 
-String myKey = PropsUtil.get("my.key");
+String myKey=PropsUtil.get("my.key");
 ```
 
 ---
@@ -873,32 +878,31 @@ Is the same thing of the ```portal-ext.properties``` !
 
 ## Change permission to a FileEntry programmatically
 
-
 ```java
-public static void setFilePermissions(FileEntry fileEntry) throws Exception {
-    ResourcePermission resourcePermission = null;
-    final Role siteMemberRole = RoleLocalServiceUtil.getRole(fileEntry.getCompanyId(), RoleConstants.USER);
-    ResourceAction resourceAction = ResourceActionLocalServiceUtil.getResourceAction(DLFileEntry.class.getName(), ActionKeys.VIEW);
-    try {
-        resourcePermission = ResourcePermissionLocalServiceUtil.getResourcePermission(fileEntry.getCompanyId(),
-                DLFileEntry.class.getName(), ResourceConstants.SCOPE_INDIVIDUAL, String.valueOf(fileEntry
-                        .getPrimaryKey()), siteMemberRole.getRoleId());
-        if (Validator.isNotNull(resourcePermission)) {
-            resourcePermission.setActionIds(resourceAction.getBitwiseValue());
-            ResourcePermissionLocalServiceUtil.updateResourcePermission(resourcePermission);
-        }
-    } catch (com.liferay.portal.NoSuchResourcePermissionException e) {
-        resourcePermission = ResourcePermissionLocalServiceUtil
-                .createResourcePermission(CounterLocalServiceUtil.increment());
-        resourcePermission.setCompanyId(fileEntry.getCompanyId());
-        resourcePermission.setName(DLFileEntry.class.getName());
-        resourcePermission.setScope(ResourceConstants.SCOPE_INDIVIDUAL);
-        resourcePermission.setPrimKey(String.valueOf(fileEntry.getPrimaryKey()));
-        resourcePermission.setRoleId(siteMemberRole.getRoleId());
-        resourcePermission.setActionIds(resourceAction.getBitwiseValue());// (ActionKeys.VIEW);
-        ResourcePermissionLocalServiceUtil.addResourcePermission(resourcePermission);
-    }
-}
+public static void setFilePermissions(FileEntry fileEntry)throws Exception{
+				ResourcePermission resourcePermission=null;
+final Role siteMemberRole=RoleLocalServiceUtil.getRole(fileEntry.getCompanyId(),RoleConstants.USER);
+				ResourceAction resourceAction=ResourceActionLocalServiceUtil.getResourceAction(DLFileEntry.class.getName(),ActionKeys.VIEW);
+				try{
+				resourcePermission=ResourcePermissionLocalServiceUtil.getResourcePermission(fileEntry.getCompanyId(),
+				DLFileEntry.class.getName(),ResourceConstants.SCOPE_INDIVIDUAL,String.valueOf(fileEntry
+				.getPrimaryKey()),siteMemberRole.getRoleId());
+				if(Validator.isNotNull(resourcePermission)){
+				resourcePermission.setActionIds(resourceAction.getBitwiseValue());
+				ResourcePermissionLocalServiceUtil.updateResourcePermission(resourcePermission);
+				}
+				}catch(com.liferay.portal.NoSuchResourcePermissionException e){
+				resourcePermission=ResourcePermissionLocalServiceUtil
+				.createResourcePermission(CounterLocalServiceUtil.increment());
+				resourcePermission.setCompanyId(fileEntry.getCompanyId());
+				resourcePermission.setName(DLFileEntry.class.getName());
+				resourcePermission.setScope(ResourceConstants.SCOPE_INDIVIDUAL);
+				resourcePermission.setPrimKey(String.valueOf(fileEntry.getPrimaryKey()));
+				resourcePermission.setRoleId(siteMemberRole.getRoleId());
+				resourcePermission.setActionIds(resourceAction.getBitwiseValue());// (ActionKeys.VIEW);
+				ResourcePermissionLocalServiceUtil.addResourcePermission(resourcePermission);
+				}
+				}
 ```
 
 ---
@@ -950,7 +954,8 @@ NOTE: even if you re-deploy it, it is always in the stop(Resolved) state!
 
 ## How to create a new "hook"
 
-In liferay 7 DXP, I just created from maven/gradle a new osgi module (I.E.: it can be a random type of portlet) and I used the @Component mechanism to add/override the functionalities I needed
+In liferay 7 DXP, I just created from maven/gradle a new osgi module (I.E.: it can be a random type of portlet) and I used the @Component mechanism to
+add/override the functionalities I needed
 
 ---
 
@@ -988,14 +993,17 @@ If not working, check liferay home directory in file property like the wizard on
 ```css
 .ie .example {
 }
+
 /* IE 11*/
 @media screen and (-ms-high-contrast: none) {
     #heading.heading__img {
         background-image: url("/ADRTEL-theme/img/header-explorer.png");
     }
 }
+
 .firefox .example {
 }
+
 /* EDGE ONLY */
 @supports (-ms-ime-align: auto) {
     .example {
@@ -1024,7 +1032,7 @@ from jsp:
 They are similar to the templates under web contents, remember to search in both location if you can't find the desidered template.
 
 + database table: ```ddmtemplate```
-  + after editing one row, I had to restart Liferay to see the effect (lol)
+    + after editing one row, I had to restart Liferay to see the effect (lol)
 + you can edit them as admin user in Liferay under ```Configuration > Application Display Template```
 
 ---
@@ -1032,7 +1040,6 @@ They are similar to the templates under web contents, remember to search in both
 ## Site Settings
 
 Site entry are save by AssetEntry model -  ```assetentry``` table.
-
 
 If ```assetentry.classNameId = 20045``` ~~it is the assetentry relative to the site~~. **NO, IT DEPENDS BY OTHER TABLE DATA, check the relations**
 
@@ -1043,7 +1050,7 @@ If ```assetentry.classNameId = 20045``` ~~it is the assetentry relative to the s
 Use always the ```xxxLocalServiceUtil...```
 
 ```java
-AssetEntry assetEntry = AssetEntryLocalServiceUtil.getAssetEntry(newAssetEntry.getEntryId());
+AssetEntry assetEntry=AssetEntryLocalServiceUtil.getAssetEntry(newAssetEntry.getEntryId());
 ```
 
 ---
@@ -1052,10 +1059,10 @@ AssetEntry assetEntry = AssetEntryLocalServiceUtil.getAssetEntry(newAssetEntry.g
 
 ```java
 //DynamicQuery dynamicQuery = DynamicQueryFactoryUtil.forClass(Library.class); // <-- possible runtime error
-DynamicQuery dynamicQuery = LibraryLocalServiceUtil.dynamicQuery();
-dynamicQuery.add(RestrictionsFactoryUtil.like("bookName", "java"));
-dynamicQuery.add(RestrictionsFactoryUtil.eq("author", "james"));
-List results = LibraryLocalServiceUtil.dynamicQuery(dynamicQuery);
+DynamicQuery dynamicQuery=LibraryLocalServiceUtil.dynamicQuery();
+				dynamicQuery.add(RestrictionsFactoryUtil.like("bookName","java"));
+				dynamicQuery.add(RestrictionsFactoryUtil.eq("author","james"));
+				List results=LibraryLocalServiceUtil.dynamicQuery(dynamicQuery);
 ```
 
 ---
@@ -1063,21 +1070,21 @@ List results = LibraryLocalServiceUtil.dynamicQuery(dynamicQuery);
 ## Random database notes
 
 + Documents library files
-  + DLFileEntry
-    + the version is increased at every update
-  + DLFileRank
-  + DLFileShortcut
-  + DLFileVersion
-  + DLFolder
+    + DLFileEntry
+        + the version is increased at every update
+    + DLFileRank
+    + DLFileShortcut
+    + DLFileVersion
+    + DLFolder
 
 + Web contents
-  + JournalArticle
-  + JournalArticleImage
-  + JournalArticleResource
-  + JournalContentSearch
-  + JournalFeed
-  + JournalStructure
-  + JournalTemplate
+    + JournalArticle
+    + JournalArticleImage
+    + JournalArticleResource
+    + JournalContentSearch
+    + JournalFeed
+    + JournalStructure
+    + JournalTemplate
 
 *Web Content Folders are different from Documents and Media Folders*
 
@@ -1086,8 +1093,8 @@ List results = LibraryLocalServiceUtil.dynamicQuery(dynamicQuery);
 ## How to convert ActionRequest to HttpServletRequest in a Liferay portlet?
 
 ```java
-HttpServletRequest request = PortalUtil.getHttpServletRequest(actionRequest);
-HttpServletResponse response = PortalUtil.getHttpServletResponse(actionResponse);
+HttpServletRequest request=PortalUtil.getHttpServletRequest(actionRequest);
+				HttpServletResponse response=PortalUtil.getHttpServletResponse(actionResponse);
 ```
 
 ---
@@ -1115,20 +1122,20 @@ There are different type of listeners.
 Example of a BaseModelListener:
 
 ```java
-@Component(
-    service = ModelListener.class,
-    immediate = true
+@Component (
+				service = ModelListener.class,
+				immediate = true
 )
 public class MyNewCustomOnAssetEntryEntityListener extends BaseModelListener<AssetEntry> {
 
-    private static final Log logger = LogFactoryUtil.getLog(MyNewCustomOnAssetEntryEntityListener.class);
+	private static final Log logger = LogFactoryUtil.getLog ( MyNewCustomOnAssetEntryEntityListener.class );
 
-    @Override
-    public void onBeforeUpdate(AssetEntry model) throws ModelListenerException {
-        logger.info(model.toString());
+	@Override
+	public void onBeforeUpdate ( AssetEntry model ) throws ModelListenerException {
+		logger.info ( model.toString () );
 
-        super.onBeforeUpdate(model);
-    }
+		super.onBeforeUpdate ( model );
+	}
 }
 ```
 
@@ -1263,55 +1270,55 @@ AUI().use('aui-base','liferay-util-window','aui-io-plugin-deprecated',function(A
 ```
 
 ```java
-@Component(
-    immediate = true,
-    property = {
-        "com.liferay.portlet.display-category=category.sample", 
-        "com.liferay.portlet.instanceable=false",
-        "javax.portlet.init-param.template-path=/",
-        "javax.portlet.init-param.view-template=/view.jsp",
-        "javax.portlet.name=" + MyModulePortletKeys.PortletName,
-        "javax.portlet.resource-bundle=content.Language",
-        "javax.portlet.security-role-ref=power-user,user",
-    },
-    service = Portlet.class
+@Component (
+				immediate = true,
+				property = {
+								"com.liferay.portlet.display-category=category.sample",
+								"com.liferay.portlet.instanceable=false",
+								"javax.portlet.init-param.template-path=/",
+								"javax.portlet.init-param.view-template=/view.jsp",
+								"javax.portlet.name=" + MyModulePortletKeys.PortletName,
+								"javax.portlet.resource-bundle=content.Language",
+								"javax.portlet.security-role-ref=power-user,user",
+				},
+				service = Portlet.class
 )
 public class MyModule extends MVCPortlet {
-    
-    @Override
-    public void doView(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
-        //
-    }
-    
-    @Override
-    public void serveResource(ResourceRequest resourceRequest, ResourceResponse resourceResponse) throws IOException, PortletException {
 
-        ThemeDisplay themeDisplay = (ThemeDisplay) resourceRequest.getAttribute(WebKeys.THEME_DISPLAY);
-        Locale locale = themeDisplay.getLocale();
-        Layout layout = themeDisplay.getLayout();
-        long groupID = layout.getGroupId();
-        HttpServletRequest hsr = PortalUtil.getOriginalServletRequest(PortalUtil.getHttpServletRequest(resourceRequest));
-        String cmd = ParamUtil.getString(resourceRequest, "cmd");
+	@Override
+	public void doView ( RenderRequest renderRequest, RenderResponse renderResponse ) throws IOException, PortletException {
+		//
+	}
 
-        if("getMyData".equalsIgnoreCase(cmd)) {
-            String var1js = resourceRequest.getParameter("var1js");//reading variables from the data POSTed... you can use them
-            String var2js = resourceRequest.getParameter("var2js");
+	@Override
+	public void serveResource ( ResourceRequest resourceRequest, ResourceResponse resourceResponse ) throws IOException, PortletException {
 
-            JSONArray jsonList = JSONFactoryUtil.createJSONArray();
-            JSONObject jsonObj = JSONFactoryUtil.createJSONObject();
+		ThemeDisplay themeDisplay = (ThemeDisplay) resourceRequest.getAttribute ( WebKeys.THEME_DISPLAY );
+		Locale locale = themeDisplay.getLocale ();
+		Layout layout = themeDisplay.getLayout ();
+		long groupID = layout.getGroupId ();
+		HttpServletRequest hsr = PortalUtil.getOriginalServletRequest ( PortalUtil.getHttpServletRequest ( resourceRequest ) );
+		String cmd = ParamUtil.getString ( resourceRequest, "cmd" );
 
-            jsonObj.put("id", 0);
-            jsonObj.put("name", LanguageUtil.get(hsr , "key.0.inside.language.properties"));
-            jsonList.put(jsonObj);
+		if ( "getMyData".equalsIgnoreCase ( cmd ) ) {
+			String var1js = resourceRequest.getParameter ( "var1js" );//reading variables from the data POSTed... you can use them
+			String var2js = resourceRequest.getParameter ( "var2js" );
 
-            jsonObj = JSONFactoryUtil.createJSONObject();
-            jsonObj.put("id", 1);
-            jsonObj.put("name",  LanguageUtil.get(hsr, "key.1.inside.language.properties"));
-            jsonList.put(jsonObj);
+			JSONArray jsonList = JSONFactoryUtil.createJSONArray ();
+			JSONObject jsonObj = JSONFactoryUtil.createJSONObject ();
 
-            resourceResponse.getWriter().print(jsonList.toString());//write json
-        }
-    }
+			jsonObj.put ( "id", 0 );
+			jsonObj.put ( "name", LanguageUtil.get ( hsr, "key.0.inside.language.properties" ) );
+			jsonList.put ( jsonObj );
+
+			jsonObj = JSONFactoryUtil.createJSONObject ();
+			jsonObj.put ( "id", 1 );
+			jsonObj.put ( "name", LanguageUtil.get ( hsr, "key.1.inside.language.properties" ) );
+			jsonList.put ( jsonObj );
+
+			resourceResponse.getWriter ().print ( jsonList.toString () );//write json
+		}
+	}
 }
 ```
 
@@ -1322,20 +1329,20 @@ public class MyModule extends MVCPortlet {
 ```java
 //linkName is a field of the structure (can be an url in this example)
 //it is the current name inside the database (xml field)
-private boolean isLinkNotEmpty(long groupId, String uuid, String linkName) {
-    JournalArticle journalArticle = JournalArticleLocalServiceUtil.fetchJournalArticleByUuidAndGroupId(uuid, groupId);
-    String content = journalArticle.getContent();
-    Document contentDoc;
-    try {
-        contentDoc = SAXReaderUtil.read(content);
-        Node node = contentDoc.selectSingleNode("/root/dynamic-element[@name='" + linkName + "']/dynamic-content");
-        String url = node.getText();
-        return !url.isEmpty();
-    } catch (DocumentException e) {
-        e.printStackTrace();
-    }
-    return true;
-}
+private boolean isLinkNotEmpty(long groupId,String uuid,String linkName){
+				JournalArticle journalArticle=JournalArticleLocalServiceUtil.fetchJournalArticleByUuidAndGroupId(uuid,groupId);
+				String content=journalArticle.getContent();
+				Document contentDoc;
+				try{
+				contentDoc=SAXReaderUtil.read(content);
+				Node node=contentDoc.selectSingleNode("/root/dynamic-element[@name='"+linkName+"']/dynamic-content");
+				String url=node.getText();
+				return!url.isEmpty();
+				}catch(DocumentException e){
+				e.printStackTrace();
+				}
+				return true;
+				}
 ```
 
 ---
@@ -1354,49 +1361,50 @@ Example inside an ```BaseModelListener```
 
 ```java
 //assetEntry is an Entity, Model
-try {
-    String eventType = "event bla";
-    long companyId = CompanyThreadLocal.getCompanyId().longValue();
-    long userId = 0L;
-    if (null != PrincipalThreadLocal.getName()) {
-        userId = GetterUtil.getLong(PrincipalThreadLocal.getName());
-    }
-    AuditRequestThreadLocal auditRequestThreadLocal = AuditRequestThreadLocal.getAuditThreadLocal();
-    long realUserId = auditRequestThreadLocal.getRealUserId();
-    String realUserName = PortalUtil.getUserName(realUserId, "");
-    JSONObject additionalInfo = JSONFactoryUtil.createJSONObject();
+try{
+				String eventType="event bla";
+				long companyId=CompanyThreadLocal.getCompanyId().longValue();
+				long userId=0L;
+				if(null!=PrincipalThreadLocal.getName()){
+				userId=GetterUtil.getLong(PrincipalThreadLocal.getName());
+				}
+				AuditRequestThreadLocal auditRequestThreadLocal=AuditRequestThreadLocal.getAuditThreadLocal();
+				long realUserId=auditRequestThreadLocal.getRealUserId();
+				String realUserName=PortalUtil.getUserName(realUserId,"");
+				JSONObject additionalInfo=JSONFactoryUtil.createJSONObject();
 
-    if ((realUserId > 0L) && (userId != realUserId)) {
-        additionalInfo.put("doAsUserId", String.valueOf(userId));
-        additionalInfo.put("doAsUserName", PortalUtil.getUserName(userId, ""));
-    }
-    additionalInfo.put("name", organization.getName());
-    additionalInfo.put("type",organization.getType());
-    additionalInfo.put("countryId", organization.getCountryId());
-    additionalInfo.put("regionId", organization.getRegionId());
-    if(organization.getParentOrganization() != null) {
-        additionalInfo.put("parentName", organization.getParentOrganization().getName());
-    }
+				if((realUserId>0L)&&(userId!=realUserId)){
+				additionalInfo.put("doAsUserId",String.valueOf(userId));
+				additionalInfo.put("doAsUserName",PortalUtil.getUserName(userId,""));
+				}
+				additionalInfo.put("name",organization.getName());
+				additionalInfo.put("type",organization.getType());
+				additionalInfo.put("countryId",organization.getCountryId());
+				additionalInfo.put("regionId",organization.getRegionId());
+				if(organization.getParentOrganization()!=null){
+				additionalInfo.put("parentName",organization.getParentOrganization().getName());
+				}
 
-    AuditMessage auditMessage = new AuditMessage(
-        eventType, companyId, realUserId, realUserName, AssetEntry.class.getName(), String.valueOf(assetEntry.getEntryId()), null, additionalInfo);
+				AuditMessage auditMessage=new AuditMessage(
+				eventType,companyId,realUserId,realUserName,AssetEntry.class.getName(),String.valueOf(assetEntry.getEntryId()),null,additionalInfo);
 
-    AuditRouterUtil.route(auditMessage);
+				AuditRouterUtil.route(auditMessage);
 
-} catch(Exception exception) {
-    throw new ModelListenerException(exception);
-} finally {
-    super.onAfterUpdate(assetEntry);
-}
+				}catch(Exception exception){
+				throw new ModelListenerException(exception);
+				}finally{
+				super.onAfterUpdate(assetEntry);
+				}
 ```
 
 ---
 
 ## Example of AUI checkboxes
 
-This script enables/disables a button according to a random number of checkboxes.  
+This script enables/disables a button according to a random number of checkboxes.
 
-(this table and button are inside a form)  
+(this table and button are inside a form)
+
 ```jsp
 <table id="" class="table table-bordered table-striped" style="width: 100%">
     <thead>
@@ -1473,11 +1481,11 @@ AUI().ready('aui-node', function(A) {
 
 + ```public class com.liferay.portal.servlet.filters.dynamiccss.DynamicCSSUtil``` -> theme sass cache generation trigger
 + plugins:
-  + portlet
-  + hook
-  + theme
-  + ext
-  + layout
+    + portlet
+    + hook
+    + theme
+    + ext
+    + layout
 + set proxy inside dev environment
   build-common-ivy.xml
   ```xml
@@ -1485,33 +1493,34 @@ AUI().ready('aui-node', function(A) {
   <setproxy proxyhost="" proxyport=""/>
   ```
 + Eclipse setup example
-  + download Eclipse
-  + download and install Liferay IDE from Eclipse marketplace or web
-  + create new workspace
-  + set the jdk
-  + download from project version system the sdk
-  + set the just downloaded sdk as default
-  + if you want you can set the source folder, tomcat bundle zip and javadoc
-  + to edit a Liferay plugin just export from sdk (project nature:liferay should be already enabled)
-  + now the Liferay menu should be enabled from context menu (es. right click on project, Liferay, build)
-  + set the proxy if any in ```build-common-ivy.xml```
-    + ```<setproxy proxyhost="" proxyport=""/>```
-  + if some library cannot be downloaded automatically from ivy, just download and add it in ```/liferay-plugins-sdk-6.2/.ivy/cache``` (unzipped) [example of added zip](https://github.com/simon387/job_note/blob/master/java/jars/biz.zip)
-  + to include the Liferay source code into Eclipse:
-    + right click on Package Explorer
-    + import
-    + Existing project into Workspace
+    + download Eclipse
+    + download and install Liferay IDE from Eclipse marketplace or web
+    + create new workspace
+    + set the jdk
+    + download from project version system the sdk
+    + set the just downloaded sdk as default
+    + if you want you can set the source folder, tomcat bundle zip and javadoc
+    + to edit a Liferay plugin just export from sdk (project nature:liferay should be already enabled)
+    + now the Liferay menu should be enabled from context menu (es. right click on project, Liferay, build)
+    + set the proxy if any in ```build-common-ivy.xml```
+        + ```<setproxy proxyhost="" proxyport=""/>```
+    + if some library cannot be downloaded automatically from ivy, just download and add it in ```/liferay-plugins-sdk-6.2/.ivy/cache``` (
+      unzipped) [example of added zip](https://github.com/simon387/job_note/blob/master/java/jars/biz.zip)
+    + to include the Liferay source code into Eclipse:
+        + right click on Package Explorer
+        + import
+        + Existing project into Workspace
 + EXT deploy example
-  + stop Liferay
-  + remove the old ext
-    + ```sudo rm /opt/liferay/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/lib/ext/ext-NAME-ext-service.jar```
-    + ```sudo rm -rf /opt/liferay/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/webapps/NAME-ext/```
-    + ```sudo rm /opt/liferay/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/webapps/ROOT/WEB-INF/ext-NAME-ext.xml```
-    + ```sudo rm /opt/liferay/liferay/tomcat-7.0.42/webapps/ROOT/WEB-INF/lib/ext-NAME-ext-*```
-  + start Liferay
-  + after complete startup, deploy the war (just cp it)
-  + always check logs
-  + at the end restart Liferay
+    + stop Liferay
+    + remove the old ext
+        + ```sudo rm /opt/liferay/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/lib/ext/ext-NAME-ext-service.jar```
+        + ```sudo rm -rf /opt/liferay/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/webapps/NAME-ext/```
+        + ```sudo rm /opt/liferay/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/webapps/ROOT/WEB-INF/ext-NAME-ext.xml```
+        + ```sudo rm /opt/liferay/liferay/tomcat-7.0.42/webapps/ROOT/WEB-INF/lib/ext-NAME-ext-*```
+    + start Liferay
+    + after complete startup, deploy the war (just cp it)
+    + always check logs
+    + at the end restart Liferay
 
 ---
 
@@ -1545,9 +1554,9 @@ just do in this way:
 4. delete the project keeping the files on file system
 5. reimport project from SDK plugin
 6. for sure you have also to fix ```.classpath```
-   1. right click on project
-   2. Java Build Path
-   3. double click on unbound things, and replace with correct value (if necessary, for example, copy lib jar from server to your local environment)
+    1. right click on project
+    2. Java Build Path
+    3. double click on unbound things, and replace with correct value (if necessary, for example, copy lib jar from server to your local environment)
 
 Tips: sometime you need to play with checkboxes (Java Build Path -> Order and Export tab)
 
@@ -1573,8 +1582,9 @@ or
 ## Alert, dialog, popup example (liferay 6.2)
 
 ```html
+
 <div class="yui3-skin-sam">
-    <div id="modal"></div>
+	<div id="modal"></div>
 </div>
 ```
 
@@ -1604,7 +1614,7 @@ YUI().use(
 
 ```javascript
 var liferayForm = Liferay.Form.get('YOUR-FORM-ID');
-liferayForm.formValidator.get('rules')['ID-OF-YOUR-INPUT-FIELD'] = {required : true};
+liferayForm.formValidator.get('rules')['ID-OF-YOUR-INPUT-FIELD'] = {required: true};
 ```
 
 ---
@@ -1612,6 +1622,7 @@ liferayForm.formValidator.get('rules')['ID-OF-YOUR-INPUT-FIELD'] = {required : t
 ## Backend validation example
 
 jsp:
+
 ```jsp
 <%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 <%@ taglib uri="http://liferay.com/tld/ui" prefix="liferay-ui" %>
@@ -1652,6 +1663,7 @@ jsp:
 ```
 
 java:
+
 ```java
 import javax.portlet.ActionRequest;
 import javax.portlet.ActionResponse;
@@ -1669,37 +1681,40 @@ import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.servlet.SessionErrors;
 import com.liferay.portal.kernel.util.ParamUtil;
 
-@Controller(value = "ServerSideValidationTestViewController")
-@RequestMapping("VIEW")
+
+@Controller ( value = "ServerSideValidationTestViewController" )
+@RequestMapping ( "VIEW" )
 public class ServerSideValidationTestViewController {
- private static Log log = LogFactoryUtil.getLog(ServerSideValidationTestViewController.class);
- /*
-  * maps the incoming portlet request to this method
-  * Since no request parameters are specified, therefore the default
-  * render method will always be this method
-  */
- @RenderMapping
- public String handleRenderRequest(RenderRequest request,RenderResponse response,Model model){
-  
-  return "profile";
- }
- 
- @ActionMapping(params = "action=submitProfile") 
- public void submitProfileAction(ActionRequest request, ActionResponse response) {
-  String name=ParamUtil.get(request, "name", "");
-  String age=ParamUtil.get(request, "age", "");
-  String email=ParamUtil.get(request, "email", "");
-  
-  if(name ==null || "".equalsIgnoreCase(name)){
-   SessionErrors.add(request, "name-is-required");
-  }
-  if(age == null || "".equalsIgnoreCase(age)){
-   SessionErrors.add(request, "age-is-required");
-  }
-  if(email == null || "".equalsIgnoreCase(email)){
-   SessionErrors.add(request, "email-is-required");
-  }
- }
+
+	private static Log log = LogFactoryUtil.getLog ( ServerSideValidationTestViewController.class );
+
+	/*
+	 * maps the incoming portlet request to this method
+	 * Since no request parameters are specified, therefore the default
+	 * render method will always be this method
+	 */
+	@RenderMapping
+	public String handleRenderRequest ( RenderRequest request, RenderResponse response, Model model ) {
+
+		return "profile";
+	}
+
+	@ActionMapping ( params = "action=submitProfile" )
+	public void submitProfileAction ( ActionRequest request, ActionResponse response ) {
+		String name = ParamUtil.get ( request, "name", "" );
+		String age = ParamUtil.get ( request, "age", "" );
+		String email = ParamUtil.get ( request, "email", "" );
+
+		if ( name == null || "".equalsIgnoreCase ( name ) ) {
+			SessionErrors.add ( request, "name-is-required" );
+		}
+		if ( age == null || "".equalsIgnoreCase ( age ) ) {
+			SessionErrors.add ( request, "age-is-required" );
+		}
+		if ( email == null || "".equalsIgnoreCase ( email ) ) {
+			SessionErrors.add ( request, "email-is-required" );
+		}
+	}
 
 }
 ```
@@ -1738,6 +1753,7 @@ or
 working example:
 
 contractList.jsp
+
 ```jsp
 <portlet:actionURL var="visualizzaContratto" name="dettagliContrattoHelper">
     <portlet:param name="jspPage" value="/html/contract/dettaglioContratto.jsp"/>
@@ -1747,31 +1763,33 @@ contractList.jsp
 ```
 
 Java Portlet Class
+
 ```java
-public void dettagliContrattoHelper(final ActionRequest actionRequest, final ActionResponse actionResponse) throws SystemException, PortalException {
-    String backURL = actionRequest.getParameter(BACK_URL);
-    Contract contract = dettagliContrattoUffVenditeActionHelper(actionRequest, actionResponse);
-    actionRequest.setAttribute(BACK_URL, backURL);
-    if (null != backURL) {
-        actionResponse.setRenderParameter(BACK_URL, backURL);
-    }
-    List<String> allegati = new ArrayList();
-    List<String> nomiAllegati = new ArrayList();
-    DynamicQuery query = DynamicQueryFactoryUtil.forClass(Allegato.class, ALLEGATO, PortletClassLoaderUtil.getClassLoader());
-    query.add(RestrictionsFactoryUtil.eq(CONTRACT_ID, contract.getId()));
-    List<Allegato> allegatoList = AllegatoLocalServiceUtil.dynamicQuery(query);
-    for (Allegato allegato : allegatoList) {
-        loadAllegatiListHelper(allegato, actionRequest, allegati);
-        nomiAllegati.add(allegato.getName());
-    }
-    String[] fileUrls = allegati.toArray(new String[0]);
-    String[] nomiAllegatiString = nomiAllegati.toArray(new String[0]);
-    actionRequest.setAttribute(FILE_URLS, fileUrls);
-    actionRequest.setAttribute(NOMI_ALLEGATI_STRING, nomiAllegatiString);
-}
+public void dettagliContrattoHelper(final ActionRequest actionRequest,final ActionResponse actionResponse)throws SystemException,PortalException{
+				String backURL=actionRequest.getParameter(BACK_URL);
+				Contract contract=dettagliContrattoUffVenditeActionHelper(actionRequest,actionResponse);
+				actionRequest.setAttribute(BACK_URL,backURL);
+				if(null!=backURL){
+				actionResponse.setRenderParameter(BACK_URL,backURL);
+				}
+				List<String> allegati=new ArrayList();
+				List<String> nomiAllegati=new ArrayList();
+				DynamicQuery query=DynamicQueryFactoryUtil.forClass(Allegato.class,ALLEGATO,PortletClassLoaderUtil.getClassLoader());
+				query.add(RestrictionsFactoryUtil.eq(CONTRACT_ID,contract.getId()));
+				List<Allegato> allegatoList=AllegatoLocalServiceUtil.dynamicQuery(query);
+				for(Allegato allegato:allegatoList){
+				loadAllegatiListHelper(allegato,actionRequest,allegati);
+				nomiAllegati.add(allegato.getName());
+				}
+				String[]fileUrls=allegati.toArray(new String[0]);
+				String[]nomiAllegatiString=nomiAllegati.toArray(new String[0]);
+				actionRequest.setAttribute(FILE_URLS,fileUrls);
+				actionRequest.setAttribute(NOMI_ALLEGATI_STRING,nomiAllegatiString);
+				}
 ```
 
 dettaglioContratto.jsp
+
 ```jsp
 <%
     String backURL = ParamUtil.getString(request, BACK_URL);
@@ -1811,64 +1829,62 @@ MyPortlet.java
 ```java
 public class MyPortlet extends MVCPortlet {
 
-//action method
-public void uploadFile(ActionRequest request, ActionResponse response)
-        throws Exception {
+	//action method
+	public void uploadFile ( ActionRequest request, ActionResponse response )
+					throws Exception {
 
-    UploadPortletRequest uploadRequest 
-        = PortalUtil.getUploadPortletRequest(request);
+		UploadPortletRequest uploadRequest
+						= PortalUtil.getUploadPortletRequest ( request );
 
-    ServiceContext serviceContext = ServiceContextFactory.getInstance(
-            MyPortlet.class.getName(), uploadRequest);
+		ServiceContext serviceContext = ServiceContextFactory.getInstance (
+						MyPortlet.class.getName (), uploadRequest );
 
-    this.uploadFileEntity(serviceContext, uploadRequest);
+		this.uploadFileEntity ( serviceContext, uploadRequest );
 
-    response.setRenderParameter("mvcPath", "/html/view.jsp");
-}
+		response.setRenderParameter ( "mvcPath", "/html/view.jsp" );
+	}
 
-// Create a folder called "A_FOLDER" in Documents & Media
-private void uploadFileEntity(ServiceContext serviceContext, 
-        UploadPortletRequest request) 
-                throws PortalException, SystemException {
+	// Create a folder called "A_FOLDER" in Documents & Media
+	private void uploadFileEntity ( ServiceContext serviceContext,
+					UploadPortletRequest request )
+					throws PortalException, SystemException {
 
-    String filename = "";
-    String description = "File description";
+		String filename = "";
+		String description = "File description";
 
-    try{
+		try {
 
-        // serviceContext.scopeGroupId is the groupId of a site
-        long repositoryId = DLFolderConstants.getDataRepositoryId(
-            serviceContext.getScopeGroupId(), 
-            DLFolderConstants.DEFAULT_PARENT_FOLDER_ID);
+			// serviceContext.scopeGroupId is the groupId of a site
+			long repositoryId = DLFolderConstants.getDataRepositoryId (
+							serviceContext.getScopeGroupId (),
+							DLFolderConstants.DEFAULT_PARENT_FOLDER_ID );
 
+			Folder f = DLAppLocalServiceUtil.getFolder (
+							repositoryId, 0L, "A_FOLDER" );
+			long folderId = f.getFolderId ();
 
-        Folder f = DLAppLocalServiceUtil.getFolder(
-            repositoryId, 0L, "A_FOLDER");
-        long folderId = f.getFolderId();
+			File file = request.getFile ( "file-to-upload" );
+			filename = request.getFileName ( "file-to-upload" );
+			String mimeType = MimeTypesUtil.getContentType ( file );
 
+			FileEntry entry = DLAppLocalServiceUtil.addFileEntry ( serviceContext.getUserId (),
+							repositoryId, folderId, filename,
+							mimeType, filename, description, "",
+							file, serviceContext
+			);
 
-        File file = request.getFile("file-to-upload");
-        filename = request.getFileName("file-to-upload");
-        String mimeType =  MimeTypesUtil.getContentType(file);
+		} catch ( PortalException e ) {
+			_log.error ( "An exception occured uploading file: "
+							+ e.getMessage () );
+			throw e;
+		} catch ( SystemException e ) {
+			_log.error ( "An exception occured uploading file: "
+							+ e.getMessage () );
+			throw e;
+		}
+	}
 
-        FileEntry entry = DLAppLocalServiceUtil.addFileEntry(serviceContext.getUserId(), 
-                repositoryId, folderId, filename, 
-                mimeType, filename, description, "", 
-                file, serviceContext
-        );  
-
-    }catch(PortalException e){
-        _log.error("An exception occured uploading file: " 
-                + e.getMessage());
-        throw e;
-    }catch(SystemException e ){
-        _log.error("An exception occured uploading file: " 
-                + e.getMessage());
-        throw e;
-    }
-}
-
-private static Log _log = LogFactoryUtil.getLog(MyPortlet.class);
+	private static Log _log = LogFactoryUtil.getLog ( MyPortlet.class );
 }
 ```
 
@@ -1923,11 +1939,11 @@ package com.liferay.site.admin.web.internal.constants;
  */
 public class SiteAdminPortletKeys {
 
-    public static final String SITE_ADMIN =
-        "com_liferay_site_admin_web_portlet_SiteAdminPortlet";
+	public static final String SITE_ADMIN =
+					"com_liferay_site_admin_web_portlet_SiteAdminPortlet";
 
-    public static final String SITE_SETTINGS =
-        "com_liferay_site_admin_web_portlet_SiteSettingsPortlet";
+	public static final String SITE_SETTINGS =
+					"com_liferay_site_admin_web_portlet_SiteSettingsPortlet";
 
 }
 ```
@@ -1942,28 +1958,20 @@ public class SiteAdminPortletKeys {
 4. set the server in DEV mode
 
 ```tomcat-7.0.62/webapps/ROOT/WEB-INF/classes/portal.ext.properties```
+
 ```properties
 theme.css.fast.load=false
 theme.images.fast.load=false
-
 javascript.fast.load=true
 javascript.log.enabled=false
-
 layout.template.cache.enabled=false
-
 browser.launcher.url=
-
 combo.check.timestamp=true
-
 freemarker.engine.cache.storage=soft:1
 freemarker.engine.resource.modification.check.interval=0
-
 log.sanitizer.enabled=false
-
 minifier.enabled=false
-
 openoffice.cache.enabled=false
-
 com.liferay.portal.servlet.filters.cache.CacheFilter=false
 com.liferay.portal.servlet.filters.etag.ETagFilter=false
 com.liferay.portal.servlet.filters.header.HeaderFilter=false
@@ -1975,9 +1983,11 @@ com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true
 (30 70 example)
 
 ```liferay-look-and-feel.xml```
+
 ```xml
+
 <theme id="ADRTEL-theme" name="ADRTEL-theme">
-		
+
 	<layout-templates>
 		<custom>
 			<layout-template id="layoutAdrtelTwoCol3070" name="Adrtel Grid 30-70 1 Row">
@@ -1988,7 +1998,9 @@ com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true
 ```
 
 ```layout_ADRTEL_30_70.tpl```
+
 ```xml
+
 <div class="columns-2" id="main-content" role="main">
 	<div class="portlet-layout row-fluid">
 		<div class="portlet-column portlet-column-first span4" id="column-1">
@@ -2033,21 +2045,22 @@ Select with idiomas on the theme:
 Theme settings example
 
 ```xml
+
 <look-and-feel>
-    <compatibility>
-        <version>6.2.2+</version>
-    </compatibility>
-    <theme id="Tema-Restyle2015B" name="Tema-Restyle2015B" >
-        <settings>
-            <setting configurable="true" key="portlet-setup-show-borders-default" type="checkbox" value="false"></setting>
-            <setting configurable="false" key="show-site-name-default" value="false"></setting>
-            <setting configurable="false" key="show-site-name-supported" value="true"></setting>
-        </settings>
+	<compatibility>
+		<version>6.2.2+</version>
+	</compatibility>
+	<theme id="Tema-Restyle2015B" name="Tema-Restyle2015B">
+		<settings>
+			<setting configurable="true" key="portlet-setup-show-borders-default" type="checkbox" value="false"></setting>
+			<setting configurable="false" key="show-site-name-default" value="false"></setting>
+			<setting configurable="false" key="show-site-name-supported" value="true"></setting>
+		</settings>
 ```
 
 ---
 
-## Embedding a portlet with preferences 
+## Embedding a portlet with preferences
 
 + Liferay 6.2
 + Velocity
@@ -2068,24 +2081,25 @@ $velocityPortletPreferences.reset()
 
 ```java
 public class MyPortlet extends MVCPortlet {
-    @ProcessAction(name = "saveConfiguration")
-    public void saveConfiguration(ActionRequest request, ActionResponse response) throws PortletException, IOException {
-        String myField = ParamUtil.getString(request, "myField");
-        PortletPreferences portletPreferences = request.getPreferences();
-        if (myField != null && !myField.isEmpty()) {
-            portletPreferences.setValue("myField", myField);
-            portletPreferences.store();
-            response.setPortletMode(PortletMode.VIEW);
-        }
-    }
 
-    @Override
-    public void doEdit(RenderRequest request, RenderResponse response) throws IOException, PortletException {
-        PortletPreferences portletPreferences = request.getPreferences();
-        String myField = portletPreferences.getValue("myField", StringPool.BLANK);
-        request.setAttribute("myField", myField);
-        super.doEdit(request, response);
-    }
+	@ProcessAction ( name = "saveConfiguration" )
+	public void saveConfiguration ( ActionRequest request, ActionResponse response ) throws PortletException, IOException {
+		String myField = ParamUtil.getString ( request, "myField" );
+		PortletPreferences portletPreferences = request.getPreferences ();
+		if ( myField != null && !myField.isEmpty () ) {
+			portletPreferences.setValue ( "myField", myField );
+			portletPreferences.store ();
+			response.setPortletMode ( PortletMode.VIEW );
+		}
+	}
+
+	@Override
+	public void doEdit ( RenderRequest request, RenderResponse response ) throws IOException, PortletException {
+		PortletPreferences portletPreferences = request.getPreferences ();
+		String myField = portletPreferences.getValue ( "myField", StringPool.BLANK );
+		request.setAttribute ( "myField", myField );
+		super.doEdit ( request, response );
+	}
 }
 ```
 
@@ -2121,17 +2135,18 @@ String myField = portletPreferences.getValue("myField", "no-string-value");
 How to abilitate portlet edit-mode:
 
 ```portlet.xml```
+
 ```xml
 ...
 <init-param>
-    <name>edit-template</name>
-    <value>/html/contacts/edit.jsp</value>
+	<name>edit-template</name>
+	<value>/html/contacts/edit.jsp</value>
 </init-param>
-...
+		...
 <supports>
-    <mime-type>text/html</mime-type>
-    <portlet-mode>view</portlet-mode>
-    <portlet-mode>edit</portlet-mode>
+<mime-type>text/html</mime-type>
+<portlet-mode>view</portlet-mode>
+<portlet-mode>edit</portlet-mode>
 </supports>
 ```
 
@@ -2168,7 +2183,8 @@ $("#loginOne").modal('toggle');
 
 ## How to know if an user got a specific role
 
-From JSP java code:  
+From JSP java code:
+
 ```java
 request.isUserInRole("custom role name or standard one");
 ```
@@ -2199,29 +2215,30 @@ Controller:
 
 ```java
 public class MyController extends MVCPortlet {
-    public void doView(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
-        ThemeDisplay themeDisplay = (ThemeDisplay) renderRequest.getAttribute(WebKeys.THEME_DISPLAY);
-        Layout layout = themeDisplay.getLayout();
-        Locale locale = themeDisplay.getLocale();
-        long groupId = themeDisplay.getScopeGroupId();
-        String articleId = (String) layout.getExpandoBridge().getAttribute(" name ");
-        String structureId = PropsUtil.get(" structure.name ");
-        Long lStructureId = new Long(structureId);
 
-        JournalArticle journalArticle = JournalArticleLocalServiceUtil.getArticle(groupId, articleId);
-        journalArticle = JournalArticleLocalServiceUtil.getLatestArticle(journalArticle.getGroupId(), journalArticle.getArticleId());
-        DDMStructure ddmStructure = DDMStructureLocalServiceUtil.getDDMStructure(lStructureId);
+	public void doView ( RenderRequest renderRequest, RenderResponse renderResponse ) throws IOException, PortletException {
+		ThemeDisplay themeDisplay = (ThemeDisplay) renderRequest.getAttribute ( WebKeys.THEME_DISPLAY );
+		Layout layout = themeDisplay.getLayout ();
+		Locale locale = themeDisplay.getLocale ();
+		long groupId = themeDisplay.getScopeGroupId ();
+		String articleId = (String) layout.getExpandoBridge ().getAttribute ( " name " );
+		String structureId = PropsUtil.get ( " structure.name " );
+		Long lStructureId = new Long ( structureId );
 
-        Fields fields = JournalConverterUtil.getDDMFields(ddmStructure, journalArticle.getContent());
-        String imgUrl = Validator.isNotNull(fields.get("imgUrl")) ? (String) fields.get("imgUrl").getValue(locale) : StringPool.BLANK;
+		JournalArticle journalArticle = JournalArticleLocalServiceUtil.getArticle ( groupId, articleId );
+		journalArticle = JournalArticleLocalServiceUtil.getLatestArticle ( journalArticle.getGroupId (), journalArticle.getArticleId () );
+		DDMStructure ddmStructure = DDMStructureLocalServiceUtil.getDDMStructure ( lStructureId );
 
-        MyModelClass myModelClass = new MyModelClass();
-        myModelClass.setImgUrl(imgUrl);
+		Fields fields = JournalConverterUtil.getDDMFields ( ddmStructure, journalArticle.getContent () );
+		String imgUrl = Validator.isNotNull ( fields.get ( "imgUrl" ) ) ? (String) fields.get ( "imgUrl" ).getValue ( locale ) : StringPool.BLANK;
 
-        renderRequest.setAttribute("myModelClass", myModelClass);
+		MyModelClass myModelClass = new MyModelClass ();
+		myModelClass.setImgUrl ( imgUrl );
 
-        super.doView(renderRequest, renderResponse);
-    }
+		renderRequest.setAttribute ( "myModelClass", myModelClass );
+
+		super.doView ( renderRequest, renderResponse );
+	}
 }
 
 ```
@@ -2245,24 +2262,24 @@ MyModelClass myModelClass = (MyModelClass)request.getAttribute("myModelClass");
 ## Useful Java methods
 
 ```java
-public static long classNameIdForClass(Class<?> clazz) throws SystemException {
-    return ClassNameLocalServiceUtil
-        .getClassName(clazz.getName())
-        .getClassNameId();
-}
+public static long classNameIdForClass(Class<?> clazz)throws SystemException{
+				return ClassNameLocalServiceUtil
+				.getClassName(clazz.getName())
+				.getClassNameId();
+				}
 ```
 
 ```java
-public static Class<?> classForClassNameId(long classNameId) throws PortalException, SystemException {
-    try {
-        String modelClassName = ClassNameLocalServiceUtil
-            .getClassName(classNameId)
-            .getValue();
-        return Class.forName(modelClassName);
-    } catch (ClassNotFoundException e) {
-        throw new SystemException(e);
-    }
-}
+public static Class<?> classForClassNameId(long classNameId)throws PortalException,SystemException{
+				try{
+				String modelClassName=ClassNameLocalServiceUtil
+				.getClassName(classNameId)
+				.getValue();
+				return Class.forName(modelClassName);
+				}catch(ClassNotFoundException e){
+				throw new SystemException(e);
+				}
+				}
 ```
 
 ---
@@ -2274,23 +2291,24 @@ Usually server configuration like datasources are in ```standalone.xml```
 Example:
 
 ```xml
+
 <subsystem xmlns="urn:jboss:domain:datasources:1.2">
-    <datasources>
-        <datasource jndi-name="java:/jdbc/nameeeeee" pool-name="namee" enabled="true" use-java-context="true">
-            <connection-url>jdbc:oracle:thin:@xxx.xxx.xxx.xxx:1521:ORCL</connection-url>
-            <driver>oracle</driver>
-            <security>
-                <user-name>xxx</user-name>
-                <password>xxx</password>
-            </security>
-        </datasource>
-        <drivers>
-            <driver name="oracle" module="com.liferay.portal">
-                <driver-class>oracle.jdbc.OracleDriver</driver-class>
-                <xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
-            </driver>
-        </drivers>
-    </datasources>
+	<datasources>
+		<datasource jndi-name="java:/jdbc/nameeeeee" pool-name="namee" enabled="true" use-java-context="true">
+			<connection-url>jdbc:oracle:thin:@xxx.xxx.xxx.xxx:1521:ORCL</connection-url>
+			<driver>oracle</driver>
+			<security>
+				<user-name>xxx</user-name>
+				<password>xxx</password>
+			</security>
+		</datasource>
+		<drivers>
+			<driver name="oracle" module="com.liferay.portal">
+				<driver-class>oracle.jdbc.OracleDriver</driver-class>
+				<xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
+			</driver>
+		</drivers>
+	</datasources>
 </subsystem>
 ```
 
@@ -2315,7 +2333,7 @@ are missing inside this declaration ```/opt/jboss-eap-x.y/modules/com/liferay/po
 Always pay attenction to permissions on them (control panel)! or you will get nullpointers!
 
 ```java
-String ufficioVenditeDellUser = (String)user.getExpandoBridge().getAttribute(UFFICIO_VENDITE_CUSTOM_FIELD);
+String ufficioVenditeDellUser=(String)user.getExpandoBridge().getAttribute(UFFICIO_VENDITE_CUSTOM_FIELD);
 ```
 
 ---
@@ -2341,12 +2359,12 @@ themeDisplay.getUserId();
 ```java
 import com.liferay.portal.kernel.json.JSONFactoryUtil;
 
-Blob blob = //input Blob Object got from somewhere
-int blobLength = (int) blob.length();
-byte[] blobAsBytes = blob.getBytes(1, blobLength);
-blob.free();//release the blob and free up memory. (since JDBC 4.0)
-String blobAsString = new String(blobAsBytes, StandardCharsets.UTF_8);
-JSONObject jSONObject = JSONFactoryUtil.createJSONObject(blobAsString);
+Blob blob= //input Blob Object got from somewhere
+				int blobLength=(int)blob.length();
+				byte[]blobAsBytes=blob.getBytes(1,blobLength);
+				blob.free();//release the blob and free up memory. (since JDBC 4.0)
+				String blobAsString=new String(blobAsBytes,StandardCharsets.UTF_8);
+				JSONObject jSONObject=JSONFactoryUtil.createJSONObject(blobAsString);
 ```
 
 ---
@@ -2356,12 +2374,13 @@ JSONObject jSONObject = JSONFactoryUtil.createJSONObject(blobAsString);
 ```java
 import com.liferay.portal.kernel.json.JSONFactoryUtil;
 import com.liferay.portal.kernel.dao.jdbc.OutputBlob;
+
 import java.io.ByteArrayInputStream;
 
-JSONObject jSONObject = //input JSONObject Object got from somewhere
-String jSONObjectAsString = jSONObject.toString();
-InputStream inputStream = new ByteArrayInputStream(jSONObjectAsString.getBytes(StandardCharsets.UTF_8));
-OutputBlob blob = new OutputBlob(inputStream, jSONObjectAsString.length());
+JSONObject jSONObject= //input JSONObject Object got from somewhere
+				String jSONObjectAsString=jSONObject.toString();
+				InputStream inputStream=new ByteArrayInputStream(jSONObjectAsString.getBytes(StandardCharsets.UTF_8));
+				OutputBlob blob=new OutputBlob(inputStream,jSONObjectAsString.length());
 ```
 
 ---
@@ -2427,13 +2446,13 @@ Example:
 <!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 6.2.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_6_2_0.dtd">
 
 <liferay-portlet-app>
-    <portlet>
-        <portlet-name>croccantina</portlet-name>
-        <icon>/icon.png</icon>
-        <configuration-action-class>com.liferay.portal.kernel.portlet.DefaultConfigurationAction</configuration-action-class>
-        ...
-        <header-portlet-javascript>/js/jsrender.min.js</header-portlet-javascript>
-        ...
+	<portlet>
+		<portlet-name>croccantina</portlet-name>
+		<icon>/icon.png</icon>
+		<configuration-action-class>com.liferay.portal.kernel.portlet.DefaultConfigurationAction</configuration-action-class>
+		...
+		<header-portlet-javascript>/js/jsrender.min.js</header-portlet-javascript>
+		...
 ```
 
 ---
@@ -2441,7 +2460,7 @@ Example:
 ## Portlet refresh by JS
 
 ```javascript
-Liferay.Portlet.refresh("#p_p_id_portlet_name_" );
+Liferay.Portlet.refresh("#p_p_id_portlet_name_");
 ```
 
 ---
@@ -2451,17 +2470,19 @@ Liferay.Portlet.refresh("#p_p_id_portlet_name_" );
 Example:
 
 Portlet class:
+
 ```java
-if (sendMail(nome, email, telefono, motivo)) {
-    SessionMessages.add(actionRequest, REQUEST_OK);
-    log.info("Mail sent!");
-} else {
-    SessionErrors.add(actionRequest, REQUEST_KO);
-    log.error("Can't send mail.");
-}
+if(sendMail(nome,email,telefono,motivo)){
+				SessionMessages.add(actionRequest,REQUEST_OK);
+				log.info("Mail sent!");
+				}else{
+				SessionErrors.add(actionRequest,REQUEST_KO);
+				log.error("Can't send mail.");
+				}
 ```
 
 JSP:
+
 ```jsp
 <liferay-ui:success key="<%=REQUEST_OK%>" message="contacts-portlet-request-ok" />
 <liferay-ui:error key="<%=REQUEST_KO%>" message="contacts-portlet-request-ko" />
@@ -2474,44 +2495,44 @@ JSP:
 ```xml
 <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
 <dependency>
-    <groupId>javax.mail</groupId>
-    <artifactId>mail</artifactId>
-    <version>1.4</version>
-    <scope>provided</scope>
+	<groupId>javax.mail</groupId>
+	<artifactId>mail</artifactId>
+	<version>1.4</version>
+	<scope>provided</scope>
 </dependency>
 ```
 
 ```java
-public static void sendMail(String subject, String body, String from, String to)
-        throws AddressException {
-    InternetAddress fromAddress;
-    InternetAddress toAddress;
-    fromAddress = new InternetAddress(from);
-    toAddress = new InternetAddress(to);
-    MailMessage mailMessage = new MailMessage();
-    mailMessage.setTo(toAddress);
-    mailMessage.setFrom(fromAddress);
-    mailMessage.setSubject(subject);
-    mailMessage.setBody(body);
-    mailMessage.setHTMLFormat(true);
-    MailServiceUtil.sendEmail(mailMessage);
-}
+public static void sendMail(String subject,String body,String from,String to)
+				throws AddressException{
+				InternetAddress fromAddress;
+				InternetAddress toAddress;
+				fromAddress=new InternetAddress(from);
+				toAddress=new InternetAddress(to);
+				MailMessage mailMessage=new MailMessage();
+				mailMessage.setTo(toAddress);
+				mailMessage.setFrom(fromAddress);
+				mailMessage.setSubject(subject);
+				mailMessage.setBody(body);
+				mailMessage.setHTMLFormat(true);
+				MailServiceUtil.sendEmail(mailMessage);
+				}
 ```
 
 or
 
 ```java
-MailMessage mailMessage = new MailMessage();
-mailMessage.setHTMLFormat(false);
-mailMessage.setSubject("subject");
-mailMessage.setBody("body");
-try {
-    mailMessage.setFrom(new InternetAddress("from@gmail.com", "from name as title of the mail"));
-    mailMessage.setTo(new InternetAddress("to@gmail.com"));
-    MailEngine.send(mailMessage);
-} catch (AddressException | MailEngineException | UnsupportedEncodingException e1) {
-    e1.printStackTrace();
-}
+MailMessage mailMessage=new MailMessage();
+				mailMessage.setHTMLFormat(false);
+				mailMessage.setSubject("subject");
+				mailMessage.setBody("body");
+				try{
+				mailMessage.setFrom(new InternetAddress("from@gmail.com","from name as title of the mail"));
+				mailMessage.setTo(new InternetAddress("to@gmail.com"));
+				MailEngine.send(mailMessage);
+				}catch(AddressException|MailEngineException|UnsupportedEncodingException e1){
+				e1.printStackTrace();
+				}
 ```
 
 ---
@@ -2521,14 +2542,15 @@ try {
 Add this to ```liferay-portlet.xml```
 
 ```xml
+
 <portlet>
-    ...
-    <user-notification-definitions>
-        dockbar-user-notification-definitions.xml
-    </user-notification-definitions>
-    <user-notification-handler-class>
-        custom.p_ackage.path.DockBarUserNotificationHandler
-    </user-notification-handler-class>
+	...
+	<user-notification-definitions>
+		dockbar-user-notification-definitions.xml
+	</user-notification-definitions>
+	<user-notification-handler-class>
+		custom.p_ackage.path.DockBarUserNotificationHandler
+	</user-notification-handler-class>
 ```
 
 Create this new Class
@@ -2537,30 +2559,31 @@ Create this new Class
 package custom.p_ackage.path.notification;
 
 public class DockBarUserNotificationHandler extends BaseUserNotificationHandler {
-    public static final String PORTLET_ID = "dockbarnotificationaction_WAR_DockBarCustomNotificationportlet";
 
-    public DockBarUserNotificationHandler() {
-        setPortletId(DockBarUserNotificationHandler.PORTLET_ID);
-    }
+	public static final String PORTLET_ID = "dockbarnotificationaction_WAR_DockBarCustomNotificationportlet";
 
-    @Override
-    protected String getBody(UserNotificationEvent userNotificationEvent, ServiceContext serviceContext) throws Exception {
-        JSONObject jsonObject = JSONFactoryUtil.createJSONObject(userNotificationEvent.getPayload());
-//long userId = jsonObject.getLong("userId");
-        String notificationText = jsonObject.getString("notificationText");
-        String title = "<strong>Dockbar Custom User Notification for You</strong>";
-        String body = StringUtil.replace(getBodyTemplate(), new String[]{
-                        "[$TITLE$]", "[$BODY_TEXT$]"},
-                new String[]{title, notificationText});
-        return body;
-    }
+	public DockBarUserNotificationHandler () {
+		setPortletId ( DockBarUserNotificationHandler.PORTLET_ID );
+	}
 
-    protected String getBodyTemplate() {
-        StringBundler sb = new StringBundler(5);
-        sb.append("<div class=\"title\">[$TITLE$]</div><div ");
-        sb.append("class=\"body\">[$BODY_TEXT$]</div>");
-        return sb.toString();
-    }
+	@Override
+	protected String getBody ( UserNotificationEvent userNotificationEvent, ServiceContext serviceContext ) throws Exception {
+		JSONObject jsonObject = JSONFactoryUtil.createJSONObject ( userNotificationEvent.getPayload () );
+		//long userId = jsonObject.getLong("userId");
+		String notificationText = jsonObject.getString ( "notificationText" );
+		String title = "<strong>Dockbar Custom User Notification for You</strong>";
+		String body = StringUtil.replace ( getBodyTemplate (), new String[] {
+										"[$TITLE$]", "[$BODY_TEXT$]" },
+						new String[] { title, notificationText } );
+		return body;
+	}
+
+	protected String getBodyTemplate () {
+		StringBundler sb = new StringBundler ( 5 );
+		sb.append ( "<div class=\"title\">[$TITLE$]</div><div " );
+		sb.append ( "class=\"body\">[$BODY_TEXT$]</div>" );
+		return sb.toString ();
+	}
 }
 ```
 
@@ -2569,25 +2592,25 @@ Create this new xml and add it inside the a correct class path location (example
 ```xml
 <?xml version="1.0"?>
 <!DOCTYPE user-notification-definitions
-        PUBLIC "-//Liferay//DTD User Notification Definitions 6.2.0//EN"
-        "http://www.liferay.com/dtd/liferay-user-notification-definitions_6_2_0.dtd">
+		PUBLIC "-//Liferay//DTD User Notification Definitions 6.2.0//EN"
+		"http://www.liferay.com/dtd/liferay-user-notification-definitions_6_2_0.dtd">
 <user-notification-definitions>
-    <definition>
-        <notification-type>${custom.p_ackage.path.notification.DockBarUserNotificationHandler.PORTLET_ID}</notification-type>
-        <description>receive-a-notification-when-administrator-triggered</description>
-        <delivery-type>
-            <name>email</name>
-            <type>${com.liferay.portal.model.UserNotificationDeliveryConstants.TYPE_EMAIL}</type>
-            <default>false</default>
-            <modifiable>true</modifiable>
-        </delivery-type>
-        <delivery-type>
-            <name>website</name>
-            <type>${com.liferay.portal.model.UserNotificationDeliveryConstants.TYPE_WEBSITE}</type>
-            <default>true</default>
-            <modifiable>true</modifiable>
-        </delivery-type>
-    </definition>
+	<definition>
+		<notification-type>${custom.p_ackage.path.notification.DockBarUserNotificationHandler.PORTLET_ID}</notification-type>
+		<description>receive-a-notification-when-administrator-triggered</description>
+		<delivery-type>
+			<name>email</name>
+			<type>${com.liferay.portal.model.UserNotificationDeliveryConstants.TYPE_EMAIL}</type>
+			<default>false</default>
+			<modifiable>true</modifiable>
+		</delivery-type>
+		<delivery-type>
+			<name>website</name>
+			<type>${com.liferay.portal.model.UserNotificationDeliveryConstants.TYPE_WEBSITE}</type>
+			<default>true</default>
+			<modifiable>true</modifiable>
+		</delivery-type>
+	</definition>
 </user-notification-definitions>
 
 ```
@@ -2596,27 +2619,27 @@ And you can use it
 
 ```java
 //	public void sendUserNotification(ActionRequest actionRequest, ActionResponse actionResponse) {
-public void sendUserNotification(RenderRequest renderRequest) {
-    try {
-        List<User> users = UserLocalServiceUtil.getUsers(0,
-                UserLocalServiceUtil.getUsersCount());
-//			ServiceContext serviceContext = ServiceContextFactory.getInstance(actionRequest);
-        ServiceContext serviceContext = ServiceContextFactory.getInstance(renderRequest);
-//			String notificationText = ParamUtil.getString(actionRequest,"notifciationText");
-        String notificationText = "test text";
-        for (User user : users) {
-            JSONObject payloadJSON = JSONFactoryUtil.createJSONObject();
-            payloadJSON.put("userId", user.getUserId());
-            payloadJSON.put("notificationText", notificationText);
+public void sendUserNotification(RenderRequest renderRequest){
+				try{
+				List<User> users=UserLocalServiceUtil.getUsers(0,
+				UserLocalServiceUtil.getUsersCount());
+				//			ServiceContext serviceContext = ServiceContextFactory.getInstance(actionRequest);
+				ServiceContext serviceContext=ServiceContextFactory.getInstance(renderRequest);
+				//			String notificationText = ParamUtil.getString(actionRequest,"notifciationText");
+				String notificationText="test text";
+				for(User user:users){
+				JSONObject payloadJSON=JSONFactoryUtil.createJSONObject();
+				payloadJSON.put("userId",user.getUserId());
+				payloadJSON.put("notificationText",notificationText);
 
-            UserNotificationEventLocalServiceUtil.addUserNotificationEvent(
-                    user.getUserId(), DockBarUserNotificationHandler.PORTLET_ID,
-                    (new Date()).getTime(), user.getUserId(),payloadJSON.toString(),false, serviceContext);
-        }
-    } catch (Exception e) {
-        _log.error(e);
-    }
-}
+				UserNotificationEventLocalServiceUtil.addUserNotificationEvent(
+				user.getUserId(),DockBarUserNotificationHandler.PORTLET_ID,
+				(new Date()).getTime(),user.getUserId(),payloadJSON.toString(),false,serviceContext);
+				}
+				}catch(Exception e){
+				_log.error(e);
+				}
+				}
 ```
 
 ---
@@ -2624,10 +2647,10 @@ public void sendUserNotification(RenderRequest renderRequest) {
 ## Example of getting ServiceContext
 
 ```java
-List<Company> companies = CompanyLocalServiceUtil.getCompanies(0,1);
-Group group = GroupLocalServiceUtil.getCompanyGroup(companies.get(0).getCompanyId());
-ServiceContext serviceContext = new ServiceContext();
-serviceContext.setScopeGroupId(group.getGroupId());
+List<Company> companies=CompanyLocalServiceUtil.getCompanies(0,1);
+				Group group=GroupLocalServiceUtil.getCompanyGroup(companies.get(0).getCompanyId());
+				ServiceContext serviceContext=new ServiceContext();
+				serviceContext.setScopeGroupId(group.getGroupId());
 ```
 
 ---
@@ -2656,26 +2679,26 @@ itemLocalService = serviceLocator.findService("name-of-the-portlet-inside-bundle
 java.util.List<T> list = itemLocalService.getItems(-1, -1);
 
 out.println(
-    "uuid" + separator +
-    "resourcePrimKey" + separator +
-    "ref" + separator +
-    "companyId" + separator +
-    "groupId" + separator +
-    "createDate" + separator +
-    "modifiedDate"
+        "uuid" + separator +
+                "resourcePrimKey" + separator +
+                "ref" + separator +
+                "companyId" + separator +
+                "groupId" + separator +
+                "createDate" + separator +
+                "modifiedDate"
 );
 
 SimpleDateFormat dateFormatDate = new SimpleDateFormat("yyyy/MM/dd");
 
 for (item in list) {
     out.println(
-        item.getUuid() + separator +
-        item.getResourcePrimKey() + separator +
-        item.getRef() + separator +
-        item.getCompanyId() + separator +
-        item.getGroupId() + separator +
-        dateFormatDate.format(item.getCreateDate()) + separator +
-        dateFormatDate.format(item.getModifiedDate())
+            item.getUuid() + separator +
+                    item.getResourcePrimKey() + separator +
+                    item.getRef() + separator +
+                    item.getCompanyId() + separator +
+                    item.getGroupId() + separator +
+                    dateFormatDate.format(item.getCreateDate()) + separator +
+                    dateFormatDate.format(item.getModifiedDate())
     );
 }
 
@@ -2689,7 +2712,7 @@ for (item in list) {
 try {
     nullVar = null
     out.println(nullVar.length())
-} catch(e) {
+} catch (e) {
     out.println("""<div class="portlet-msg-error">${e}</div>""")
     e.printStackTrace(out)
 }
@@ -2843,26 +2866,28 @@ $(document).ready(function () {
 Solution: put the ```xml``` in the first portlet of the project!
 
 ```xml
+
 <scheduler-entry>
-        <scheduler-event-listener-class>
-                package.class
-        </scheduler-event-listener-class>
-        <trigger>
-                <simple>
-                        <simple-trigger-value>1</simple-trigger-value>
-                        <time-unit>minute</time-unit>
-                </simple>
-        </trigger>
+	<scheduler-event-listener-class>
+		package.class
+	</scheduler-event-listener-class>
+	<trigger>
+		<simple>
+			<simple-trigger-value>1</simple-trigger-value>
+			<time-unit>minute</time-unit>
+		</simple>
+	</trigger>
 </scheduler-entry>
 ```
 
 Example of every day run trigger:
 
 ```xml
+
 <trigger>
-    <cron>
-        <cron-trigger-value>0 30 06 ? * *</cron-trigger-value>
-    </cron>
+	<cron>
+		<cron-trigger-value>0 30 06 ? * *</cron-trigger-value>
+	</cron>
 </trigger>
 ```
 
@@ -2875,6 +2900,7 @@ Example of every day run trigger:
 Note: I always prefer to run in from command line, like production environment
 
 Example on linux, similar on Windows:
+
 1. Run Configuration
 2. Bash
 3. Script: ```/home/scelia/dev/servers/idea_liferay-portal-6.2-ce-ga6/tomcat-7.0.62/bin/startup.sh```
@@ -2913,50 +2939,54 @@ import com.liferay.portal.kernel.dao.orm.PropertyFactoryUtil;
 import com.liferay.portlet.journal.model.JournalArticle;
 import com.liferay.portlet.journal.service.JournalArticleLocalServiceUtil;
 
-try {
-    DynamicQuery dynamicQuery = DynamicQueryFactoryUtil.forClass(JournalArticle.class);
-    String structureId = 12345 + ""; // replace with real structure ID
-    int status = 0;
-    long[] userIds = new long[1];
-    userIds[0] = 12345; // replace with real user ID
-    List results = null;
-    Calendar calendar = Calendar.getInstance();
-    Date statusDate = calendar.getTime();
-    calendar.add(Calendar.DATE, -30);
-    Date fromDate = calendar.getTime();
+try{
+				DynamicQuery dynamicQuery=DynamicQueryFactoryUtil.forClass(JournalArticle.class);
+				String structureId=12345+""; // replace with real structure ID
+				int status=0;
+				long[]userIds=new long[1];
+				userIds[0]=12345; // replace with real user ID
+				List results=null;
+				Calendar calendar=Calendar.getInstance();
+				Date statusDate=calendar.getTime();
+				calendar.add(Calendar.DATE,-30);
+				Date fromDate=calendar.getTime();
 
-    Property structureIdProperty = PropertyFactoryUtil.forName("structureId");
-    Property statusProperty = PropertyFactoryUtil.forName("status");
-    Property userIdProperty = PropertyFactoryUtil.forName("userId");
-    Property statusDateProperty = PropertyFactoryUtil.forName("createDate");
+				Property structureIdProperty=PropertyFactoryUtil.forName("structureId");
+				Property statusProperty=PropertyFactoryUtil.forName("status");
+				Property userIdProperty=PropertyFactoryUtil.forName("userId");
+				Property statusDateProperty=PropertyFactoryUtil.forName("createDate");
 
-    dynamicQuery.add(structureIdProperty.eq(structureId));
-    dynamicQuery.add(statusProperty.eq(status));
-    dynamicQuery.add(userIdProperty.in(userIds));
-    dynamicQuery.add(statusDateProperty.between(fromDate, statusDate));
-    dynamicQuery.addOrder(OrderFactoryUtil.desc("modifiedDate"));
-    results = JournalArticleLocalServiceUtil.dynamicQuery(dynamicQuery);
-    // out.println(results);
+				dynamicQuery.add(structureIdProperty.eq(structureId));
+				dynamicQuery.add(statusProperty.eq(status));
+				dynamicQuery.add(userIdProperty.in(userIds));
+				dynamicQuery.add(statusDateProperty.between(fromDate,statusDate));
+				dynamicQuery.addOrder(OrderFactoryUtil.desc("modifiedDate"));
+				results=JournalArticleLocalServiceUtil.dynamicQuery(dynamicQuery);
+				// out.println(results);
 
-} catch (Exception e) {
-    e.printStackTrace();
-}
+				}catch(Exception e){
+				e.printStackTrace();
+				}
 ```
 
 ---
 
 ## Default Liferay user password
+
 ```
 user: test@liferay.com
 pass: test
 ```
+
 ---
+
 ## Password encryption OFF
+
 ```
 passwords.encryption.algorithm=NONE
 ```
----
 
+---
 
 ## How to include a no-maven jar in a maven portlet
 
@@ -2964,6 +2994,7 @@ passwords.encryption.algorithm=NONE
 2. Set the ```pom.xml``` in this way:
 
 ```xml
+
 <dependency>
 	<groupId>com.sample</groupId>
 	<artifactId>sample</artifactId>
@@ -2993,7 +3024,8 @@ passwords.encryption.algorithm=NONE
   example: ```String content = jArticle.getContentByLocale(themeDisplay.getLocale().toString());```
 + Always use Logs framework, never ```sout``` or ```printstacktrace``` or similar!
 + Always use Liferay Portal to change log's levels
-+ Liferay 7.x: if you want to create a new Portlet in Liferay IDE (Eclipse based) you have to: right click on parent module -> New -> Other -> Liferay -> Liferay Module Project
++ Liferay 7.x: if you want to create a new Portlet in Liferay IDE (Eclipse based) you have to: right click on parent module -> New -> Other -> Liferay ->
+  Liferay Module Project
 + Always write code in english!
 
 ---
@@ -3011,10 +3043,12 @@ passwords.encryption.algorithm=NONE
   ```
   it gives the correct result even if you edit the database without updating indexes / cache
 + If you can't find a piece of rendered html in the source code... maybe it's inside the database! (for example as a web content)
-+ If you change extension to the ```.war``` files before copying them into the deploy folder, you will get less errors in the hot deploy phase... just put back the right extension after the transfer. This trick is usefull only for large ```.war``` (typically >1MB)
-  + see [warRenamer.au3](src/warRenamer.au3) for automatic renaming in Windows systems.
++ If you change extension to the ```.war``` files before copying them into the deploy folder, you will get less errors in the hot deploy phase... just put back
+  the right extension after the transfer. This trick is usefull only for large ```.war``` (typically >1MB)
+    + see [warRenamer.au3](src/warRenamer.au3) for automatic renaming in Windows systems.
 + If you can't create a local database, use the dev one (duplicate it from the original one)
-+ Every time you edit a structure, Liferay (lucene i.e.) reindexes everything and can be a very long process. Go in server page to enable logs (search lucene) so you can see when reindex ends. 
++ Every time you edit a structure, Liferay (lucene i.e.) reindexes everything and can be a very long process. Go in server page to enable logs (search lucene)
+  so you can see when reindex ends.
 
 ---
 
@@ -3073,11 +3107,12 @@ Not using AUI...
 + use ```UploadPortletRequest``` class in the portlet
 
 Example:
+
 ```java
-@SuppressWarnings("unused")
-public void richiediUnaConsulenzaAction(final ActionRequest actionRequest, final ActionResponse actionResponse) {
-    UploadPortletRequest uploadPortletRequest = PortalUtil.getUploadPortletRequest(actionRequest);
-    String nome = ParamUtil.getString(uploadPortletRequest, "nome", StringPool.BLANK);
+@SuppressWarnings ( "unused" )
+public void richiediUnaConsulenzaAction(final ActionRequest actionRequest,final ActionResponse actionResponse){
+				UploadPortletRequest uploadPortletRequest=PortalUtil.getUploadPortletRequest(actionRequest);
+				String nome=ParamUtil.getString(uploadPortletRequest,"nome",StringPool.BLANK);
 ```
 
 ---
@@ -3087,27 +3122,28 @@ public void richiediUnaConsulenzaAction(final ActionRequest actionRequest, final
 Solution: added ```<pluginName>ADRTEL-contacts-portlet</pluginName>``` in the ```pom.xml```
 
 ```xml
+
 <plugin>
-    <groupId>com.liferay.maven.plugins</groupId>
-    <artifactId>liferay-maven-plugin</artifactId>
-    <version>${liferay.maven.plugin.version}</version>
-    <executions>
-        <execution>
-            <phase>generate-sources</phase>
-            <goals>
-                <goal>build-css</goal>
-            </goals>
-        </execution>
-    </executions>
-    <configuration>
-        <autoDeployDir>${liferay.auto.deploy.dir}</autoDeployDir>
-        <appServerDeployDir>${liferay.app.server.deploy.dir}</appServerDeployDir>
-        <appServerLibGlobalDir>${liferay.app.server.lib.global.dir}</appServerLibGlobalDir>
-        <appServerPortalDir>${liferay.app.server.portal.dir}</appServerPortalDir>
-        <liferayVersion>${liferay.version}</liferayVersion>
-        <pluginType>portlet</pluginType>
-        <pluginName>ADRTEL-contacts-portlet</pluginName>
-    </configuration>
+	<groupId>com.liferay.maven.plugins</groupId>
+	<artifactId>liferay-maven-plugin</artifactId>
+	<version>${liferay.maven.plugin.version}</version>
+	<executions>
+		<execution>
+			<phase>generate-sources</phase>
+			<goals>
+				<goal>build-css</goal>
+			</goals>
+		</execution>
+	</executions>
+	<configuration>
+		<autoDeployDir>${liferay.auto.deploy.dir}</autoDeployDir>
+		<appServerDeployDir>${liferay.app.server.deploy.dir}</appServerDeployDir>
+		<appServerLibGlobalDir>${liferay.app.server.lib.global.dir}</appServerLibGlobalDir>
+		<appServerPortalDir>${liferay.app.server.portal.dir}</appServerPortalDir>
+		<liferayVersion>${liferay.version}</liferayVersion>
+		<pluginType>portlet</pluginType>
+		<pluginName>ADRTEL-contacts-portlet</pluginName>
+	</configuration>
 </plugin>
 ```
 
@@ -3120,6 +3156,7 @@ You need to specify the **iteratorURL**
 Example:
 
 gestioneCodiceArticolo.jsp
+
 ```jsp
 <liferay-portlet:renderURL varImpl="iteratorURL">
     <portlet:param name="mvcPath" value="/html/articolo/gestioneCodiceArticolo.jsp" />
@@ -3144,12 +3181,12 @@ gestioneCodiceArticolo.jsp
 Add this to the java code before the line that create the error
 
 ```java
-Company companyqq = CompanyLocalServiceUtil.getCompanyByWebId("liferay.com");
-Role adminRole = RoleLocalServiceUtil.getRole(companyqq.getCompanyId(),"Administrator");
-List<User> adminUsers = UserLocalServiceUtil.getRoleUsers(adminRole.getRoleId());
-PrincipalThreadLocal.setName(adminUsers.get(0).getUserId());
-PermissionChecker permissionChecker = PermissionCheckerFactoryUtil.create(adminUsers.get(0), true);
-PermissionThreadLocal.setPermissionChecker(permissionChecker);
+Company companyqq=CompanyLocalServiceUtil.getCompanyByWebId("liferay.com");
+				Role adminRole=RoleLocalServiceUtil.getRole(companyqq.getCompanyId(),"Administrator");
+				List<User> adminUsers=UserLocalServiceUtil.getRoleUsers(adminRole.getRoleId());
+				PrincipalThreadLocal.setName(adminUsers.get(0).getUserId());
+				PermissionChecker permissionChecker=PermissionCheckerFactoryUtil.create(adminUsers.get(0),true);
+				PermissionThreadLocal.setPermissionChecker(permissionChecker);
 ```
 
 ---
@@ -3161,7 +3198,7 @@ Now maybe another error will occurs, but its more specific.
 
 ---
 
-### ParallelDestination:74] Unable to process 
+### ParallelDestination:74] Unable to process
 
 Changed ```Calendar.getInstance()``` to ```new GregorianCalendar()``` solved the issues... but I think is a locale setting problem.
 
@@ -3194,7 +3231,7 @@ There are 2 PropsUtil class, switch them when things don't working
 
 ```java
 com.liferay.portal.kernel.util.PropsUtil
-com.liferay.portal.util.PropsUtil
+				com.liferay.portal.util.PropsUtil
 ```
 
 ---
@@ -3240,7 +3277,7 @@ you got some javascript errors, check the browser javascript console!
 
 ### No tag "" defined in tag library imported with prefix "portlet"
 
-add in jsp 
+add in jsp
 
 ```jsp
 <%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
@@ -3266,7 +3303,7 @@ Was a bad usage of ```xxLocalServiceUtil();```
 
 ### java.lang.IllegalStateException: No servlet context name specified
 
-or 
+or
 
 ```liferay Unable find model ...```
 
@@ -3275,13 +3312,13 @@ Possible solution if happening while using dynamyc queries:
 Change the code from this one:
 
 ```java
-DynamicQuery dynamicQuery = DynamicQueryFactoryUtil.forClass(MyEntity.class);
+DynamicQuery dynamicQuery=DynamicQueryFactoryUtil.forClass(MyEntity.class);
 ```
 
 to this one:
 
 ```java
-DynamicQuery dynamicQuery = MyEntityLocalServiceUtil.dynamicQuery();
+DynamicQuery dynamicQuery=MyEntityLocalServiceUtil.dynamicQuery();
 ```
 
 ### class file for javax.servlet.http.HttpServletRequest not found
@@ -3291,11 +3328,12 @@ maybe you miss the dependency?
 if maven, add something like this to the pom gerarchy
 
 ```xml
+
 <dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>javax.servlet-api</artifactId>
-    <version>3.0.1</version>
-    <scope>provided</scope>
+	<groupId>javax.servlet</groupId>
+	<artifactId>javax.servlet-api</artifactId>
+	<version>3.0.1</version>
+	<scope>provided</scope>
 </dependency>
 ```
 
@@ -3309,7 +3347,7 @@ Maybe the ide is too new, download an older version (6.x ones)
 
 ### Ant error, dependencies not founds?
 
-Even if the java classpath is correct? 
+Even if the java classpath is correct?
 
 Use the "save" trick (Eclipse based IDEs):
 
@@ -3326,7 +3364,7 @@ Use the "save" trick (Eclipse based IDEs):
 2. Check if the project setup is correct: source level x.y
 
    example:
-   
+
    ```
    Right-click on the project.
    Choose Properties.
@@ -3381,7 +3419,8 @@ When calling from javascript ```Liferay.Service()```
 Solution:
 
 1. re-build the service
-2. copy the service's ```jar``` (the one inside ```WEB-INF/lib```) into the remote server library runtime (for example ```/opt/jboss-eap-x.y/modules/com/liferay/portal/main```)
+2. copy the service's ```jar``` (the one inside ```WEB-INF/lib```) into the remote server library runtime (for
+   example ```/opt/jboss-eap-x.y/modules/com/liferay/portal/main```)
 3. copy it in your local server for development (to avoid compilation error)
 4. empty the folder ```WEB-INF/lib```
 5. build the portlet
