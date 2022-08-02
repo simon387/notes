@@ -3469,6 +3469,12 @@ Try to give a look at ```portlet-hbm.xml```
 
 ---
 
+### liferay doesn't start: connection reset error while starting (ms sql)
+
+Solution: put ms-sql to other machine or dockerize it
+
+---
+
 <!-- ## TEST ZONE
 
 https://github.com/simon387/notes/blob/efdf77dfc11cd8ca6b7a0f2d9cddca93f910d68a/java/src/Test.java#L1
