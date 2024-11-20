@@ -1,0 +1,26 @@
+powershell ```.\auto_clicker.ps1```
+
+
+
+```shell
+while ($true) {
+Add-Type -TypeDefinition @"
+using System;
+using System.Runtime.InteropServices;
+public class Mouse {
+[DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
+public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
+public const int MOUSEEVENTF_LEFTDOWN = 0x02;
+public const int MOUSEEVENTF_LEFTUP = 0x04;
+
+        public static void Click() {
+            mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
+        }
+    }
+"@
+[Mouse]::Click()
+Start-Sleep -Seconds 60  # Aspetta 60 secondi
+}
+```
+
+serve per click automatico senza diritti admin, coordinate del mouse quelle che ci sono
