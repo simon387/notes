@@ -1,7 +1,5 @@
 powershell ```.\auto_clicker.ps1```
 
-
-
 ```shell
 while ($true) {
 Add-Type -TypeDefinition @"
@@ -24,3 +22,17 @@ Start-Sleep -Seconds 60  # Aspetta 60 secondi
 ```
 
 serve per click automatico senza diritti admin, coordinate del mouse quelle che ci sono
+
+---
+
+powershell anti lock
+
+```shell
+Add-Type -AssemblyName System.Windows.Forms
+```
+
+and
+
+```shell
+while ($true) { [System.Windows.Forms.SendKeys]::SendWait("{SCROLLLOCK}") ; Start-Sleep -Seconds 240 }
+```
