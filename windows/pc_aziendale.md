@@ -28,11 +28,15 @@ serve per click automatico senza diritti admin, coordinate del mouse quelle che 
 powershell anti lock
 
 ```shell
-Add-Type -AssemblyName System.Windows.Forms
+Add-Type -AssemblyName System.Windows.Forms ; while ($true) { [System.Windows.Forms.SendKeys]::SendWait("{SCROLLLOCK}") ; Start-Sleep -Seconds 240 }
 ```
 
-and
+---
 
-```shell
-while ($true) { [System.Windows.Forms.SendKeys]::SendWait("{SCROLLLOCK}") ; Start-Sleep -Seconds 240 }
-```
+## VPN
+
+- fai partire come admin open vpn e connettiti
+- fai partire come admin mypublicwifi
+- firewall di windows spento (non è vero, va pure con il firewall up)
+
+Connessione alla rete locale LAN 10.8.0.6 è quella giusta
