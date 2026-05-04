@@ -36,7 +36,7 @@ Add-Type -AssemblyName System.Windows.Forms ; while ($true) { [System.Windows.Fo
 ## VPN
 
 - fai partire come admin open vpn e connettiti
-- fai partire come admin mypublicwifi
+- fai partire come admin mypublicwifi **RICORDATI DI AVERE IL WIFI ATTIVATO**
 - firewall di windows spento (non è vero, va pure con il firewall up)
 
 Connessione alla rete locale LAN 10.8.0.6 è quella giusta
