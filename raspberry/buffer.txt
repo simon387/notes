@@ -1,0 +1,26 @@
+Perfetto, vedo tutto quello che serve. Fai questi passaggi nell'ordine:
+
+  1. Cambia RSA a 2048 bit
+
+  Seleziona 2048 bit invece di 1024. I nuovi certificati avranno una codifica corretta che risolve il bug OpenSSL.
+
+  2. Cambia "Client will use VPN to access"
+
+  Seleziona "Internet and local network" — senza questo, il traffico NON viene reindirizzato in Italia.
+
+  3. Clicca "Rinnova certificazione"
+
+  Questo rigenera tutti i certificati. Conferma se chiede.
+
+  4. Applica e poi "Esporta"
+
+  Scarica il nuovo file .ovpn.
+
+  5. Mandami il nuovo .ovpn
+
+  Incollalo in C:\dev\notes\raspberry\client.ovpn (sovrascrive quello vecchio) e lo carico sul Pi automaticamente.
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  -
+
+   Nota: vedo che scelia risulta "Connesso" sul router — probabilmente una sessione fantasma rimasta. Dopo il rinnovo si resetta tutto.
