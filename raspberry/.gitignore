@@ -1,1 +1,5 @@
 client.ovpn
+server_ovpn.cert
+ca.crt
+client.crt
+client.key
