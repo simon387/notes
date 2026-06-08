@@ -301,7 +301,8 @@ Before=openvpn-client@italia.service
 
 [Service]
 Type=oneshot
-ExecStart=/sbin/ip addr add 192.168.50.1/24 dev wlan0
+ExecStart=/usr/sbin/rfkill unblock wifi
+ExecStart=-/sbin/ip addr add 192.168.50.1/24 dev wlan0
 ExecStart=/sbin/ip link set wlan0 up
 RemainAfterExit=yes
 
@@ -316,7 +317,27 @@ sudo systemctl enable wlan0-setup.service
 
 ---
 
-## 9. Avvio automatico al boot
+## 9. Permetti al servizio OpenVPN di accedere a /dev/rfkill
+
+Il servizio `openvpn-client@` ha un `DeviceAllow` ristretto per sicurezza. Senza questo step, hostapd non riesce ad alzare il WiFi e `up.sh` fallisce, causando la chiusura di OpenVPN.
+
+```bash
+sudo mkdir -p /etc/systemd/system/openvpn-client@italia.service.d
+sudo nano /etc/systemd/system/openvpn-client@italia.service.d/rfkill.conf
+```
+
+```
+[Service]
+DeviceAllow=/dev/rfkill rw
+```
+
+```bash
+sudo systemctl daemon-reload
+```
+
+---
+
+## 10. Avvio automatico al boot
 
 `hostapd` e `dnsmasq` vengono gestiti dagli script VPN, **non** si avviano da soli:
 
@@ -338,7 +359,7 @@ sudo reboot
 ```
 
 Sequenza al boot:
-1. `wlan0-setup` assegna `192.168.50.1` a `wlan0`
+1. `wlan0-setup` sblocca il WiFi (`rfkill unblock wifi`) e assegna `192.168.50.1` a `wlan0`
 2. `openvpn-client@italia` tenta la connessione VPN
 3. Se la VPN si connette → `up.sh` avvia hostapd e dnsmasq
 4. L'hotspot `it365` diventa visibile e naviga con IP italiano
@@ -428,12 +449,32 @@ rfkill list
 
 + **`Error reading extra certificate` nei log VPN** — bug certificati ASUS (vedi sezione 2). Rigenerare i certificati dal pannello ASUS.
 
-+ **hostapd non parte** — WiFi bloccato da rfkill:
++ **VPN fallisce con `rfkill: cannot open /dev/rfkill: Operation not permitted`** — il servizio OpenVPN non ha accesso al device. Crea un drop-in:
 
   ```bash
-  rfkill list
-  rfkill unblock wifi
+  sudo mkdir -p /etc/systemd/system/openvpn-client@italia.service.d
+  sudo nano /etc/systemd/system/openvpn-client@italia.service.d/rfkill.conf
   ```
+
+  ```
+  [Service]
+  DeviceAllow=/dev/rfkill rw
+  ```
+
+  ```bash
+  sudo systemctl daemon-reload
+  sudo systemctl restart openvpn-client@italia
+  ```
+
++ **hostapd non parte / wlan0 bloccato da rfkill** — il WiFi è soft-blocked. Sblocca e aggiungi `rfkill unblock wifi` come primo `ExecStart` in `wlan0-setup.service` (già incluso nella configurazione sopra):
+
+  ```bash
+  sudo rfkill unblock wifi
+  sudo systemctl restart wlan0-setup
+  sudo systemctl restart openvpn-client@italia
+  ```
+
++ **`wlan0-setup` fallisce con `Address already assigned`** — l'IP è già presente, normale se il servizio viene riavviato. Il prefisso `-` su `ExecStart=-/sbin/ip addr add ...` lo ignora (già incluso nella configurazione sopra).
 
 + **wlan0 non ha IP** — controlla che `wlan0-setup.service` sia attivo:
 
