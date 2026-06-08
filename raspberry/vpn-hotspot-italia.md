@@ -384,6 +384,46 @@ sudo journalctl -t vpn-up -t vpn-down --since "1 hour ago"
 
 ---
 
+## Diagnostica rapida — WiFi non visibile al boot
+
+Esegui in ordine, ogni comando ti dice dove si è fermato:
+
+```bash
+# 1. La VPN si è connessa?
+sudo systemctl status openvpn-client@italia --no-pager
+
+# 2. Errori VPN (ultimi 50 log)
+sudo journalctl -u openvpn-client@italia -n 50 --no-pager
+
+# 3. Il tunnel tun0 esiste?
+ip addr show tun0
+
+# 4. wlan0 ha l'IP statico?
+ip addr show wlan0
+
+# 5. Il servizio wlan0-setup è partito?
+sudo systemctl status wlan0-setup --no-pager
+
+# 6. hostapd e dnsmasq sono attivi?
+sudo systemctl status hostapd --no-pager
+sudo systemctl status dnsmasq --no-pager
+
+# 7. Lo script up.sh è stato chiamato?
+sudo journalctl -t vpn-up --since "1 hour ago" --no-pager
+
+# 8. WiFi bloccato da rfkill?
+rfkill list
+```
+
+**Interpretazione rapida:**
++ VPN `failed` o `activating` → la VPN non si connette → l'AP non parte mai (guarda log al punto 2)
++ `tun0` non esiste → VPN non connessa
++ `wlan0` senza IP → `wlan0-setup` non ha girato
++ `hostapd` `inactive` + nessun log `vpn-up` → lo script `up.sh` non è stato chiamato
++ `rfkill` mostra `blocked` → esegui `rfkill unblock wifi` poi riavvia hostapd
+
+---
+
 ## Troubleshooting
 
 + **`Error reading extra certificate` nei log VPN** — bug certificati ASUS (vedi sezione 2). Rigenerare i certificati dal pannello ASUS.
