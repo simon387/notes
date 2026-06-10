@@ -386,6 +386,107 @@ Da un dispositivo connesso all'hotspot, visita `https://ifconfig.me` — deve mo
 
 ---
 
+## Script di verifica
+
+Salva in `/usr/local/bin/check-vpn-hotspot` e rendilo eseguibile:
+
+```bash
+sudo nano /usr/local/bin/check-vpn-hotspot
+sudo chmod +x /usr/local/bin/check-vpn-hotspot
+```
+
+```bash
+#!/bin/bash
+# Verifica stato VPN + hotspot it365
+
+OK="\e[32m[OK]\e[0m"
+KO="\e[31m[KO]\e[0m"
+ERRORS=0
+
+check() {
+    local label="$1"
+    local result="$2"   # 0 = OK, 1 = KO
+    local detail="$3"
+    if [ "$result" -eq 0 ]; then
+        echo -e "$OK  $label${detail:+  ($detail)}"
+    else
+        echo -e "$KO  $label${detail:+  ($detail)}"
+        ERRORS=$((ERRORS + 1))
+    fi
+}
+
+echo "=== VPN + Hotspot status ==="
+echo
+
+# 1. Servizio OpenVPN
+systemctl is-active --quiet openvpn-client@italia
+check "VPN service (openvpn-client@italia)" $? "$(systemctl is-active openvpn-client@italia)"
+
+# 2. Interfaccia tun0 presente
+ip link show tun0 &>/dev/null
+check "Tunnel tun0 presente" $?
+
+# 3. IP su tun0
+TUN_IP=$(ip -4 addr show tun0 2>/dev/null | awk '/inet /{print $2}')
+[ -n "$TUN_IP" ]
+check "IP su tun0" $? "$TUN_IP"
+
+# 4. wlan0 con IP statico
+WLAN_IP=$(ip -4 addr show wlan0 2>/dev/null | awk '/inet /{print $2}')
+[ "$WLAN_IP" = "192.168.50.1/24" ]
+check "IP statico wlan0 (192.168.50.1/24)" $? "$WLAN_IP"
+
+# 5. rfkill non bloccato
+rfkill list wifi 2>/dev/null | grep -q "Soft blocked: no"
+check "WiFi non bloccato da rfkill" $?
+
+# 6. hostapd attivo
+systemctl is-active --quiet hostapd
+check "hostapd attivo" $? "$(systemctl is-active hostapd)"
+
+# 7. dnsmasq attivo
+systemctl is-active --quiet dnsmasq
+check "dnsmasq attivo" $? "$(systemctl is-active dnsmasq)"
+
+# 8. IP forwarding abilitato
+FWD=$(cat /proc/sys/net/ipv4/ip_forward)
+[ "$FWD" = "1" ]
+check "IP forwarding abilitato" $?
+
+# 9. Regola NAT su tun0 presente
+iptables -t nat -C POSTROUTING -o tun0 -j MASQUERADE 2>/dev/null
+check "Regola NAT (MASQUERADE su tun0)" $?
+
+# 10. IP pubblico italiano (opzionale, richiede rete)
+echo
+echo -n "Controllo IP pubblico... "
+PUB_IP=$(curl -s --max-time 5 https://api.ipify.org 2>/dev/null)
+if [ -n "$PUB_IP" ]; then
+    COUNTRY=$(curl -s --max-time 5 "https://ipapi.co/${PUB_IP}/country/" 2>/dev/null)
+    echo "$PUB_IP ($COUNTRY)"
+    [ "$COUNTRY" = "IT" ]
+    check "IP pubblico italiano" $? "$PUB_IP — $COUNTRY"
+else
+    echo "non raggiungibile"
+fi
+
+echo
+if [ "$ERRORS" -eq 0 ]; then
+    echo -e "\e[32m✔ Tutto OK\e[0m"
+else
+    echo -e "\e[31m✘ $ERRORS problema/i rilevati\e[0m"
+    exit 1
+fi
+```
+
+Uso:
+
+```bash
+sudo check-vpn-hotspot
+```
+
+---
+
 ## Comandi utili
 
 ```bash
