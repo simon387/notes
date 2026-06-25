@@ -1,0 +1,4 @@
+cose da fare se non va:
+
++ primissima cosa: controlla da altro pc se va la vpn
++ check su rasp: sudo check-vpn-hotspot
